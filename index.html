@@ -1,0 +1,82 @@
+---
+layout: splash
+classes: wide
+title: DesignToolBox for 3ds Max
+author_profile: false
+# excerpt: "In our daily work we had developed some tools to enhance our workflow and ease recurrent tasks, better suiting Autodesk 3ds Max to the needs of an archviz-design technical modeller. These tools have evolved to become feature rich plugin, and we made it available to the public."
+excerpt: 'DesignToolbox is a collection of tools specially designed to accelerate and simplify basic modeling tasks for architectural models, furniture design and other tasks where accurate modeling is needed. Professionals used to CAD or precision software will find it very familiar some of the included transformation tools, like reference rotation, scale and position, measurement tools and reference guides.<br/>Ability to place snapping points at polylines intersections, visual rulers, fast UVW mapping and randomizations, cloning tools, scene management, panel grids, fast pivot placement and workplanes are some of the tools included, and new ones are added with each update.'
+header:
+  image: '/assets/images/logo-dstlbx.png'
+  overlay_color: "#353535"
+  overlay_filter: "rgba(255, 255, 255, 0.8)"
+  overlay_image: /assets/images/banner-02.jpg
+  video:
+    id: zskGfiWOeyo
+    provider: youtube
+# feature_row_about:
+#   - image_path: '/assets/images/logo-dstlbx.png'
+#     alt: "designtoolbox logo"
+#     title: " "
+#     excerpt: 'DesignToolbox is a collection of tools specially designed to accelerate and simplify basic modeling tasks for architectural models, furniture design and other tasks where accurate modeling is needed. Professionals used to CAD or precision software will find it very familiar some of the included transformation tools, like reference rotation, scale and position, measurement tools and reference guides.<br/>Ability to place snapping points at polylines intersections, visual rulers, fast UVW mapping and randomizations, cloning tools, scene management, panel grids, fast pivot placement and workplanes are some of the tools included, and new ones are added with each update.'
+feature_row_ui:
+  - title: "Over 50+ unique tools to enhance your workflow"
+    excerpt: "Carefully crafted and visually pleasant UI"
+    url: "/features/"
+    btn_label: "Complete feature list"
+    btn_class: "btn--primary"
+feature_row:
+  - image_path: /assets/images/splash-docs.jpg
+    alt: "DesignToolBox documents"
+    title: "Documents"
+    excerpt: "Consult the user guide to learn how to use the tools and their available options."
+    url: "/docs/userguide/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/splash-changelog.jpg
+    alt: "New Features"
+    title: "What's new"
+    excerpt: "Stay up to date with the development and new features added in the latest version."
+    url: "/docs/changelog/"
+    btn_label: "Version history"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/splash-maxscript.jpg
+    title: "Free Tools"
+    excerpt: "Look if some of our tools can improve your work. Feel free to modify and collaborate with improve them."
+    url: "/tools/"
+    btn_label: "Explore"
+    btn_class: "btn--primary"
+---
+
+<!--About DesignToolBox-->
+{% include feature_row id="feature_row_about" %}
+
+<!--Feature list-->
+{% include dstlbx-features-cats.html %}
+{% include feature_row id="feature_row_ui" type="center" %}
+
+<!--Slider images-->
+<div class="flexslider">
+  <ul class="slides">
+    <li><img src="/assets/images/slide_refguides.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_quick_measuere.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_divide_distance.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_local_isolate.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_quick_angle.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_ref_rotation.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_ref_scale.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_ref_offset.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_multimap.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_paneling.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_pivot_tools.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_menu.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_ribbon_tab.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/dimobj_preview.png" alt="Features slider"/></li>
+  </ul>
+</div>
+
+<!--Buy now section-->
+{% include dstlbx-buy-now.html price="$23.00*" purchase-url="https://gum.co/dstlbx" download-url="https://github.com/HAG87/designtoolbox-release" %}
+<!-- {% include dstlbx-buy-now.html price="$22.99" purchase-url="https://gum.co/dstlbx" download-url="https://github.com/HAG87/designtoolbox-release/releases/latest" %} -->
+
+<!-- Documents 3 column-->
+{% include feature_row %}

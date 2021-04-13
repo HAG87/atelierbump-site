@@ -1,0 +1,171 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "Free tools"
+    url: /tools/
+  - title: "Documents"
+    url: /docs/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contact"
+    url: "/contact/"
+  - title: "&#10096; Download &#10097;"
+    url: "/#installer-download"
+  #- title: "Sitemap"
+  #  url: /sitemap/
+
+# User guide sidebar
+sidebar-userguide:
+- title: "refGuides, spatial reference helpers"
+  url: /docs/userguide/#refguides-spatial-reference-helpers
+  children:
+  - title: "Line guides placement"
+    url: /docs/userguide/#line-guides-placement
+  - title: "Free space mode"
+    url: /docs/userguide/#free-space-mode
+  - title: "Orthogonal space mode"
+    url: /docs/userguide/#orthogonal-space-mode
+  - title: "Polar space mode"
+    url: /docs/userguide/#polar-space-mode
+  - title: "Protractor guide"
+    url: /docs/userguide/#protractor-guide
+  - title: "Intersection points"
+    url: /docs/userguide/#intersection-points
+  - title: "Guides parameters"
+    url: /docs/userguide/#guides-parameters
+  - title: "refGuides Objects"
+    url: /docs/userguide/#refguides-objects
+  - title: "Viewport information tools"
+    url: /docs/userguide/#viewport-information-tools
+  - title: "refGuides additional tools"
+    url: /docs/userguide/#refguides-additional-tools
+  - title: "Options dialog"
+    url: /docs/userguide/#options-dialog
+- title: "Transform tools"
+  url: /docs/userguide/#transform-tools
+  children:
+  - title: "reference Rotation"
+    url: /docs/userguide/#reference-rotation
+  - title: "local reference Rotation"
+    url: /docs/userguide/#local-reference-rotation
+  - title: "reference Scale"
+    url: /docs/userguide/#reference-scale
+  - title: "Mirror tool"
+    url: /docs/userguide/#mirror-tool
+  - title: "Move and align (1D Align tool)"
+    url: /docs/userguide/#move-and-align-1d-align-tool
+  - title: "3 points align"
+    url: /docs/userguide/#3-points-align
+  - title: "reDimension"
+    url: /docs/userguide/#redimension
+  - title: "Offset (reference move)"
+    url: /docs/userguide/#offset-reference-move
+  - title: "Random transform"
+    url: /docs/userguide/#random-transform
+  - title: "Object distribution tools"
+    url: /docs/userguide/#arrange-objects    
+- title: "Measure tools"
+  url: /docs/userguide/#measure-tools
+  children:
+  - title: "Divide distance"
+    url: /docs/userguide/#divide-distance
+  - title: "Distance"
+    url: /docs/userguide/#distance
+  - title: "Working with measurements"
+    url: /docs/userguide/#working-with-measurements-distance-history
+  - title: "Angle"
+    url: /docs/userguide/#angle
+  - title: "Area"
+    url: /docs/userguide/#area
+  - title: "Volume"
+    url: /docs/userguide/#volume
+  - title: "Home grid size"
+    url: /docs/userguide/#home-grid-size
+  - title: "Spatial info"
+    url: /docs/userguide/#spatial-info
+- title: "Pivot and coordinates related tools"
+  url: /docs/userguide/#pivot-and-coordinates-related-tools
+  children:
+  - title: "Pivot tools"
+    url: /docs/userguide/#pivot-tools
+  - title: "Transform locks"
+    url: /docs/userguide/#transform-locks
+- title: "Scene organization tools"
+  url: /docs/userguide/#scene-organization-tools
+  children:
+  - title: "Local isolate"
+    url: /docs/userguide/#local-isolate
+  - title: "Incremental isolation"
+    url: /docs/userguide/#incremental-isolation
+  - title: "unHide by selection"
+    url: /docs/userguide/#unhide-by-selection
+  - title: "unFreeze by selection"
+    url: /docs/userguide/#unfreeze-by-selection
+  - title: "Layer tools"
+    url: /docs/userguide/#layer-tools
+- title: "Eyedropper tools"
+  url: /docs/userguide/#eyedropper-tools
+  children:
+  - title: "Replicator"
+    url: /docs/userguide/#replicator
+  - title: "Eyedropper"
+    url: /docs/userguide/#eyedropper
+  - title: "MultiTool"
+    url: /docs/userguide/#multitool
+  - title: "Eyedropper modes"
+    url: /docs/userguide/#eyedropper-modes
+- title: "Object related tools"
+  url: /docs/userguide/#object-related-tools
+  children:
+  - title: "1D Array"
+    url: /docs/userguide/#1d-array-clone-between
+  - title: "Interactive 2D Array"
+    url: /docs/userguide/#interactive-2d-array
+  - title: "Pattern Array"
+    url: /docs/userguide/#pattern-array
+  - title: "Polar array"
+    url: /docs/userguide/#polar-array
+  - title: "Merge and explode tools"
+    url: /docs/userguide/#merge-and-explode-tools
+- title: "Scene management"
+  url: /docs/userguide/#scene-management-and-rendering-related-tools
+  children:
+  - title: "Camera manager"
+    url: /docs/userguide/#camera-manager
+  - title: "Bitmap multi-loader"
+    url: /docs/userguide/#bitmap-multi-loader
+  - title: "Bitmap name from file"
+    url: /docs/userguide/#bitmap-name-from-file
+  - title: "Other material related tools"
+    url: /docs/userguide/#other-material-related-tools
+- title: "Utilities"
+  url: /docs/userguide/#utilities
+  children:
+  - title: "Paneling and detailer"
+    url: /docs/userguide/#paneling-and-detailer
+  - title: "Paneling"
+    url: /docs/userguide/#paneling
+  - title: "Detailer"
+    url: /docs/userguide/#detailer
+  - title: "Map tools and multiMap"
+    url: /docs/userguide/#map-tools-and-multimap
+  - title: "Snaps states"
+    url: /docs/userguide/#snaps-states
+  - title: "Color clipboard"
+    url: /docs/userguide/#color-clipboard
+  - title: "Wireframe color HSV"
+    url: /docs/userguide/#wireframe-colors-adjustment
+- title: "UI reference"
+  url: /docs/userguide/#ui-reference
+  children:
+  - title: "Viewport elements colors"
+    url: /docs/userguide/#viewport-elements-colors
+  - title: "Toolbar macros"
+    url: /docs/userguide/#where-to-locate-the-toolbar-macros
+  - title: "Ribbon Tab"
+    url: /docs/userguide/#ribbon-tab
+  - title: "Combined floater dialogs UI"
+    url: /docs/userguide/#combined-floater-dialogs-ui
+- title: "Install folders"
+  url: /docs/userguide/#install-folders

@@ -1,0 +1,15 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://atelierbump.tk/* https://atelierbump.com/:splat 301!
+https://www.atelierbump.tk/* https://atelierbump.com/:splat 301!
+
+http://atelierbump.tk/* https://atelierbump.com/:splat 301!
+http://www.atelierbump.tk/* https://atelierbump.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://atelierbump-site.netlify.com/* https://atelierbump.com/:splat 301!
+
+# URL redirections
+/freebies/*      /tools/:splat 301!
+/designtoolbox/ /              301!

@@ -1,0 +1,312 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+@import "/assets/css/flexslider.css";
+/*
+   Box Shadow
+   ========================================================================== */
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color;
+        -moz-box-shadow: inset $top $left $blur $color;
+        box-shadow: inset $top $left $blur $color;
+    }
+
+    @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+@mixin glow($ext, $blur, $color) {
+    filter: drop-shadow( 0 $ext $blur $color);
+    -webkit-filter: drop-shadow( 0 $ext $blur $color);
+}
+/*
+   Transition
+   ========================================================================== */
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+  }
+
+  // Misc styles
+.drop-shadow {
+    @include box-shadow(0px, 0px, 5px, rgba(0, 0, 0, 0.4));
+}
+
+.no-margin {
+    margin: 0 auto;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+// flexslider
+.flexslider .slides img {
+    border-radius: $border-radius;
+}
+
+// extensions
+mark {
+    padding: 0.1em;
+    border-radius: $border-radius;
+    background-color: $primary-color;
+}
+
+hr {
+    border: 0;
+    background-color: $light-gray;
+    height: 1px;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+}
+
+// Links text decoration override
+.archive__item-title > a {
+    text-decoration: none;
+}
+
+//Additions to archive elements
+.ruled-archive {
+    .archive__item {
+        border-top: solid 1px $border-color;
+    }
+}
+
+// Social Buttons style overrides
+%btn-social-shared {
+    color: $dark-gray;
+    background-color: $background-color;
+    border-color: $border-color;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.btn--facebook,
+.btn--linkedin,
+.btn--twitter {
+    @extend %btn-social-shared;
+}
+
+.btn--facebook:visited,
+.btn--linkedin:visited,
+.btn--twitter:visited {
+    @extend %btn-social-shared;
+}
+
+.btn--facebook:hover,
+.btn--linkedin:hover,
+.btn--twitter:hover {
+    @extend %btn-social-shared;
+}
+
+// extend responsive video container
+.responsive-video-container {
+    border-radius: $border-radius;
+}
+
+.gist .blob-wrapper.data {
+    max-height:18.75;
+    overflow:auto;
+}
+
+// small image style
+.icon-small {
+    width: 3.12em;
+    height: auto;
+    // margin: 0.5em !important;
+}
+
+.icon-medium {
+    width: 5.0em;
+    height: auto;
+}
+
+.element-highlight {
+    background-color: mix(#fff, $info-color, 80%);
+
+    margin: 2em 0 !important;  /* override*/
+    padding: 1em;
+    color: $dark-gray;
+    font-family: $global-font-family;
+    // font-size: $type-size-6 !important;
+    text-indent: initial; /* override*/
+    border-radius: $border-radius;
+    // box-shadow: 0 1px 1px rgba($notice-color, 0.25);
+
+    h4 {
+      margin-top: 0 !important; /* override*/
+      margin-bottom: 0.75em;
+    }
+
+    @at-root .page__content #{&} h4 {
+      margin-bottom: 0;
+      font-size: 1em;
+    }
+
+    p {
+      &:last-child {
+        margin-bottom: 0 !important; /* override*/
+      }
+    }
+
+    h4 + p {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    ul {
+        &:last-child {
+          margin-bottom: 0; /* override*/
+        }
+    }
+}
+
+// elements for features
+%title-shared {
+    border-bottom: solid 1px $border-color;
+    padding: 0.2em;
+    margin: 0;
+}
+
+.section--featured {
+    margin: 2em 0 !important;  /* override*/
+    padding: 1em;
+    font-family: $global-font-family;
+    font-size: $type-size-6 !important;
+    text-indent: initial; /* override*/
+    border-radius: $border-radius;
+}
+
+.hero-content {
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    // color: $text-color;
+
+    @include breakpoint($large) {
+        justify-content: space-evenly;
+        -webkit-justify-content: space-evenly;
+    }
+    .image {
+        text-align: center;
+        padding: 1.5em;
+        width: span(1 of 1);
+        img {
+            width:50%;
+            @include glow(10px, 10px, rgba(255,255,255,0.4) );
+            // filter: drop-shadow(0 16px 10px rgba(255,255,255,0.4));
+        }
+    }
+    .col {
+        border-radius: $border-radius;
+        vertical-align: top;
+
+        &-1 {
+            width: span(2 of 4);
+        }
+        &-2 {
+            width: span(2 of 4);
+        }
+    }
+}
+
+.grid-row {
+    // @include clearfix;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+
+    @include breakpoint($large) {
+        justify-content: space-evenly;
+        -webkit-justify-content: space-evenly;
+    }
+
+    .generic {
+        vertical-align: top;
+        text-align: center;
+        width: span(1 of 1);
+        // @include breakpoint($large) {
+        //     width: span(1 of 5);
+        // }
+    }
+
+    .feature {
+        @include transition(background-color 0.5s ease-out);
+        @include transition(transform 0.3s ease-out);
+        border-radius: $border-radius;
+        vertical-align: top;
+        padding: 1.5em;
+        width: span(5 of 5);
+
+        @include breakpoint($medium) {
+            width: span(6 of 12 set-gutters 0.5em);
+        }
+        @include breakpoint($large) {
+            width: span(1 of 5);
+        }
+
+
+        &:hover {
+            background-color: $lighter-gray;
+            // transform: scale(1.02);
+        }
+
+        h3 {
+            @extend %title-shared;
+            text-align: left;
+        }
+
+        h4 {
+            font-size: $type-size-3;
+            @include breakpoint($large) {
+                font-size: $type-size-4;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            @include breakpoint($large) {
+                font-size: small;
+            }
+        }
+
+        img {
+            width: 2.5em;
+            height: auto;
+        }
+
+        &-two__fifth {
+            @extend .feature;
+            width: span(2 of 5);
+        }
+
+        &-three__fifth {
+            @extend .feature;
+            width: span(3 of 5);
+        }
+
+        &-wide {
+            @extend .feature;
+            width: span(1 of 1);
+        }
+
+    }
+}
+

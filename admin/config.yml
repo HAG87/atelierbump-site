@@ -1,0 +1,142 @@
+# Netlify Backend configuration
+backend:
+  name: github #test-repo
+  repo: HAG87/atelierbump-site # Path to Github repository
+  branch: atelierbump-website # Branch to update
+# -----------------------------------------------------------------------#
+# site_url: https://your-site.com # URL to your published site
+# display_url: https://your-site.com #The CMS UI will include a link in the fixed area at the top of the page
+custom_logo: 'assets/images/logo.png'
+# -----------------------------------------------------------------------#
+media_folder: 'assets/images' # Media files will be stored in the repo under images/uploads
+publish_mode: editorial_workflow
+# -----------------------------------------------------------------------#
+collections:
+#Blog Posts
+  - name: 'blog' # Used in routes, e.g., /admin/collections/blog
+    label: 'Blog' # Used in the UI
+    folder: '_posts' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      # - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Excerpt', name: 'excerpt', widget: 'text'}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Modified Date', name: 'last_modified_at', widget: 'datetime'}
+      - {label: 'Link', name: 'link', widget: 'string'}
+      - {label: 'TOC', name: 'toc', widget: 'boolean'}
+      - label: 'Teaser'
+        name: 'header'
+        widget: 'object'
+        fields:
+          - {label: 'Teaser', name: 'teaser', widget: 'image'}
+          - {label: 'Image', name: 'image', widget: 'image'}
+          - {label: 'OG Override', name: 'og_image', widget: 'image'}
+          - {label: 'Overlay image', name: 'overlay_image', widget: 'image'}
+          - {label: 'Overlay Color', name: 'overlay_color', widget: 'string'}
+          - {label: 'Caption', name: 'caption', widget: 'string'}
+          - label: Video
+            name: video
+            widget: object
+            fields:
+              - {label: 'id', name: 'id', widget: 'string'}
+              - {label: 'Provider', name: 'provider', widget: 'string', default: 'youtube'}
+          - label: 'Actions'
+            name: actions
+            widget: object
+            fields:
+              - {label: 'label', name: 'label', widget: 'string'}
+              - {label: 'URL', name: 'url', widget: 'string'}
+
+      - label: Galleries
+        label_singular: 'Gallery'
+        name: 'gallery'
+        widget: list
+        fields:
+          - {label: 'URL', name: 'url', widget: 'string'}
+          - {label: 'Image path', name: 'image_path', widget: 'image'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Alt', name: 'alt', widget: 'string'}
+
+
+      # - {label: 'toc_sticky', name: 'toc_sticky', widget: 'boolean'}
+      # - {label: 'Featured Image', name: 'thumbnail', widget: 'image'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'list'
+        allow_add: true
+        default: ['3ds max tools', 'DesignToolBox']
+      - {label: 'Tags', name: 'tags', widget: 'list'}
+# Tools collection
+  - name: 'tools'
+    label: 'Free Tools'
+    folder: '_tools'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Excerpt', name: 'excerpt', widget: 'text'}
+      - {label: 'Permalink', name: 'permalink', widget: 'string'}
+      - label: 'Teaser'
+        name: 'header'
+        widget: object
+        fields:
+          - {label: 'Image', name: 'teaser', widget: 'image'}
+          - {label: 'OG image', name: 'og_image', widget: 'image'}
+      - {label: 'Link', name: 'link', widget: 'string'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+# Docs collection
+  - name: 'docs'
+    label: 'Documents'
+    folder: '_docs'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Excerpt', name: 'excerpt', widget: 'text'}
+      - {label: 'Permalink', name: 'permalink', widget: 'text'}
+      - label: 'Teaser'
+        name: 'header'
+        widget: object
+        fields:
+          - {label: 'Image', name: 'teaser', widget: 'image'}
+          - {label: 'OG image', name: 'og_image', widget: 'image'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+# Site pages
+  # - name: 'sitepages'
+  #   label: 'Site pages'
+  #   delete: false
+  #   editor:
+  #     preview: false
+  #   files:
+  #     - name: 'homepage'
+  #       label: 'Home page'
+  #       file: 'index.html'
+  #       description: 'Site home page'
+  #       fields:
+  #         - {label: 'Title', name: 'title', widget: 'string'}
+  #         - name: 'features_collection'
+  #           label: 'List of features'
+  #           widget: list
+  #           fields:
+  #           - name: 'feature_row'
+  #             label: 'Features'
+  #             widget: object
+  #             fields:
+  #               - name: 'feature_item'
+  #                 label: 'Items'
+  #                 widget: list
+  #                 fields:
+  #                 - { label: 'Title', name: 'title', widget: 'string'}
+  #                 - { label: 'Excerpt', name: 'excerpt', widget: 'string'}
+  #                 - { label: 'URL', name: 'url', widget: 'string'}
+  #                 - { label: 'Image', name: 'image_path', widget: 'image'}
+  #                 - { label: 'Video', name: 'video_path', widget: 'string'}
+  #                 - { label: 'Video width', name: 'v_w', widget: 'number', default: 720}
+  #                 - { label: 'Video height', name: 'v_h', widget: 'number', default: 380}
+  #                 - { label: 'Alt', name: 'alt', widget: 'string'}
+  #                 - { label: 'Btn label', name: 'btn_label', widget: 'string', default: 'Download'}
+  #                 - { label: 'Btn class', name: 'btn_class', widget: 'string', default: 'btn--primary'}
+  #         - {label: 'Body', name: 'body', widget: 'text'}
