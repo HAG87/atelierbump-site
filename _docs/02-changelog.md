@@ -22,7 +22,8 @@ permalink: /docs/changelog
 * Combined tools launch floater dialogs:
   * Updated to include latest tools.
   * Treated now as a "legacy" feature. Is moved to "Extras" optional installation category. Considering not to update it anymore (user feedback welcome) since it was introduced in the firsts versions, then the current 3ds Max menu system was not implemented yet, and it makes this dialogs irrelevant now.
-  
+* Added support for 3ds Max 2022
+
 ### Fixes
 
 * Eyedropper: Fixed UVWmapping mode, it was broken in 2.9.0.0.
