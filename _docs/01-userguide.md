@@ -288,6 +288,8 @@ Distribute or redistribute objects (equally spaced) on a linear direction.
 
 #### Arrange objects (real-time)
 
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/1xn46xp3xvc" frameborder="0" allowfullscreen></iframe></div>
+
 Distribute or redistribute objects (equally spaced) on a linear direction.
 *This variant of the tool tracks the objects new position's in real time. it could be slow with complex geometry*
 
@@ -472,7 +474,16 @@ While there already are tools available to reposition an object's center pivot, 
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/OshrLo5QpqA" frameborder="0" allowfullscreen></iframe></div>
 
-![localisolate](/assets/images/icons/isolate_local.png){: .icon-small}
+#### Pivot to Snap point
+
+Quickly move an object's pivot to a snapping point. Works with any snap type.
+If no object is selected, the tool will reposition the pivot of the object where the snap is displayed (if any)
+
+>This tool needs to be assigned to a keyboard shortcut!
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/kQdwEGEm2U8" frameborder="0" allowfullscreen></iframe></div>
+
+![lockpos](/assets/images/icons/Locks_pos.png){: .icon-small}
 
 ### Transform locks
 

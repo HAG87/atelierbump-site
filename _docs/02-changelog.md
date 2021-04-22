@@ -4,14 +4,33 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.1.1
+
+### New tools
+
+* Pivot to snap point: Quickly move an object's pivot to a snapping point.
+
+### Enhancements
+
+* Divide distance tool: viewport text that displays the number of segments and length was moved to follow the mouse position instead of being near start point
+* Explode and Merge: Now pressing **CTRL** when executing the tool will skip the "keep original object" prompt.
+
+### Fixes
+
+* refGuides: Fixed broken "standard splines creation mode". NOTICE: It is reported that refGuides tools can conflict with the plugin "VG Snaps" and cause a total crash of 3ds Max, if you're having this issue, please let us know.
+
+### Issues
+
+* Tooltips: 3ds Max uses the MacroScripts tooltips to list them in customization and the new hotkey editor. This makes difficult to find the right tool. As a workaround the prefix "Dstlbx -" was added to the tooltips.
+
 ## Version 2.9.1.0
 
 ### New tools
 
 * **Drop objects:** Drop objects on below surfaces. Press SHIFT when activating the tool to align the objects to the surface form.
 * **Arrange objects (start-end objects):** Distribute objects (equally spaced) on a linear direction.  Direction and length of the distribution determined by the position of two objects: 1. Select the START OBJECT -- 2. Select the END OBJECT -- 3. Select the objects to distribute between them. * Press the TOOL BUTTON+SHIFT to conform and align the objects to the underlying surfaces.
-* **Arrange objects (real-time):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's in Real Time. Warning! slow.  When tracking positions: * Press SHIFT to conform to the underlying surfaces * Press CONTROL to orient to the underlying surfaces
-* **Arrange objects (interactive):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's with marks in the viewport.  When tracking positions: * Press SHIFT to conform to the underlying surfaces * Press CONTROL to orient to the underlying surfaces
+* **Arrange objects (real-time):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's in Real Time. Warning! slow.  When tracking positions: *Press SHIFT to conform to the underlying surfaces* Press CONTROL to orient to the underlying surfaces
+* **Arrange objects (interactive):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's with marks in the viewport.  When tracking positions: *Press SHIFT to conform to the underlying surfaces* Press CONTROL to orient to the underlying surfaces
 
 >Check the user guide for detailed instruction of how this tools work
 
