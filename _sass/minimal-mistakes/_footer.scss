@@ -66,8 +66,8 @@
 
   li {
     display: inline-block;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
     text-transform: uppercase;
@@ -75,11 +75,11 @@
 
   li + li:before {
     content: "";
-    padding-right: 0.3em;
+    padding-right: 5px;
   }
 
   a {
-    padding-right: 0.3em;
+    padding-right: 10px;
     font-weight: bold;
   }
 

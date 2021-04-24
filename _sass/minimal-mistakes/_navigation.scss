@@ -178,13 +178,14 @@
   align-items: center;
   min-height: $nav-height;
   background: $background-color;
-  font-size: $nav-font-size;
 
   a {
     display: block;
     margin: 0 1rem;
     color: $masthead-link-color;
     text-decoration: none;
+    -webkit-transition: none;
+    transition: none;
 
     &:hover {
       color: $masthead-link-color-hover;
@@ -198,6 +199,11 @@
     &.site-title {
       margin-left: 0;
     }
+  }
+  
+  img{
+    -webkit-transition: none;
+    transition: none;
   }
 
   &__toggle {
@@ -230,9 +236,7 @@
 
     a {
       position: relative;
-/*       &:hover {
-        font-weight: bolder;
-      } */
+
       &:before {
         content: "";
         position: absolute;
@@ -517,7 +521,7 @@
   }
 
   // Scrollspy marks toc items as .active when they are in focus
-  .active {
+  .active a {
     @include yiq-contrasted($active-color);
   }
 }
