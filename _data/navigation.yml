@@ -10,6 +10,8 @@ main:
     url: /blog/
   - title: "Contact"
     url: "/contact/"
+  # - title: "Features"
+  #   url: "/featuresNew/"
   - title: "&#10096; Download &#10097;"
     url: "/#installer-download"
   #- title: "Sitemap"
