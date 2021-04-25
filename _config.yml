@@ -9,8 +9,8 @@
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-#---------------------------------------------------------------------#
-theme                    : "minimal-mistakes-jekyll"
+
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -18,12 +18,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Atelier Bump"
 title_separator          : "|"
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "atelierbump"
 description              : "3ds Max Plugins developer"
 url                      : "https://atelierbump.com"
-#baseurl                  : # the subpath of your site, e.g. "/blog"
+# baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png"
 masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -41,29 +42,16 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment by {fields.name}"
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : true
+  hide                   : # true, false (default)
+search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -74,7 +62,6 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
-
 # SEO Related
 google_site_verification : "u87qJDkv-c4VVhkSZnLfX7gMazFqiea6NHx2ub7Ow1I"
 bing_site_verification   : "6B4D363637A197BAA365EF81DEBE4430"
@@ -99,16 +86,14 @@ social:
     - "https://github.com/HAG87/"
     - https://www.youtube.com/channel/UCuhU8SUI7it3eJL4-WEXM3w
 
-# Contact
-contact:
-  support: "atelierbump@gmail.com"
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "UA-52234068-1"
+    tracking_id          :
     anonymize_ip         : # true, false (default)
+
 
 # Site Author
 author:
@@ -118,15 +103,18 @@ author:
   location : "Somewhere"
   email    : "atelierbump@gmail.com"
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "atelierbump@gmail.com"
     - label: "Website"
-      icon : "fas fa-fw fa-link"
-      url  : "https://atelierbump.tk"
+      icon: "fas fa-fw fa-link"
+      url: "https://atelierbump.com"
     - label: "Facebook"
-      icon : "fab fa-fw fa-facebook-square"
-      url  : "https://www.facebook.com/atelierBump/"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/atelierBump/"
     - label: "GitHub"
-      icon : "fab fa-fw fa-github"
-      url  : "https://github.com/HAG87/"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/HAG87/"
     - label: "YouTube"
       icon : "fab fa-fw fa-youtube"
       url  : "https://www.youtube.com/playlist?list=PLJcfO-OCdjs-t4BhGYvdcw9ThQU2FVdb1"
@@ -151,20 +139,20 @@ footer:
 # Reading Files
 include:
   - .htaccess
+  - _pages
   - _redirects
   - .ruby-version
-  - _pages
 exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
-  - .jekyll-cache
   - .sass-cache
-  - .vscode
-  - assets/js/_main.js
   - assets/js/plugins
+  - assets/js/_main.js
   - assets/js/vendor
-  - banner.js
   - Capfile
   - CHANGELOG
   - config
@@ -174,18 +162,20 @@ exclude:
   - LICENSE
   - log
   - node_modules
-  - package-lock.json
   - package.json
+  - package-lock.json
   - Rakefile
   - README
   - tmp
-  - vendor
-
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+  - .vscode
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
 
 # Conversion
 markdown: kramdown
@@ -193,6 +183,7 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+
 
 # Markdown Processing
 kramdown:
@@ -205,22 +196,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: []
 
 # Outputting
 permalink: /:categories/:title/
@@ -234,7 +215,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -243,8 +223,8 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
+
 
 # Archives
 #  Type
@@ -254,8 +234,8 @@ whitelist:
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
 # category_archive:
 #   type: liquid
 #   path: /categories/
@@ -274,21 +254,21 @@ whitelist:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-# Collections
-collections:
-  tools:
-    output: true
-    permalink: /:collection/:title
-  docs:
-    output: true
-    permalink: /:collection/:title
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
 
 # Defaults
 defaults:
   # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
       layout: single
       permalink: /:categories/:year/:month/:day/:title/
