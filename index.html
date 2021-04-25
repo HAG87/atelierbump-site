@@ -3,21 +3,15 @@ layout: splash
 classes: wide
 title: DesignToolBox for 3ds Max
 author_profile: false
-# excerpt: "In our daily work we had developed some tools to enhance our workflow and ease recurrent tasks, better suiting Autodesk 3ds Max to the needs of an archviz-design technical modeller. These tools have evolved to become feature rich plugin, and we made it available to the public."
 excerpt: 'DesignToolbox is a collection of tools specially designed to accelerate and simplify basic modeling tasks for architectural models, furniture design and other tasks where accurate modeling is needed. Professionals used to CAD or precision software will find it very familiar some of the included transformation tools, like reference rotation, scale and position, measurement tools and reference guides.<br/>Ability to place snapping points at polylines intersections, visual rulers, fast UVW mapping and randomizations, cloning tools, scene management, panel grids, fast pivot placement and workplanes are some of the tools included, and new ones are added with each update.'
 header:
   image: '/assets/images/logo-dstlbx.png'
   overlay_color: "#353535"
   overlay_filter: "rgba(255, 255, 255, 0.8)"
   overlay_image: /assets/images/banner-02.jpg
-  video:
-    id: zskGfiWOeyo
-    provider: youtube
-# feature_row_about:
-#   - image_path: '/assets/images/logo-dstlbx.png'
-#     alt: "designtoolbox logo"
-#     title: " "
-#     excerpt: 'DesignToolbox is a collection of tools specially designed to accelerate and simplify basic modeling tasks for architectural models, furniture design and other tasks where accurate modeling is needed. Professionals used to CAD or precision software will find it very familiar some of the included transformation tools, like reference rotation, scale and position, measurement tools and reference guides.<br/>Ability to place snapping points at polylines intersections, visual rulers, fast UVW mapping and randomizations, cloning tools, scene management, panel grids, fast pivot placement and workplanes are some of the tools included, and new ones are added with each update.'
+video:
+  id: zskGfiWOeyo
+  provider: youtube
 feature_row_ui:
   - title: "Over 50+ unique tools to enhance your workflow"
     excerpt: "Carefully crafted and visually pleasant UI"
@@ -45,10 +39,12 @@ feature_row:
     url: "/tools/"
     btn_label: "Explore"
     btn_class: "btn--primary"
+footer_text:
+  - 3ds Max is a trademark of Autodesk Inc.
 ---
 
-<!--About DesignToolBox-->
-{% include feature_row id="feature_row_about" %}
+<!-- Video presentation -->
+{% include video id=page.video.id provider=page.video.provider %}
 
 <!--Feature list-->
 {% include dstlbx-features-cats.html %}
@@ -59,18 +55,18 @@ feature_row:
   <ul class="slides">
     <li><img src="/assets/images/slide_refguides.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_quick_measuere.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_divide_distance.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_local_isolate.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_quick_angle.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_ref_rotation.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_ref_scale.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_ref_offset.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/dimobj_preview.png" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_divide_distance.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_quick_angle.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_menu.jpg" alt="Features slider"/></li>
+    <li><img src="/assets/images/slide_ribbon_tab.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_multimap.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_paneling.jpg" alt="Features slider"/></li>
     <li><img src="/assets/images/slide_pivot_tools.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_menu.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_ribbon_tab.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/dimobj_preview.png" alt="Features slider"/></li>
+    <!-- <li><img src="/assets/images/slide_local_isolate.jpg" alt="Features slider"/></li> -->
   </ul>
 </div>
 
