@@ -100,7 +100,6 @@ $mfp-use-visuallyhidden:              false !default; // Hide content from brows
   z-index: $mfp-z-index-base + 3;
   position: fixed;
   outline: none !important;
-  backface-visibility: hidden; // fixes webkit bug that can cause "false" scrollbar
   -webkit-backface-visibility: hidden; // fixes webkit bug that can cause "false" scrollbar
 }
 
