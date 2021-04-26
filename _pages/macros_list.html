@@ -1,0 +1,1022 @@
+---
+title: DesignToolBox feature list
+excerpt: List of available tools and utilities
+layout: single
+permalink: /dstlbx/commands/
+classes: wide
+---
+<style>
+    .tools td {
+        min-height: 48px;
+        min-width: 48px;
+    }
+
+    .tools td:nth-child(2) {
+        font-weight: bold;
+        min-width: 10.0em;
+    }
+
+    .cellWithComment {
+        position: relative;
+    }
+
+    .comment {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        border-radius: 0.5em;
+        background-color: rgb(55, 55, 55);
+        color: lightgrey;
+        padding: 3px;
+        top: 20px;
+        left: 30px;
+    }
+
+    .cellWithComment:hover span.comment {
+        display: block;
+    }
+</style>
+
+<h2>{{ page.excerpt }}</h2>
+<p>Last update: Version 2.9.1.2</p>
+<table class="tools">
+    <tbody>
+        <td colspan="3"><b>Transform</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/offset_48.png" alt="offset"></td>
+            <td>Distance Offset</td>
+            <td class="cellWithComment">Distance Offset: Performs a Translation from a reference point and direction (Pick Base Point &gt; Pick Direction Point)</td>
+            <span class="comment" id="DSTBX_offset">Reference Offset (position displacement).<br>Performs a Translation from a reference point and direction.
+                <ol>
+                    <li>Pick Base point</li>
+                    <li>Pick Direction point</li>
+                    <li>Adjust new position in the floater dialog</li>
+                </ol>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rotate_48.png" alt="rotate"></td>
+            <td>Reference Rotation</td>
+            <td class="cellWithComment">4-point rotation (Base Point &gt; Reference Point &gt; Axis Point &gt; Dest. Point). | Hold <b>SHIFT</b> while tracking angle to restrict angle measure.</td>
+            <span class="comment" id="DSTBX_rotator">Reference Rotation | 4-point rotation. Action performed in object's local coordinates.
+                <ol>
+                    <li>Position point</li>
+                    <li>Rotation axis point</li>
+                    <li>Reference direction</li>
+                    <li>Rotated direction</li>
+                </ol>
+                <ul>
+                    <li>Hold <b>SHIFT</b> while tracking angle to restrict angle measure.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/QLrotate_48.png" alt="QLrotate"></td>
+            <td>Local Rotation</td>
+            <td class="cellWithComment">Local reference rotation | Performs a 3-Point rotation (Base point &gt; Reference point &gt; Dest. point) using objects local coordinates.| Default rotation axis: Z. hold <b>SHIFT</b> while picking the reference point for X axis, press <b>CTRL</b> for Y axis.| Hold <b>SHIFT</b> while tracking angle to restrict angle measure.</td>
+            <span class="comment" id="DSTBX_Lrotator">Local reference rotation, Performs a 3-Point rotation using objects local coordinates.<br>It works for <em>SUB-OBJECT</em> selection in Editable polys<br>Default rotation axis: Z.
+                <ol>
+                    <li>Position point</li>
+                    <li>Reference rotation point
+                        <ul>
+                            <li>Change rotation axis: Hold <b>SHIFT</b> while tracking the reference point to change the rotation axis.</li>
+                        </ul>
+                    </li>
+                    <li>New rotation point</li>
+                </ol>
+                <ul>
+                    <li>Hold <b>SHIFT</b> while tracking angle to restrict angle measure.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/scale_48.png" alt="scale"></td>
+            <td>Reference Scale</td>
+            <td class="cellWithComment">Reference Scale | Transform Scale by matching distance | Pick reference dimension in object &gt; Pick new dimension. | Press <b>SHIFT</b> on tool start to keep proportions.</td>
+            <span class="comment" id="DSTBX_scale">Reference Scale, transform scale by matching reference vectors.
+                <ol>
+                    <li>Pick 2 points for reference dimension.</li>
+                    <li>Pick 2 points for new dimension and transformation direction.</li>
+                </ol>
+                <ul>
+                    <li>Press <b>SHIFT</b> on tool start to keep proportions.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/scale_48.png" alt="scale"></td>
+            <td>Reference Scale - Mode 2</td>
+            <td>Reference Scale - current coordinate system mode | Transform Scale by matching distance. | Pick reference dimension in object &gt; Pick new dimension. |Press <b>SHIFT</b> on tool start to keep proportions.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/scaleDim_48.png" alt="scaleDim"></td>
+            <td>Reference Scale - Xform</td>
+            <td class="cellWithComment">Reference Scale - adds Xform Modifier | Transform Scale by matching distance. | Pick reference dimension in object &gt; Pick new dimension. | Press <b>SHIFT</b> on tool start to keep proportions.</td>
+            <span class="comment" id="DSTBX_scale_xform">Reference Scale, transform scale by matching reference vectors. Adds a Xform modifier instead of transforming the object matrix.
+                <ol>
+                    <li>Pick 2 points for reference dimension.</li>
+                    <li>Pick 2 points for new dimension and transformation direction.</li>
+                </ol>
+                <ul>
+                    <li>Press <b>SHIFT</b> on tool start to keep proportions.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Qdim_48.png" alt="Qdim"></td>
+            <td>reDimension</td>
+            <td class="cellWithComment">Scale object by dimensional value. | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</td>
+            <span class="comment" id="DSTBX_scale_distance">reDimension, scale object by dimensional value.
+                <ol>
+                    <li>Pick base point</li>
+                    <li>Pick second point for reference distance and direction.</li>
+                    <li>Set new dimension in floater dialog.</li>
+                </ol>
+                <ul>
+                    <li>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/QrotateF_48.png" alt="QrotateF"></td>
+            <td>Move & Align</td>
+            <td class="cellWithComment">Move and Align | Move node to destination and 1D align (Origin Point &gt; Position Point &gt; Align vector reference &gt; Align target &gt; Repeat or cancel)</td>
+            <span class="comment" id="DSTBX_rotator_free">Move and align | Reposition a node changing its location and performing 1D alignment actions.
+                <ol>
+                    <li>Reference point</li>
+                    <li>New location Point</li>
+                    <li>alignment vector, reference point.</li>
+                    <li>Alignment vector, destination point.</li>
+                </ol>
+                <ul>
+                    <li>Continue repeating 3 and 4, or Right Click - Escape to finish the operation.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/3ptAlign_48.png" alt="3ptAlign"></td>
+            <td>3pt Align</td>
+            <td class="cellWithComment">Relocate a node from three pairs of points, from an origin position to a target position.</td>
+            <span class="comment" id="DSTBX_threePtAlign">Relocate a node from three pairs of points, from an origin position to a target position.
+                <ol>
+                    <li>Select a node to Align</li>
+                    <li>Pick three pairs of matching points, from origin to target:</li>A1-A2 | B1-B2 | C1-C2<br>* "A" is the base point for the transformation<br>The plane delimited by the three origin points, will be matched to the plane defined by the three target points.
+                    <li>After setting the matching pairs of points:</li>
+                </ol>
+                <ul>
+                    <li>Press Right-Click to confirm the operation</li>
+                    <li>Press Left-Click to altern object orientation</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td colspan="3"><b>Measurements</b></td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/measure_48.png" alt="measure"></td>
+            <td>Measure Distance</td>
+            <td class="cellWithComment">Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock. Results are copied to the clipboard.</td>
+            <span class="comment" id="DSTBX_Qmeasure">Measure linear distances.<br>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.<br>Results are copied to the clipboard.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Qmeasure_2_48.png" alt="Qmeasure_2"></td>
+            <td>Measure Distance - continued</td>
+            <td class="cellWithComment">Continued dimension line | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock. Measures are copied to the clipboard and traced to the listener while picking distances.</td>
+            <span class="comment" id="DSTBX_Qmeasure_mult">Measure continuous segments of linear distances<br>Hold <b>SHIFT</b> while tracking point for orthogonal track, then press <b>CTRL</b> for axis-lock.<br>Mesurements are copied to the clipboard and traced to the listener.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/angle_48.png" alt="angle"></td>
+            <td>Measure Angle</td>
+            <td class="cellWithComment">Take an angular measurement and copy the result to the clipboard.</td>
+            <span class="comment" id="DSTBX_Qangle">Measure angle by picking 3 points.
+                <ol>
+                    <li>base point</li>
+                    <li>Reference base direction point</li>
+                    <li>Angle measure point</li>
+                </ol>
+                <ul>
+                    <li>The measurement result is copied to the clipboard.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Qarea_48.png" alt="Qarea"></td>
+            <td>Measure Area</td>
+            <td class="cellWithComment">Polygonal Area | Result in listener. | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</td>
+            <span class="comment" id="DSTBX_Qarea">Measures a 2D polygonal area by picking vertex points.<br>Hold <b>SHIFT</b> while tracking points for orthogonal mode, then press <b>CTRL</b> for axis-lock.<br>Measurement result is traced to the listener.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Qvolume_48.png" alt="Qvolume"></td>
+            <td>Measure Volume</td>
+            <td class="cellWithComment">Cubic volume measurement | Result in listener</td>
+            <span class="comment" id="DSTBX_Qvolume">Measures a cubic volume by picking a bottom minimum point and a opposed top maximum point.<br>Result is traced to the listener.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/sdivide_48.png" alt="sdivide"></td>
+            <td>Divide distance</td>
+            <td class="cellWithComment">Pick distance start point &gt; pick dist. end point. Move mouse to set division points. | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</td>
+            <span class="comment" id="DSTBX_Divider">Divide distance in segments. Adds a helper mark at each division.
+                <ol>
+                    <li>Pick distance start point.</li>
+                    <li>pick distance end point.</li>
+                    <li>Move mouse to set division points amount.</li>
+                </ol>
+                <ul>
+                    <li>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/sdivide_48.png" alt="sdivide"></td>
+            <td>Divide distance - type mode</td>
+            <td class="cellWithComment">Pick distance start point &gt; pick dist. end point. Type division factor | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</td>
+            <span class="comment" id="DSTBX_Divider_input">Divide distance in segments. Type input mode.
+                <ol>
+                    <li>Pick distance start point.</li>
+                    <li>pick distance end point.</li>
+                    <li>Type segments amount and press ENTER.</li>
+                </ol>
+                <ul>
+                    <li>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</li>
+                </ul>
+            </span>
+        </tr>
+
+        <tr>
+            <td><img src="/assets/images/icons/reflect_48.png" alt="reflect"></td>
+            <td>Reflect - interactive</td>
+            <td class="cellWithComment">Mirror tool | position the 3-plane gizmo picking a center point for the mirror operation, orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle. Select the objects and use the options in the dialog.</td>
+            <span class="comment" id="DSTBX_reflect">Mirror tool.
+                <ol>
+                    <li>Position the 3-plane gizmo picking a center point for the mirror operation.</li>
+                    <li>Orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle.</li>
+                    <li>Select the objects and use the options in the dialog.</li>
+                </ol>
+            </span>
+        </tr>
+
+    </tbody>
+    <tbody>
+        <td colspan="3"><b>ext Transform</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/QmDlg_48.png" alt="QmDlg"></td>
+            <td>Measure history</td>
+            <td class="cellWithComment">Distance measure history. Create renderable dimension objects.</td>
+            <span class="comment" id="DSTBX_distListener">Distance measure history dialog.<br>Keeps track of performed measures, allowing to re-display them and customize appearance.<br>Create dimension lines with measure annotation. Standard Spline and text shapes will be created.<br>Please note that, the text will be oriented left -&gt; right, based on the current view. Expect unpredicted result on orthogonal views.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/dstlbx_icon_48.png" alt="dstlbx_icon"></td>
+            <td>Dstlbx Configuration</td>
+            <td class="cellWithComment">Configuration</td>
+            <span class="comment" id="DSTBX_cfg">Vierport elements color themes and styles.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/dstlbx_icon_48.png" alt="dstlbx_icon"></td>
+            <td>Dstlbx Set Units</td>
+            <td>Units configuration</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <td colspan="3"><b>refGuides</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/rg_B_48.png" alt="rg_B"></td>
+            <td>Line guide - Free</td>
+            <td class="cellWithComment">Free Mode noUI. <b>SHIFT</b> on button for continued mode. <b>SHIFT</b> during creation for orthogonal track. <b>ALT</b> during creation for int. points.</td>
+            <span class="comment" id="DSTBX_refGuides_noUI_free">refGuides line, free mode; no UI.<br>TOOL BUTTON + <b>SHIFT</b> for continued mode.
+                <ul>
+                    <li><b>SHIFT</b> during creation for othogonal track.</li>
+                    <li><b>ALT</b> while tracking position to override intersection points toggle.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_B2_48.png" alt="rg_B2"></td>
+            <td>Line guide - Free+</td>
+            <td class="cellWithComment">Free Mode noUI - continued. <b>SHIFT</b> on button for unique mode. <b>ALT</b> during creation for int. points.</td>
+            <span class="comment" id="DSTBX_refGuides_noUI_free_cont">refGuides line, free mode continuous placing; no UI.
+                <ul>
+                    <li><b>SHIFT</b> during creation for othogonal track.</li>
+                    <li><b>ALT</b> while tracking position to override intersection points toggle.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_UI_48.png" alt="rg_UI"></td>
+            <td>Line guide - FreeUI</td>
+            <td class="cellWithComment">Free Mode UI</td>
+            <span class="comment" id="DSTBX_refGuides_UI_free">refGuides free mode with UI.
+                <ul>
+                    <li><b>SHIFT</b> during creation for othogonal track.</li>
+                    <li><b>ALT</b> while tracking position to override intersection points toggle.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_ortho_48.png" alt="rg_ortho"></td>
+            <td>Line guide - Ortho</td>
+            <td class="cellWithComment">Ortho Mode noUI. <b>SHIFT</b> on button for continued mode. <b>ALT</b> during creation for int. points. <b>SHIFT</b> during axis selection for XY plane lock.</td>
+            <span class="comment" id="DSTBX_refGuides_noUI_ortho">refGuides line, orthogonal mode; no UI.<br><b>SHIFT</b> on button for continued mode.
+                <ul>
+                    <li><b>ALT</b> while tracking position to override intersection points toggle.</li>
+                    <li><b>CTRL</b> during axis selection for Z axis lock.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_ortho2_48.png" alt="rg_ortho2"></td>
+            <td>Line guide - Ortho+</td>
+            <td class="cellWithComment">Ortho Mode noUI - continued. <b>SHIFT</b> on button for unique mode. <b>ALT</b> during creation for int. points. <b>SHIFT</b> during axis selection for XY plane lock.</td>
+            <span class="comment" id="DSTBX_refGuides_noUI_ortho_cont">refGuides line continous placing, orthogonal mode; no UI.<br>Press TOOL BUTTON + <b>SHIFT</b> for continued mode.
+                <ul>
+                    <li><b>ALT</b> while tracking position to override intersection points toggle.</li>
+                    <li><b>CTRL</b> during axis selection for Z axis lock.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_UI_ortho_48.png" alt="rg_UI_ortho"></td>
+            <td>Line guide - OrthoUI</td>
+            <td class="cellWithComment">Ortho Mode UI</td>
+            <span class="comment" id="DSTBX_refGuides_UI_ortho">refGuides line continous placing, orthogonal mode with UI.<br><b>SHIFT</b> on button for continued mode.
+                <ul>
+                    <li><b>ALT</b> while tracking position to override intersection points toggle.</li>
+                    <li><b>CTRL</b> during axis selection for Z axis lock.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_polar_48.png" alt="rg_polar"></td>
+            <td>Line guide - Polar</td>
+            <td class="cellWithComment">Polar Mode noUI. <b>SHIFT</b> on button for continued mode. <b>ALT</b> during creation for int. points.</td>
+            <span class="comment" id="DSTBX_refGuides_noUI_polar">refGuides polar mode, without UI.
+                <ol>
+                    <li>Pick base point.</li>
+                    <li>Pick Z axis gizmo rotation reference point.</li>
+                    <li>X or Y axis rotation points.</li>Press <b>SHIFT</b> to change direction, <b>CTRL</b> to change axis.<br>Press <b>ALT</b> tracking any gizmo rotation to snap angle values.
+                    <li>Guide rotation angle about polar gizmo.</li>
+                </ol>
+                <ul>
+                    <li><b>ALT</b> during (4) to override intersection points toggle.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_polar2_48.png" alt="rg_polar2"></td>
+            <td>Line guide - Polar+</td>
+            <td class="cellWithComment">Polar Mode noUI - continued. <b>SHIFT</b> on button for unique mode. <b>ALT</b> during creation for int. points.</td>
+            <span class="comment" id="DSTBX_refGuides_noUI_polar_cont">refGuides polar mode, without UI. Continous creation.
+                <ol>
+                    <li>Pick base point.</li>
+                    <li>Pick Z axis gizmo rotation reference point.</li>
+                    <li>X or Y axis rotation points.</li>Press <b>SHIFT</b> to change direction, <b>CTRL</b> to change axis.<br>Press <b>ALT</b> tracking any gizmo rotation to snap angle values.
+                    <li>Guide rotation angle about polar gizmo.</li>
+                </ol>
+                <ul>
+                    <li><b>ALT</b> during (4) to override intersection points toggle.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_UI_polar_48.png" alt="rg_UI_polar"></td>
+            <td>Line guide - PolarUI</td>
+            <td class="cellWithComment">Polar Mode UI</td>
+            <span class="comment" id="DSTBX_refGuides_UI_polar">refGuides polar mode UI
+                <ol>
+                    <li>Pick base point.</li>
+                    <li>Pick Z axis gizmo rotation reference point.</li>
+                    <li>X or Y axis rotation points.
+                        <ul>
+                            <li>Press <b>SHIFT</b> to change direction</li>
+                            <li><b>CTRL</b> to change axis.</li>
+                            <li><br>Press <b>ALT</b> tracking any gizmo rotation to snap angle values.<br></li>
+                        </ul>
+                    </li>
+                    <li>Guide rotation angle about polar gizmo.</li>
+                </ol>
+                <ul>
+                    <li><b>ALT</b> during (4) to override intersection points toggle.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/prot_48.png" alt="prot"></td>
+            <td>Protractor - Free</td>
+            <td class="cellWithComment">Protractor: Free Mode noUI. <b>SHIFT</b> on button for continued mode. <b>SHIFT</b> during creation for orthogonal track</td>
+            <span class="comment" id="DSTBX_refGuides_prot_free">Protractor free mode, no UI.
+                <b>SHIFT</b> on button for continued mode.
+                <b>SHIFT</b> during creation for orthogonal track.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/prot_ortho_48.png" alt="prot_ortho"></td>
+            <td>Protractor - Orthogonal</td>
+            <td class="cellWithComment">Protractor: Ortho Mode noUI. <b>SHIFT</b> on button for continued mode.</td>
+            <span class="comment" id="DSTBX_refGuides_prot_ortho">Protractor Ortho mode.<br><b>SHIFT</b> on button for continued mode.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/prot_polar_48.png" alt="prot_polar"></td>
+            <td>Protractor - Polar</td>
+            <td class="cellWithComment">Protractor: Polar Mode noUI. <b>SHIFT</b> on button for continued mode.</td>
+            <span class="comment" id="DSTBX_refGuides_prot_polar">Protractor Polar mode.
+                <ol>
+                    <li>Pick base point.</li>
+                    <li>Pick Z axis gizmo rotation reference point.
+                        <ul>
+                            <li><b>SHIFT</b> to change direction</li>
+                            <li><b>CTRL</b> to change axis.</li>
+                            <li><b>ALT</b> tracking any gizmo rotation to snap angle values</li>
+                        </ul>
+                    </li>
+                    <li>X or Y axis rotation points.</li>
+                    <li>Guide rotation angle about polar gizmo.</li>
+                </ol>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/infer_48.png" alt="infer"></td>
+            <td>Reference Points</td>
+            <td class="cellWithComment">Trace temporary reference lines and place points at intersections. Options: 1. Hold <b>SHIFT</b> in standard free space mode for ORTHOGONAL override. 2. When picking first point of line, hold <b>SHIFT</b> for Orthogonal and <b>ALT</b> for Polar placing modes.</td>
+            <span class="comment" id="DSTBX_refGuides_intpoints">Trace temporary reference lines and place points at intersections.<br>Line tracing options:<br>1. Hold <b>SHIFT</b> in standard free space mode for ORTHOGONAL override
+                <ul>
+                    <li>Hold when picking first point of line:
+                        <ul>
+                            <li><b>SHIFT</b>: Orthogonal placing mode<br></li>
+                            <li><b>ALT</b>: Polar placing mode</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Delete_48.png" alt="Delete"></td>
+            <td>Delete guides</td>
+            <td class="cellWithComment">Delete all refGuides</td>
+            <span class="comment" id="DSTBX_refGuides_delete">Delete all guides (lines, protractos and intersection points) on scene.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_ax_48.png" alt="rg_ax"></td>
+            <td>Grid Scale</td>
+            <td class="cellWithComment">Display: Grid XYZ axis units reference</td>
+            <span class="comment" id="DSTBX_HGScale">Display a gizmo for the active grid indicating grid lines spacing and axes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_Inf_48.png" alt="rg_Inf"></td>
+            <td>Line guide - display units - selected</td>
+            <td class="cellWithComment">liveInfo tool. Displays refLines unit scale on selected ones.</td>
+            <span class="comment" id="DSTBX_refGuides_Li2">refGuides liveInfo tool for selected guides.<br>Shows guide units and protractor angles on viewport.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/rg_Inf2_48.png" alt="rg_Inf2"></td>
+            <td>Line guide - display units - all</td>
+            <td class="cellWithComment">liveInfo tool - full mode. Displays all refLines unit scale.</td>
+            <span class="comment" id="DSTBX_refGuides_Li">Shows guide units and protractor angles on the scene.<br>Shows guide units and protractor angles on viewport.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/info_48.png" alt="info"></td>
+            <td>Object spatial info</td>
+            <td class="cellWithComment">Displays information about an object's dimension and transformation</td>
+            <span class="comment" id="DSTBX_infotool">Displays information about an object's dimension and transformation.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/info_48.png" alt="info"></td>
+            <td>Object Z-position</td>
+            <td>Display: object Z-position guide.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/refGuides_icon_48.png" alt="refGuides_icon"></td>
+            <td>CFG</td>
+            <td class="cellWithComment">refGuides Configuration</td>
+            <span class="comment" id="DSTBX_refGuides_config">refGuides preferences dialog.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/refGuides_icon_48.png" alt="refGuides_icon"></td>
+            <td>Guides - Set units</td>
+            <td>Units configuration</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <td colspan="3"><b>ext refGuides</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/intToggle_48.png" alt="intToggle"></td>
+            <td>Guides - Enable intersections</td>
+            <td class="cellWithComment">Intersection points toggle</td>
+            <span class="comment" id="rG_ribbon_intPoints">Enable auto creation of intersection points.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/protToggle_48.png" alt="protToggle"></td>
+            <td>Guides - Set protractor</td>
+            <td class="cellWithComment">Protractor toggle</td>
+            <span class="comment" id="rG_ribbon_Prot">Enabled: Auto creation of protractor when placing guides.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/lockGuides_48.png" alt="lockGuides"></td>
+            <td>Guides - Lock Guides</td>
+            <td class="cellWithComment">Lock Guides toggle</td>
+            <span class="comment" id="rG_ribbon_LkGuides">Lock guides after placing.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/polarGrid_48.png" alt="polarGrid"></td>
+            <td>Guides - Polar Grid</td>
+            <td class="cellWithComment">polar Grid toggle</td>
+            <span class="comment" id="rG_ribbon_pGrid">Enabled: keep grid active after polar mode guides creation.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/intOpt_48.png" alt="intOpt"></td>
+            <td>Guides - Intersection mode</td>
+            <td class="cellWithComment">Intersect all or current toggle</td>
+            <span class="comment" id="rG_ribbon_IntMode">Intersection points mode. Intersect all guides in scene or only current creation.</span>
+        </tr>
+    </tbody>
+    <tbody>
+        <td colspan="3"><b>Eyedropper</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_1_48.png" alt="eyedrop_1"></td>
+            <td>Replicator</td>
+            <td class="cellWithComment">Replicator | Replaces Nodes with ref. node instances. Press <b>SHIFT</b> while clicking tool for reference mode. Press <b>CTRL</b> when selecting the tool to replace current selection with a source node.</td>
+            <span class="comment" id="DSTBX_replicator">Replaces target nodes with picked reference node.<br>Press <b>CTRL</b> when selecting the tool to replace current selection with a source node.<br>Press <b>SHIFT</b> while clicking tool for create references instead of instances.<br>Press <b>ALT</b> while clicking tool for create copies instead of instances.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/check_48.png" alt="check"></td>
+            <td>Replicator - RPL_MULT</td>
+            <td class="cellWithComment">Replicator | Multi Target toggle. Press <b>CTRL</b> when selecting the tool to apply to the current selection picking a source node.</td>
+            <span class="comment" id="DSTBX_rep_mt">Enable replicator multi target mode.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/check_48.png" alt="check"></td>
+            <td>Replicator - RPL_GRP</td>
+            <td class="cellWithComment">Replicator | Target node group mode | Replace grouped target node as a whole.</td>
+            <span class="comment" id="DSTBX_rep_grp">Enable replicator to replace entire groups.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/check_48.png" alt="check"></td>
+            <td>Replicator - RPL_S_GRP</td>
+            <td class="cellWithComment">Replicator | Source node group mode | For grouped nodes, use as reference the entire group.</td>
+            <span class="comment" id="DSTBX_rep_src_grp">For grouped nodes, use as reference the entire group.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/check_48.png" alt="check"></td>
+            <td>Replicator - RPL_TM</td>
+            <td class="cellWithComment">Replicator | Transform copy toggle</td>
+            <span class="comment" id="DSTBX_rep_tm">Enable replicator to copy reference object transformation.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/check_48.png" alt="check"></td>
+            <td>Replicator - INSTPROP</td>
+            <td class="cellWithComment">Replicator | Replace all instances of the target nodes. This option does not work with groups.</td>
+            <span class="comment" id="DSTBX_rep_inst">Replace instances of target nodes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_2_48.png" alt="eyedrop_2"></td>
+            <td>Eyedropper - DRP1</td>
+            <td class="cellWithComment">Multi Eyedropper Tool | Copy selected characteristics form one node to another node or group of nodes</td>
+            <span class="comment" id="DSTBX_edrpAll">Copy several characteristics form one node to another node or group of nodes.<br>Set options for properties, material or modifiers to copy form the filters dialog.<br>Press <b>CTRL</b> when selecting the tool to apply to the current selection picking a source node.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_3_48.png" alt="eyedrop_3"></td>
+            <td>Eyedropper - DRP2</td>
+            <td class="cellWithComment">Transform Eyedropper Tool | Copy selected node transform to another node or group of nodes.</td>
+            <span class="comment" id="DSTBX_edrpTr">Copy picked node transform to another node or group of nodes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_4_48.png" alt="eyedrop_4"></td>
+            <td>Eyedropper - DRP3</td>
+            <td class="cellWithComment">Material Eyedropper Tool | Copy selected node material to another node or group of nodes.</td>
+            <span class="comment" id="DSTBX_edrpMt">Copy picked node material to another node or group of nodes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_5_48.png" alt="eyedrop_5"></td>
+            <td>Eyedropper - DRP4</td>
+            <td class="cellWithComment">Modifiers Eyedropper Tool | Copy selected node modifiers to another node or group of nodes. (Works only with non topology dependent modifiers for now)</td>
+            <span class="comment" id="DSTBX_edrpMd">Copy picked node modifiers to another node or group of nodes.<br>Works only with non topology dependant modifers for now.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_6_48.png" alt="eyedrop_6"></td>
+            <td>Eyedropper - DRP5</td>
+            <td class="cellWithComment">UVW Eyedropper Tool | Copy selected node UVW modifiers to another node or group of nodes. (Works only with non topology dependent modifiers for now)</td>
+            <span class="comment" id="DSTBX_edrpUV">Copy picked node UVWmodifiers to another node or group of nodes.<br>Works only with non topology dependant modifers for now.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_7_48.png" alt="eyedrop_7"></td>
+            <td>Eyedropper - DRP6</td>
+            <td class="cellWithComment">Visual Appearance Eyedropper Tool | Copy selected node display options to another node or group of nodes.</td>
+            <span class="comment" id="DSTBX_edrpVis">Copy selected node Apprearance to another node or group of nodes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/check_48.png" alt="check"></td>
+            <td>Eyedropper - DRP_MULT</td>
+            <td class="cellWithComment">Eyedropper | Multi Target toggle</td>
+            <span class="comment" id="DSTBX_edrp_mt">Enable eyedropper multi target mode.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/eyedrop_ui_48.png" alt="eyedrop_ui"></td>
+            <td>Eyedropper - DRP_FLT</td>
+            <td class="cellWithComment">Eyedropper | Set filters</td>
+            <span class="comment" id="DSTBX_edrp_flt">Set filters for multi-eyedropper.</span>
+        </tr>
+    </tbody>
+    <tbody>
+        <td colspan="3"><b>Utilities</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/Merge_48.png" alt="Merge"></td>
+            <td>Merge Nodes</td>
+            <td class="cellWithComment">Combine geometry and splines in one node</td>
+            <span class="comment" id="DSTBX_nodeMerge">Combine geometry and splines in one node.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Explode_48.png" alt="Explode"></td>
+            <td>Explode Nodes</td>
+            <td class="cellWithComment">Explode geometry elements and spline shapes</td>
+            <span class="comment" id="DSTBX_nodeExplode">Explode geometry elements and spline shapes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/sdivide_48.png" alt="sdivide"></td>
+            <td>Clone between</td>
+            <td class="cellWithComment">Pick distance start point &gt; pick dist. end point. Move mouse to set division points. Pick node to clone. | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</td>
+            <span class="comment" id="DSTBX_clonebtwn">Clone object between 2 points (1D array)
+                <ol>
+                    <li>Pick distance start point.</li>
+                    <li>Pick distance end point.</li>
+                    <li>Move mouse to set division points amount.</li>
+                    <li>Pick node to clone.</li>
+                </ol>
+                <ul>
+                    <li>Hold <b>SHIFT</b> while tracking second point for orthogonal track, then press <b>CTRL</b> for axis-lock.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Maround_48.png" alt="Maround"></td>
+            <td>Polar array</td>
+            <td class="cellWithComment">Circular path cloning</td>
+            <span class="comment" id="DSTBX_arrayPolar">Clone and orient an object around a center.<br>Additional options:<br>* Clone around object.<br>* Look-at the central object.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/i_array_48.png" alt="i_array"></td>
+            <td>Array 2D - Interactive</td>
+            <td class="cellWithComment">Array 2D - Interactive: Interactive 2D Array</td>
+            <span class="comment" id="DSTBX_IARR">Interactive 2D array.
+                <ol>
+                    <li>Select Object to replicate.</li>
+                    <li>Pick base point</li>
+                    <li>Move mouse to select a rectangular region in space to size the array. Click again to confirm.</li>
+                    <li>Move the mouse &amp; click to set rows and columns.</li>
+                </ol>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/P_array_48.png" alt="P_array"></td>
+            <td>Array - Pattern</td>
+            <td class="cellWithComment">Rule / Pattern based 2D Array</td>
+            <span class="comment" id="DSTBX_PARR">Pattern / rule based 2.5 array
+                <ol>
+                    <li>Select a base object.</li>
+                    <li>Array General Dimension: Set total rows, columns, origin and gap between rows and columns.</li>
+                    <li>Pattern rules: Change current row/column spinners to add a new rule. Each cell can have a different node, transformation and can be turned on/off.</li>
+                    <li>Preview o generate the array.</li>
+                </ol>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/paneling_48.png" alt="paneling"></td>
+            <td>Paneling</td>
+            <td class="cellWithComment">Simple Paneling tool - creates panels (or shells) on planar areas. Option for adding details to panels.</td>
+            <span class="comment" id="DSTBX_PN">Simple Paneling tool. Creates panels (or shells) on planar areas. Option for adding details (like handles) to panels.
+                <ol>
+                    <li>Start the tool picking position, height and width points.</li>
+                    <li>Box/custom object mode: choose what object will ve used to generate the panels.</li>
+                    <li>Set H/V divisions and gap between panels.</li>
+                    <li>Use the detailer tool to position detail objects on selected panel's surface.</li>
+                </ol>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/paneling_48.png" alt="paneling"></td>
+            <td>paneling details</td>
+            <td class="cellWithComment">paneling details: Simple Paneling tool - Detailer tool</td>
+            <span class="comment" id="DSTBX_PNDT">Simple Paneling tool - Detailer tool.
+                <ol>
+                    <li>Select objects to be detailed.</li>
+                    <li>Pick detail object</li>
+                    <li>Set transformation &amp; align and orientation options. Some complex mirror/symmetry rules can be set.</li>
+                    <li>Apply operation</li>
+                </ol>
+                <ul>
+                    <li>Mirror list syntax example: 1 (first object in the list), 3-6 (from third to sixth object in list), 8 (eighth object in list) will be mirrored.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/multimap_48.png" alt="multimap"></td>
+            <td>UVW Map tools Floater</td>
+            <td class="cellWithComment">UVW Mapping tools combined floater</td>
+            <span class="comment" id="DSTBX_MMap">UVW Mapping tools:
+                <ul>
+                    <li>Apply individual uvwMaps to multiple objects.</li>
+                    <li>Apply mapping by Epoly Elements or by faces.</li>
+                    <li>Random or constant transform mapping.</li>
+                    <li>Bulk UVW Xform operations.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/maptools_48.png" alt="maptools"></td>
+            <td>UVW modifiers tools</td>
+            <td class="cellWithComment">UVW modifiers tools - Gizmo reposition, bulk deletion and more</td>
+            <span class="comment" id="DSTBX_mapTools">UVW Modifier tools. Fit, center and reset gizmo, delete all UVW modifiers on object's stack.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/maptools_48.png" alt="maptools"></td>
+            <td>UVW Bulk add</td>
+            <td>UVW modifier Bulk apply. Apply individual uvwMaps to multiple objects. Apply mapping by Edit Poly elements or by faces.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/multimap_48.png" alt="multimap"></td>
+            <td>UVW modifier transform</td>
+            <td>Random or constant transform mapping</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/multimap_48.png" alt="multimap"></td>
+            <td>UVW Xform transform</td>
+            <td>UVW Xform transform: Random or constant transform.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - Quick position</td>
+            <td class="cellWithComment">Quick position pivot</td>
+            <span class="comment" id="DSTBX_QPVT">Quick position pivot<br>Options:
+                <ul>
+                    <li>Bottom, center, top.</li>
+                    <li>Bottom, middle, Top corners and centers of the object's bounding box.</li>
+                    <li>Pick point.</li>
+                    <li>Position and orient by 3 points. Also, for Working Pivot.</li>
+                    <li>Position and orient by selected Editable Poly faces. Also, for Working Pivot.</li>
+                    <li>Reset pivot and reset Xform shortcuts.</li>
+                    <li>Press Right-Click on any action to close the dialog after.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - to bottom</td>
+            <td>Position pivot at bottom</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_btm_48.png" alt="qpivot_btm"></td>
+            <td>Pivot - top</td>
+            <td>Position pivot at top</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - center</td>
+            <td>Position pivot at center</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - 3points</td>
+            <td class="cellWithComment">Position pivot from 3 points. Press <b>SHIFT</b> for Working pivot</td>
+            <span class="comment" id="DSTBX_QPVT_3p">Position pivot from 3 points. Press <b>SHIFT</b> for Working Pivot.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - to face</td>
+            <td class="cellWithComment">Position pivot from selected EditPoly faces. Press <b>SHIFT</b> for Working pivot.</td>
+            <span class="comment" id="DSTBX_QPVT_sf">Position pivot from selected Faces.<br><b>TOOL BUTTON</b> + <b>SHIFT</b> for Working Pivot.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - Point</td>
+            <td>Pivot to point</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/qpivot_48.png" alt="qpivot"></td>
+            <td>Pivot - Snap point</td>
+            <td>** ASSIGN THIS TO A SHORTCUT** Move pivot to snapping point. Quickly move an object's pivot to a snapping point. Works with any snap type. If no object is selected, the tool will reposition the pivot of the object where the snap is displayed (if any)</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/isolate_local_48.png" alt="isolate_local"></td>
+            <td>Isolate - Local</td>
+            <td class="cellWithComment">Isolation in local coordinates. Object level or EditPoly selected face.</td>
+            <span class="comment" id="DSTBX_refIsolate">Isolate object in local coordinates.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/incIso_48.png" alt="incIso"></td>
+            <td>Incremental isolation</td>
+            <td class="cellWithComment">re-Isolate within current selection</td>
+            <span class="comment" id="DSTBX_nestedISO">Incremental isolation<br>re-Isolate within current selection</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/bulb_usel_48.png" alt="bulb_usel"></td>
+            <td>unHide selection</td>
+            <td class="cellWithComment">Unhide object selection</td>
+            <span class="comment" id="DSTBX_unhider">Unhide objects by selection</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/bulb_fsel_48.png" alt="bulb_fsel"></td>
+            <td>unFreeze selection</td>
+            <td class="cellWithComment">unFreeze object selection</td>
+            <span class="comment" id="DSTBX_unfrozer">unfreze objects by selection</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Locks_pos_48.png" alt="Locks_pos"></td>
+            <td>Lock - position</td>
+            <td class="cellWithComment">LoLock/Unlock object Position</td>
+            <span class="comment" id="DSTBX_Locks_pos">Lock/Unlock object Position</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Locks_ro_48.png" alt="Locks_ro"></td>
+            <td>Lock - rotation</td>
+            <td class="cellWithComment">Lock/Unlock object Rotation</td>
+            <span class="comment" id="DSTBX_Locks_rot">Lock/Unlock object Rotation</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Locks_sc_48.png" alt="Locks_sc"></td>
+            <td>Lock - scale</td>
+            <td class="cellWithComment">Lock/Unlock object Scale</td>
+            <span class="comment" id="DSTBX_Locks_scale">Lock/Unlock object Scale</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/Locks_all_48.png" alt="Locks_all"></td>
+            <td>Lock - All</td>
+            <td class="cellWithComment">Lock/Unlock all object transformations</td>
+            <span class="comment" id="DSTBX_Locks_all">Lock/Unlock all object transformations</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/LayIso_48.png" alt="LayIso"></td>
+            <td>Isolate - layer</td>
+            <td class="cellWithComment">Isolate-Unisolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer.</td>
+            <span class="comment" id="DSTBX_layIso">Isolate-Unisolate selected obect/s layer/s.<br>If nothing is selected, you can pick an object in viewport and isolate the respective layer.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/LayProps_48.png" alt="LayProps"></td>
+            <td>Layer Lock</td>
+            <td class="cellWithComment">Locks the layer of the picked/selected node. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</td>
+            <span class="comment" id="DSTBX_layProp1">Locks the layer of the picked/selected node.<br>Press <b>SHIFT</b> when selecting the tool to unlock a frozen layer.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/LayProps_48.png" alt="LayProps"></td>
+            <td>Layer Off</td>
+            <td>Turn off the layer of the selected/picked node. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/LayProps_48.png" alt="LayProps"></td>
+            <td>Layer BoxMode</td>
+            <td>Set Box mode status for selected/picked node layer. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/LayProps_48.png" alt="LayProps"></td>
+            <td>Layer BackFaceCull</td>
+            <td>Set BackFaceCull status for selected/picked node layer. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/magnet_48.png" alt="magnet"></td>
+            <td>Snap sate sets</td>
+            <td class="cellWithComment">Save Snap settings States</td>
+            <span class="comment" id="DSTBX_snapSets">Save Snap settings States.<br>Press the "OK" button to expand the UI and add states.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/color_48.png" alt="color"></td>
+            <td>Color Clipboard</td>
+            <td class="cellWithComment">Dockable color Clipboard bar</td>
+            <span class="comment" id="DSTBX_cclp">Dockable color Clipboard bar.
+                <ul>
+                    <li>Left-click on "+" button to fill swatches with random colors.</li>
+                    <li>Right-click on "+" button to fill unused swatches with random colors.</li>
+                    <li>Press <b>SHIFT</b> while clicking "+" button to fill swatches with grayscale values.</li>
+                    <li>Right-click on color swatch to copy. Drag&amp;Drop supported.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/color_48.png" alt="color"></td>
+            <td>Wirecolor adjust</td>
+            <td>Adjust selection wire colors. brightness, saturation and hue.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/multimap_48.png" alt="multimap"></td>
+            <td>Random transform</td>
+            <td>Random transform nodes</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Replace scene materials</td>
+            <td>Replace each scene material with an alternative one. You can save and load the material replacements list.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/camtool_48.png" alt="camtool"></td>
+            <td>Camera manager</td>
+            <td>Manage Cameras and render batch views</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/dropObj_48.png" alt="dropObj"></td>
+            <td>Drop objects</td>
+            <td class="cellWithComment">Drop objects on below surfaces. Press <b>SHIFT</b> when activating the tool to align the objects to the surface form.</td>
+            <span class="comment" id="DSTBX_drop">Drop objects on below surfaces.<br>Press <b>SHIFT</b> when activating the tool to align the objects to the surface form.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/arrangeInt_48.png" alt="arrangeInt"></td>
+            <td>Arrange objects (start-end objects)</td>
+            <td class="cellWithComment">Distribute objects (equally spaced) on a linear direction. Direction and length of the distribution determined by the position of two objects: 1. Select the START OBJECT -- 2. Select the END OBJECT -- 3. Select the objects to distribute between them. * Press the TOOL BUTTON+<b>SHIFT</b> to conform and align the objects to the underlying surfaces.</td>
+            <span class="comment" id="DSTBX_arrangeByObjs">Distribute objects (equally spaced) on a linear direction.<br>Direction and length of the distribution determined by the position of two objects.
+                <ol>
+                    <li>Select the START OBJECT</li>
+                    <li>Select the END OBJECT</li>
+                    <li>Select the objects to distribute between them.</li>
+                </ol>
+                <ul>
+                    <li>Press the TOOL BUTTON+<b>SHIFT</b> to conform and align the objects to the underlying surfaces.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/arrangeRT_48.png" alt="arrangeRT"></td>
+            <td>Arrange objects (real-time)</td>
+            <td class="cellWithComment">Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's in Real Time. Warning! slow. When tracking positions: * Press <b>SHIFT</b> to conform to the underlying surfaces * Press <b>CONTROL</b> to orient to the underlying surfaces</td>
+            <span class="comment" id="DSTBX_arrangeRT">Distribute objects (equally spaced) on a linear direction.<br>**This variant of the tool tracks the objects new position's in real time. It could be slow with complex geometry**
+                <ol>
+                    <li>Select the object set to rearrange.</li>
+                    <li>Pick the direction line START POINT</li>
+                    <li>Track the end of the line. Before picking the END POINT to finish the operation, use these options:</li>
+                </ol>
+                <ul>
+                    <li>Press <b>SHIFT</b> to conform to the underlying surfaces.</li>
+                    <li>Press <b>CONTROL</b> to orient to the underlying surfaces.</li>
+                </ul>
+            </span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/arrangeAB_48.png" alt="arrangeAB"></td>
+            <td>Arrange objects (interactive)</td>
+            <td class="cellWithComment">Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's with marks in the viewport. When tracking positions: * Press <b>SHIFT</b> to conform to the underlying surfaces * Press <b>CONTROL</b> to orient to the underlying surfaces</td>
+            <span class="comment" id="DSTBX_arrangeInteractive">Distribute objects (equally spaced) on a linear direction.<br>**This variant of the tool tracks the objects new position's with marks in the viewport**
+                <ol>
+                    <li>Select the object set to rearrange.</li>
+                    <li>Pick the direction line START POINT</li>
+                    <li>Track the end of the line. Before picking the END POINT to finish the operation, use these options:</li>
+                </ol>
+                <ul>
+                    <li>Press <b>SHIFT</b> to conform to the underlying surfaces.
+                    <li>Press <b>CONTROL</b> to orient to the underlying surfaces.</li>
+                    </li>
+                </ul>
+            </span>
+        </tr>
+
+    </tbody>
+    <tbody>
+        <td colspan="3"><b>Extras</b></td>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Bitmap multi-loader</td>
+            <td>Load multiple bitmapTextures to the slate material editor</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Map name from file</td>
+            <td>Change the names of Bitmap Textures to the name of the loaded files.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtlrem_48.png" alt="mtlrem"></td>
+            <td>Remove materials</td>
+            <td>Remove material from selection</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Select nodes without material</td>
+            <td>Filter nodes without material in current selection.</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>ID from camera</td>
+            <td>Set objects ID for current camera view</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Face ID</td>
+            <td>Select faces with same material ID</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Random ID Set</td>
+            <td>Set random material IDs for selected faces</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/mtl_48.png" alt="mtl"></td>
+            <td>Quick material ID Set</td>
+            <td>Set material IDs for selected faces</td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/alignassets_48.png" alt="alignassets"></td>
+            <td>Align Assets</td>
+            <td>Put nodes in line</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Random Select</td>
+            <td>Select random nodes</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Replace with Xref</td>
+            <td>Replace selected node with Xref Record.</td>
+        </tr>
+    </tbody>
+</table>
