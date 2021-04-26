@@ -2,17 +2,17 @@
 main:
   - title: "Home"
     url: /
-  - title: "Free tools"
-    url: /tools/
+  - title: "Features"
+    url: "/features/"
   - title: "Documents"
     url: /docs/
   - title: "Blog"
     url: /blog/
+  - title: "Free tools"
+    url: /tools/
   - title: "Contact"
     url: "/contact/"
-  # - title: "Features"
-  #   url: "/featuresNew/"
-  - title: "&#10096; Download &#10097;"
+  - title: "&#10096; DOWNLOAD &#10097;"
     url: "/#installer-download"
   #- title: "Sitemap"
   #  url: /sitemap/
