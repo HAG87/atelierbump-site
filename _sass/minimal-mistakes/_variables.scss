@@ -1,22 +1,12 @@
 /* ==========================================================================
    Variables
    ========================================================================== */
-$right-sidebar-width: 200px;
+
 /*
-       Typography
-       ========================================================================== */
+   Typography
+   ========================================================================== */
 
 $doc-font-size: 16 !default;
-
-/**/
-$type-global-scale: 1 !default;
-$type-main-increment: 2px !default;
-
-/**/
-$type-main-default: 16px !default;
-$type-main-medium: ($type-main-default + $type-main-increment) !default;
-$type-main-large: ($type-main-default + $type-main-increment) !default;
-$type-main-x-large: ($type-main-default + $type-main-increment) !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -44,31 +34,29 @@ $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
-/* ========================================================================== */
-$type-size-1: (2.441em * $type-global-scale) !default; // ~39.056px
-$type-size-2: (1.953em * $type-global-scale) !default; // ~31.248px
-$type-size-3: (1.563em * $type-global-scale) !default; // ~25.008px
-$type-size-4: (1em * $type-global-scale) !default; // ~20px -- Used in page hero
-$type-size-5: (1em * $type-global-scale) !default; // ~16px
-$type-size-6: (0.75em * $type-global-scale) !default; // ~12px
-$type-size-7: (0.6875em * $type-global-scale) !default; // ~11px
-$type-size-8: (0.625em * $type-global-scale) !default; // ~10px
-$nav-font-size: 12px;
+$type-size-1: 2.441em !default; // ~39.056px
+$type-size-2: 1.953em !default; // ~31.248px
+$type-size-3: 1.563em !default; // ~25.008px
+$type-size-4: 1.25em !default; // ~20px
+$type-size-5: 1em !default; // ~16px
+$type-size-6: 0.75em !default; // ~12px
+$type-size-7: 0.6875em !default; // ~11px
+$type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
-$h-size-1: $type-size-3 !default; // 1.563em !default; // ~25.008px
-$h-size-2: $type-size-4 !default; // 1.25em !default; // ~20px
-$h-size-3: $type-size-5 !default; // 1.125em !default; // ~18px
-$h-size-4: $type-size-6 !default; // 1.0625em !default; // ~17px
-$h-size-5: $type-size-6 !default; // 1.03125em !default; // ~16.5px
-$h-size-6: $type-size-6 !default; // 1em !default; // ~16px
+$h-size-1: 1.563em !default; // ~25.008px
+$h-size-2: 1.25em !default; // ~20px
+$h-size-3: 1.125em !default; // ~18px
+$h-size-4: 1.0625em !default; // ~17px
+$h-size-5: 1.03125em !default; // ~16.5px
+$h-size-6: 1em !default; // ~16px
 
 /*
-       Colors
-       ========================================================================== */
+   Colors
+   ========================================================================== */
 
 $gray: #7a8288 !default;
-$dark-gray: mix(#000, $gray, 40%) !default;
+$dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
@@ -77,11 +65,10 @@ $background-color: #fff !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
-$muted-text-color: mix(#fff, $text-color, 35%) !default;
+$muted-text-color: mix(#fff, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
-$footer-background-color: $background-color !default;
-$hero-text-color: black;
+$footer-background-color: $lighter-gray !default;
 
 $primary-color: #6f777d !default;
 $success-color: #3fa63f !default;
@@ -98,36 +85,36 @@ $yiq-contrasted-threshold: 175 !default;
 $yiq-debug: false !default;
 
 /* brands */
-$behance-color:       $primary-color !default; /* #1769ff */
-$bitbucket-color:     $primary-color !default; /* #205081 */
-$dribbble-color:      $primary-color !default; /* #ea4c89 */
-$facebook-color:      $primary-color !default; /* #3b5998 */
-$flickr-color:        $primary-color !default; /* #ff0084 */
-$foursquare-color:    $primary-color !default; /* #0072b1 */
-$github-color:        $primary-color !default; /* #171516 */
-$gitlab-color:        $primary-color !default; /* #e24329 */
-$instagram-color:     $primary-color !default; /* #517fa4 */
-$keybase-color:       $primary-color !default; /* #ef7639 */
-$lastfm-color:        $primary-color !default; /* #d51007 */
-$linkedin-color:      $primary-color !default; /* #007bb6 */
-$mastodon-color:      $primary-color !default; /* #2b90d9 */
-$pinterest-color:     $primary-color !default; /* #cb2027 */
-$reddit-color:        $primary-color !default; /* #ff4500 */
-$rss-color:           $primary-color !default; /* #fa9b39 */
-$soundcloud-color:    $primary-color !default; /* #ff3300 */
-$stackoverflow-color: $primary-color !default; /* #fe7a15 */
-$tumblr-color:        $primary-color !default; /* #32506d */
-$twitter-color:       $primary-color !default; /* #55acee */
-$vimeo-color:         $primary-color !default; /* #1ab7ea */
-$vine-color:          $primary-color !default; /* #00bf8f */
-$youtube-color:       $primary-color !default; /* #bb0000 */
-$xing-color:          $primary-color !default; /* #006567 */
+$behance-color: #1769ff !default;
+$bitbucket-color: #205081 !default;
+$dribbble-color: #ea4c89 !default;
+$facebook-color: #3b5998 !default;
+$flickr-color: #ff0084 !default;
+$foursquare-color: #0072b1 !default;
+$github-color: #171516 !default;
+$gitlab-color: #e24329 !default;
+$instagram-color: #517fa4 !default;
+$keybase-color: #ef7639 !default;
+$lastfm-color: #d51007 !default;
+$linkedin-color: #007bb6 !default;
+$mastodon-color: #2b90d9 !default;
+$pinterest-color: #cb2027 !default;
+$reddit-color: #ff4500 !default;
+$rss-color: #fa9b39 !default;
+$soundcloud-color: #ff3300 !default;
+$stackoverflow-color: #fe7a15 !default;
+$tumblr-color: #32506d !default;
+$twitter-color: #55acee !default;
+$vimeo-color: #1ab7ea !default;
+$vine-color: #00bf8f !default;
+$youtube-color: #bb0000 !default;
+$xing-color: #006567 !default;
 
 /* links */
-$link-color: $darker-gray !default;
-$link-color-hover: $info-color !default;
+$link-color: mix(#000, $info-color, 20%) !default;
+$link-color-hover: mix(#000, $link-color, 25%) !default;
 $link-color-visited: mix(#fff, $link-color, 15%) !default;
-$masthead-link-color: $darker-gray !default;
+$masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
@@ -150,8 +137,8 @@ $base0e: #c792ea !default;
 $base0f: #ff5370 !default;
 
 /*
-       Breakpoints
-       ========================================================================== */
+   Breakpoints
+   ========================================================================== */
 
 $small: 600px !default;
 $medium: 768px !default;
@@ -159,18 +146,19 @@ $medium-wide: 900px !default;
 $large: 1024px !default;
 $x-large: 1280px !default;
 $max-width: $x-large !default;
+
 /*
-       Grid
-       ========================================================================== */
+   Grid
+   ========================================================================== */
 
 $right-sidebar-width-narrow: 200px !default;
 $right-sidebar-width: 300px !default;
 $right-sidebar-width-wide: 400px !default;
 
 /*
-       Other
-       ========================================================================== */
-$text-shadow-1: none !default; /* 0px 1px 4px rgba(#000, 0.5) !default;*/
+   Other
+   ========================================================================== */
+
 $border-radius: 4px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 $nav-height: 2em !default;
@@ -179,4 +167,3 @@ $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
-$hero-min-height: 450px !default;
