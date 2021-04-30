@@ -205,6 +205,23 @@ textarea {
 Overrides
 ==========================================================================
 */
+html {
+    /* apply a natural box layout model to all elements */
+    font-size: $type-main-default;
+  
+    @include breakpoint($medium) {
+      font-size: $type-main-medium;
+    }
+  
+    @include breakpoint($large) {
+      font-size: $type-main-large;
+    }
+  
+    @include breakpoint($x-large) {
+      font-size: $type-main-x-large;
+    }
+  
+  }
 
 .archive__subtitle {
   margin: 1.414em 0 0;
@@ -330,11 +347,11 @@ Overrides
   &--overlay {
     .page__title,
     .page__meta,
-    .page__lead,
-    .btn {
+    .page__lead {
       color: $hero-text-color;
-      text-shadow: 1px 1px #fff;
+      text-shadow: none;
       text-align: center;
+      font-weight: 500;
     }
     .wrapper {
       display: -webkit-flex;

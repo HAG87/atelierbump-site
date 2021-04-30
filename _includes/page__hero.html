@@ -23,9 +23,7 @@
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
         {% if page.header.image %}
-          <div class="image">
-            <img src="{{ page.header.image | relative_url  }}" alt="{{ image_description }}" class="align-center">
-          </div>
+            <img src="{{ page.header.image | relative_url  }}" alt="{{ image_description }}">
         {% endif %}       
         <!-- left column -->
         <!-- {% if page.header.show_overlay_excerpt != false and page.excerpt %}

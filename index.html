@@ -7,8 +7,8 @@ excerpt: 'DesignToolbox is a collection of tools specially designed to accelerat
 header:
   image: '/assets/images/logo-dstlbx.png'
   overlay_color: "#353535"
-  overlay_filter: "rgba(255, 255, 255, 0.8)"
-  overlay_image: /assets/images/banner-02.jpg
+  overlay_filter: "linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.0))"
+  overlay_image: /assets/images/hero-image.png
 video:
   id: zskGfiWOeyo
   provider: youtube
@@ -71,7 +71,32 @@ feature_cats:
 footer_text:
   - 3ds Max is a trademark of Autodesk Inc.
 ---
+<style>
+  .masthead,
+  .masthead__menu,
+  .greedy-nav {
+    /* background-color: #1377ff; */
+    background-color: #5BA0FF;
+    border-bottom: none;
+  }
 
+  .search__toggle,
+  .search__toggle:hover {
+    color:black
+  }
+  
+  .navicon,
+  .navicon:after,
+  .navicon:before,
+  .navicon:hover,
+  /* .greedy-nav__toggle, */
+  /* .greedy-nav__toggle:hover, */
+  /* .greedy-nav__toggle:after, */
+  .greedy-nav__toggle:before
+  {
+    background: black;
+  }
+</style>
 <!-- Video presentation -->
 {% include video id=page.video.id provider=page.video.provider %}
 
