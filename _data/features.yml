@@ -67,14 +67,14 @@
 # RefGuides -->
 - title: "Spatial Reference guides"
   features:
-    - caption: "Reference tools are intended to improve and speed up architecture modeling, or any case where the use of dimensin references are needed. It allows to create construction guides, for accurately position and model objects. This guides can act as rulers, displaying custom measurement units in the viewport. The main functionality of this toolset consist in the creation of two types of reference objects: <b>linear guides and protractors</b>."
+    - caption: "Reference tools are intended to improve and speed up architecture modeling, or any case where the use of dimension references are needed. It allows to create construction guides, for accurately position and model objects. This guides can act as rulers, displaying custom measurement units in the viewport. The main functionality of this toolset consist in the creation of two types of reference objects: <b>linear guides and protractors</b>."
 - title: "Reference tools"
   features:
     - img: "/assets/images/icons/rg_B_128.png"
       title: "Line guides"
       caption: "Reference guide that works as a ruler."
     - img: "/assets/images/icons/prot_128.png"
-      title: "Protractopr"
+      title: "Protractor"
       caption: "Reference protractor object for working with angles."
     - img: "/assets/images/icons/infer_128.png" 
       title: "Points"
@@ -137,7 +137,7 @@
       title: "Material"
     - img: "/assets/images/icons/eyedrop_6.png" 
       title: "UVW mapping"
-      caption: "modifers & direct mesh UV coordinates"
+      caption: "modifiers & direct mesh UV coordinates"
     - img: "/assets/images/icons/eyedrop_5.png" 
       title: "Modifiers"
       caption: "(non-topology dependant)"
@@ -165,7 +165,7 @@
   features:
     - img: "/assets/images/icons/layIso_128.png" 
       title: "Layer isolation"
-      caption: "Isolate-Unisolate selected obect/s layer/s."
+      caption: "Isolate/Un-isolate selected object/s layer/s."
     - img: "/assets/images/icons/layProps_128.png" 
       title: "Layer lock, visibility, backface cull..."
       caption: "Lock current layer or pick an object to change the layer state or properties."
@@ -210,7 +210,7 @@
 # UVW map -->
     - img: "/assets/images/icons/multimap.png" 
       title: "Multimap"
-      caption: "Add individual UVW modifiers to a selection of objects, poly elements or faces. Randomize Gizmos, direct mesh coordinates or UVW Xform modifers."
+      caption: "Add individual UVW modifiers to a selection of objects, poly elements or faces. Randomize Gizmos, direct mesh coordinates or UVW Xform modifiers."
     - img: "/assets/images/icons/maptools.png" 
       title: "Map Tools"
       caption: "Fit, center, reset UVW gizmos and delete UVW or UVW xform modifiers in selected objects from a convenient dialog."

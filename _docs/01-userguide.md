@@ -329,7 +329,7 @@ Drop objects on underlay surfaces.
 
 ### Divide distance
 
-*Sets reference points between a reference distance.*
+*Set reference points to divide a distance*
 
 1. Pick distance start point.
 2. Pick distance second point.
