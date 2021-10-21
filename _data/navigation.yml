@@ -6,10 +6,10 @@ main:
     url: "/features/"
   - title: "Documents"
     url: /docs/
-  - title: "Blog"
-    url: /blog/
   - title: "Free tools"
     url: /tools/
+  - title: "Blog"
+    url: /blog/
   - title: "Contact"
     url: "/contact/"
   - title: "&#10096; DOWNLOAD &#10097;"

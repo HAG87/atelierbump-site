@@ -4,6 +4,24 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.3.0
+
+### Enhancements
+
+* Entirely rewritten Array tools
+Besides setting up a framework that allows to expand the tools feature sets, these are the changes for now:
+  * 2D Array: If you press SHIFT when executing the tool, the object will be cloned to the grid cells instead. Also a new Macro was added to use this mode: 2D Array - grid cells.
+  * Pattern Array:
+    * Simplified the UI, just one button to add/update the row-column rule.
+    * Major enhancement and performance improvement in some cases.
+* Paneling tool: Replaced the tool completely; the results will be the same, but is easier to use and follows the same mechanics that the 2D Array tool. For how-to-use, refer to the user guide.
+* Replaced the "Welcome" dialog with some more useful information for new users.
+* Some general optimizations all over the place, some tools should work faster in some cases.
+
+### Added
+
+* Stamp tool: Use an object to Interactively stamp its shape or cut holes in a mesh.
+
 ## Version 2.9.2.0
 
 * Reverted changes in Move and Align tool: Instead of picking an align origin point and reposition it until the tool is ended, now you can pick a origin-destination point pair each time.

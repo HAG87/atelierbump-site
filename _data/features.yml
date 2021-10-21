@@ -121,6 +121,9 @@
   - img: "/assets/images/icons/Merge_128.png" 
     title: "Merge"
     caption: "Merge will Combine geometry and splines in one object."
+  - img: "/assets/images/icons/stampTool_128.png" 
+    title: "Stamp"
+    caption: "Use an object to Interactively stamp its shape or cut holes in a mesh."
 # Utilities -->
 - title: "Utilities"
 # Eyedropper - Replicator -->

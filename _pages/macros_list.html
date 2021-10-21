@@ -38,7 +38,7 @@ classes: wide
 </style>
 
 <h2>{{ page.excerpt }}</h2>
-<p>Last update: Version 2.9.1.2</p>
+<p>Last update: Version 2.9.3.x</p>
 <table class="tools">
     <tbody>
         <td colspan="3"><b>Transform</b></td>
@@ -626,6 +626,23 @@ classes: wide
             <td>Explode Nodes</td>
             <td class="cellWithComment">Explode geometry elements and spline shapes</td>
             <span class="comment" id="DSTBX_nodeExplode">Explode geometry elements and spline shapes.</span>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/icons/stampTool_48.png" alt="Explode"></td>
+            <td>Stamp</td>
+            <td class="cellWithComment">Use an object to Interactively stamp its shape or cut holes in a mesh</td>
+            <span class="comment" id="DSTBX_stmp">
+                <ul>
+                    <li>Objects must be geometry that can be converted to Editable Poly.</li>
+                    <li>This tool will collapse the modifier stack.</li>
+                </ul>
+                <ol>
+                    <li>Use the UI to pick a base node to operate on</li>
+                    <li>Choose the operation</li>
+                    <li>Select a tool object in the scene, and press the start button</li>
+                    <li>The tool object will be positioned in the base object surface, following the mouse; use right-click to stamp the object shape or left click to end the operation.</li>
+                </ol>
+            </span>
         </tr>
         <tr>
             <td><img src="/assets/images/icons/sdivide_48.png" alt="sdivide"></td>

@@ -682,6 +682,20 @@ This tools offers some enhanced functionality to the default available attach/de
 | Edit Mesh  |
 | Splines    |
 
+![stamptool](/assets/images/icons/stampTool_128.png){: .icon-small}
+
+### Mesh stamp tool
+
+Use an object to Interactively stamp its shape or cut holes in a mesh.
+
+- Objects must be geometry that can be converted to Editable Poly.
+- This tool will collapse the modifier stack.
+
+1. Use the UI to pick a base node to operate on
+2. Choose the operation
+3. Select a tool object in the scene, and press the start button
+4. The tool object will be positioned in the base object surface, following the mouse; use right-click to stamp the object shape or left click to end the operation.
+
 ---
 
 ## Scene management and rendering related tools
@@ -753,11 +767,18 @@ Change the scene bitmaps name from the default random name to a more meaningful 
 
 ![paneling](/assets/images/icons/paneling.png){: .icon-small}
 
-### Paneling and detailer
+### Paneling
 
 *Create a grid of panels (boxes or custom geometry) in a planar surface. Originally intended to fast model furniture cabinets and add handles, now is a multi-purpose tool.*
 
-#### Paneling
+1. The first step using the Paneling tool is setting the operation surface. Set a rectangular area defined by two points: lower-left and top-right corners.
+2. By default the tool creates the panels with standard box objects. **Start the tool with an object selected, to use it as source for the panels.**
+3. Set Grid Vertical subdivisions moving the mouse towards or away the first point of the area (the lowe left corner), confirm with a left-click; repeat for the horizontal divisions. Each grid cell corresponds with one panel.
+4. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
+
+![paneling](/assets/images/ui/paneling_ui_1.png){: .align-center .drop-shadow}
+
+**Note**: the following instruction set corresponds with the now removed tool available until version 2.9.2.X
 
 1. The first step using the Paneling tool is setting the operation surface. Use the **Pick limits** button to set a surface with three reference points: **Base point > Height Point > Width point**
 2. Uncheck "Box" and pick an object if you want to use a custom geometry for the panels. Invert Object H/W flips the front facing side.
@@ -766,7 +787,7 @@ Change the scene bitmaps name from the default random name to a more meaningful 
 5. Specify the thickness for the panel. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
 6. Add Chamfer *(3ds Max 2016+ version restriction)* will add to each panel a Chamfer modifier.
 
-#### Detailer
+### Detailer
 
 Best suited to be used as a complement of the Paneling tool. This utility allows to parametrically place an object over a selection
 
@@ -782,7 +803,7 @@ Best suited to be used as a complement of the Paneling tool. This utility allows
 
 > Re-center pivots is intended to address situations where the detail object has a displaced pivot from its center, or to correct misplaced pivots in the result.
 
-![paneling](/assets/images/ui/paneling_ui.png){: .align-center .drop-shadow}
+![paneling](/assets/images/ui/paneling_ui_2.png){: .align-center .drop-shadow}
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pCalAPZWGjI" frameborder="0" allowfullscreen></iframe></div>
 
