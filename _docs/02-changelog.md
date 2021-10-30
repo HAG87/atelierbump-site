@@ -20,7 +20,13 @@ Besides setting up a framework that allows to expand the tools feature sets, the
 
 ### Added
 
-* Stamp tool: Use an object to Interactively stamp its shape or cut holes in a mesh.
+* Stamp tool (Experimental): Use an object to Interactively stamp its shape or cut holes in a mesh.
+
+### Fixes
+
+* Fixed a problem with eyedropper tool that caused the display of an error dialog after one use.
+* The Drop Objects tool did not work as expected when the target object's pivot was displaced.
+* Distribute tools that were broken.
 
 ## Version 2.9.2.0
 

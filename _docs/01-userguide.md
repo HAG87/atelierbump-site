@@ -696,6 +696,10 @@ Use an object to Interactively stamp its shape or cut holes in a mesh.
 3. Select a tool object in the scene, and press the start button
 4. The tool object will be positioned in the base object surface, following the mouse; use right-click to stamp the object shape or left click to end the operation.
 
+>- Keep pressed **<mark>SHIFT</mark>** and move the mouse to displace the tool towards-away the target surface.
+>- Keep pressed **<mark>CTRL</mark>** and move the mouse towards-away from the tool object to rotate it around its normal.
+>- Keep pressed **<mark>CTRL+SHIFT</mark>** and move the mouse towards-away from the tool object to change its scale.
+
 ---
 
 ## Scene management and rendering related tools

@@ -1,5 +1,5 @@
 ---
-title: New tools introduced in v 2.9.3.x
+title: New tools introduced in v2.9.3.x
 author: Bump
 categories:
   - DesignToolBox
@@ -8,18 +8,37 @@ tags:
   - Update
 ---
 
+Last major release for 2021. This version brings some enhancements and a few new tools
 
-* Entirely rewritten Array tools
-Besides setting up a framework that allows to expand the tools feature sets, these are the changes for now:
-  * 2D Array: If you press SHIFT when executing the tool, the object will be cloned to the grid cells instead. Also a new Macro was added to use this mode: 2D Array - grid cells.
-  * Pattern Array:
-    * Simplified the UI, just one button to add/update the row-column rule.
-    * Major enhancement and performance improvement in some cases.
-* Paneling tool: Replaced the tool completely; the results will be the same, but is easier to use and follows the same mechanics that the 2D Array tool. For how-to-use, refer to the user guide.
-* Replaced the "Welcome" dialog with some more useful information for new users.
+## Entirely rewritten Array tools and Replacement of paneling tool
+
+The idea was to set up a framework that will allow to have a more optimized Array tools and be able to the features. Part off this work derived in replacing the old and feature-similar panelling tool.
+For now, the changes introduced are these:
+
+* The 2D Array tools has a new mode for cloning the object in the "Grid cells" instead of the grid points. (Use SHIFT when starting the tool to use this mode)
+* Pattern Array UI was simplified a bit, just one button to add/update the row-column rule, and it should be a performance improvement in most cases.
+
+"Paneling tool", is now more interactive, with more interaction in the viewport and less in the UI. Behaving similar to 2D Array tool. The results will be the same, but is easier and faster to use. If you want to use an object as panel model, start the tools selecting first that object, if no object is selected default boxes will be created The interface now contains just thickness and cap parameters that are easier to preview. For a more detailed list of changes, refer to the user guide.
+
+![paneling](/assets/images/ui/paneling_ui_1.png){: .align-center .drop-shadow}
+
+(Video will be added soon)
+
+## General enhancements
+
+* Since some users encounter some difficulties in the activation steps, the "Welcome" dialog was enhanced to contain more useful useful information for new users.
 * Some general optimizations all over the place, some tools should work faster in some cases.
 
-### Added
+## New tool: "Stamp"
 
-* Stamp tool: Use an object to Interactively stamp its shape or cut holes in a mesh.
-* 
+First attempt to introduce a more direct modelling oriented tool. Its objective is to provide a quick way to "stamp" an object into another or cut holes on the surface. Some use cases could be to imprint a shape in a jar, detail a wall, cut holes in a ceiling to add recessed lamps...
+
+(Video will be added soon)
+
+## Fixes
+
+major fixes includes the correction of a problem  with the eyedropper tool, that caused the display of an error dialog after one use. Also, Drop Objects tool did not work as expected when the target object's pivot was displaced and the Distribute tool was practically broken in the latest release.
+
+## On plan
+
+We have on plan a must needed remake some of the demo videos, and complete new ones for more of the main tools
