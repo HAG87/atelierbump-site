@@ -4,6 +4,16 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.3.1
+
+### Fixes
+
+* Divider tool> segments display didn't follow the mouse cursor in orthographic views
+* Rotation tools
+  * Crash when using 2.5D snap mode.
+  * Ortho views were not restored after using the tool
+* 
+
 ## Version 2.9.3.0
 
 ### Enhancements
