@@ -43,7 +43,7 @@
     caption: "Sets reference points between two picked points. Move mouse or type quantity to set segments amount."
   - img: "/assets/images/icons/Qmeasure.png" 
     title: "Distance"
-    caption: "Live visual feedback measure tape. Orthogonal constraint and orthogonal reference modes. Continuos mode displays concatenated dimensions."
+    caption: "Live visual feedback measure tape. Orthogonal constraint and orthogonal reference modes. Continuous mode displays concatenated dimensions."
   - img: "/assets/images/icons/dimobj_128.png" 
     title: "Dimensions"
     caption: "Review distance measurements, create dimension objects to show them."
