@@ -125,7 +125,7 @@ Provides settings to change the guides color, layer name, intersection points be
 
 ## Transform tools
 
-![ref?rot](/assets/images/icons/rotate.png){: .icon-small}
+![ref?rot](/assets/images/icons/rotate_128.png){: .icon-small}
 
 ### reference Rotation
 
@@ -144,7 +144,7 @@ First, select the object you want to rotate.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/jNH5CqEVkm4" frameborder="0" allowfullscreen></iframe></div>
 
-![loc?rot](/assets/images/icons/QLrotate.png){: .icon-small}
+![loc?rot](/assets/images/icons/QLrotate_128.png){: .icon-small}
 
 ### local reference Rotation
 
@@ -160,7 +160,7 @@ First, select the object you want to rotate.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7yt8PFlBymI" frameborder="0" allowfullscreen></iframe></div>
 
-![ref?scale](/assets/images/icons/scale.png){: .icon-small}
+![ref?scale](/assets/images/icons/scale_128.png){: .icon-small}
 
 ### reference Scale
 
@@ -183,7 +183,7 @@ The tool works picking two reference distances, one representing a reference len
 > - **In context:** Operation done in local coordinates.
 > - **Xform:** Instead of direct transformation, it applies a Xform modifier to the target object.
 
-![mirrortool](/assets/images/icons/Reflect.png){: .icon-small}
+![mirrortool](/assets/images/icons/Reflect_128.png){: .icon-small}
 
 ### Mirror tool
 
@@ -195,7 +195,7 @@ Select the objects and use the options in the dialog.
 
 ![mirrortool2](/assets/images/ui/mirrortool_2.png){: .align-center .drop-shadow}
 
-![movealign](/assets/images/icons/QrotateF.png){: .icon-small}
+![movealign](/assets/images/icons/QrotateF_128.png){: .icon-small}
 
 ### Move and align (1D Align tool)
 
@@ -220,7 +220,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
       - An axis gizmo will be displayed in the reference and start locations representing the origin (ABC1) and result (ABC2) coordinate systems.
 5. **<mark>Left Click</mark>** once more to invert the transformation, or exit the tool with **<mark>Right Click</mark>**
 
-![redimension](/assets/images/icons/Qdim.png){: .icon-small}
+![redimension](/assets/images/icons/Qdim_128.png){: .icon-small}
 
 ### reDimension
 
@@ -238,7 +238,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/eQ6nggsDUfw" frameborder="0" allowfullscreen></iframe></div>
 
-![offset](/assets/images/icons/Qoffset.png){: .icon-small}
+![offset](/assets/images/icons/offset_128.png){: .icon-small}
 
 ### Offset (reference move)
 
@@ -325,7 +325,7 @@ Drop objects on underlay surfaces.
 
 ## Measure tools
 
-![divide](/assets/images/icons/sdivide.png){: .icon-small}
+![divide](/assets/images/icons/sdivide_128.png){: .icon-small}
 
 ### Divide distance
 
@@ -344,7 +344,7 @@ Drop objects on underlay surfaces.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
 
-![distance](/assets/images/icons/Qmeasure.png){: .icon-small}
+![distance](/assets/images/icons/Qmeasure_128.png){: .icon-small}
 
 ### Distance
 
@@ -402,7 +402,7 @@ Create dimension lines with measure annotation allowing to render the taken dime
 
 ![dimobj?prev](\assets\images\dimobj_preview.png){: .align-center .drop-shadow}
 
-![angle](/assets/images/icons/Qangle.png){: .icon-small}
+![angle](/assets/images/icons/Qangle_128.png){: .icon-small}
 
 ### Angle
 
@@ -414,7 +414,7 @@ Create dimension lines with measure annotation allowing to render the taken dime
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/GobuvzrpsbI" frameborder="0" allowfullscreen></iframe></div>
 
-![area](/assets/images/icons/Qarea.png){: .icon-small}
+![area](/assets/images/icons/Qarea_128.png){: .icon-small}
 
 ### Area
 
@@ -427,7 +427,7 @@ Create dimension lines with measure annotation allowing to render the taken dime
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/tn2Gt9ekX-c" frameborder="0" allowfullscreen></iframe></div>
 
-![volume](/assets/images/icons/Qvolume.png){: .icon-small}
+![volume](/assets/images/icons/Qvolume_128.png){: .icon-small}
 
 ### Volume
 
@@ -445,13 +445,13 @@ Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Acti
 
 Displays information about an object's dimension and transformation
 
-![spatialInfo](/assets/images/ui/spatialInfo.png)
+![spatialInfo](/assets/images/ui/spatialinfo_128.png)
 
 ---
 
 ## Pivot and coordinates related tools
 
-![pivot](/assets/images/icons/Qpivot.png){: .icon-small}
+![pivot](/assets/images/icons/qpivot_128.png){: .icon-small}
 
 ### Pivot tools
 
@@ -483,7 +483,7 @@ If no object is selected, the tool will reposition the pivot of the object where
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/kQdwEGEm2U8" frameborder="0" allowfullscreen></iframe></div>
 
-![lockpos](/assets/images/icons/Locks_pos.png){: .icon-small}
+![lockpos](/assets/images/icons/Locks_pos_128.png){: .icon-small}
 
 ### Transform locks
 
@@ -516,13 +516,13 @@ re-Isolate within current selection.
 
 The tool will open a floater dialog with three buttons. **"LEVEL UP"**, **"LEVEL DOWN"** and **"CLOSE"**. Select some nodes and press **LEVEL UP** to isolate them. Press **LEVEL DOWN** to restore the previous isolated nodes, or exit isolation mode if no previous level is registered. Closing the tool will exit isolation mode.
 
-![unhide](/assets/images/icons/bulb_usel.png){: .icon-small}
+![unhide](/assets/images/icons/bulb_usel_128.png){: .icon-small}
 
 ### unHide by selection
 
 This tool will temporally display all hidden objects (and hide visible ones). Select the ones you want to unhide and Press "Done" on the floater.
 
-![unfroze](/assets/images/icons/bulb_fsel.png){: .icon-small}
+![unfroze](/assets/images/icons/bulb_fsel_128.png){: .icon-small}
 
 ### unFreeze by selection
 
@@ -544,7 +544,7 @@ Layer tools will work on the selected node (if any) otherwise they will work in 
 
 ## Eyedropper tools
 
-![replicator](/assets/images/icons/eyedrop_1.png){: .icon-small}
+![replicator](/assets/images/icons/eyedrop_1_128.png){: .icon-small}
 
 ### Replicator
 
@@ -560,7 +560,7 @@ Layer tools will work on the selected node (if any) otherwise they will work in 
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/8xTYApZCjVA" frameborder="0" allowfullscreen></iframe></div>
 
-![eyedropper](/assets/images/icons/eyedrop_2.png){: .icon-small}
+![eyedropper](/assets/images/icons/eyedrop_2_128.png){: .icon-small}
 
 ### Eyedropper
 
@@ -590,7 +590,7 @@ Additional available modes:
 
 ## Object related tools
 
-![1darray](/assets/images/icons/sdivide.png){: .icon-small}
+![1darray](/assets/images/icons/1d_array_128.png){: .icon-small}
 
 ### 1D Array (Clone Between)
 
@@ -607,7 +607,7 @@ Set subdivision marks between two points, and place a clone on each mark
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
 
-![interactive?array](/assets/images/icons/i_array.png){: .icon-small}
+![interactive?array](/assets/images/icons/2d_array_128.png){: .icon-small}
 
 ### Interactive 2D Array
 
@@ -621,7 +621,7 @@ Set subdivision marks between two points, and place a clone on each mark
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/aR_UTzUdyps" frameborder="0" allowfullscreen></iframe></div>
 
-![pattern?array](/assets/images/icons/p_array.png){: .icon-small}
+![pattern?array](/assets/images/icons/P_array_128.png){: .icon-small}
 
 ### Pattern Array
 
@@ -646,7 +646,7 @@ Make complex rule-based object arrays; walls, mosaic patterns...
 
 ![cammanager](/assets/images/icons/Explode_128.png){: .icon-small}
 
-![array?polar](/assets/images/icons/Maround.png){: .icon-small}
+![array?polar](/assets/images/icons/polar_array_128.png){: .icon-small}
 
 ### Polar array
 
@@ -769,7 +769,7 @@ Change the scene bitmaps name from the default random name to a more meaningful 
 
 ## Utilities
 
-![paneling](/assets/images/icons/paneling.png){: .icon-small}
+![paneling](/assets/images/icons/paneling_128.png){: .icon-small}
 
 ### Paneling
 
@@ -815,7 +815,7 @@ Best suited to be used as a complement of the Paneling tool. This utility allows
 
 Texture coordinates related tools
 
-![maptools](/assets/images/icons/maptools.png){: .icon-small}
+![maptools](/assets/images/icons/maptools_128.png){: .icon-small}
 
 #### Map tools
 
@@ -825,7 +825,7 @@ Fit, center, reset UVW gizmos *(this tolls are only available by default through
 
 ![multimap](/assets/images/ui/maptools_dlg.png){: .align-center .drop-shadow}
 
-![multimap](/assets/images/icons/multimap.png){: .icon-small}
+![multimap](/assets/images/icons/multimap_128.png){: .icon-small}
 
 #### multiMap
 
@@ -835,7 +835,7 @@ Add **individual** UVW modifiers to a **selection** of objects, **poly elements*
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/BAxjEX4N4CY" frameborder="0" allowfullscreen></iframe></div>
 
-![snap?states](/assets/images/icons/magnet.png){: .icon-small}
+![snap?states](/assets/images/icons/magnet_128.png){: .icon-small}
 
 ### Snaps states
 
@@ -845,7 +845,7 @@ Save current active snaps as a named set and reuse them from the floater dropdow
 
 ![savesnapadd](/assets/images/ui/savesnap2.png){: .align-center .drop-shadow}
 
-![color?clipboard](/assets/images/icons/color.png){: .icon-small}
+![color?clipboard](/assets/images/icons/color_128.png){: .icon-small}
 
 ### Color clipboard
 
