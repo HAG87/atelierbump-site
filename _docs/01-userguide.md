@@ -747,7 +747,7 @@ Automate the process of replacing materials. Intended to be used when importing 
 
 The tool enables to save a list of material correspondences, so if you work in another software with a standardized material library, reassigning materials is as easy to set up correspondences with your 3ds max material library one time, and use the saved list each time you import a scene or object.
 
-Note: When importing some formats, 3ds max auto assigns materials with random names, so use a format like **FBX** that keeps materials information.
+Note: When importing some formats, 3ds max auto assigns materials with random names, so use a format like **FBX** that keeps material information.
 
 ![mtlreplacer](/assets/images/ui/matreplacer.png){: .align-center .drop-shadow}
 

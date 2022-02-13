@@ -4,6 +4,39 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.4.0
+
+### Enhancements
+
+* New UI icons: Due to a data loss, the icons had to be redone. The new aesthetic is more consistent and blends well with native icons.
+* Camera manager
+  * Added control for f-number, shutter, and ISO
+  * Replaced image aspect presets to aspect ratio «X:Y» format.
+  * Added buttons to get the resolution/ratio from an image and the current viewport background.
+* mtlReplacer received several improvements:
+  * Simplified UI: to assign a replacement, select a material (or a range) in the list and double click to open the Material explorer.
+  * Multi-materials are listed by default. Added support to list & replace sub-materials (one level deep, no nested materials, for now, a multi-level solution is on plans).
+  * Added a "Use" column to the list that shows if the material is used in the scene or as sub-material.
+* Incremental Isolation:
+  * Added an indication of the current level (i.e: level 7)
+  * Decreasing the level selected all visible objects. This was corrected to maintain the current selection. Known Issue: working in sub-object and changing the level will return to object mode.
+  * Newly created objects in a level were not correctly added to the stack.
+  * Hiding an object when at a level will not keep the visibility state going one level up/down. This was changed so the object will remain hidden.
+
+### Added
+
+* Included extras*:
+  * Texture maps filename search and replace
+  * viewport composition guides
+
+* Extras are tools that either do not fit well in another group of tools or are provided for free on our website and it is included in the package for convenience.
+
+### Fixes
+
+* layTools: Fixed undo actions
+* mapTools: Optimized slow UI, fixed broken functionality
+* Some general maintenance and optimizations.
+
 ## Version 2.9.3.1
 
 ### Fixes

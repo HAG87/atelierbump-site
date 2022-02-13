@@ -56,7 +56,7 @@
   - img: "/assets/images/icons/Qvolume_128.png" 
     title: "Volume"
     caption: "Pick two diagonal points representing an enclosing box and measure its volume."
-# Additonal measure tools -->
+# Additional measure tools -->
 - features:
   - img: "/assets/images/icons/rg_ax_128.png"
     title: "Active grid units"
