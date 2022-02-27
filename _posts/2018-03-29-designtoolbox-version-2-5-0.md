@@ -34,5 +34,5 @@ tags:
   * Some other refinements.
 * Net rendering (Backburner): Install the demo version in the render nodes to avoid warnings and potential render job fail.
 * Moved refGuides MacroScripts to category *refGuides*;
-* Moved DesignToolbox MacroScripts to category *Designtoolbox*; Optional features remains on category *HAG tools*.
+* Moved DesignToolbox MacroScripts to category *Designtoolbox*; Optional features remains on category *DSTLBX tools*.
 * 3ds Max 2019 compatibility. Fixed compatibility whit versions prior to 2017.

@@ -885,7 +885,7 @@ You can change the color palette used to represent points marks, lines and other
 
 ### Where to locate the toolbar macros
 
-You can find the tools in the **customization dialog** under the categories of <mark>HAG refGuides</mark>, <mark>HAG DesignToolBox</mark> and the extras in <mark>HAG tools</mark>
+You can find the tools in the **customization dialog** under the categories of <mark>refGuides</mark>, <mark>DesignToolBox</mark> and the extras in <mark>DSTLBX tools</mark>
 
 ### Ribbon Tab
 

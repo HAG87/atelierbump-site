@@ -4,6 +4,18 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.4.1
+
+### Fixes
+
+* The angle measure tool was not displaying the angle correctly
+* The area measure tool was not displaying the value and was throwing an error
+
+### Enhancements
+
+* reDimension tool has now an option to keep object proportions.
+* Photographic composition guides updated to include golden ratio proportions.
+
 ## Version 2.9.4.0
 
 ### Enhancements
@@ -285,7 +297,7 @@ This is a maintenance release, centered in fixing some critical bugs.
 ### Added tools
 
 * Wirecolor adjust: Adjust selection wire colors. brightness, saturation and hue.
-* Extras (Tools under "HAG tools" category):
+* Extras (Tools under "DSTLBX tools" category):
   * Bitmap multi-loader: Create SME Texture Nodes from multiple images with one action. With option to override gamma of loaded images.
   * Map name from file: rename scene texture maps with their correspondent filename.
   * Select without material.
@@ -489,7 +501,7 @@ This version addresses some problems found in the previous release:
   * Some other refinements.
 * Net rendering (Backburner): Install the demo version in the render nodes to avoid warnings and potential render job fail.
 * Moved refGuides MacroScripts to category "refGuides"
-* Moved DesignToolbox MacroScripts to category "Designtoolbox"; Optional features remains on category "HAG tools".
+* Moved DesignToolbox MacroScripts to category "Designtoolbox"; Optional features remains on category ~~"HAG tools"~~ (Replaced by DSTLBX tools).
 * 3ds Max 2019 compatibility. Fixed compatibility with versions prior to 2017.
 
 ### New features

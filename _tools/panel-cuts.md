@@ -21,4 +21,4 @@ Tool for creating panel cuts reports. Useful for furniture or kitchen cabinets d
 
 1. Copy *scripts*, *usericons* and *usermacros* folders to **3ds Max user folder**. Usually located at: *C:\Users\USER_NAME\AppData\Local\Autodesk\3dsMax\20XX - 64bit\ENU*
 2. Restart Max if opened.
-3. Add the macro to a toolbar. Found under the category "HAG tools".
+3. Add the macro to a toolbar. Found under the category "DSTLBX tools".

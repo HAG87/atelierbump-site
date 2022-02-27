@@ -41,7 +41,7 @@ This version implements some major changes and is recommended for all users to u
 * Overall optimizations.
 * Updated installer to support multiple 3ds Max versions on a single run.
 
-### Included extras (Tools under "HAG tools" category) as of version 2.7.X
+### Included extras (Tools under "DSTLBX tools" category) as of version 2.7.X
 
 * **File name to Map**:      Change the names of Bitmap Textures to the name of the loaded files.
 * **Remove material**:       Remove material from selection
