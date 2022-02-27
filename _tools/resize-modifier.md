@@ -8,4 +8,4 @@ This modifier can be used to resize an object using dimensional values instead o
 
 {% include video id="tQPPcBfg9iE" provider="youtube" %}
 
-<a href="https://apps.autodesk.com/3DSMAX/en/Detail/Index?id=400416994353627831" class="btn btn--primary">Download</a>  <a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/plugin/HAG_resizer.mse" class="btn btn--inverse">Source</a>
+<a href="https://apps.autodesk.com/3DSMAX/en/Detail/Index?id=400416994353627831" class="btn btn--primary">Download</a>  <a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/plugin/resizer.zip" class="btn btn--inverse">Source</a>

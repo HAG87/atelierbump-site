@@ -10,4 +10,4 @@ More useful UI with colors and font effects to indicate directories status, disp
 
 ![adv?mngr](/assets/images/ui/advman.png)
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Adv_path_manager.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/adv_path_manager.zip" class="btn btn--primary">Download</a>

@@ -35,4 +35,4 @@ Keep: 3; Quit: 2
 <br/>
 XXX--XXX--XXX--...
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Random_select.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/random_select.zip" class="btn btn--primary">Download</a>

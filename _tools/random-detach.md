@@ -5,4 +5,4 @@ excerpt: Randomly select elements in Editable Polys. It can detach each element 
 
 {{page.excerpt}}
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Random_detach.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/random_detach.zip" class="btn btn--primary">Download</a>

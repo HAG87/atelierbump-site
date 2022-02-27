@@ -14,4 +14,4 @@ excerpt: Randomize selected vertex position's.
 
 {% include video id="rph8H8OtWTs" provider="youtube" %}
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Vertexscrambler.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/vertex_scrambler.zip" class="btn btn--primary">Download</a>

@@ -7,4 +7,4 @@ excerpt: Compact interface to manage, review, select cameras. It also can add ba
 
 ![cam?tool](/assets/images/ui/camtool.png)
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Render_Tools.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/cam_manager.zip" class="btn btn--primary">Download</a>

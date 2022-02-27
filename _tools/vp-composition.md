@@ -30,4 +30,4 @@ This tool is intended to be of aid when composing shots. easily draw common phot
 
 ## Get it
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Photographic_composition_guides.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/photographic_composition_guides.zip" class="btn btn--primary">Download</a>
