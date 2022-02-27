@@ -15,7 +15,7 @@ Tool for creating panel cuts reports. Useful for furniture or kitchen cabinets d
 - Material finish, part type, description, grain orientation properties.
 - Export a .csv file with Part quantity, dimensions, finish, grain direction, part and description values; Import the file in a spreadsheet or cut optimization software.
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/panel_cuts.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Panel_cuts.zip" class="btn btn--primary">Download</a>
 
 ## Install notes
 
