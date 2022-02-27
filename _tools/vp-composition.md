@@ -1,5 +1,5 @@
 ---
-title: viewport composition guides
+title: Photographic composition guides
 excerpt: Display an overlay of photographic composition guides in the viewport.
 ---
 
@@ -9,8 +9,10 @@ This tool is intended to be of aid when composing shots. easily draw common phot
 
 ## Features
 
-* 4-field grid (2x2)
-* 9-field grid (3x3)
+* Quadrants (2x2)
+* Rule of thirds (3x3)
+* Golden proportions
+* Golden ratio rectangles & spiral
 * Position a guide in the viewport with the mouse. Possible positions:
   * Vertical
   * Horizontal
@@ -28,4 +30,4 @@ This tool is intended to be of aid when composing shots. easily draw common phot
 
 ## Get it
 
-<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Viewport_composition_guides.zip" class="btn btn--primary">Download</a>
+<a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/Photographic_composition_guides.zip" class="btn btn--primary">Download</a>
