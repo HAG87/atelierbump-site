@@ -4,6 +4,22 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.4.2
+
+### Added
+
+* Reference move tool (User requested): Move tool that uses two (origin and destination) reference points.
+* Swap position tool (User requested): Select a collection of objects (will follow the selection pick order) and cycle their transform from one to the next.
+
+### Fixes
+
+* Fixed critical functionality problem with refGuides: Intersection points were not working correctly in 3ds Max 2022.
+* Fixed configuration option to change refGuide object to standard splines.
+
+### Enhancements
+
+* Tested compatibility with 3ds Max 2023
+
 ## Version 2.9.4.1
 
 ### Fixes

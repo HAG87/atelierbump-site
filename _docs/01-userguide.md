@@ -254,6 +254,18 @@ Precise referential movement from a target point, and specified direction
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/L1Bu_d280ME" frameborder="0" allowfullscreen></iframe></div>
 
+### Reference move
+
+ CAD-like Move tool that uses two (origin and destination) reference points.
+
+1. Select the objects you want to move.
+2. Start the tool; Pick an origin ref. point (be sure to enable snaps)
+3. Pick a destination point to displace the origin point to.
+
+### Swap transform
+
+Select a collection of objects (will follow the selection pick order) and cycle their transform from one to the next.
+
 #### Floater dialog
 
 ![offset](/assets/images/ui/offset_dlg.png){: .align-center .drop-shadow}
@@ -263,7 +275,7 @@ Precise referential movement from a target point, and specified direction
 Tool packed with several options to randomize and clone nodes.
 
 - Can be used to directly modify the node transform, add a XForm modifier, or transform applied modifiers gizmo's.
-- Set constant, by range or a scripted list of values to appply the transform.
+- Set constant, by range or a scripted list of values to apply the transform.
 - Apply the transform in Grid, Local or a Reference coordinate system. To use the later mode, pick a reference node first.
 
 ![randomtransform](/assets/images/ui/rndTrnsform.png){: .align-center .drop-shadow}
