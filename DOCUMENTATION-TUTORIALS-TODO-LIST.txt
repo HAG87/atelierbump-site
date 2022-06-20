@@ -1,0 +1,84 @@
+[ ] IN-ACTION VIDEOS
+[ ] CALL FOR VIDEOTUTORIALS
+[ ] Transform tools
+      [x] Reference rotation
+      [x] Local rotation
+      [ ] Reference Scale
+      [ ] Move and Align
+    [ ] Reflect
+    [x] reDimension
+    [x] Offset
+    [o] Random transform
+    [x] Distribution tool
+    [.] Drop objects
+    [ ] Reference Move
+    [ ] Swap transform
+[ ] Measure tools
+    [x] Subdivide distance
+    [x] Distance
+    [x] Distance - history
+    [x] Angle
+    [x] Polygonal area
+    [-] Volume
+[x] Additional measure tools
+    [o] Active grid units
+    [x] Live Info
+[ ] Spatial Reference guides
+  [ ] Reference tools
+    [ ] Line guides
+    [ ] Protractor
+    [ ] Points
+    [ ] Viewport rulers
+    [ ] Line guide and Protractor tool modes
+[ ] Array tools
+    [.] 1D Array --> with divide distance
+    [x] Interactive Array
+    [ ] Pattern Array
+    [x] Polar array
+[ ] Geometry tools
+    [-] Explode
+    [-] Merge
+    [ ] Stamp
+[x] Eyedropper - Replicator
+    [x] Replicator
+    [x] Eyedropper
+[.] Eyedropper shortcuts
+    [.] Material
+    [.] UVW mapping
+    [.] Modifiers
+    [.] Standard transformations
+    [.] Object properties
+[ ] Scene organization tools
+    [-] Reference Isolate
+    [ ] Incremental Isolate
+    [x] Unhide selection
+    [x] Unfreeze selection
+[ ] Layer tools
+    [ ] Layer isolation
+    [ ] Layer lock, visibility, backface cull...
+[ ] Pivot tools
+    [ ] Pivot positioning
+    [x] Lock standard transformations
+    [x] Pivot2SnapPoint
+[ ] Scene tools
+    [ ] Viewports, scene management
+        [x] Camera manager
+        [ ] Material replacer
+    [ ] Bitmap multi-loader
+    [ ] Map name from file
+    [ ] Remove material
+    [ ] ID from camera
+    [ ] Face Id
+    [ ] Random ID Set
+[ ] Utilities 
+    [ ] Paneling
+    [ ] detailer tool.
+    [ ] UVW map
+        [x] Multimap
+        [ ] Map Tools
+    [x] Snap states
+    [x] Color clipboard
+[ ]  Other tools
+    [ ] Random Select
+    [x] Align Assets
+    [ ] Replace with Xref
