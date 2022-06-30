@@ -187,9 +187,15 @@ The tool works picking two reference distances, one representing a reference len
 
 ### Mirror tool
 
-Position the 3-plane gizmo picking a center point for the mirror operation.
-Orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle.
-Select the objects and use the options in the dialog.
+Interactive mirror tool with complex mirror planes alignment.
+
+1. Start with positioning the reference3-plane gizmo, picking a center point for the mirror operation.
+2. Orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle.
+   1. Gizmo alignment: set the gizmo start position by picking a direction vector. Use **<mark>SHIFT</mark>** for orthogonal tracking, and **<mark>SHIFT+CTRL</mark>** to lock the gizmo and track Z axis.
+   2. YAW angle: (or XY plane): Use **<mark>RIGHT-CLICK</mark>** to skip, **<mark>SHIFT</mark>** for angle snapping and **<mark>ALT</mark>** to invert direction.
+   3. Pitch (YZ plane, along X axis) and Roll (XZ plane, along Y axis): Use **<mark>RIGHT-CLICK</mark>** to skip, **<mark>CTRL</mark>** to change from Pitch to Roll, **<mark>SHIFT</mark>** for angle snapping and **<mark>ALT</mark>** to invert direction.
+3. Set or skip the offset angle
+4. Finally, select the objects and use the options in the dialog to enable or disable the mirror axes or planes.
 
 ![mirrortool1](/assets/images/ui/mirrortool_1.png){: .align-center .drop-shadow}
 
