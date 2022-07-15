@@ -2,7 +2,7 @@
 title: reSize modifier
 excerpt: use this modifier to change an object's dimensions
 ---
-<!-- ![resizer](/assets/images/icons/refGuides.png) -->
+<!-- ![resizer](/assets/images/icons/refGuides_icon_128.png) -->
 
 This modifier can be used to resize an object using dimensional values instead of scale factor. For example, let's assume you have out of scale Chair model. Instead of "scaling it until it fits, you can match it to real dimensions (i.e. 0.50 x 0.50 x .70 mts.)
 

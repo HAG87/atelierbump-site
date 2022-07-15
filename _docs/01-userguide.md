@@ -121,7 +121,7 @@ Provides settings to change the guides color, layer name, intersection points be
 > [*] Custom Object mode (On by default) is only available for 3Ds Max 2016 and up.
 > Smart intersection mode will consider any planar shape on the scene as a guide. While resource consuming, it can place intersection points on imported CAD drawings. for example.
 
-![dslogo](/assets/images/icons/designtoolbox.png){: .icon-small}
+![dslogo](/assets/images/icons/dstlbx_icon_128.png){: .icon-small}
 
 ## Transform tools
 
