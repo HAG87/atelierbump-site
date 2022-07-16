@@ -38,8 +38,9 @@ classes: wide
 </style>
 
 <h2>{{ page.excerpt }}</h2>
-<p>Last update: Version 2.9.3.x</p>
+<p>Last update: Version 2.9.5.x</p>
 <table class="tools">
+    <!-- #region TRANSFORM -->
     <tbody>
         <td colspan="3"><b>Transform</b></td>
         <tr>
@@ -194,11 +195,15 @@ classes: wide
             </span>
         </tr>
         <tr>
-            <td><img src="/assets/images/icons/swapTr_48.png" alt="3ptAlign"></td>
+            <td><img src="/assets/images/icons/swapTr_48.png" alt="swapTransforms"></td>
             <td>Swap transform</td>
             <td class="cellWithComment">Select a collection of objects (will follow the selection pick order) and cycle their transform from one to the next.</td>
             <span class="comment" id="DSTBX_swapTransform"></span>
         </tr>
+    </tbody>
+    <!-- #endregion -->
+    <!-- #region MEASURE -->
+    <tbody>
         <tr>
             <td colspan="3"><b>Measurements</b></td>
         </tr>
@@ -242,6 +247,12 @@ classes: wide
             <span class="comment" id="DSTBX_Qvolume">Measures a cubic volume by picking a bottom minimum point and a opposed top maximum point.<br>Result is traced to the listener.</span>
         </tr>
         <tr>
+            <td><img src="/assets/images/icons/angle2faces_48.png" alt="angle2faces"></td>
+            <td>Angle between faces</td>
+            <td class="cellWithComment">Angle2Faces for short, measure angle between polygons | Result in listener</td>
+            <span class="comment" id="DSTBX_Angle2Faces">Needs an Editable Poly or Editable Mesh object selected. Pick one point on each face to get the angle between them.<br>Result is traced to the listener.</span>
+        </tr>
+        <tr>
             <td><img src="/assets/images/icons/sdivide_48.png" alt="sdivide"></td>
             <td>Divide distance</td>
             <td class="cellWithComment">Pick distance start point &gt; pick dist. end point. Move mouse to set division points. | Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</td>
@@ -271,29 +282,15 @@ classes: wide
                 </ul>
             </span>
         </tr>
-
-        <tr>
-            <td><img src="/assets/images/icons/reflect_48.png" alt="reflect"></td>
-            <td>Reflect - interactive</td>
-            <td class="cellWithComment">Mirror tool | position the 3-plane gizmo picking a center point for the mirror operation, orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle. Select the objects and use the options in the dialog.</td>
-            <span class="comment" id="DSTBX_reflect">Mirror tool.
-                <ol>
-                    <li>Position the 3-plane gizmo picking a center point for the mirror operation.</li>
-                    <li>Orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle.</li>
-                    <li>Select the objects and use the options in the dialog.</li>
-                </ol>
-            </span>
-        </tr>
-
-    </tbody>
-    <tbody>
-        <td colspan="3"><b>ext transform</b></td>
         <tr>
             <td><img src="/assets/images/icons/QmDlg_48.png" alt="QmDlg"></td>
             <td>Measure history</td>
             <td class="cellWithComment">Distance measure history. Create renderable dimension objects.</td>
             <span class="comment" id="DSTBX_distListener">Distance measure history dialog.<br>Keeps track of performed measures, allowing to re-display them and customize appearance.<br>Create dimension lines with measure annotation. Standard Spline and text shapes will be created.<br>Please note that, the text will be oriented left -&gt; right, based on the current view. Expect unpredicted result on orthogonal views.</span>
         </tr>
+    </tbody>
+    <tbody>
+        <!-- <td colspan="3"><b>additional transform tools</b></td> -->
         <tr>
             <td><img src="/assets/images/icons/dstlbx_icon_48.png" alt="dstlbx_icon"></td>
             <td>Dstlbx Configuration</td>
@@ -306,6 +303,8 @@ classes: wide
             <td>Units configuration</td>
         </tr>
     </tbody>
+    <!-- #endregion -->
+    <!-- #region refGuides -->
     <tbody>
         <td colspan="3"><b>refGuides</b></td>
         <tr>
@@ -524,7 +523,7 @@ classes: wide
         </tr>
     </tbody>
     <tbody>
-        <td colspan="3"><b>ext refGuides</b></td>
+        <td colspan="3"><b>additional refGuides tools</b></td>
         <tr>
             <td><img src="/assets/images/icons/intToggle_48.png" alt="intToggle"></td>
             <td>Guides - Enable intersections</td>
@@ -556,6 +555,8 @@ classes: wide
             <span class="comment" id="rG_ribbon_IntMode">Intersection points mode. Intersect all guides in scene or only current creation.</span>
         </tr>
     </tbody>
+    <!-- #endregion -->
+    <!-- #region Eyedropper -->
     <tbody>
         <td colspan="3"><b>Eyedropper</b></td>
         <tr>
@@ -643,6 +644,8 @@ classes: wide
             <span class="comment" id="DSTBX_edrp_flt">Set filters for multi-eyedropper.</span>
         </tr>
     </tbody>
+    <!-- #endregion -->
+    <!-- #region UTILITIES -->
     <tbody>
         <td colspan="3"><b>Utilities</b></td>
         <tr>
@@ -1011,6 +1014,8 @@ classes: wide
         </tr>
 
     </tbody>
+    <!-- #endregion -->
+    <!-- #region EXTRAS -->
     <tbody>
         <td colspan="3"><b>Extras</b></td>
         <tr>
@@ -1074,4 +1079,5 @@ classes: wide
             <td>Utility for textureMaps, to manually relocate missing files</td>
         </tr>
     </tbody>
+    <!-- #endregion -->
 </table>
