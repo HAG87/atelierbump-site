@@ -15,11 +15,20 @@ permalink: /docs/changelog
 
 * Improved refRotation tool.
 * General optimizations.
+* Improved paneling tool and 2D array tool: the operation area is now easier to orient:
+  * A rectangular area to operate will be delimited:
+     1. Base point
+     2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
+     3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction.
+  * Added two parameters in the dialog, to rotate the panels:
+    * pre-adjust object: When using an existing object as panel source, sometimes the orientation will not be as expected, since the objects axes are not aligned to the operation matrix. Use this parameter to rotate the object tu the correct orientation.
+    * adjust: Apply a rotation to each panel after the creation. Use this parameter to fix transposed height caused by an inverted matrix.
 
 ### Fixes
 
 * Material Replacer tool was not working
 * Fixed the configuration, some settings where not saved
+* Fixed UI scaling problems in some tools (pattern array)
 
 ## Version 2.9.4.3
 
