@@ -647,10 +647,12 @@ Set subdivision marks between two points, and place a clone on each mark
 *Quickly create a 2.5D Array of objects, picking points in the viewport.*
 
 1. Select the object to clone.
-2. Pick start point.
-3. Pick second point to define a rectangular area.
-4. Move the mouse away from the last point to select the amount of rows. Press left click to finish selecting rows.
-5. move the mouse again to define columns quantity. press click to finish.
+2. A rectangular area to operate will be delimited:
+   1. Base point
+   2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
+   3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction
+3. Move the mouse away from the last point to select the amount of rows. Press left click to finish selecting rows.
+4. move the mouse again to define columns quantity. press click to finish.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/aR_UTzUdyps" frameborder="0" allowfullscreen></iframe></div>
 
@@ -670,7 +672,7 @@ Make complex rule-based object arrays; walls, mosaic patterns...
     1. Set a row number in the spinner to add rules to. Press "update Row" if you change the offset parameters for the current selected row number. unchecking "Enable" will turn off   the current row, but it's still used for calculations.
     2. Set current column for the row. Each added rule will "fill" a cell in the row.
         2.1 Pick the node to use.
-        2.2 Set offset, rotation and scale values. unchecking "Enabled" will left a "hole" in the array, without breaking the rules.
+        2.2 Set offset, rotation and scale values. un-checking "Enabled" will left a "hole" in the array, without breaking the rules.
     3. Once you finish to set the new column, or update the current selected row, press "ADD/UPDATE", check in the listview if the rule was successfully updated.
 
 >Note: The preview needs to be updated after making changes to the rules.
@@ -809,9 +811,13 @@ Change the scene bitmaps name from the default random name to a more meaningful 
 *Create a grid of panels (boxes or custom geometry) in a planar surface. Originally intended to fast model furniture cabinets and add handles, now is a multi-purpose tool.*
 
 1. The first step using the Paneling tool is setting the operation surface. Set a rectangular area defined by two points: lower-left and top-right corners.
-2. By default the tool creates the panels with standard box objects. **Start the tool with an object selected, to use it as source for the panels.**
-3. Set Grid Vertical subdivisions moving the mouse towards or away the first point of the area (the lowe left corner), confirm with a left-click; repeat for the horizontal divisions. Each grid cell corresponds with one panel.
-4. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
+2. A rectangular area to operate will be delimited:
+   1. Base point
+   2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
+   3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction.
+3. By default, the tool creates the panels with standard box objects. **Start the tool with an object selected, to use it as source for the panels.**
+4. Set Grid Vertical subdivisions moving the mouse towards or away the first point of the area (the lowe left corner), confirm with a left-click; repeat for the horizontal divisions. Each grid cell corresponds with one panel.
+5. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
 
 ![paneling](/assets/images/ui/paneling_ui_1.png){: .align-center .drop-shadow}
 

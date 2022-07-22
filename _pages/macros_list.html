@@ -709,8 +709,16 @@ classes: wide
             <span class="comment" id="DSTBX_IARR">Interactive 2D array.
                 <ol>
                     <li>Select Object to replicate.</li>
-                    <li>Pick base point</li>
-                    <li>Move mouse to select a rectangular region in space to size the array. Click again to confirm.</li>
+                    <li>Define a rectangular area by three points:
+                        <ol>
+                            <li>Start: Base point</li>
+                            <li>Second point will determine the height and alignment of the rectangle</li>
+                            <li>Third and last point sets the width.</li>
+                        </ol>
+                        <ul>
+                            <li>Press SHIFT to invert the up-direction.</li>
+                        </ul>
+                    </li>
                     <li>Move the mouse &amp; click to set rows and columns.</li>
                 </ol>
             </span>
@@ -734,11 +742,22 @@ classes: wide
             <td class="cellWithComment">Simple Paneling tool - creates panels (or shells) on planar areas. Option for adding details to panels.</td>
             <span class="comment" id="DSTBX_PN">Simple Paneling tool. Creates panels (or shells) on planar areas. Option for adding details (like handles) to panels.
                 <ol>
-                    <li>Start the tool picking position, height and width points.</li>
-                    <li>Box/custom object mode: choose what object will ve used to generate the panels.</li>
-                    <li>Set H/V divisions and gap between panels.</li>
-                    <li>Use the detailer tool to position detail objects on selected panel's surface.</li>
+                    <li>Define a rectangular area by three points:
+                        <ol>
+                            <li>Start: Base point</li>
+                            <li>Second point will determine the height and alignment of the rectangle</li>
+                            <li>Third and last point sets the width.</li>
+                        </ol>
+                        <ul>
+                            <li>Press SHIFT to invert the up-direction.</li>
+                        </ul>
+                    </li>
+                    <li>Move the mouse &amp; click to set rows and columns.</li>
+                    <li>Set H/V divisions, gap between panels and other parameters in the floater dialog.</li>
                 </ol>
+                <ul>
+                    <li>Additionally, Use the detailer tool to position detail objects on selected panel's surface.</li>
+                </ul>
             </span>
         </tr>
         <tr>
