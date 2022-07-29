@@ -246,7 +246,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
 
 ![offset](/assets/images/icons/offset_128.png){: .icon-small}
 
-### Offset (reference move)
+### Offset
 
 Precise referential movement from a target point, and specified direction
 
@@ -260,13 +260,19 @@ Precise referential movement from a target point, and specified direction
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/L1Bu_d280ME" frameborder="0" allowfullscreen></iframe></div>
 
+![refMove](/assets/images/icons/refMove_128.png){: .icon-small}
+
 ### Reference move
 
- CAD-like Move tool that uses two (origin and destination) reference points.
+CAD-like Move tool that uses two (origin and destination) reference points.
 
 1. Select the objects you want to move.
 2. Start the tool; Pick an origin ref. point (be sure to enable snaps)
 3. Pick a destination point to displace the origin point to.
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZCKKdEMK9a8" frameborder="0" allowfullscreen></iframe></div>
+
+![swaptransform](/assets/images/icons/swapTr_128.png){: .icon-small}
 
 ### Swap transform
 
@@ -275,6 +281,8 @@ Select a collection of objects (will follow the selection pick order) and cycle 
 #### Floater dialog
 
 ![offset](/assets/images/ui/offset_dlg.png){: .align-center .drop-shadow}
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/A4xlntUFo2k" frameborder="0" allowfullscreen></iframe></div>
 
 ### Random transform
 
@@ -455,9 +463,9 @@ Pick two points representing the start and end point of a box diagonal line. The
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/voUivMGAsqM" frameborder="0" allowfullscreen></iframe></div>
 
-![spatialInfo](/assets/images/ui/angle2faces_128.png)
+![angle2faces](/assets/images/icons/angle2faces_128.png)
 
-### Angle between polygon faces
+### Angle between faces
 
 Measure the angle between two faces.
 To use it, you need all the faces to be part of the same Editable Poly or Editable mesh object.
@@ -470,15 +478,17 @@ To use it, you need all the faces to be part of the same Editable Poly or Editab
 
 >Note that this tool will not work when you have flipped normals, so check for inverted normals first.
 
-### Home grid size
-
-Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Active Grid spacing units.
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0v34PlCsrT4" frameborder="0" allowfullscreen></iframe></div>
 
 ### Spatial Info
 
 Displays information about an object's dimension and transformation
 
-![spatialInfo](/assets/images/ui/spatialinfo_128.png)
+![spatialInfo](/assets/images/ui/spatialinfo.png)
+
+### Home grid size
+
+Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Active Grid spacing units.
 
 ---
 
@@ -605,7 +615,7 @@ Note that, Eyedropper will replace any matching or similar property, regardless 
 
 #### MultiTool
 
-Will copy the active settings on the _**filters**_ dialog:
+Will copy the active settings on the **filters** dialog:
 
 ![eyedrop?filters](/assets/images/ui/eyedropper_floater.png){: .align-center .drop-shadow}
 
@@ -820,6 +830,8 @@ Change the scene bitmaps name from the default random name to a more meaningful 
 5. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
 
 ![paneling](/assets/images/ui/paneling_ui_1.png){: .align-center .drop-shadow}
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0FMW5lpSUFI" frameborder="0" allowfullscreen></iframe></div>
 
 **Note**: the following instruction set corresponds with the now removed tool available until version 2.9.2.X
 
