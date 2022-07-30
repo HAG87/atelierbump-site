@@ -63,6 +63,10 @@ sidebar-userguide:
     url: /docs/userguide/#redimension
   - title: "Offset (reference move)"
     url: /docs/userguide/#offset-reference-move
+  - title: "Reference move"
+    url: /docs/userguide/#reference-move
+  - title: "Swap transform"
+    url: /docs/userguide/#swap-transform
   - title: "Random transform"
     url: /docs/userguide/#random-transform
   - title: "Object distribution tools"
@@ -82,10 +86,12 @@ sidebar-userguide:
     url: /docs/userguide/#area
   - title: "Volume"
     url: /docs/userguide/#volume
-  - title: "Home grid size"
-    url: /docs/userguide/#home-grid-size
+  - title: "Angle between faces"
+    url: /docs/userguide/#angle-between-faces
   - title: "Spatial info"
     url: /docs/userguide/#spatial-info
+  - title: "Home grid size"
+    url: /docs/userguide/#home-grid-size
 - title: "Pivot and coordinates related tools"
   url: /docs/userguide/#pivot-and-coordinates-related-tools
   children:

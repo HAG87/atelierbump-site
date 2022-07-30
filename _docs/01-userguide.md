@@ -246,7 +246,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
 
 ![offset](/assets/images/icons/offset_128.png){: .icon-small}
 
-### Offset (reference move)
+### Offset
 
 Precise referential movement from a target point, and specified direction
 
@@ -260,13 +260,19 @@ Precise referential movement from a target point, and specified direction
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/L1Bu_d280ME" frameborder="0" allowfullscreen></iframe></div>
 
+![refMove](/assets/images/icons/refMove_128.png){: .icon-small}
+
 ### Reference move
 
- CAD-like Move tool that uses two (origin and destination) reference points.
+CAD-like Move tool that uses two (origin and destination) reference points.
 
 1. Select the objects you want to move.
 2. Start the tool; Pick an origin ref. point (be sure to enable snaps)
 3. Pick a destination point to displace the origin point to.
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZCKKdEMK9a8" frameborder="0" allowfullscreen></iframe></div>
+
+![swaptransform](/assets/images/icons/swapTr_128.png){: .icon-small}
 
 ### Swap transform
 
@@ -275,6 +281,8 @@ Select a collection of objects (will follow the selection pick order) and cycle 
 #### Floater dialog
 
 ![offset](/assets/images/ui/offset_dlg.png){: .align-center .drop-shadow}
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/A4xlntUFo2k" frameborder="0" allowfullscreen></iframe></div>
 
 ### Random transform
 
@@ -455,15 +463,32 @@ Pick two points representing the start and end point of a box diagonal line. The
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/voUivMGAsqM" frameborder="0" allowfullscreen></iframe></div>
 
-### Home grid size
+![angle2faces](/assets/images/icons/angle2faces_128.png)
 
-Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Active Grid spacing units.
+### Angle between faces
+
+Measure the angle between two faces.
+To use it, you need all the faces to be part of the same Editable Poly or Editable mesh object.
+
+1. Select the object.
+2. Start the tool.
+3. Pick the first face and then a second one to inquiry the angle.
+   - Two marks indicating the points and face normals will be drawn, along with a line connecting them and a text showing the angle in this format: **ANGLE---COMPLEMENTARY ANGLE**
+   - The measurement will be printed to the listener, so you can copy and use these values.
+
+>Note that this tool will not work when you have flipped normals, so check for inverted normals first.
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0v34PlCsrT4" frameborder="0" allowfullscreen></iframe></div>
 
 ### Spatial Info
 
 Displays information about an object's dimension and transformation
 
-![spatialInfo](/assets/images/ui/spatialinfo_128.png)
+![spatialInfo](/assets/images/ui/spatialinfo.png)
+
+### Home grid size
+
+Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Active Grid spacing units.
 
 ---
 
@@ -590,7 +615,7 @@ Note that, Eyedropper will replace any matching or similar property, regardless 
 
 #### MultiTool
 
-Will copy the active settings on the _**filters**_ dialog:
+Will copy the active settings on the **filters** dialog:
 
 ![eyedrop?filters](/assets/images/ui/eyedropper_floater.png){: .align-center .drop-shadow}
 
@@ -632,10 +657,12 @@ Set subdivision marks between two points, and place a clone on each mark
 *Quickly create a 2.5D Array of objects, picking points in the viewport.*
 
 1. Select the object to clone.
-2. Pick start point.
-3. Pick second point to define a rectangular area.
-4. Move the mouse away from the last point to select the amount of rows. Press left click to finish selecting rows.
-5. move the mouse again to define columns quantity. press click to finish.
+2. A rectangular area to operate will be delimited:
+   1. Base point
+   2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
+   3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction
+3. Move the mouse away from the last point to select the amount of rows. Press left click to finish selecting rows.
+4. move the mouse again to define columns quantity. press click to finish.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/aR_UTzUdyps" frameborder="0" allowfullscreen></iframe></div>
 
@@ -655,7 +682,7 @@ Make complex rule-based object arrays; walls, mosaic patterns...
     1. Set a row number in the spinner to add rules to. Press "update Row" if you change the offset parameters for the current selected row number. unchecking "Enable" will turn off   the current row, but it's still used for calculations.
     2. Set current column for the row. Each added rule will "fill" a cell in the row.
         2.1 Pick the node to use.
-        2.2 Set offset, rotation and scale values. unchecking "Enabled" will left a "hole" in the array, without breaking the rules.
+        2.2 Set offset, rotation and scale values. un-checking "Enabled" will left a "hole" in the array, without breaking the rules.
     3. Once you finish to set the new column, or update the current selected row, press "ADD/UPDATE", check in the listview if the rule was successfully updated.
 
 >Note: The preview needs to be updated after making changes to the rules.
@@ -794,11 +821,17 @@ Change the scene bitmaps name from the default random name to a more meaningful 
 *Create a grid of panels (boxes or custom geometry) in a planar surface. Originally intended to fast model furniture cabinets and add handles, now is a multi-purpose tool.*
 
 1. The first step using the Paneling tool is setting the operation surface. Set a rectangular area defined by two points: lower-left and top-right corners.
-2. By default the tool creates the panels with standard box objects. **Start the tool with an object selected, to use it as source for the panels.**
-3. Set Grid Vertical subdivisions moving the mouse towards or away the first point of the area (the lowe left corner), confirm with a left-click; repeat for the horizontal divisions. Each grid cell corresponds with one panel.
-4. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
+2. A rectangular area to operate will be delimited:
+   1. Base point
+   2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
+   3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction.
+3. By default, the tool creates the panels with standard box objects. **Start the tool with an object selected, to use it as source for the panels.**
+4. Set Grid Vertical subdivisions moving the mouse towards or away the first point of the area (the lowe left corner), confirm with a left-click; repeat for the horizontal divisions. Each grid cell corresponds with one panel.
+5. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
 
 ![paneling](/assets/images/ui/paneling_ui_1.png){: .align-center .drop-shadow}
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0FMW5lpSUFI" frameborder="0" allowfullscreen></iframe></div>
 
 **Note**: the following instruction set corresponds with the now removed tool available until version 2.9.2.X
 
