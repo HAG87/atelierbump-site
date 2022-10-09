@@ -9,7 +9,7 @@ permalink: /docs/changelog
 ### New
 
 * Tool to measure the angle between two polygons faces.
-* Accumulative dimension Measure. Useful to visualize the length of a non linear path, or to get the perimeter of a shape.
+* Accumulative dimension Measure. Useful to visualize the length of a nonlinear path, or to get the perimeter of a shape.
 
 ### Enhancements
 
@@ -21,13 +21,13 @@ permalink: /docs/changelog
      2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
      3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction.
   * Added two parameters in the dialog, to rotate the panels:
-    * pre-adjust object: When using an existing object as panel source, sometimes the orientation will not be as expected, since the objects axes are not aligned to the operation matrix. Use this parameter to rotate the object tu the correct orientation.
+    * pre-adjust object: When using an existing object as panel source, sometimes the orientation will not be as expected, since the objects axes are not aligned to the operation matrix. Use this parameter to rotate the object to the correct orientation.
     * adjust: Apply a rotation to each panel after the creation. Use this parameter to fix transposed height caused by an inverted matrix.
 
 ### Fixes
 
 * Material Replacer tool was not working
-* Fixed the configuration, some settings where not saved
+* Fixed the configuration, some settings were not saved
 * Fixed UI scaling problems in some tools (pattern array)
 
 ## Version 2.9.4.3
