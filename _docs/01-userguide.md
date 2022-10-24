@@ -138,9 +138,7 @@ First, select the object you want to rotate.
 3. Rotate from line (Pick reference point).
 4. Move mouse to set rotation angle and direction. Snap to point or press **<mark>SHIFT</mark>** to lock angle steps.
 
->Reference rotation has two alternative modes:
->**Default mode:** The rotation will take place in a temporary coordinate system, defined by a work plane.
->**Free mode:** Rotation is not restricted to a temporary coordinate system.
+>Hold CTRL key when performing the last step (rotation) the tool will rotate an instance of the object instead.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/jNH5CqEVkm4" frameborder="0" allowfullscreen></iframe></div>
 
