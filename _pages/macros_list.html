@@ -6,16 +6,6 @@ permalink: /dstlbx/commands/
 classes: wide
 ---
 <style>
-    .tools li b {
-        padding: 0.1rem 0.3rem 0.1rem 0.3rem;
-        background-color: rgb(214, 214, 214);
-        border-radius: 0.35rem;
-        word-break: keep-all;
-        white-space: nowrap;
-        font-style: small-caps;
-        box-shadow: 1px 1px 2px rgb(165, 165, 165);
-    }
-
     .tools {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
@@ -56,6 +46,11 @@ classes: wide
         margin-right: 1rem;
     }
 
+    .tool-item:hover img {
+        -webkit-filter: drop-shadow(2px 2px 4px rgb(134, 134, 134));
+        filter: drop-shadow(2px 2px 4px rgb(134, 134, 134));
+    }
+
     .tool-item div:nth-child(1) {
         padding-bottom: 1rem;
     }
@@ -81,6 +76,15 @@ classes: wide
         border-top: 1px solid rgb(120, 120, 120);
     }
 
+    .instruction b {
+        padding: 0 0.3rem 0 0.3rem;
+        background-color: rgb(214, 214, 214);
+        border-radius: 0.35rem;
+        word-break: keep-all;
+        white-space: nowrap;
+        box-shadow: 1px 1px 2px rgb(165, 165, 165);
+    }
+
     .tool-footer {
         height: 48px;
         bottom: 0;
@@ -96,11 +100,17 @@ classes: wide
     .category {
         display: block;
         position: relative;
-        /* display: flex; 
-        align-items: center; */
         width: auto;
+        /* display: flexbox; 
+        align-items: center;
+        width: 100%; */
         cursor: pointer;
         padding-left: 1rem;
+
+    }
+
+    .category:hover {
+        color: rgb(12, 120, 255);
     }
 
     .category::before {
@@ -118,7 +128,30 @@ classes: wide
         transition: transform 0.2s ease-in-out;
     }
 
+    .category::after {
+        content: "ROLL UP";
+        position: absolute;
+        display: block;
+        visibility: hidden;
+        top: 0;
+        right: 0;
+        font-weight: bolder;
+        color: rgb(169, 169, 169);
+        font-variant-caps: all-small-caps;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0.2;
+    }
+
+    .category:hover::after {
+        visibility: visible;
+        opacity: 1;
+    }
+
     .category:hover::before {
+        border-color: rgb(12, 120, 255);
+    }
+
+    .category-up:before {
         transform: rotate(-45deg);
     }
 </style>
