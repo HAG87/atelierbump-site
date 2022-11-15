@@ -1,6 +1,6 @@
 ---
-title: DesignToolBox Reference
-excerpt: 'Userguide containing tools description and how to use.'
+title: User Guide
+excerpt: 'User guide containing tools description and how to use.'
 permalink: /docs/userguide/
 # toc: true
 sidebar:
@@ -10,10 +10,9 @@ sidebar:
 
 ## refGuides, spatial reference helpers
 
-*refGuides plug-in is intended to improve and speed up architecture modeling, or any case where precise measurements are needed.
-It allows to create construction guides, for accurately position and model objects. This guides can act as rulers, displaying custom measurement units in the viewport.*
+*refGuides toolset allows to create construction guides for accurately position and model objects. This guides can act as rulers, displaying custom measurement units in the viewport.*
 
-The main functionality of this tool set consist in the creation of two types of reference objects : **linear guides** and **protractors**.
+The main functionality of this tool set consist in the creation of tree types of reference objects : **linear guide**, **protractor** and **point**.
 
 Another feature is the ability to place **intersection marks** where linear guides intersects in space. Use this feature with the **Intersection points** option, or holding the **<mark>ALT</mark>** key during placement.
 
@@ -276,6 +275,14 @@ CAD-like Move tool that uses two (origin and destination) reference points.
 
 Select a collection of objects (will follow the selection pick order) and cycle their transform from one to the next.
 
+![randomswap](/assets/images/icons/RndSwap_128.png){: .icon-small}
+
+### Random swap transform
+
+Randomly swap position, rotation and scale between the selected objects.
+
+![randomswap](/assets/images/ui/random-swap.png){: .align-center .drop-shadow}
+
 #### Floater dialog
 
 ![offset](/assets/images/ui/offset_dlg.png){: .align-center .drop-shadow}
@@ -286,9 +293,9 @@ Select a collection of objects (will follow the selection pick order) and cycle 
 
 Tool packed with several options to randomize and clone nodes.
 
-- Can be used to directly modify the node transform, add a XForm modifier, or transform applied modifiers gizmo's.
+- Can be used to directly modify the node transform, add an XForm modifier, or transform applied modifiers gizmo's.
 - Set constant, by range or a scripted list of values to apply the transform.
-- Apply the transform in Grid, Local or a Reference coordinate system. To use the later mode, pick a reference node first.
+- Apply the transform in Grid, Local, or Reference coordinate system. To use the later mode, pick a reference node first.
 
 ![randomtransform](/assets/images/ui/rndTrnsform.png){: .align-center .drop-shadow}
 
@@ -543,7 +550,7 @@ Convenient shortcuts to enable / disable standard transformations locks on the c
 
 ### Local isolate
 
-Isolate / unisolate selected object and set an active work grid with it’s local coordinates.
+Isolate / unisolate selected object and set an active work grid in its local coordinates.
 
 >Note: If more than one object is selected, Local isolate will use the first object in the selection to set the grid.
 
@@ -551,7 +558,7 @@ Isolate / unisolate selected object and set an active work grid with it’s loca
 
 ### Incremental isolation
 
-re-Isolate within current selection.
+re-Isolate within current the selection.
 
 ![inciso](/assets/images/ui/incIso_ui.png){: .align-center .drop-shadow}
 
@@ -645,6 +652,7 @@ Set subdivision marks between two points, and place a clone on each mark
 
 >**Note:**
 > Orthogonal tracking (**<mark>SHIFT</mark>**) has a axis-lock feature: Keep **<mark>SHIFT</mark>** pressed, and having vertex snap activated, move the cursor to a vertex and press **<mark>CTRL</mark>**, the tracking will be **restricted to the nearest axis**, and then you can track any point, the line will lock to that specific axis. This feature works in all the tools that has a orthogonal tracking feature.
+> **Alternate mode**: Press <mark>SHIFT</mark> when activating the tool to place the clones at segments midpoint.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
 
@@ -802,6 +810,26 @@ Load multiple bitmaps in the scene at once. Bitmap names will be auto assigned w
 
 Change the scene bitmaps name from the default random name to a more meaningful name based on the filename.
 
+### Color clipboard
+
+Dockable color swatches bar
+
+![colorbar](/assets/images/ui/colorbar.png){: .align-center .drop-shadow}
+
+- "*\+*" button populates swatches with random colors.
+  - **LEFT CLICK** to fill unused slots.
+  - press **SHIFT + LEFT CLICK** for grayscale values.
+  - press **RIGHT CLICK** to replace all samples.
+- **RIGHT CLICK** on a sample: Copy or paste color.
+- Drag and Drop colors to and form the material editor
+- Use the "..." Button to apply HSV adjustments to the colors.
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/QlSqMZJj8YQ" frameborder="0" allowfullscreen></iframe></div>
+
+### Wireframe colors Adjustment
+
+Adjust HSV values of selected objects wireframe color.
+
 ### Other material related tools
 
 - Remove materials from selection
@@ -895,26 +923,6 @@ Save current active snaps as a named set and reuse them from the floater dropdow
 ![savesnapadd](/assets/images/ui/savesnap2.png){: .align-center .drop-shadow}
 
 ![color?clipboard](/assets/images/icons/color_128.png){: .icon-small}
-
-### Color clipboard
-
-Dockable color swatches bar
-
-![colorbar](/assets/images/ui/colorbar.png){: .align-center .drop-shadow}
-
-- "*\+*" button populates swatches with random colors.
-  - **LEFT CLICK** to fill unused slots.
-  - press **SHIFT + LEFT CLICK** for grayscale values.
-  - press **RIGHT CLICK** to replace all samples.
-- **RIGHT CLICK** on a sample: Copy or paste color.
-- Drag and Drop colors to and form the material editor
-- Use the "..." Button to apply HSV adjustments to the colors.
-
-<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/QlSqMZJj8YQ" frameborder="0" allowfullscreen></iframe></div>
-
-### Wireframe colors Adjustment
-
-Adjust HSV values of selected objects wireframe color.
 
 ---
 

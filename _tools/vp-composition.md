@@ -5,7 +5,7 @@ excerpt: Display an overlay of photographic composition guides in the viewport.
 
 ![vp?guides](/assets/images/vp-guides.png)
 
-This tool is intended to be of aid when composing shots. easily draw common photographic grids, reference and perspective lines to help compose the perfect shot.
+This tool is intended to be of aid when composing shots. Easily draw common photographic grids, reference and perspective lines to help compose the perfect shot.
 
 ## Features
 

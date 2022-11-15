@@ -4,6 +4,26 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.5.2
+
+### New
+
+* Random swap transforms: randomly exchange the position-rotation-scale between a selection of objects.
+  
+### Changes
+
+* Added a submenu for the Lock flag tools that where removed from the ribbon panel. This is now an optional feature installed with the "Extras"
+* Added an icon for tools that were missing it.
+* Re-arranged some tools. Integrated a few extra scripts from the freebies: Normal maps gamma adjust.
+* Updated face ID tools, integrated "random ID set" in the floater dialog.
+* Added a shortcut to a quick reference guide that contains a list of the available tools, and a short description of how to use them.
+
+### Fixes
+
+* Fixed a problem with the "mirror tool" that caused the UI dialog to be transparent
+* Small usability fix for the "stamp tool": changing settings in the UI are now properly disabled when the tool is running.
+* Some internal changes and minor UI fixes.
+
 ## Version 2.9.5.1
 
 ### New

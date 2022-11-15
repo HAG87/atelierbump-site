@@ -42,6 +42,9 @@
   - img: "/assets/images/icons/swapTr_128.png"
     title: "Swap transform"
     caption: "Select a collection of objects and cycle their transform from one to the next."
+  - img: "/assets/images/icons/RndSwap_128.png"
+    title: "Random Swap transform"
+    caption: "Randomly swap position, rotation and scale between the selected objects."
 # Measure tools -->
 - title: "Measure tools"
   features:
