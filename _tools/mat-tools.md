@@ -14,7 +14,6 @@ excerpt: Several tools to work with textures, geometry faces ID and more.
 | ObjIDbyCAM  | Set objects ID for current camera view
 | FaceSel     | Select faces with same material ID
 | RndIDSet    | Set random material IDs for selected faces
-| QIDSet      | Set material IDs for selected faces
 | bumpTo100   | (V-ray) material Bump value to 100.0
 
 <a href="https://github.com/HAG87/maxscript-assorted/blob/master/release/mat_tools.zip" class="btn btn--primary">Download</a>
