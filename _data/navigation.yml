@@ -42,8 +42,6 @@ sidebar-userguide:
     url: /docs/userguide/#viewport-information-tools
   - title: "refGuides additional tools"
     url: /docs/userguide/#refguides-additional-tools
-  - title: "Options dialog"
-    url: /docs/userguide/#options-dialog
 - title: "Transform tools"
   url: /docs/userguide/#transform-tools
   children:
@@ -62,11 +60,13 @@ sidebar-userguide:
   - title: "reDimension"
     url: /docs/userguide/#redimension
   - title: "Offset (reference move)"
-    url: /docs/userguide/#offset-reference-move
+    url: /docs/userguide/#offset
   - title: "Reference move"
     url: /docs/userguide/#reference-move
   - title: "Swap transform"
     url: /docs/userguide/#swap-transform
+  - title: "Swap transform"
+    url: /docs/userguide/#random-swap-transform
   - title: "Random transform"
     url: /docs/userguide/#random-transform
   - title: "Object distribution tools"
@@ -92,6 +92,17 @@ sidebar-userguide:
     url: /docs/userguide/#spatial-info
   - title: "Home grid size"
     url: /docs/userguide/#home-grid-size
+- title: "configuration dialog"
+  url: /docs/userguide/#configuration-dialog
+  children:
+  - title: "refGuides options"
+    url: /docs/userguide/#refguides-options
+  - title: "refGuides units"
+    url: /docs/userguide/#refguides-units-configuration
+  - title: "Viewport options"
+    url: /docs/userguide/#viewport-elements-colors
+  - title: "Transform tools units"
+    url: /docs/userguide/#transform-and-measure-tools-units-configuration
 - title: "Pivot and coordinates related tools"
   url: /docs/userguide/#pivot-and-coordinates-related-tools
   children:
@@ -134,13 +145,19 @@ sidebar-userguide:
     url: /docs/userguide/#pattern-array
   - title: "Polar array"
     url: /docs/userguide/#polar-array
-  - title: "Merge and explode tools"
+  - title: "Merge and explode"
     url: /docs/userguide/#merge-and-explode-tools
+  - title: "Mesh stamp"
+    url: /docs/userguide/#mesh-stamp-tool
 - title: "Scene management"
   url: /docs/userguide/#scene-management-and-rendering-related-tools
   children:
   - title: "Camera manager"
     url: /docs/userguide/#camera-manager
+  - title: "Material replacer"
+    url: /docs/userguide/#material-replacer
+  - title: "Polygon ID set"
+    url: /docs/userguide/#quick-material-id-set
   - title: "Bitmap multi-loader"
     url: /docs/userguide/#bitmap-multi-loader
   - title: "Bitmap name from file"
@@ -173,7 +190,5 @@ sidebar-userguide:
     url: /docs/userguide/#where-to-locate-the-toolbar-macros
   - title: "Ribbon Tab"
     url: /docs/userguide/#ribbon-tab
-  - title: "Combined floater dialogs UI"
-    url: /docs/userguide/#combined-floater-dialogs-ui
 - title: "Install folders"
   url: /docs/userguide/#install-folders

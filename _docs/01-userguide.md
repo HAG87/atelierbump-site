@@ -14,7 +14,7 @@ sidebar:
 
 The main functionality of this tool set consist in the creation of tree types of reference objects : **linear guide**, **protractor** and **point**.
 
-Another feature is the ability to place **intersection marks** where linear guides intersects in space. Use this feature with the **Intersection points** option, or holding the **<mark>ALT</mark>** key during placement.
+Another feature is the ability to place **intersection marks** where linear guides intersects in space. Use this feature with the **Intersection points** option, or holding the <mark>ALT</mark> key during placement.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ewg1prguQE0" frameborder="0" allowfullscreen></iframe></div>
 
@@ -31,26 +31,26 @@ This mode place a guide by determining a direction from two points.
 1. Pick a base reference point.
 2. Pick a second reference point determining the direction of the guide.
 
->Pressing **<mark>SHIFT</mark>** will lock the tracking to orthogonal coordinates.
+>Pressing <mark>SHIFT</mark> will lock the tracking to orthogonal coordinates.
 
 #### Orthogonal space mode
 
 1. Pick a reference point, it will act as a center of the orthogonal space.
 2. Move the mouse around to change the direction or snap to a point.
 
->Press **<mark>CTRL</mark>** during axis selection for Z axis restriction.
+>Press <mark>CTRL</mark> during axis selection for Z axis restriction.
 
 #### Polar space mode
 
 1. Pick base point. A circular gizmo displays in the viewports, representing a construction plane.
 2. Rotation point 1: Pick Z axis gizmo rotation reference point.
 3. Rotation point 1: X or Y axis rotation points.
-    - Press **<mark>ALT</mark>** while tracking any gizmo rotation to snap angle values.
-    - Press **<mark>SHIFT</mark>** to change direction, **<mark>CTRL</mark>** to change axis.
+    - Press <mark>ALT</mark> while tracking any gizmo rotation to snap angle values.
+    - Press <mark>SHIFT</mark> to change direction, <mark>CTRL</mark> to change axis.
 4. Rotate the mouse around to select the angular component.
 
 > - "Polar mode angle" option sets the angular increment. It's accessible from the ribbon, the UI creation mode or the Options dialog.
-> - Press **<mark>ALT</mark>** during last placement tracking to override intersection points ON/OFF setting.
+> - Press <mark>ALT</mark> during last placement tracking to override intersection points ON/OFF setting.
 > - The tools have a "continued creation" mode for placing more than one guide in one action.
 
 ![rGUImode](/assets/images/ui/rgUImode.png){: .align-center .drop-shadow}
@@ -86,10 +86,9 @@ Trace temporary reference lines and place points at intersections. In difference
 
 Line tracing options:
 
-1. Hold **<mark>SHIFT</mark>** when tracking a line second reference point to enable **ORTHOGONAL** direction override.
-2. Hold [**<mark>SHIFT</mark>** / **<mark>ALT</mark>**] when picking first point of line:
-   - *SHIFT*: Orthogonal placing mode
-   - *ALT*: Polar placing mode
+- Hold <mark>SHIFT</mark> when tracking a line second reference point to enable **ORTHOGONAL** direction override.
+- Press <mark>SHIFT</mark> / when picking first point of line for **orthogonal** placement mode
+- Press <mark>ALT</mark> when picking first point of line for **polar** placement mode
 
 ![rg?liveview](/assets/images/icons/rg_inf2_128.png){: .icon-small}
 
@@ -111,15 +110,6 @@ When using any of the "refGuides" tools, a custom Shape object is created for / 
 - Delete all guides in scene.
 - Lock guides after creation.
 
-#### Options dialog
-
-Provides settings to change the guides color, layer name, intersection points behavior and object type.
-
-![rGoptions](/assets/images/ui/rGoptions.png){: .align-center .drop-shadow}
-
-> [*] Custom Object mode (On by default) is only available for 3Ds Max 2016 and up.
-> Smart intersection mode will consider any planar shape on the scene as a guide. While resource consuming, it can place intersection points on imported CAD drawings. for example.
-
 ![dslogo](/assets/images/icons/dstlbx_icon_128.png){: .icon-small}
 
 ## Transform tools
@@ -135,7 +125,7 @@ First, select the object you want to rotate.
 1. Pick base point. this point will act as rotation center.
 2. Pick point for rotation axis.
 3. Rotate from line (Pick reference point).
-4. Move mouse to set rotation angle and direction. Snap to point or press **<mark>SHIFT</mark>** to lock angle steps.
+4. Move mouse to set rotation angle and direction. Snap to point or press <mark>SHIFT</mark> to lock angle steps.
 
 >Hold CTRL key when performing the last step (rotation) the tool will rotate an instance of the object instead.
 
@@ -150,10 +140,10 @@ First, select the object you want to rotate.
 1. Pick base point.
 2. Pick rotate-from point.
 3. change XYZ axis while tracing rotate-from point:
-    - X axis: **<mark>SHIFT</mark>**</mark>
-    - Y axis: **<mark>CTRL</mark>**
+    - X axis: <mark>SHIFT</mark>
+    - Y axis: <mark>CTRL</mark>
     - Z axis: Default
-4. Track rotation angle and direction. Press **<mark>SHIFT</mark>** to restrict angle steps.
+4. Track rotation angle and direction. Press <mark>SHIFT</mark> to restrict angle steps.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7yt8PFlBymI" frameborder="0" allowfullscreen></iframe></div>
 
@@ -172,8 +162,8 @@ The tool works picking two reference distances, one representing a reference len
 3. pick Base point for the reference length.
 4. pick End point for the reference length.
 
-- Pressing **<mark>SHIFT</mark>** while tracking second points will restrict the lines to <mark>Orthogonal space*</mark>.
-- Pressing **<mark>SHIFT</mark>** When activating the tool will keep the objects proportion for the scaling operation.
+- Pressing <mark>SHIFT</mark> while tracking second points will restrict the lines to <mark>Orthogonal space*</mark>.
+- Pressing <mark>SHIFT</mark> When activating the tool will keep the objects proportion for the scaling operation.
 
 > - The reference scale tools has three modes:
 > - **Normal:** Operation done in world space.
@@ -188,9 +178,9 @@ Interactive mirror tool with complex mirror planes alignment.
 
 1. Start with positioning the reference3-plane gizmo, picking a center point for the mirror operation.
 2. Orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle.
-   1. Gizmo alignment: set the gizmo start position by picking a direction vector. Use **<mark>SHIFT</mark>** for orthogonal tracking, and **<mark>SHIFT+CTRL</mark>** to lock the gizmo and track Z axis.
-   2. YAW angle: (or XY plane): Use **<mark>RIGHT-CLICK</mark>** to skip, **<mark>SHIFT</mark>** for angle snapping and **<mark>ALT</mark>** to invert direction.
-   3. Pitch (YZ plane, along X axis) and Roll (XZ plane, along Y axis): Use **<mark>RIGHT-CLICK</mark>** to skip, **<mark>CTRL</mark>** to change from Pitch to Roll, **<mark>SHIFT</mark>** for angle snapping and **<mark>ALT</mark>** to invert direction.
+   1. Gizmo alignment: set the gizmo start position by picking a direction vector. Use <mark>SHIFT</mark> for orthogonal tracking, and <mark>SHIFT+CTRL</mark> to lock the gizmo and track Z axis.
+   2. YAW angle: (or XY plane): Use <mark>RIGHT-CLICK</mark> to skip, <mark>SHIFT</mark> for angle snapping and <mark>ALT</mark> to invert direction.
+   3. Pitch (YZ plane, along X axis) and Roll (XZ plane, along Y axis): Use <mark>RIGHT-CLICK</mark> to skip, <mark>CTRL</mark> to change from Pitch to Roll, <mark>SHIFT</mark> for angle snapping and <mark>ALT</mark> to invert direction.
 3. Set or skip the offset angle
 4. Finally, select the objects and use the options in the dialog to enable or disable the mirror axes or planes.
 
@@ -206,7 +196,7 @@ Align objects using two directions from a common base point.
 
 1. Select a target node. Pick a reference point and a target point to displace the node to a new position. This is a free space operation.
 2. Pick one point to set a reference direction, and a target point to match the original direction to it.
-3. Use **<mark>Right Click</mark>** or **<mark>ESCAPE</mark>** to end the tool.
+3. Use <mark>Right Click</mark> or <mark>ESCAPE</mark> to end the tool.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/4qdFyJbd9n4" frameborder="0" allowfullscreen></iframe></div>
 
@@ -221,7 +211,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
 3. Pick second (B1) reference position and match it with a destination position (B2)
 4. Pick first (C1) reference position and match it with a destination position (D2)
       - An axis gizmo will be displayed in the reference and start locations representing the origin (ABC1) and result (ABC2) coordinate systems.
-5. **<mark>Left Click</mark>** once more to invert the transformation, or exit the tool with **<mark>Right Click</mark>**
+5. <mark>Left Click</mark> once more to invert the transformation, or exit the tool with <mark>Right Click</mark>
 
 ![redimension](/assets/images/icons/Qdim_128.png){: .icon-small}
 
@@ -231,7 +221,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
 
 1. Select the object and pick a base reference point.
 2. Pick reference distance / direction end.
-    - Pressing **<mark>SHIFT</mark>** while tracking second point will restrict the direction to <mark>orthogonal space*</mark>.
+    - Pressing <mark>SHIFT</mark> while tracking second point will restrict the direction to <mark>orthogonal space*</mark>.
 3. Set new dimension on the Dialog UI.
     - Incremental option will add / subtract the value form the former distance.
 
@@ -243,7 +233,7 @@ Relocate a node from three pairs of points, from an origin position to a target 
 
 ![offset](/assets/images/icons/offset_128.png){: .icon-small}
 
-### Offset
+### Position Offset
 
 Precise referential movement from a target point, and specified direction
 
@@ -312,8 +302,8 @@ Distribute or redistribute objects (equally spaced) on a linear direction.
 2. Pick the direction line START POINT
 3. Track the end of the line. Before picking the END POINT to finish the operation, use these options:
 
-> - Press **<mark>SHIFT</mark>** to conform to the underlying surfaces
-> - Press **<mark>SHIFT</mark>** to orient to the underlying surfaces
+> - Press <mark>SHIFT</mark> to conform to the underlying surfaces
+> - Press <mark>SHIFT</mark> to orient to the underlying surfaces
 
 ![arrangeRT](/assets/images/icons/arrangeRT_128.png){: .icon-small}
 
@@ -328,8 +318,8 @@ Distribute or redistribute objects (equally spaced) on a linear direction.
 2. Pick the direction line START POINT
 3. Track the end of the line. Before picking the END POINT to finish the operation, use these options:
 
-> - Press **<mark>SHIFT</mark>** to conform to the underlying surfaces
-> - Press **<mark>CONTROL</mark>** to orient to the underlying surfaces
+> - Press <mark>SHIFT</mark> to conform to the underlying surfaces
+> - Press <mark>CONTROL</mark> to orient to the underlying surfaces
 
 ![arrangeAB](/assets/images/icons/arrangeAB_128.png){: .icon-small}
 
@@ -342,7 +332,7 @@ Direction and length of the distribution determined by the position of two objec
 2. Select the END OBJECT
 3. Select the objects to distribute between them.
 
-> Press the TOOL BUTTON+**<mark>SHIFT</mark>** to conform and align the objects to the underlying surfaces.
+> Press the TOOL BUTTON+<mark>SHIFT</mark> to conform and align the objects to the underlying surfaces.
 
 ![arrangeAB](/assets/images/icons/dropObj_128.png){: .icon-small}
 
@@ -350,7 +340,7 @@ Direction and length of the distribution determined by the position of two objec
 
 Drop objects on underlay surfaces.
 
-> Press **<mark>SHIFT</mark>** when activating the tool to align the objects to the surface form.
+> Press <mark>SHIFT</mark> when activating the tool to align the objects to the surface form.
 
 ---
 
@@ -360,16 +350,16 @@ Drop objects on underlay surfaces.
 
 ### Divide distance
 
-*Set reference points to divide a distance*
+Set reference points to divide a distance.
 
 1. Pick distance start point.
 2. Pick distance second point.
 3. Move the mouse towards the start or end point to set segments amount.
-    - Press **<mark>SHIFT</mark>** while tracking second point for orthogonal mode.
+    - Press <mark>SHIFT</mark> while tracking second point for orthogonal mode.
 
 > You can use the **Divide distance | input mode** tool to type the subdivision steps instead of mouse tracking.
 >**Note:**
-> Orthogonal tracking (**<mark>SHIFT</mark>**) has a axis-lock feature: Keep **<mark>SHIFT</mark>** pressed, and having vertex snap activated, move the cursor to a vertex and press **<mark>CTRL</mark>**, the tracking will be **restricted to the nearest axis**, and then you can track any point, the line will lock to that specific axis. This feature works in all the tools that has a orthogonal tracking feature.
+> Orthogonal tracking (<mark>SHIFT</mark>) has a axis-lock feature: Keep <mark>SHIFT</mark> pressed, and having vertex snap activated, move the cursor to a vertex and press <mark>CTRL</mark>, the tracking will be **restricted to the nearest axis**, and then you can track any point, the line will lock to that specific axis. This feature works in all the tools that has a orthogonal tracking feature.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/VtAfxGZs4gU" frameborder="0" allowfullscreen></iframe></div>
 
@@ -379,12 +369,12 @@ Drop objects on underlay surfaces.
 
 ### Distance
 
-*Live visual feedback measure tape.*
+Measure tape with live visual feedback.
 
 1. Pick a start point.
 2. Track distance.
 3. Pick an end point to measure again. A tape for each measurement will remain displayed until tool exit.
-    - After picking the first point, press **<mark>SHIFT</mark>** to restrict the tape to XYZ axes (orthogonal mode).
+    - After picking the first point, press <mark>SHIFT</mark> to restrict the tape to XYZ axes (orthogonal mode).
 
 The result of the last measure will be copied to the clipboard and each measure is traced to the listener after finishing using the tool.
 
@@ -454,7 +444,7 @@ Create dimension lines with measure annotation allowing to render the taken dime
 1. Start picking points to draw an enclosed polyline.
 2. Press right click to finish the measure. The result is traced to the listener.
 
->Orthogonal mode is available for the measure tool, press **<mark>SHIFT</mark>** between point picks.
+>Orthogonal mode is available for the measure tool, press <mark>SHIFT</mark> between point picks.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/tn2Gt9ekX-c" frameborder="0" allowfullscreen></iframe></div>
 
@@ -497,6 +487,48 @@ Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Acti
 
 ---
 
+## Configuration dialog
+
+Provides settings to change the guides color, layer name, intersection points behavior and object type.
+
+### refGuides options
+
+![rGoptions](/assets/images/ui/rGoptions.png){: .align-center .drop-shadow}
+
+- [*] Custom Object mode (On by default) is only available for 3Ds Max 2016 and up.
+- Smart intersection mode will consider any planar shape on the scene as a guide. While resource consuming, it can place intersection points on imported CAD drawings. for example.
+
+### Viewport elements colors
+
+You can change the color palette used to represent points marks, lines and other kind of visual helpers within the tools. Change the colors in the pickers or use one of the presets.
+
+![dstlbx_cfg](/assets/images/ui/dstlbx_cfg.png){: .align-center .drop-shadow}
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/Peh68BRbEiQ" frameborder="0" allowfullscreen></iframe></div>
+
+### refGuides units configuration
+
+- Configure the default values for the guidelines extension and unit scale.
+- For the protractor change the radius, angle marks and angle snap for the polar positioning function.
+- Set the size of the point markers
+
+![rgunits](/assets/images/ui/refguides-units.png){: .align-center .drop-shadow}
+
+### Transform and measure tools units configuration
+
+![dsunits](/assets/images/ui/dstlbx-units.png){: .align-center .drop-shadow}
+
+- Linear Units apply only to results printed in the listener.
+- Changing any of these values from the default 1.0 Will NOT scale the values in the current Display Unit Scale (i.e.: 1.0m to 0.1m).
+- The values Will be printed in a generic unit, representing the measured value transformed by the scale factor.
+- The mapping is done this way: Display Unit * Factor -> Scaled value in generic units.  
+  I.E.:  
+  MEASUREMENT: 1.0m  
+  Linear Units Scale factor: 0.01 (for printing the value in centimeters)  
+  PRINTED RESULT: 100.0 u
+
+---
+
 ## Pivot and coordinates related tools
 
 ![pivot](/assets/images/icons/qpivot_128.png){: .icon-small}
@@ -513,7 +545,7 @@ While there already are tools available to reposition an object's center pivot, 
 
 - CENTER, TOP, BOTTOM: Most common operations, can be used directly from a dedicated macro.
 - Top corners / middle / bottom corners: Box model reference locations. **A** | **B** | **C** | **D** buttons represents a corner point.
-- 3 PNT: Position pivot from three points *(base point > Y axis > X axis)* keep **<mark>SHIFT</mark>** pressed to flip Z direction.
+- 3 PNT: Position pivot from three points *(base point > Y axis > X axis)* keep <mark>SHIFT</mark> pressed to flip Z direction.
   - This also can be used to set a Working Pivot.
 - FACE: Select an editable poly face and puts the pivot on its center, aligned to the face normal.
   - This also can be used to set a Working Pivot.
@@ -583,10 +615,10 @@ This tool will temporally display all frozen objects (and freeze visible ones). 
 Layer tools will work on the selected node (if any) otherwise they will work in "pick mode".
 
 | **Isolate layer**       | Isolate-Unisolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer. |
-| **Lock layer**          | Locks the layer of the picked/selected node. Press **<mark>SHIFT</mark>** when activating the tool to pick frozen nodes/layers.          |
-| **Hide layer**          | Turn off the layer of the picked node. Press **<mark>SHIFT</mark>** when activating the tool to pick frozen nodes/layers.                |
-| **Layer box mode**      | Set Box mode status for target node layer. Press **<mark>SHIFT</mark>** when activating the tool to pick frozen nodes/layers.            |
-| **Layer backface cull** | Set BackFaceCull status for target node layer. Press **<mark>SHIFT</mark>** when activating the tool to pick frozen nodes/layers.        |
+| **Lock layer**          | Locks the layer of the picked/selected node. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.          |
+| **Hide layer**          | Turn off the layer of the picked node. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.                |
+| **Layer box mode**      | Set Box mode status for target node layer. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.            |
+| **Layer backface cull** | Set BackFaceCull status for target node layer. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.        |
 
 ---
 
@@ -601,7 +633,7 @@ Layer tools will work on the selected node (if any) otherwise they will work in 
 1. Pick source node.
 2. Pick nodes to be replaced.
     - DEFAULT: Instance replacement
-    - **<mark>SHIFT</mark>** while picking objects will create a **reference**.
+    - <mark>SHIFT</mark> while picking objects will create a **reference**.
 
 > - By Default, replicator will keep the original node material and transformation. to replace the transformation, activate the checkbox in the ribbon or the check button macro. *Note that the original position is always maintained.*
 > - Multitarget toggle will disable multiple targets.
@@ -647,11 +679,11 @@ Set subdivision marks between two points, and place a clone on each mark
 1. Pick distance start point.
 2. Pick distance second point.
 3. Move the mouse towards the start or end point to set segments amount.
-    - Press **<mark>SHIFT</mark>** while tracking second point for orthogonal mode.
+    - Press <mark>SHIFT</mark> while tracking second point for orthogonal mode.
 4. Pick the object to clone when prompted.
 
 >**Note:**
-> Orthogonal tracking (**<mark>SHIFT</mark>**) has a axis-lock feature: Keep **<mark>SHIFT</mark>** pressed, and having vertex snap activated, move the cursor to a vertex and press **<mark>CTRL</mark>**, the tracking will be **restricted to the nearest axis**, and then you can track any point, the line will lock to that specific axis. This feature works in all the tools that has a orthogonal tracking feature.
+> Orthogonal tracking (<mark>SHIFT</mark>) has a axis-lock feature: Keep <mark>SHIFT</mark> pressed, and having vertex snap activated, move the cursor to a vertex and press <mark>CTRL</mark>, the tracking will be **restricted to the nearest axis**, and then you can track any point, the line will lock to that specific axis. This feature works in all the tools that has a orthogonal tracking feature.
 > **Alternate mode**: Press <mark>SHIFT</mark> when activating the tool to place the clones at segments midpoint.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
@@ -665,8 +697,8 @@ Set subdivision marks between two points, and place a clone on each mark
 1. Select the object to clone.
 2. A rectangular area to operate will be delimited:
    1. Base point
-   2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
-   3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction
+   2. Second point will determine the height and alignment of the rectangle. Press <mark>SHIFT</mark> for orthogonal tracking.
+   3. Third and last point sets the width. Keep pressed <mark>SHIFT</mark> to invert the up-direction
 3. Move the mouse away from the last point to select the amount of rows. Press left click to finish selecting rows.
 4. move the mouse again to define columns quantity. press click to finish.
 
@@ -747,9 +779,9 @@ Use an object to Interactively stamp its shape or cut holes in a mesh.
 3. Select a tool object in the scene, and press the start button
 4. The tool object will be positioned in the base object surface, following the mouse; use right-click to stamp the object shape or left click to end the operation.
 
->- Keep pressed **<mark>SHIFT</mark>** and move the mouse to displace the tool towards-away the target surface.
->- Keep pressed **<mark>CTRL</mark>** and move the mouse towards-away from the tool object to rotate it around its normal.
->- Keep pressed **<mark>CTRL+SHIFT</mark>** and move the mouse towards-away from the tool object to change its scale.
+>- Keep pressed <mark>SHIFT</mark> and move the mouse to displace the tool towards-away the target surface.
+>- Keep pressed <mark>CTRL</mark> and move the mouse towards-away from the tool object to rotate it around its normal.
+>- Keep pressed <mark>CTRL+SHIFT</mark> and move the mouse towards-away from the tool object to change its scale.
 
 ---
 
@@ -802,6 +834,16 @@ Note: When importing some formats, 3ds max auto assigns materials with random na
 
 ![mtlreplacer](/assets/images/ui/matreplacer.png){: .align-center .drop-shadow}
 
+### Quick material ID Set
+
+Dialog UI for select and set material IDs without the need to dive in the command panel.
+
+![mtlidset](/assets/images/ui/mtl-id-set.png){: .align-center .drop-shadow}
+
+- Works with editable poly only
+- You can also select all the faces that has the same ID as the current selected one.
+- An additional option allows to randomly set IDs for the selected polygons.
+
 ### Bitmap multi-loader
 
 Load multiple bitmaps in the scene at once. Bitmap names will be auto assigned with a prefix and the file name. The tool also enables to set the gamma value for the loaded bitmaps.
@@ -809,6 +851,10 @@ Load multiple bitmaps in the scene at once. Bitmap names will be auto assigned w
 ### Bitmap name from file
 
 Change the scene bitmaps name from the default random name to a more meaningful name based on the filename.
+
+### Missing textures
+
+Texture maps filename search and replace utility for relocating missing files.
 
 ### Color clipboard
 
@@ -849,8 +895,8 @@ Adjust HSV values of selected objects wireframe color.
 1. The first step using the Paneling tool is setting the operation surface. Set a rectangular area defined by two points: lower-left and top-right corners.
 2. A rectangular area to operate will be delimited:
    1. Base point
-   2. Second point will determine the height and alignment of the rectangle. Press **<mark>SHIFT</mark>** for orthogonal tracking.
-   3. Third and last point sets the width. Keep pressed **<mark>SHIFT</mark>** to invert the up-direction.
+   2. Second point will determine the height and alignment of the rectangle. Press <mark>SHIFT</mark> for orthogonal tracking.
+   3. Third and last point sets the width. Keep pressed <mark>SHIFT</mark> to invert the up-direction.
 3. By default, the tool creates the panels with standard box objects. **Start the tool with an object selected, to use it as source for the panels.**
 4. Set Grid Vertical subdivisions moving the mouse towards or away the first point of the area (the lowe left corner), confirm with a left-click; repeat for the horizontal divisions. Each grid cell corresponds with one panel.
 5. Use the UI to set the gap between panels and thickness. The checkbox next to the spinner will disable custom thickness for reference object mode and use the original height instead.
@@ -932,14 +978,6 @@ Save current active snaps as a named set and reuse them from the floater dropdow
 
 ![dstlbx_menu](/assets/images/designtoolbox-menus.png){: .align-center .drop-shadow}
 
-### Viewport elements colors
-
-You can change the color palette used to represent points marks, lines and other kind of visual helpers within the tools. Change the colors in the pickers or use one of the presets.
-
-![dstlbx_cfg](/assets/images/ui/dstlbx_cfg.png){: .align-center .drop-shadow}
-
-<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/Peh68BRbEiQ" frameborder="0" allowfullscreen></iframe></div>
-
 ### Where to locate the toolbar macros
 
 You can find the tools in the **customization dialog** under the categories of <mark>refGuides</mark>, <mark>DesignToolBox</mark> and the extras in <mark>DSTLBX tools</mark>
@@ -997,16 +1035,6 @@ Options available in toolbars as Checkbuttons:
 #### Layer tools panel
 
 ![object_ribbon](/assets/images/ui/r9.png){: .align-center .drop-shadow}
-
-### Combined floater dialogs UI
-
-#### DesignToolBox floater
-
-![refguidesUIfloater](/assets/images/ui/refguidesfloatUI.png){: .align-center .drop-shadow}
-
-#### refGuides floater
-
-![dstlbxUIfloater](/assets/images/ui/destlbxfloatUI.png){: .align-center .drop-shadow}
 
 ---
 
