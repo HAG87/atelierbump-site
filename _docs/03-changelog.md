@@ -12,7 +12,7 @@ permalink: /docs/changelog
   
 ### Changes
 
-* Added a submenu for the Lock flag tools that where removed from the ribbon panel. This is now an optional feature installed with the "Extras"
+* Added a submenu for the Lock flag tools that where removed from the ribbon panel. This is now an optional feature installed with the "Extras".
 * Added an icon for tools that were missing it.
 * Re-arranged some tools. Integrated a few extra scripts from the freebies: Normal maps gamma adjust.
 * Updated face ID tools, integrated "random ID set" in the floater dialog.
