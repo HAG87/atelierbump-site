@@ -134,9 +134,9 @@
   - img: "/assets/images/icons/Merge_128.png" 
     title: "Merge"
     caption: "Merge will Combine geometry and splines in one object."
-  - img: "/assets/images/icons/stampTool_128.png" 
-    title: "Stamp"
-    caption: "Use an object to Interactively stamp its shape or cut holes in a mesh."
+  - img: "/assets/images/icons/EdgeLength_128.png"
+    title: "Edge length"
+    caption: "Change the length of selected edges"
 # Utilities -->
 - title: "Utilities"
 # Eyedropper - Replicator -->
@@ -247,3 +247,6 @@
       caption: "Put nodes in line."
     - title: "Replace with Xref"
       caption: "Replace selected node with Xref Record"
+    - img: "/assets/images/icons/stampTool_128.png" 
+      title: "Mesh Stamp"
+      caption: "Use an object to Interactively stamp its shape or cut holes in a mesh."

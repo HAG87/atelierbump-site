@@ -1055,22 +1055,20 @@ classes: wide
             <p>Select the objects to explode, run the tool, select or dismiss the prompt for keeping the original nodes, done.</p>
         </div>
     </div>
-    <div class="tool-item" onclick="window.open('/docs/userguide/#mesh-stamp-tool','target');">
-        <div><img src="/assets/images/icons/stampTool_48.png" alt="Explode">
-            <p>Mesh Stamp</p>
+
+    <div class="tool-item" onclick="window.open('/docs/userguide/#edge-length-tool','target');">
+        <div><img src="/assets/images/icons/edgeLength_48.png" alt="EdgeLength">
+            <p>Edge Length</p>
         </div>
         <div>
-            <p>Use an object to Interactively stamp its shape or cut holes in a mesh.</p>
+            <p>Change the length of selected edges. (Works only with Editable Poly objects)</p>
         </div>
         <div class="instruction" id="DSTBX_stmp">
             <p>Note that the objects must be geometry that can be converted to Editable Poly and, the tool will collapse the modifier stack.</p>
+            <p>Options: Max, minimum, and average length, custom value.</p>
             <ol>
-                <li>In the UI, pick a base node to operate on and choose the operation</li>
-                <li>Select a tool object in the scene, and press the start button.</li>
-                <li>The tool object will be positioned in the base object surface, following the mouse; use <b>right-click</b> to stamp the object shape or <b>left-click</b> to finish.</li>
-                <li>Hold <b>SHIFT</b> and move the mouse to displace the tool towards-away the target surface.</li>
-                <li>Hold <b>CTRL</b> and move the mouse towards-away from the tool object to rotate it.</li>
-                <li>Hold <b>CTRL+SHIFT</b> and move the mouse to change the scale of the tool object.</li>
+                <li>Select the Editable Poly object and start the tool.</li>
+                <li>Select a set of edges you want to modify and select a reference vertex for each edge, it will be used as a base point to set the direction of the operation. If no vertex is selected the tool will use the first one that finds.</li>
             </ol>
         </div>
     </div>
@@ -1626,6 +1624,25 @@ classes: wide
     <h2>Extras</h2>
 </div>
 <div class="tools">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#mesh-stamp-tool','target');">
+        <div><img src="/assets/images/icons/stampTool_48.png" alt="StampTool">
+            <p>Mesh Stamp</p>
+        </div>
+        <div>
+            <p>Use an object to Interactively stamp its shape or cut holes in a mesh.</p>
+        </div>
+        <div class="instruction" id="DSTBX_stmp">
+            <p>Note that the objects must be geometry that can be converted to Editable Poly and, the tool will collapse the modifier stack.</p>
+            <ol>
+                <li>In the UI, pick a base node to operate on and choose the operation</li>
+                <li>Select a tool object in the scene, and press the start button.</li>
+                <li>The tool object will be positioned in the base object surface, following the mouse; use <b>right-click</b> to stamp the object shape or <b>left-click</b> to finish.</li>
+                <li>Hold <b>SHIFT</b> and move the mouse to displace the tool towards-away the target surface.</li>
+                <li>Hold <b>CTRL</b> and move the mouse towards-away from the tool object to rotate it.</li>
+                <li>Hold <b>CTRL+SHIFT</b> and move the mouse to change the scale of the tool object.</li>
+            </ol>
+        </div>
+    </div>
     <div class="tool-item" onclick="window.open('/docs/userguide/#wireframe-colors-adjustment','target');">
         <div><img src="/assets/images/icons/color_48.png" alt="wirecolor-adjust">
             <p>Wirecolor adjust</p>

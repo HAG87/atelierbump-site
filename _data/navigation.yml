@@ -147,8 +147,8 @@ sidebar-userguide:
     url: /docs/userguide/#polar-array
   - title: "Merge and explode"
     url: /docs/userguide/#merge-and-explode-tools
-  - title: "Mesh stamp"
-    url: /docs/userguide/#mesh-stamp-tool
+  - title: "Edge length"
+    url: /docs/userguide/#edge-length-tool
 - title: "Scene management"
   url: /docs/userguide/#scene-management-and-rendering-related-tools
   children:
@@ -190,5 +190,10 @@ sidebar-userguide:
     url: /docs/userguide/#where-to-locate-the-toolbar-macros
   - title: "Ribbon Tab"
     url: /docs/userguide/#ribbon-tab
+- title: "Extras"
+  url: /docs/userguide/#extras
+  children:
+  - title: "Mesh stamp"
+    url: /docs/userguide/#mesh-stamp-tool
 - title: "Install folders"
   url: /docs/userguide/#install-folders
