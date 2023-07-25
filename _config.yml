@@ -93,10 +93,11 @@ contact:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : false # "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-52234068-1"
-    anonymize_ip         : # true, false (default)
+    # tracking_id          : "UA-52234068-1"
+    # tracking_id          : "G-21NPLM9ZG5"
+    anonymize_ip         : false # true, false (default)
 
 # Site Author
 author:
