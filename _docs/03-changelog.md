@@ -4,6 +4,19 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.9.6.0
+
+### New
+
+* Compatible with 3ds Max 2024
+* Dimension tool improvements: Dimension objects
+  * Expanded the customization:
+    * Now it is possible to change the arrow heads style. Available styles are: Arrow, Triangle, Circle, Ticks.
+    * You can set an offset parameter to move the line away from the points.
+    * Added extension lines to better mark the start and end of the dimension line
+    * New "Solid rendering" option creates an outlined spline with a extrude modifier applied. Lines thickness and extrude value can be controlled
+    * After starting the tool, a new dialog to align the dimension and flip the text
+
 ## Version 2.9.5.2
 
 ### New

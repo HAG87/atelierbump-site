@@ -18,6 +18,7 @@ classes: wide
         flex-direction: column;
         background-color: rgb(238, 238, 238);
         border-radius: 0.5em;
+        cursor: pointer;
     }
 
     .tool-item>div {
@@ -168,9 +169,9 @@ classes: wide
     <h2>Transform tools</h2>
 </div>
 <div class="tools" id="transform-tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#position-offset','target');">
         <div><img src="/assets/images/icons/offset_48.png" alt="offset">
-            <p>Distance Offset</p>
+            <p>Offset</p>
         </div>
         <div>
             <p>Performs a Translation from a reference point and a direction path.</p>
@@ -183,7 +184,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#reference-rotation','target');">
         <div><img src="/assets/images/icons/rotate_48.png" alt="rotate">
             <p>Reference Rotation</p>
         </div>
@@ -202,7 +203,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#local-reference-rotation','target');">
         <div><img src="/assets/images/icons/QLrotate_48.png" alt="QLrotate">
             <p>Local Rotation</p>
         </div>
@@ -216,12 +217,12 @@ classes: wide
                 <li>New rotation point</li>
             </ol>
             <ul>
-                <li>Hold <b>SHIFT</b> while picking the reference point for X axis, press <b>CTRL</b> for Y axis.</li>
+        "material"        <li>Hold <b>SHIFT</b> while picking the reference point for X axis, press <b>CTRL</b> for Y axis.</li>
                 <li>Hold <b>SHIFT</b> while tracking angle to restrict angle measure.</li>
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#reference-scale','target');">
         <div><img src="/assets/images/icons/scale_48.png" alt="scale">
             <p>Reference Scale</p>
         </div>
@@ -244,7 +245,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#redimension','target');">
         <div><img src="/assets/images/icons/Qdim_48.png" alt="Qdim">
             <p>reDimension</p>
         </div>
@@ -262,7 +263,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#move-and-align-1d-align-tool','target');">
         <div><img src="/assets/images/icons/QrotateF_48.png" alt="QrotateF">
             <p>Move & Align (1D Align)</p>
         </div>
@@ -281,7 +282,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#3-points-align','target');">
         <div><img src="/assets/images/icons/3ptAlign_48.png" alt="3ptAlign">
             <p>3-Points Align</p>
         </div>
@@ -307,7 +308,7 @@ classes: wide
 
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#mirror-tool','target');">
         <div><img src="/assets/images/icons/reflect_48.png" alt="reflect">
             <p>Reflect - interactive</p>
         </div>
@@ -322,7 +323,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#reference-move','target');">
         <div><img src="/assets/images/icons/refMove_48.png" alt="refMove">
             <p>Reference move</p>
         </div>
@@ -337,7 +338,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#swap-transform','target');">
         <div><img src="/assets/images/icons/swapTr_48.png" alt="swapTransforms">
             <p>Swap transform</p>
         </div>
@@ -346,7 +347,7 @@ classes: wide
         </div>
         <div class="instruction">The cycle will follow the selection pick order</div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#random-swap-transform','target');">
         <div><img src="/assets/images/icons/RndSwap_48.png" alt="swapTransforms">
             <p>Random swap transform</p>
         </div>
@@ -355,7 +356,7 @@ classes: wide
         </div>
         <!-- <div class="instruction">TODO: Complete this</div> -->
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#drop-objects','target');">
         <div><img src="/assets/images/icons/dropObj_48.png" alt="dropObj">
             <p>Drop objects</p>
         </div>
@@ -366,7 +367,7 @@ classes: wide
             <p>Press <b>SHIFT</b> when activating the tool to align the objects to the surface shape.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#arrange-objects','target');">
         <div><img src="/assets/images/icons/arrangeInt_48.png" alt="arrangeInt">
             <p>Arrange objects (start-end objects)</p>
         </div>
@@ -384,7 +385,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#arrange-objects','target');">
         <div><img src="/assets/images/icons/arrangeRT_48.png" alt="arrangeRT">
             <p>Arrange objects (real-time)</p>
         </div>
@@ -404,7 +405,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#arrange-objects','target');">
         <div><img src="/assets/images/icons/arrangeAB_48.png" alt="arrangeAB">
             <p>Arrange objects (interactive)</p>
         </div>
@@ -431,7 +432,7 @@ classes: wide
     <h2>Measure tools</h2>
 </div>
 <div class="tools" id="Measure-tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#distance','target');">
         <div><img src="/assets/images/icons/Qmeasure_48.png" alt="measure">
             <p>Measure Distance</p>
         </div>
@@ -442,6 +443,7 @@ classes: wide
             <ol>
                 <li>Measurement start point</li>
                 <li>Measurement end point</li>
+                <li>Repeat, or <b>right-click</b> to finish.</li>
             </ol>
             <ul>
                 <li>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</li>
@@ -449,7 +451,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#distance','target');">
         <div><img src="/assets/images/icons/Qmeasure_2_48.png" alt="Qmeasure_2">
             <p>Distance - continued</p>
         </div>
@@ -467,7 +469,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#angle','target');">
         <div><img src="/assets/images/icons/Qangle_48.png" alt="angle">
             <p>Measure Angle</p>
         </div>
@@ -485,7 +487,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#area','target');">
         <div><img src="/assets/images/icons/Qarea_48.png" alt="Qarea">
             <p>Measure Area</p>
         </div>
@@ -499,7 +501,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#volume','target');">
         <div><img src="/assets/images/icons/Qvolume_48.png" alt="Qvolume">
             <p>Measure Volume</p>
         </div>
@@ -514,7 +516,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#angle-between-faces','target');">
         <div><img src="/assets/images/icons/angle2faces_48.png" alt="angle2faces">
             <p>Angle between faces</p>
         </div>
@@ -529,7 +531,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#divide-distance','target');">
         <div><img src="/assets/images/icons/sdivide_48.png" alt="sdivide">
             <p>Divide distance</p>
         </div>
@@ -548,7 +550,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#divide-distance','target');">
         <div><img src="/assets/images/icons/sdivide_48.png" alt="sdivide">
             <p>Divide dist. - type mode</p>
         </div>
@@ -566,7 +568,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#working-with-measurements-distance-history','target');">
         <div><img src="/assets/images/icons/QmDlg_48.png" alt="QmDlg">
             <p>Measure history</p>
         </div>
@@ -580,7 +582,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#home-grid-size','target');">
         <div><img src="/assets/images/icons/rg_ax_48.png" alt="rg_ax">
             <p>Grid Scale</p>
         </div>
@@ -588,7 +590,7 @@ classes: wide
             <p>Draws a gizmo for the active grid (at the origin), indicating grid lines spacing and axes.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#spatial-info','target');">
         <div><img src="/assets/images/icons/info_48.png" alt="info">
             <p>Object spatial info</p>
         </div>
@@ -611,7 +613,7 @@ classes: wide
     <h2>Settings #1</h2>
 </div>
 <div class="tools" id="settings">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#viewport-elements-colors','target');">
         <div><img src="/assets/images/icons/dstlbx_icon_48.png" alt="dstlbx_icon">
             <p>Configuration</p>
         </div>
@@ -619,7 +621,7 @@ classes: wide
             <p>DesignToolBox general settings, like viewport elements color and style, tools behavior and more.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#transform-and-measure-tools-units-configuration','target');">
         <div><img src="/assets/images/icons/dstlbx_icon_48.png" alt="dstlbx_icon">
             <p>Set Units</p>
         </div>
@@ -632,7 +634,7 @@ classes: wide
     <h2>refGuides</h2>
 </div>
 <div class="tools" id="refguides">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#free-space-mode','target');">
         <div><img src="/assets/images/icons/rg_B_48.png" alt="rg_B">
             <p>Line guide - Free position</p>
         </div>
@@ -656,7 +658,7 @@ classes: wide
             <img src="/assets/images/icons/rg_UI_48.png" alt="rg_UI">
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#orthogonal-space-mode','target');">
         <div><img src="/assets/images/icons/rg_ortho_48.png" alt="rg_ortho">
             <p>Line guide - Orthogonal position</p>
         </div>
@@ -680,7 +682,7 @@ classes: wide
             <img src="/assets/images/icons/rg_UI_ortho_48.png" alt="rg_UI_ortho">
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#polar-space-mode','target');">
         <div><img src="/assets/images/icons/rg_polar_48.png" alt="rg_polar">
             <p>Line guide - Polar</p>
         </div>
@@ -711,7 +713,7 @@ classes: wide
         </div>
     </div>
     <!-- Protractor -->
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#protractor-guide','target');">
         <div><img src="/assets/images/icons/prot_48.png" alt="prot">
             <p>Protractor - Free</p>
         </div>
@@ -730,7 +732,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#protractor-guide','target');">
         <div><img src="/assets/images/icons/prot_ortho_48.png" alt="prot_ortho">
             <p>Protractor - Orthogonal</p>
         </div>
@@ -749,7 +751,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#protractor-guide','target');">
         <div><img src="/assets/images/icons/prot_polar_48.png" alt="prot_polar">
             <p>Protractor - Polar</p>
         </div>
@@ -775,7 +777,7 @@ classes: wide
         </div>
     </div>
     <!-- Points -->
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#intersection-points','target');">
         <div><img src="/assets/images/icons/infer_48.png" alt="infer">
             <p>Reference Points</p>
         </div>
@@ -794,7 +796,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/viewport-information-tools','target');">
         <div><img src="/assets/images/icons/rg_Inf_48.png" alt="rg_Inf">
             <p>Display units (liveInfo)</p>
         </div>
@@ -814,18 +816,20 @@ classes: wide
         </div>
     </div>
 </div>
+<!-- endregion -->
+<!-- #region refGuides extra -->
 <div class="category">
     <h2>Additional refGuides tools</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/Delete_48.png" alt="Delete">
             <p>Delete guides</p>
         </div>
         <div>Delete all refGuides</div>
         <div class="instruction" id="DSTBX_refGuides_delete">Delete all guides (lines, protractor and intersection points) on scene.</div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/intToggle_48.png" alt="intToggle">
             <p>Guides: Enable intersections</p>
         </div>
@@ -836,7 +840,7 @@ classes: wide
             <p>Enable or disable the auto creation of intersection points when placing reference guidelines</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/protToggle_48.png" alt="protToggle">
             <p>Guides: Set protractor</p>
         </div>
@@ -847,7 +851,7 @@ classes: wide
             <p>When the option is enabled, a protractor will be created when placing reference guides.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/lockGuides_48.png" alt="lockGuides">
             <p>Guides: Lock Guides</p>
         </div>
@@ -855,7 +859,7 @@ classes: wide
             <p>Turn on to lock the guides after creation</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/polarGrid_48.png" alt="polarGrid">
             <p>Guides: Polar Grid</p>
         </div>
@@ -866,7 +870,7 @@ classes: wide
             <p>When enabled, the reference grid used to define polar coordinates in guidelines placement will remain active.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/intOpt_48.png" alt="intOpt">
             <p>Guides: Intersection mode
         </div>
@@ -878,12 +882,13 @@ classes: wide
         </div>
     </div>
 </div>
-
+<!-- endregion -->
+<!-- #region Settings #2 -->
 <div class="category">
     <h2>Settings #2</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-options','target');">
         <div><img src="/assets/images/icons/refGuides_icon_48.png" alt="refGuides_icon">
             <p>Configuration</p>
         </div>
@@ -891,7 +896,7 @@ classes: wide
             <p>refGuides preferences dialog.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#refguides-units-configuration','target');">
         <div><img src="/assets/images/icons/refGuides_icon_48.png" alt="refGuides_icon">
             <p>Set units</p>
         </div>
@@ -906,7 +911,7 @@ classes: wide
     <h2>Replicator and Eyedropper</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#replicator','target');">
         <div><img src="/assets/images/icons/eyedrop_1_48.png" alt="eyedrop_1">
             <p>Replicator</p>
         </div>
@@ -925,7 +930,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#replicator','target');">
         <div><img src="/assets/images/icons/check_48.png" alt="check">
             <p>Replicator: Options</p>
         </div>
@@ -946,7 +951,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper','target');">
         <div><img src="/assets/images/icons/eyedrop_2_48.png" alt="eyedrop_2">
             <p>Eyedropper</p>
         </div>
@@ -966,7 +971,7 @@ classes: wide
             <img src="/assets/images/icons/eyedrop_ui_48.png" alt="eyedrop_ui">
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper-modes','target');">
         <div><img src="/assets/images/icons/eyedrop_3_48.png" alt="eyedrop_3">
             <p>Eyedropper: transform</p>
         </div>
@@ -974,7 +979,7 @@ classes: wide
             <p>Copy selected node transform to another node or group of nodes.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper-modes','target');">
         <div><img src="/assets/images/icons/eyedrop_4_48.png" alt="eyedrop_4">
             <p>Eyedropper: Material</p>
         </div>
@@ -982,7 +987,7 @@ classes: wide
             <p>Copy selected node material to another node or group of nodes.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper-modes','target');">
         <div><img src="/assets/images/icons/eyedrop_5_48.png" alt="eyedrop_5">
             <p>Eyedropper: Modifiers</p>
         </div>
@@ -990,7 +995,7 @@ classes: wide
             <p>Copy selected node modifiers to another node or group of nodes. (Works only with non topology dependant modifiers for now)</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper-modes','target');">
         <div><img src="/assets/images/icons/eyedrop_6_48.png" alt="eyedrop_6">
             <p>Eyedropper: Mapping</p>
         </div>
@@ -998,7 +1003,7 @@ classes: wide
             <p>Copy selected node UVW modifiers to another node or group of nodes. (Works only with non topology dependent modifiers for now)</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper-modes','target');">
         <div><img src="/assets/images/icons/eyedrop_7_48.png" alt="eyedrop_7">
             <p>Eyedropper: Visual Appearance</p>
         </div>
@@ -1006,7 +1011,7 @@ classes: wide
             <p>Copy selected node display options to another node or group of nodes.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#eyedropper-modes','target');">
         <div><img src="/assets/images/icons/check_48.png" alt="check">
             <p>Eyedropper: Options</p>
         </div>
@@ -1030,7 +1035,7 @@ classes: wide
     <h2>Geometry modification</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#merge-and-explode-tools','target');">
         <div><img src="/assets/images/icons/Merge_48.png" alt="Merge">
             <p>Merge Nodes</p>
         </div>
@@ -1041,7 +1046,7 @@ classes: wide
             <p>Select the objects to merge, run the tool, select or dismiss the prompt for keeping the original nodes, done.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#merge-and-explode-tools','target');">
         <div><img src="/assets/images/icons/Explode_48.png" alt="Explode">
             <p>Explode Nodes</p>
         </div>
@@ -1050,9 +1055,9 @@ classes: wide
             <p>Select the objects to explode, run the tool, select or dismiss the prompt for keeping the original nodes, done.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#mesh-stamp-tool','target');">
         <div><img src="/assets/images/icons/stampTool_48.png" alt="Explode">
-            <p>Stamp</p>
+            <p>Mesh Stamp</p>
         </div>
         <div>
             <p>Use an object to Interactively stamp its shape or cut holes in a mesh.</p>
@@ -1076,7 +1081,7 @@ classes: wide
     <h2>Scene</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#local-isolate','target');">
         <div><img src="/assets/images/icons/isolate_local_48.png" alt="isolate_local">
             <p>Local Isolation</p>
         </div>
@@ -1090,7 +1095,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#incremental-isolation','target');">
         <div><img src="/assets/images/icons/incIso_48.png" alt="incIso">
             <p>Incremental isolation</p>
         </div>
@@ -1104,22 +1109,21 @@ classes: wide
             <li>Use <b>"CLOSE"</b> to end the tool and exit the isolation.</li>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#unhide-by-selection','target');">
         <div><img src="/assets/images/icons/bulb_usel_48.png" alt="bulb_usel">
             <p>unHide</p>
         </div>
         <div>Unhide object selection</div>
         <div class="instruction" id="DSTBX_unhider">Unhide objects by selection</div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#unfreeze-by-selection','target');">
         <div><img src="/assets/images/icons/bulb_fsel_48.png" alt="bulb_fsel">
             <p>unFreeze</p>
         </div>
         <div>unFreeze object selection</div>
         <div class="instruction" id="DSTBX_unfrozer">unfreeze objects by selection</div>
     </div>
-
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#transform-locks','target');">
         <div><img src="/assets/images/icons/Locks_all_48.png" alt="Locks_all">
             <p>Lock flags</p>
         </div>
@@ -1142,7 +1146,7 @@ classes: wide
     <h2>Rendering</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#camera-manager','target');">
         <div><img src="/assets/images/icons/camtool_48.png" alt="camera-tool">
             <p>Camera manager</p>
         </div>
@@ -1172,7 +1176,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#material-replacer','target');">
         <div><img src="/assets/images/icons/mtl_48.png" alt="material">
             <p>Replace scene materials</p>
         </div>
@@ -1186,7 +1190,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/tools/#vp-composition','_blank');">
         <div><img src="/assets/images/icons/vcomp_48.png" alt="composition-guides">
             <p>Viewport composition guides</p>
         </div>
@@ -1203,7 +1207,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/tools/userguide/#other-material-related-tools','_blank');">
         <div><img src="/assets/images/icons/mtlrem_48.png" alt="remove-material">
             <p>Remove materials</p>
         </div>
@@ -1211,7 +1215,7 @@ classes: wide
             <p>Single-click action for removing the material of the selected objects.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#other-material-related-tools','target');">
         <div><img src="/assets/images/icons/mtlSel_1_48.png" alt="material-select">
             <p>Select without material</p>
         </div>
@@ -1219,7 +1223,7 @@ classes: wide
             <p>For the current selection, filter out the nodes without an applied material.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#quick-material-id-set','target');">
         <div><img src="/assets/images/icons/mtl_48.png" alt="material">
             <p>Quick material ID Set</p>
         </div>
@@ -1232,24 +1236,24 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#bitmap-multi-loader','target');">
         <div><img src="/assets/images/icons/bitmap_1_48.png" alt="bitmap-load">
             <p>Bitmap multi-loader</p>
         </div>
         <div>Load multiple bitmapTextures to the slate material editor</div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#bitmap-name-from-file','target');">
         <div><img src="/assets/images/icons/bitmap_2_48.png" alt="bitmap-rename">
             <p>Map name from file</p>
         </div>
         <div>Change the names of Bitmap Textures to the name of the loaded files.</div>
     </div>
-    <div class="tool-item">
-        <div><img src="/assets/images/icons/bitmap_3_48.png" alt="bitmap-rename">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#missing-textures','target');">
+        <div><img src="/assets/images/icons/bitmap_3_48.png" alt="bitmap-missing">
             <p>Missing textures</p>
         </div>
         <div>
-            <p>Texture maps filename search and replace utility for manually relocate missing bitmap files.</p>
+            <p>Texture maps filename search and replace utility for relocating missing files.</p>
         </div>
     </div>
 </div>
@@ -1259,7 +1263,7 @@ classes: wide
     <h2>Utilities</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#1d-array-clone-between','target');">
         <div><img src="/assets/images/icons/1d_array_48.png" alt="sdivide">
             <p>Clone between</p>
         </div>
@@ -1280,7 +1284,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#interactive-2d-array','target');">
         <div><img src="/assets/images/icons/2d_array_48.png" alt="2d_array">
             <p>Array 2D - Interactive</p>
         </div>
@@ -1302,7 +1306,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#pattern-array','target');">
         <div><img src="/assets/images/icons/P_array_48.png" alt="P_array">
             <p>Array - Pattern</p>
         </div>
@@ -1319,7 +1323,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#paneling','target');">
         <div><img src="/assets/images/icons/paneling_48.png" alt="paneling">
             <p>Paneling</p>
         </div>
@@ -1344,7 +1348,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#polar-array','target');">
         <div><img src="/assets/images/icons/polar_array_48.png" alt="polar_array">
             <p>Polar array</p>
         </div>
@@ -1360,8 +1364,8 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
-        <div><img src="/assets/images/icons/paneling_48.png" alt="paneling">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#detailer','target');">
+        <div><img src="/assets/images/icons/paneling_48.png" alt="detailer">
             <p>Paneling: Detailer</p>
         </div>
         <div>
@@ -1390,7 +1394,7 @@ classes: wide
             </ul>
         </div>
     </div> -->
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#map-tools-and-multimap','target');">
         <div><img src="/assets/images/icons/maptools_48.png" alt="maptools">
             <p>UVW tools</p>
         </div>
@@ -1403,7 +1407,7 @@ classes: wide
         </div>
         <!-- <div class="tool-footer"></div> -->
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#map-tools-and-multimap','target');">
         <div><img src="/assets/images/icons/multimap_48.png" alt="maptools">
             <p>UVW Bulk add</p>
         </div>
@@ -1418,7 +1422,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#map-tools-and-multimap','target');">
         <div><img src="/assets/images/icons/multimap_tr_48.png" alt="multimap">
             <p>UVW transform</p>
         </div>
@@ -1430,7 +1434,7 @@ classes: wide
             <p>Use tis utility in a non-destructive way adding a UVW Xform modifier for the transform</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#pivot-and-coordinates-related-tools','target');">
         <div><img src="/assets/images/icons/qpivot_48.png" alt="qpivot">
             <p>Pivot: Quick position</p>
         </div>
@@ -1447,7 +1451,7 @@ classes: wide
             <p>Note: Press <b>Right-Click</b> on any action to close the dialog after.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#pivot-tools','target');">
         <div><img src="/assets/images/icons/qpivot_48.png" alt="qpivot">
             <p>Pivot: Snap to point</p>
         </div>
@@ -1465,7 +1469,7 @@ classes: wide
             <p style="text-align: center;"><b>ASSIGN THIS MACRO TO A SHORTCUT</b></p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#snaps-states','target');">
         <div><img src="/assets/images/icons/magnet_48.png" alt="magnet">
             <p>Snap sate sets</p>
         </div>
@@ -1480,7 +1484,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#color-clipboard','target');">
         <div><img src="/assets/images/icons/color_48.png" alt="color">
             <p>Color Clipboard</p>
         </div>
@@ -1496,7 +1500,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/tools/align-assets','_blank');">
         <div><img src="/assets/images/icons/alignassets_48.png" alt="align-assets">
             <p>Align Assets</p>
         </div>
@@ -1515,7 +1519,7 @@ classes: wide
             <p>OPTIONAL FEATURE</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#random-transform','target');">
         <div><img src="/assets/images/icons/random_48.png" alt="multimap">
             <p>Random transform</p>
         </div>
@@ -1529,7 +1533,7 @@ classes: wide
             </ul>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/tools/random-select','target');">
         <div><img src="/assets/images/icons/rndSel_48.png" alt="random-select">
             <p>Random Select</p>
         </div>
@@ -1538,9 +1542,9 @@ classes: wide
             <ol>
                 <li>make a selection of objects. The list of objects follows the selection order.</li>
                 <li>Select the algorithm:<ul>
-                        <li><b>Percent</b>: Randomly reduce the selection by the given percentage</li>
+                        <li><b>Percent</b>: Keep a random percentage of the total quantity of nodes in the current selection.</li>
                         <li><b>Set</b>: Group the selection in sets of (N) items, and randomly deselect some of these sets. </li>
-                        <li><b>Subtract</b>: Subtract from the current selection</li>
+                        <li><b>Subtract</b>: Randomly reduce the selection by the given percentage.</li>
                         <li><b>Pattern</b>: Reduction pattern determined by the "Keep" and "Quit" values that sets how much objects will be skipped or flagged for deselect.</li>
                     </ul>
                 </li>
@@ -1558,7 +1562,7 @@ classes: wide
     <h2>Organization</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#layer-tools','target');">
         <div><img src="/assets/images/icons/LayIso_48.png" alt="LayIso">
             <p>Isolate - layer</p>
         </div>
@@ -1570,7 +1574,7 @@ classes: wide
             <p>If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#layer-tools','target');">
         <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
             <p>Layer Lock</p>
         </div>
@@ -1582,7 +1586,7 @@ classes: wide
             <p>Press <b>SHIFT</b> when selecting the tool to unlock a frozen layer.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#layer-tools','target');">
         <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
             <p>Layer Off</p>
         </div>
@@ -1593,7 +1597,7 @@ classes: wide
             <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#layer-tools','target');">
         <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
             <p>Layer BoxMode</p>
         </div>
@@ -1604,7 +1608,7 @@ classes: wide
             <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#layer-tools','target');">
         <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
             <p>Layer BackFaceCull</p>
         </div>
@@ -1622,7 +1626,7 @@ classes: wide
     <h2>Extras</h2>
 </div>
 <div class="tools">
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#wireframe-colors-adjustment','target');">
         <div><img src="/assets/images/icons/color_48.png" alt="wirecolor-adjust">
             <p>Wirecolor adjust</p>
         </div>
@@ -1630,7 +1634,7 @@ classes: wide
             <p>Adjust the wire colors for the current selection: <b>brightness</b>, <b>saturation</b>, and <b>hue</b>.</p>
         </div>
     </div>
-    <div class="tool-item">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#utilities','target');">
         <div><img src="/assets/images/icons/box_48.png" alt="material">
             <p>Other tools</p>
         </div>
