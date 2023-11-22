@@ -42,6 +42,9 @@
   - img: "/assets/images/icons/swapTr_128.png"
     title: "Swap transform"
     caption: "Select a collection of objects and cycle their transform from one to the next."
+  - img: "/assets/images/icons/RndSwap_128.png"
+    title: "Random Swap transform"
+    caption: "Randomly swap position, rotation and scale between the selected objects."
 # Measure tools -->
 - title: "Measure tools"
   features:
@@ -63,11 +66,11 @@
   - img: "/assets/images/icons/Qvolume_128.png" 
     title: "Volume"
     caption: "Pick two diagonal points representing an enclosing box and measure its volume."
+# Additional measure tools -->
+- features:
   - img: "/assets/images/icons/angle2faces_128.png" 
     title: "Angle between faces"
     caption: "Pick one point on each face to get the angle between them. Needs an EditablePoly or EditableMesh object selected."
-# Additional measure tools -->
-- features:
   - img: "/assets/images/icons/rg_ax_128.png"
     title: "Active grid units"
     caption: "Display XYZ reference units for the active viewport grid"
