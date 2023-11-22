@@ -87,7 +87,9 @@ sidebar-userguide:
   - title: "Volume"
     url: /docs/userguide/#volume
   - title: "Angle between faces"
-    url: /docs/userguide/#angle-between-faces
+    url: /docs/userguide/#angle-between-two-faces
+  - title: "Angle between edges"
+    url: /docs/userguide/#angle-between-two-edges
   - title: "Spatial info"
     url: /docs/userguide/#spatial-info
   - title: "Home grid size"

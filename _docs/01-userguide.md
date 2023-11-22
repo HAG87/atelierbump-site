@@ -460,20 +460,25 @@ Pick two points representing the start and end point of a box diagonal line. The
 
 ![angle2faces](/assets/images/icons/angle2faces_128.png)
 
-### Angle between faces
+### Angle between two faces
 
 Measure the angle between two faces.
-To use it, you need all the faces to be part of the same Editable Poly or Editable mesh object.
 
-1. Select the object.
-2. Start the tool.
-3. Pick the first face and then a second one to inquiry the angle.
+1. Start the tool.
+2. Pick the first face and then a second one to inquiry the angle.
    - Two marks indicating the points and face normals will be drawn, along with a line connecting them and a text showing the angle in this format: **ANGLE---COMPLEMENTARY ANGLE**
    - The measurement will be printed to the listener, so you can copy and use these values.
 
 >Note that this tool will not work when you have flipped normals, so check for inverted normals first.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0v34PlCsrT4" frameborder="0" allowfullscreen></iframe></div>
+
+![angle2faces](/assets/images/icons/angle2edges_128.png)
+
+### Angle between two edges
+
+1. Select two edges in an Editable poly or mesh object.
+2. Check the tool macro button to show the angle between these two edges. Check the button again to change the object or to disable the tool.
 
 ### Spatial Info
 

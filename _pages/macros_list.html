@@ -516,7 +516,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item" onclick="window.open('/docs/userguide/#angle-between-faces','target');">
+    <div class="tool-item" onclick="window.open('/docs/userguide/#angle-between-two-faces','target');">
         <div><img src="/assets/images/icons/angle2faces_48.png" alt="angle2faces">
             <p>Angle between faces</p>
         </div>
@@ -525,9 +525,23 @@ classes: wide
         </div>
         <div class="instruction" id="DSTBX_Angle2Faces">
             <ul>
-                <li>Needs an Editable Poly or Editable Mesh object selected.</li>
                 <li>Pick one point on each face to get the angle between them.</li>
-                <li>Result is traced to the listener.</li>
+                <li>The result is displayed in the viewport and traced to the listener.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tool-item" onclick="window.open('/docs/userguide/#angle-between-two-edges','target');">
+        <div><img src="/assets/images/icons/angle2edges_48.png" alt="angle2edges">
+            <p>Angle between two edges</p>
+        </div>
+        <div>
+            <p>Angle2Edges for short, measures the angle between two selected edges.</p>
+        </div>
+        <div class="instruction" id="DSTBX_Angle2Edges">
+            <ul>
+                <li>Needs an Editable Poly or Editable Mesh object selected.</li>
+                <li>Select two edges to get the angle between them.</li>
+                <li>The result is displayed in the viewport and traced to the listener.</li>
             </ul>
         </div>
     </div>

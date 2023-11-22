@@ -69,8 +69,11 @@
 # Additional measure tools -->
 - features:
   - img: "/assets/images/icons/angle2faces_128.png" 
-    title: "Angle between faces"
-    caption: "Pick one point on each face to get the angle between them. Needs an EditablePoly or EditableMesh object selected."
+    title: "Angle between two faces"
+    caption: "Pick one point on each face to get the angle between them"
+  - img: "/assets/images/icons/angle2edges_128.png" 
+    title: "Angle between two edges"
+    caption: "Select two edges to display the angle between them. Needs an EditablePoly or EditableMesh object selected."
   - img: "/assets/images/icons/rg_ax_128.png"
     title: "Active grid units"
     caption: "Display XYZ reference units for the active viewport grid"
