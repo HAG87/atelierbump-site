@@ -765,23 +765,18 @@ This tools offers some enhanced functionality to the default available attach/de
 | Edit Mesh  |
 | Splines    |
 
-![stamptool](/assets/images/icons/stampTool_128.png){: .icon-small}
+![edgelength](/assets/images/icons/edgeLength_128.png){: .icon-small}
 
-### Mesh stamp tool
+### Edge length tool
 
-Use an object to Interactively stamp its shape or cut holes in a mesh.
+Change the length of selected edges. (Works only with Editable Poly objects)
 
-- Objects must be geometry that can be converted to Editable Poly.
-- This tool will collapse the modifier stack.
+  1. Select the Editable Poly object and start the tool.
+  2. Select a set of edges you want to modify and select a reference vertex for each edge, it will be used as a base point to set the direction of the operation.
+    If no vertex is selected the tool will use the first one that finds.
+  3. Options: Max, minimum, and average length, custom value.
 
-1. Use the UI to pick a base node to operate on
-2. Choose the operation
-3. Select a tool object in the scene, and press the start button
-4. The tool object will be positioned in the base object surface, following the mouse; use right-click to stamp the object shape or left click to end the operation.
-
->- Keep pressed <mark>SHIFT</mark> and move the mouse to displace the tool towards-away the target surface.
->- Keep pressed <mark>CTRL</mark> and move the mouse towards-away from the tool object to rotate it around its normal.
->- Keep pressed <mark>CTRL+SHIFT</mark> and move the mouse towards-away from the tool object to change its scale.
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/YOMrC9Rxlng" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 
@@ -1035,6 +1030,52 @@ Options available in toolbars as Checkbuttons:
 #### Layer tools panel
 
 ![object_ribbon](/assets/images/ui/r9.png){: .align-center .drop-shadow}
+
+---
+
+## Extras
+
+![stamptool](/assets/images/icons/stampTool_128.png){: .icon-small}
+
+### Mesh stamp tool
+
+Use an object to Interactively stamp its shape or cut holes in a mesh.
+
+- Objects must be geometry that can be converted to Editable Poly.
+- This tool will collapse the modifier stack.
+
+1. Use the UI to pick a base node to operate on
+2. Choose the operation
+3. Select a tool object in the scene, and press the start button
+4. The tool object will be positioned in the base object surface, following the mouse; use right-click to stamp the object shape or left click to end the operation.
+
+>- Keep pressed <mark>SHIFT</mark> and move the mouse to displace the tool towards-away the target surface.
+>- Keep pressed <mark>CTRL</mark> and move the mouse towards-away from the tool object to rotate it around its normal.
+>- Keep pressed <mark>CTRL+SHIFT</mark> and move the mouse towards-away from the tool object to change its scale.
+
+### Photographic composition guides
+
+![vp?guides](/assets/images/vp-guides.png)
+
+Display an overlay of photographic composition guides in the viewport.
+This tool is intended to be of aid when composing shots. Easily draw common photographic grids, reference and perspective lines to help compose the perfect shot.
+
+#### Features
+
+- Quadrants (2x2)
+- Rule of thirds (3x3)
+- Golden proportions
+- Golden ratio rectangles & spiral
+- Position a guide in the viewport with the mouse. Possible positions:
+  - Vertical
+  - Horizontal
+  - Cross
+  - From point: Position multiple Two-point aligned lines from a common base point. Useful to draw perspective lines from a vanishing point or follow the same perspective line.
+- You can select the color of the guides.
+
+#### Tool UI
+
+![vp?guides?ui](/assets/images/ui/vcomp.png)
 
 ---
 

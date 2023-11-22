@@ -20,9 +20,11 @@ This guide is of users who have purchased a license.
 {: .notice--primary}
 >**NOTE:** This form does not connect to the web in order to retrieve or send data. Please email your activation request code to the provided address.
 
-![act_step_1](/assets/images/act/step1.png){: .align-center}
-![act_step_2](/assets/images/act/step2.png){: .align-center}
-![act_step_3](/assets/images/act/step3.png){: .align-center}
-![act_step_4](/assets/images/act/step4.png){: .align-center}
-![act_step_5](/assets/images/act/step5.png){: .align-center}
-![act_step_6](/assets/images/act/step6.png){: .align-center}
+1. ![act_step_1](/assets/images/act/step1.png){: .align-center}
+2. ![act_step_2](/assets/images/act/step2.png){: .align-center}
+3. ![act_step_3](/assets/images/act/step3.png){: .align-center}
+4. ![act_step_4](/assets/images/act/step4.png){: .align-center}
+   ![act_step_4_2](/assets/images/act/step4-2.png){: .align-center}
+
+5. ![act_step_5](/assets/images/act/step5.png){: .align-center}
+6. ![act_step_6](/assets/images/act/step6.png){: .align-center}
