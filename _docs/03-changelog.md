@@ -3,6 +3,14 @@ title: DesignToolBox Changelog
 excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
+## Version 2.9.8.1
+
+### Fixes
+
+* Missing icons
+* Small UI fixes
+* Camera Manager: Fixed a bug causing the tool to crash then the cameras list was updated after deleting the active camera.
+
 ## Version 2.9.8.0
 
 ### New
