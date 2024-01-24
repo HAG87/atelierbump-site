@@ -363,8 +363,6 @@ Set reference points to divide a distance.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/VtAfxGZs4gU" frameborder="0" allowfullscreen></iframe></div>
 
-<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
-
 ![distance](/assets/images/icons/Qmeasure_128.png){: .icon-small}
 
 ### Distance
@@ -378,7 +376,18 @@ Measure tape with live visual feedback.
 
 The result of the last measure will be copied to the clipboard and each measure is traced to the listener after finishing using the tool.
 
-> The alternate tool **Distance | continuous** displays one concatenated tape with all the measures.
+![distance](/assets/images/icons/Qmeasure_2_128.png){: .icon-small}
+
+### Contiguous (chain) dimension line
+
+1. Measurement start point
+2. Continue picking points to add measurements
+3. Finish the tool with right-click
+
+> Hold <mark>SHIFT</mark> while tracking second point for orthogonal mode, then press <mark>CTRL</mark> for axis-lock.
+> Measurements are copied to the clipboard and traced to the listener.
+
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/lRFG3Da7Oag" frameborder="0" allowfullscreen></iframe></div>
 
 ![msdlg](/assets/images/icons/dimobj_128.png){: .icon-small}
 
@@ -398,8 +407,6 @@ Selecting one or multiple items in the listbox of "Distance measures" or "Contin
 - **Clear selection:** Deselect all items, turning off their display.
 - **Clear values:** Reset the history, clearing all stored measurements.
 - **Update:** This action is needed when you take some more measurements, with the dialog open. It will update the lists adding the new entries. It will also update any change in the color or text background/frame changes.
-
-<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/lRFG3Da7Oag" frameborder="0" allowfullscreen></iframe></div>
 
 ##### Dimension objects
 

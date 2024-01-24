@@ -78,6 +78,8 @@ sidebar-userguide:
     url: /docs/userguide/#divide-distance
   - title: "Distance"
     url: /docs/userguide/#distance
+  - title: "Contiguous (chain) dimension line"
+    url: /docs/userguide/#contiguous-chain-dimension-line
   - title: "Working with measurements"
     url: /docs/userguide/#working-with-measurements-distance-history
   - title: "Angle"
