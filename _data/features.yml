@@ -48,9 +48,6 @@
 # Measure tools -->
 - title: 'Measure tools'
   features:
-    - img: '/assets/images/icons/sdivide_128.png'
-      title: 'Subdivide distance'
-      caption: 'Sets reference points between two picked points. Move mouse or type quantity to set segments amount.'
     - img: '/assets/images/icons/Qmeasure_128.png'
       title: 'Distance'
       caption: 'Live visual feedback measure tape. Orthogonal constraint and orthogonal reference modes. Continuous mode displays concatenated dimensions.'
@@ -68,6 +65,9 @@
       caption: 'Pick two diagonal points representing an enclosing box and measure its volume.'
 # Additional measure tools -->
 - features:
+    - img: '/assets/images/icons/sdivide_128.png'
+      title: 'Subdivide distance'
+      caption: 'Sets reference points between two picked points. Move mouse or type quantity to set segments amount.'
     - img: '/assets/images/icons/angle2faces_128.png'
       title: 'Angle between two faces'
       caption: 'Pick one point on each face to get the angle between them'
@@ -162,6 +162,7 @@
     - img: '/assets/images/icons/maptools_128.png'
       title: 'Map Tools'
       caption: 'Fit, center, reset UVW gizmos and delete UVW or UVW xform modifiers in selected objects from a convenient dialog.'
+- features:
     - img: '/assets/images/icons/modPresets_128.png'
       title: 'Modifiers presets'
       caption: 'Store presets for modifiers in a convenient UI.'
@@ -172,7 +173,8 @@
       title: 'Random Select'
       caption: 'Select random nodes.'
 # Geometry tools -->
-- features:
+- title: 'Geometry Edit Tools'
+  features:
     - img: '/assets/images/icons/Explode_128.png'
       title: 'Explode'
       caption: 'Detach geometry elements and spline shapes to individual objects.'

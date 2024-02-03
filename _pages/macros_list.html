@@ -21,6 +21,10 @@ classes: wide
         cursor: pointer;
     }
 
+    .double {
+        grid-column: span 2;
+    }
+
     .tool-item>div {
         /* display: flex;
         flex-direction: column; */
@@ -168,21 +172,6 @@ classes: wide
     <h2>Transform tools</h2>
 </div>
 <div class="tools" id="transform-tools">
-    <div class="tool-item" id="offset" onclick="window.open('/docs/userguide/#position-offset','target');">
-        <div><img src="/assets/images/icons/offset_48.png" alt="offset">
-            <p>Offset</p>
-        </div>
-        <div>
-            <p>Performs a Translation from a reference point and a direction path.</p>
-        </div>
-        <div class="instruction">
-            <ol>
-                <li>Pick Base point</li>
-                <li>Pick Direction point</li>
-                <li>Adjust new position in the floater dialog</li>
-            </ol>
-        </div>
-    </div>
     <div class="tool-item" id="reference-rotation" onclick="window.open('/docs/userguide/#reference-rotation','target');">
         <div><img src="/assets/images/icons/rotate_48.png" alt="rotate">
             <p>Reference Rotation</p>
@@ -207,7 +196,7 @@ classes: wide
             <p>Local Rotation</p>
         </div>
         <div>
-            <p>Local reference rotation performs a 3-Point rotation (Base point &gt; Reference point &gt; Dest. point) using the object's local coordinate system.<br>It works with <em>SUB-OBJECT</em> selection in Editable polys.</p>
+            <p>Local reference rotation performs a 3-Point rotation (Base point &gt; Reference point &gt; Dest. point) using the object's local coordinate system.</p>
         </div>
         <div class="instruction">
             <ol>
@@ -219,6 +208,9 @@ classes: wide
                 "material" <li>Hold <b>SHIFT</b> while picking the reference point for X axis, press <b>CTRL</b> for Y axis.</li>
                 <li>Hold <b>SHIFT</b> while tracking angle to restrict angle measure.</li>
             </ul>
+        </div>
+        <div class="tool-footer">
+            Works with <em>SUB-OBJECT</em> selection in Editable polys.
         </div>
     </div>
     <div class="tool-item" id="reference-scale" onclick="window.open('/docs/userguide/#reference-scale','target');">
@@ -244,6 +236,21 @@ classes: wide
             </ul>
         </div>
     </div>
+    <div class="tool-item" id="offset" onclick="window.open('/docs/userguide/#position-offset','target');">
+        <div><img src="/assets/images/icons/offset_48.png" alt="offset">
+            <p>Offset</p>
+        </div>
+        <div>
+            <p>Performs a Translation from a reference point and a direction path.</p>
+        </div>
+        <div class="instruction">
+            <ol>
+                <li>Pick Base point</li>
+                <li>Pick Direction point</li>
+                <li>Adjust new position in the floater dialog</li>
+            </ol>
+        </div>
+    </div>
     <div class="tool-item" id="redimension" onclick="window.open('/docs/userguide/#redimension','target');">
         <div><img src="/assets/images/icons/Qdim_48.png" alt="Qdim">
             <p>reDimension</p>
@@ -267,7 +274,7 @@ classes: wide
             <p>Move & Align (1D Align)</p>
         </div>
         <div>
-            <p>Move the object to a new position and align it by two-points (Origin Point &gt; Position Point &gt; Align vector reference &gt; Align target &gt; Repeat or cancel)</p>
+            <p>Move the object to a new position and align it by two-points.</p>
         </div>
         <div class="instruction" id="DSTBX_rotator_free">
             <ol>
@@ -545,6 +552,20 @@ classes: wide
             </ul>
         </div>
     </div>
+    <div class="tool-item double" id="measure-history" onclick="window.open('/docs/userguide/#working-with-measurements-distance-history','target');">
+        <div><img src="/assets/images/icons/QmDlg_48.png" alt="QmDlg">
+            <p>Measure history</p>
+        </div>
+        <div>
+            <p>Distance measure history.<br>Create renderable dimension objects.</p>
+        </div>
+        <div class="instruction" id="DSTBX_distListener">
+            <ul>
+                <li>The Distance measure history dialog keeps track of performed measures, allowing to re-display them and customize appearance.</li>
+                <li>It will also <b>Create renderable dimension lines</b> with measure annotation. Standard Spline and text shapes will be created to draw the dimension line.<br><em>Please note that, the text will be oriented left -&gt; right, based on the current view. Expect unpredicted result on orthogonal views.</em></li>
+            </ul>
+        </div>
+    </div>
     <div class="tool-item" id="divide-distance" onclick="window.open('/docs/userguide/#divide-distance','target');">
         <div><img src="/assets/images/icons/sdivide_48.png" alt="sdivide">
             <p>Divide distance</p>
@@ -579,20 +600,6 @@ classes: wide
             </ol>
             <ul>
                 <li>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="tool-item" id="measure-history" onclick="window.open('/docs/userguide/#working-with-measurements-distance-history','target');">
-        <div><img src="/assets/images/icons/QmDlg_48.png" alt="QmDlg">
-            <p>Measure history</p>
-        </div>
-        <div>
-            <p>Distance measure history.<br>Create renderable dimension objects.</p>
-        </div>
-        <div class="instruction" id="DSTBX_distListener">
-            <ul>
-                <li>The Distance measure history dialog keeps track of performed measures, allowing to re-display them and customize appearance.</li>
-                <li>It will also <b>Create renderable dimension lines</b> with measure annotation. Standard Spline and text shapes will be created to draw the dimension line.<br><em>Please note that, the text will be oriented left -&gt; right, based on the current view. Expect unpredicted result on orthogonal views.</em></li>
             </ul>
         </div>
     </div>
@@ -1070,6 +1077,21 @@ classes: wide
             <p>Select the objects to explode, run the tool, select or dismiss the prompt for keeping the original nodes, done.</p>
         </div>
     </div>
+    <div class="tool-item" id="align-vertices" onclick="window.open('/docs/userguide/#align-vertices-tool','target');">
+        <div><img src="/assets/images/icons/vertexAlign_48.png" alt="VertexAlign">
+            <p>Align vertices</p>
+        </div>
+        <div>
+            <p>Align a selection of vertices in a straight line.</p>
+        </div>
+        <div class="instruction" id="DSTBX_stmp">
+            <ol>
+                <li>Select the vertices you want to align. alternatively, select a edge loop or some consecutive edges.</li>
+                <li>Start the tool. Choose a base point to begin drawing a line that will be used to align the vertices.</li>
+                <li>Choose an endpoint to determine the direction of the line. The vertices will be repositioned over the line, to the closest point to the original position.</li>
+            </ol>
+        </div>
+    </div>
     <div class="tool-item" id="edge-length" onclick="window.open('/docs/userguide/#edge-length-tool','target');">
         <div><img src="/assets/images/icons/edgeLength_48.png" alt="EdgeLength">
             <p>Edge Length</p>
@@ -1086,22 +1108,7 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="tool-item" id="align-vertices" onclick="window.open('/docs/userguide/#align-vertices-tool','target');">
-        <div><img src="/assets/images/icons/vertexAlign_48.png" alt="VertexAlign">
-            <p>Align vertices</p>
-        </div>
-        <div>
-            <p>Align a selection of vertices in a straight line.</p>
-        </div>
-        <div class="instruction" id="DSTBX_stmp">
-            <ol>
-                <li>Select the vertices you want to align. alternatively, select a edge loop or some consecutive edges.</li>
-                <li>Start the tool. Choose a base point to begin drawing a line that will be used to align the vertices.</li>
-                <li>Choose an endpoint to determine the direction of the line. The vertices will be repositioned over the line, to the closest point to the original position.</li>
-            </ol>
-        </div>
-    </div>
-    <div class="tool-item" id="mesh-stamp" onclick="window.open('/docs/userguide/#mesh-stamp-tool','target');">
+    <div class="tool-item double" id="mesh-stamp" onclick="window.open('/docs/userguide/#mesh-stamp-tool','target');">
         <div><img src="/assets/images/icons/stampTool_48.png" alt="StampTool">
             <p>Mesh Stamp</p>
         </div>
@@ -1387,319 +1394,319 @@ classes: wide
             </ol>
         </div>
     </div>
-    <div class="category">
-        <h2>General Utilities</h2>
-    </div>
-    <div class="tools" id="general-utilities">
-        <div class="tool-item" id="color-clipboard" onclick="window.open('/docs/userguide/#color-clipboard','target');">
-            <div><img src="/assets/images/icons/color_48.png" alt="color">
-                <p>Color Clipboard</p>
-            </div>
-            <div>
-                <p>Dockable color clipboard.</p>
-            </div>
-            <div class="instruction" id="DSTBX_cclp">
-                <ul>
-                    <li>Left-click on "+" button to fill swatches with random colors.</li>
-                    <li>Right-click on "+" button to fill unused swatches with random colors.</li>
-                    <li>Press <b>SHIFT</b> while clicking "+" button to fill swatches with grayscale values.</li>
-                    <li>Right-click on color swatch to copy. Drag&amp;Drop supported.</li>
-                </ul>
-            </div>
+</div>
+<div class="category">
+    <h2>General Utilities</h2>
+</div>
+<div class="tools" id="general-utilities">
+    <div class="tool-item" id="color-clipboard" onclick="window.open('/docs/userguide/#color-clipboard','target');">
+        <div><img src="/assets/images/icons/color_48.png" alt="color">
+            <p>Color Clipboard</p>
         </div>
-        <div class="tool-item" id="snap-states" onclick="window.open('/docs/userguide/#snaps-states','target');">
-            <div><img src="/assets/images/icons/magnet_48.png" alt="magnet">
-                <p>Snap sate sets</p>
-            </div>
-            <div>
-                <p>Save States for Snap settings.</p>
-            </div>
-            <div class="instruction" id="DSTBX_snapSets">
-                <!-- TODO: Complete this! -->
-                <ul>
-                    <li>You can click and drag around the compact interface.</li>
-                    <li>Press the "OK" button to expand the UI and add states.</li>
-                </ul>
-            </div>
+        <div>
+            <p>Dockable color clipboard.</p>
         </div>
-        <div class="tool-item" id="wirecolor adjust" onclick="window.open('/docs/userguide/#wireframe-colors-adjustment','target');">
-            <div><img src="/assets/images/icons/color_48.png" alt="wirecolor-adjust">
-                <p>Wirecolor adjust</p>
-            </div>
-            <div>
-                <p>Adjust the wire colors for the current selection: <b>brightness</b>, <b>saturation</b>, and <b>hue</b>.</p>
-            </div>
+        <div class="instruction" id="DSTBX_cclp">
+            <ul>
+                <li>Left-click on "+" button to fill swatches with random colors.</li>
+                <li>Right-click on "+" button to fill unused swatches with random colors.</li>
+                <li>Press <b>SHIFT</b> while clicking "+" button to fill swatches with grayscale values.</li>
+                <li>Right-click on color swatch to copy. Drag&amp;Drop supported.</li>
+            </ul>
         </div>
     </div>
-    <!-- endregion -->
-    <!-- #region Organization -->
-    <div class="category">
-        <h2>Scene Organization</h2>
-    </div>
-    <div class="tools" id="scene-management">
-        <div class="tool-item" id="local-isolation" onclick="window.open('/docs/userguide/#local-isolate','target');">
-            <div><img src="/assets/images/icons/isolate_local_48.png" alt="isolate_local">
-                <p>Local Isolation</p>
-            </div>
-            <div>
-                <p>Isolate the selected object and set an active work grid in its local coordinates</p>
-            </div>
-            <div class="instruction" id="DSTBX_refIsolate">
-                <ul>
-                    <li>Works in Object level or with the selected faces in an Editable Poly.</li>
-                    <li>If more than one object is selected, Local isolate will use the first object in the selection to set the grid</li>
-                </ul>
-            </div>
+    <div class="tool-item" id="snap-states" onclick="window.open('/docs/userguide/#snaps-states','target');">
+        <div><img src="/assets/images/icons/magnet_48.png" alt="magnet">
+            <p>Snap sate sets</p>
         </div>
-        <div class="tool-item" id="incremental-isolation" onclick="window.open('/docs/userguide/#incremental-isolation','target');">
-            <div><img src="/assets/images/icons/incIso_48.png" alt="incIso">
-                <p>Incremental isolation</p>
-            </div>
-            <div>
-                <p> Multi-level isolation tool, use it to incrementally re-isolate within the current selection</p>
-            </div>
-            <div class="instruction" id="DSTBX_nestedISO">
-                <li>The tool will open a floater dialog with three buttons.</li>.
-                <li>Select some nodes and press <b>LEVEL UP</b> to isolate them.</li>
-                <li>Press <b>LEVEL DOWN</b> to restore the previous isolated nodes, or exit isolation mode if no previous level is registered.</li>
-                <li>Use <b>"CLOSE"</b> to end the tool and exit the isolation.</li>
-            </div>
+        <div>
+            <p>Save States for Snap settings.</p>
         </div>
-        <div class="tool-item" id="unhide-selection" onclick="window.open('/docs/userguide/#unhide-by-selection','target');">
-            <div><img src="/assets/images/icons/bulb_usel_48.png" alt="bulb_usel">
-                <p>unHide selection</p>
-            </div>
-            <div>Unhide object selection</div>
-            <div class="instruction" id="DSTBX_unhider">Unhide objects by selection</div>
-        </div>
-        <div class="tool-item" id="unfreeze-selection" onclick="window.open('/docs/userguide/#unfreeze-by-selection','target');">
-            <div><img src="/assets/images/icons/bulb_fsel_48.png" alt="bulb_fsel">
-                <p>unFreeze selection</p>
-            </div>
-            <div>unFreeze object selection</div>
-            <div class="instruction" id="DSTBX_unfrozer">unfreeze objects by selection</div>
-        </div>
-        <div class="tool-item" id="isolate-layer" onclick="window.open('/docs/userguide/#layer-tools','target');">
-            <div><img src="/assets/images/icons/LayIso_48.png" alt="LayIso">
-                <p>Isolate - layer</p>
-            </div>
-            <div>
-                <p>Isolate/Un-isolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
-            </div>
-            <div class="instruction" id="DSTBX_layIso">
-                <p>Isolate/Un-isolate selected object/s layer/s.</p>
-                <p>If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="layer-lock" onclick="window.open('/docs/userguide/#layer-tools','target');">
-            <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
-                <p>Layer Lock</p>
-            </div>
-            <div>
-                <p>Locks the layer of the picked/selected node. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
-            </div>
-            <div class="instruction" id="DSTBX_layProp1">
-                <p>Locks the layer of the picked/selected node.</p>
-                <p>Press <b>SHIFT</b> when selecting the tool to unlock a frozen layer.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="layer-off" onclick="window.open('/docs/userguide/#layer-tools','target');">
-            <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
-                <p>Layer Off</p>
-            </div>
-            <div>
-                <p>Turn off the layer of the selected/picked node.</p>
-            </div>
-            <div class="instruction">
-                <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="layer-box-mode" onclick="window.open('/docs/userguide/#layer-tools','target');">
-            <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
-                <p>Layer BoxMode</p>
-            </div>
-            <div>
-                <p>Set Box mode status for selected/picked node layer.</p>
-            </div>
-            <div class="instruction">
-                <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="layer-backface-cull" onclick="window.open('/docs/userguide/#layer-tools','target');">
-            <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
-                <p>Layer BackFaceCull</p>
-            </div>
-            <div>
-                <p>Set BackFaceCull status for selected/picked node layer.</p>
-            </div>
-            <div class="instruction">
-                <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
-            </div>
+        <div class="instruction" id="DSTBX_snapSets">
+            <!-- TODO: Complete this! -->
+            <ul>
+                <li>You can click and drag around the compact interface.</li>
+                <li>Press the "OK" button to expand the UI and add states.</li>
+            </ul>
         </div>
     </div>
-    <!-- endregion -->
-    <!-- #region Rendering -->
-    <div class="category">
-        <h2>Rendering</h2>
-    </div>
-    <div class="tools" id="rendering">
-        <div class="tool-item" id="cameras-manager" onclick="window.open('/docs/userguide/#camera-manager','target');">
-            <div><img src="/assets/images/icons/camtool_48.png" alt="camera-tool">
-                <p>Camera manager</p>
-            </div>
-            <div>
-                <p>Review cameras, assign per-camera resolution, create batch render views, and add state sets.</p>
-            </div>
-            <div class="instruction" id="DSTBX_cam_manager">
-                <ul>
-                    <li>
-                        <p><b>Per-Camera resolution</b></p>
-                        <p>When you change the resolution and aspect ratio it will be stored in the camera, and the tool will automatically change the render output accordingly when cycling throw the cameras.</p>
-                        <p>Note that the tool will change the render output and will keep the last setting if you exit the tool.</p>
-                    </li>
-                    <li>
-                        <p><b>Reviewing cameras</b></p>
-                        <p>Use "Refresh" update the list if the scene changes.</p>
-                        <p>Use the "Select" to select the active camera.</p>
-                    </li>
-                    <li>
-                        <p><b>Per-camera output preview</b></p>
-                        <p>Activate it to use the render output set for the camera when changing the camera with the 3ds Max dialog (CTRL+C).</p>
-                    </li>
-                    <li>
-                        <p><b>Batch render rollout</b></p>
-                        <p>After setting the <i>output path</i> one time, the tool will auto format the <i>file name</i> and <i>output path</i> for the next views.</p>
-                    </li>
-                </ul>
-            </div>
+    <div class="tool-item" id="wirecolor adjust" onclick="window.open('/docs/userguide/#wireframe-colors-adjustment','target');">
+        <div><img src="/assets/images/icons/color_48.png" alt="wirecolor-adjust">
+            <p>Wirecolor adjust</p>
         </div>
-        <div class="tool-item" id="materials-replacer" onclick="window.open('/docs/userguide/#material-replacer','target');">
-            <div><img src="/assets/images/icons/mtl_48.png" alt="material">
-                <p>Replace scene materials</p>
-            </div>
-            <div>
-                <p>Replace each scene material with an alternative one.</p>
-            </div>
-            <div class="instruction">
-                <ul>
-                    <li>Select (or multi-select) the materials name on the list. next, double click on the selection and a scene explorer will open to select a replacement.</li>
-                    <li>You can save and load the material replacements list.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="tool-item" id="composition-guides" onclick="window.open('/tools/#vp-composition','_blank');">
-            <div><img src="/assets/images/icons/vcomp_48.png" alt="composition-guides">
-                <p>Viewport composition guides</p>
-            </div>
-            <div>
-                <p>This tool is intended to be of aid when composing shots. Easily draw photographic grids, reference lines, and vanishing lines to help compose the perfect shot.</p>
-            </div>
-            <div class="instruction">
-                <ul>
-                    <li>Quadrants (2x2)</li>
-                    <li>Rule of thirds (3x3)</li>
-                    <li>Golden proportions</li>
-                    <li>Golden ratio rectangles & spiral</li>
-                    <li>Position a guide in the viewport with the mouse. Possible positions: Vertical, horizontal, cross, from two-points.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="tool-item" id="material-remove" onclick="window.open('/tools/userguide/#other-material-related-tools','_blank');">
-            <div><img src="/assets/images/icons/mtlrem_48.png" alt="remove-material">
-                <p>Remove materials from selection</p>
-            </div>
-            <div>
-                <p>Single-click action for removing the material of the selected objects.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="select-no-material" onclick="window.open('/docs/userguide/#other-material-related-tools','target');">
-            <div><img src="/assets/images/icons/mtlSel_1_48.png" alt="material-select">
-                <p>Select objects without material</p>
-            </div>
-            <div>
-                <p>For the current selection, filter out the nodes without an applied material.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="select-same-material" onclick="window.open('/docs/userguide/#other-material-related-tools','target');">
-            <div><img src="/assets/images/icons/mtlSel_1_48.png" alt="material-select">
-                <p>Select objects with same material</p>
-            </div>
-            <div>
-                <p>Quick shortcut. For the current selection, select the scene nodes sharing the same material.</p>
-            </div>
-        </div>
-        <div class="tool-item" id="material-id-set" onclick="window.open('/docs/userguide/#quick-material-id-set','target');">
-            <div><img src="/assets/images/icons/mtl_48.png" alt="material">
-                <p>Quick material ID Set</p>
-            </div>
-            <div>Dialog UI for select and set material IDs without the need to dive in the command panel.</div>
-            <div class="instruction">
-                <ul>
-                    <li>Works with editable poly only</li>
-                    <li>You can also select all the faces that has the same ID as the current selected one.</li>
-                    <li>An additional option allows to randomly set IDs for the selected polygons.</li>
-                </ul>
-            </div>
+        <div>
+            <p>Adjust the wire colors for the current selection: <b>brightness</b>, <b>saturation</b>, and <b>hue</b>.</p>
         </div>
     </div>
-    <!-- endregion -->
-    <!-- #region Extras  -->
-    <div class="category">
-        <h2>Extras</h2>
-    </div>
-    <div class="tools" id="extras">
-        <div class="tool-item" id="multi-bitmap-loader" onclick="window.open('/docs/userguide/#bitmap-multi-loader','target');">
-            <div><img src="/assets/images/icons/bitmap_1_48.png" alt="bitmap-load">
-                <p>Bitmap multi-loader</p>
-            </div>
-            <div>Load multiple bitmapTextures to the slate material editor</div>
+</div>
+<!-- endregion -->
+<!-- #region Organization -->
+<div class="category">
+    <h2>Scene Organization</h2>
+</div>
+<div class="tools" id="scene-management">
+    <div class="tool-item" id="local-isolation" onclick="window.open('/docs/userguide/#local-isolate','target');">
+        <div><img src="/assets/images/icons/isolate_local_48.png" alt="isolate_local">
+            <p>Local Isolation</p>
         </div>
-        <div class="tool-item" id="map-name-from-file" onclick="window.open('/docs/userguide/#bitmap-name-from-file','target');">
-            <div><img src="/assets/images/icons/bitmap_2_48.png" alt="bitmap-rename">
-                <p>Map name from file</p>
-            </div>
-            <div>Change the names of Bitmap Textures to the name of the loaded files.</div>
+        <div>
+            <p>Isolate the selected object and set an active work grid in its local coordinates</p>
         </div>
-        <div class="tool-item" id="missing-textures" onclick="window.open('/docs/userguide/#missing-textures','target');">
-            <div><img src="/assets/images/icons/bitmap_3_48.png" alt="bitmap-missing">
-                <p>Missing textures</p>
-            </div>
-            <div>
-                <p>Texture maps filename search and replace utility for relocating missing files.</p>
-            </div>
-        </div>
-        <div class="tool-item" onclick="window.open('/docs/userguide/#transform-locks','target');">
-            <div><img src="/assets/images/icons/Locks_all_48.png" alt="Locks_all">
-                <p>Lock flags</p>
-            </div>
-            <div>
-                <p>Lock/Unlock the object transforms.</p>
-            </div>
-            <div class="instruction" id="DSTBX_Locks_all">
-                <p>Lock/Unlock all object transformations: Position, rotation and scale</p>
-            </div>
-            <div class="tool-footer">
-                <img src="/assets/images/icons/Locks_pos_48.png" alt="Locks_pos">
-                <img src="/assets/images/icons/Locks_ro_48.png" alt="Locks_ro">
-                <img src="/assets/images/icons/Locks_sc_48.png" alt="Locks_sc">
-            </div>
-        </div>
-        <div class="tool-item" onclick="window.open('/docs/userguide/#utilities','target');">
-            <div><img src="/assets/images/icons/box_48.png" alt="material">
-                <p>Other tools</p>
-            </div>
-            <div>
-                <ul>
-                    <li>ID from camera: Set objects ID for current camera view</li>
-                    <li>Set Bump value to 100: Easy way to adjust materials for a modern PBR workflow.</li>
-                    <li>Normal map gamma correct: Change the gamma value to 1.0 for normal maps textures.</li>
-                    <li>Texture maps filename search and replace: Utility for manually relocate missing bitmap files.</li>
-                    <li>Replace selected node with Xref Record.</li>
-                </ul>
-            </div>
-            <div class="tool-footer">
-                <p>OPTIONAL FEATURES</p>
-            </div>
+        <div class="instruction" id="DSTBX_refIsolate">
+            <ul>
+                <li>Works in Object level or with the selected faces in an Editable Poly.</li>
+                <li>If more than one object is selected, Local isolate will use the first object in the selection to set the grid</li>
+            </ul>
         </div>
     </div>
-    <!-- endregion -->
+    <div class="tool-item" id="incremental-isolation" onclick="window.open('/docs/userguide/#incremental-isolation','target');">
+        <div><img src="/assets/images/icons/incIso_48.png" alt="incIso">
+            <p>Incremental isolation</p>
+        </div>
+        <div>
+            <p> Multi-level isolation tool, use it to incrementally re-isolate within the current selection</p>
+        </div>
+        <div class="instruction" id="DSTBX_nestedISO">
+            <li>The tool will open a floater dialog with three buttons.</li>.
+            <li>Select some nodes and press <b>LEVEL UP</b> to isolate them.</li>
+            <li>Press <b>LEVEL DOWN</b> to restore the previous isolated nodes, or exit isolation mode if no previous level is registered.</li>
+            <li>Use <b>"CLOSE"</b> to end the tool and exit the isolation.</li>
+        </div>
+    </div>
+    <div class="tool-item" id="unhide-selection" onclick="window.open('/docs/userguide/#unhide-by-selection','target');">
+        <div><img src="/assets/images/icons/bulb_usel_48.png" alt="bulb_usel">
+            <p>unHide selection</p>
+        </div>
+        <div>Unhide object selection</div>
+        <div class="instruction" id="DSTBX_unhider">Unhide objects by selection</div>
+    </div>
+    <div class="tool-item" id="unfreeze-selection" onclick="window.open('/docs/userguide/#unfreeze-by-selection','target');">
+        <div><img src="/assets/images/icons/bulb_fsel_48.png" alt="bulb_fsel">
+            <p>unFreeze selection</p>
+        </div>
+        <div>unFreeze object selection</div>
+        <div class="instruction" id="DSTBX_unfrozer">unfreeze objects by selection</div>
+    </div>
+    <div class="tool-item" id="isolate-layer" onclick="window.open('/docs/userguide/#layer-tools','target');">
+        <div><img src="/assets/images/icons/LayIso_48.png" alt="LayIso">
+            <p>Isolate - layer</p>
+        </div>
+        <div>
+            <p>Isolate/Un-isolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
+        </div>
+        <div class="instruction" id="DSTBX_layIso">
+            <p>Isolate/Un-isolate selected object/s layer/s.</p>
+            <p>If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="layer-lock" onclick="window.open('/docs/userguide/#layer-tools','target');">
+        <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
+            <p>Layer Lock</p>
+        </div>
+        <div>
+            <p>Locks the layer of the picked/selected node. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
+        </div>
+        <div class="instruction" id="DSTBX_layProp1">
+            <p>Locks the layer of the picked/selected node.</p>
+            <p>Press <b>SHIFT</b> when selecting the tool to unlock a frozen layer.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="layer-off" onclick="window.open('/docs/userguide/#layer-tools','target');">
+        <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
+            <p>Layer Off</p>
+        </div>
+        <div>
+            <p>Turn off the layer of the selected/picked node.</p>
+        </div>
+        <div class="instruction">
+            <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="layer-box-mode" onclick="window.open('/docs/userguide/#layer-tools','target');">
+        <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
+            <p>Layer BoxMode</p>
+        </div>
+        <div>
+            <p>Set Box mode status for selected/picked node layer.</p>
+        </div>
+        <div class="instruction">
+            <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="layer-backface-cull" onclick="window.open('/docs/userguide/#layer-tools','target');">
+        <div><img src="/assets/images/icons/LayProps_48.png" alt="LayProps">
+            <p>Layer BackFaceCull</p>
+        </div>
+        <div>
+            <p>Set BackFaceCull status for selected/picked node layer.</p>
+        </div>
+        <div class="instruction">
+            <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
+        </div>
+    </div>
+</div>
+<!-- endregion -->
+<!-- #region Rendering -->
+<div class="category">
+    <h2>Rendering</h2>
+</div>
+<div class="tools" id="rendering">
+    <div class="tool-item double" id="cameras-manager" onclick="window.open('/docs/userguide/#camera-manager','target');">
+        <div><img src="/assets/images/icons/camtool_48.png" alt="camera-tool">
+            <p>Camera manager</p>
+        </div>
+        <div>
+            <p>Review cameras, assign per-camera resolution, create batch render views, and add state sets.</p>
+        </div>
+        <div class="instruction" id="DSTBX_cam_manager">
+            <ul>
+                <li>
+                    <p><b>Per-Camera resolution</b></p>
+                    <p>When you change the resolution and aspect ratio it will be stored in the camera, and the tool will automatically change the render output accordingly when cycling throw the cameras.</p>
+                    <p>Note that the tool will change the render output and will keep the last setting if you exit the tool.</p>
+                </li>
+                <li>
+                    <p><b>Reviewing cameras</b></p>
+                    <p>Use "Refresh" update the list if the scene changes.</p>
+                    <p>Use the "Select" to select the active camera.</p>
+                </li>
+                <li>
+                    <p><b>Per-camera output preview</b></p>
+                    <p>Activate it to use the render output set for the camera when changing the camera with the 3ds Max dialog (CTRL+C).</p>
+                </li>
+                <li>
+                    <p><b>Batch render rollout</b></p>
+                    <p>After setting the <i>output path</i> one time, the tool will auto format the <i>file name</i> and <i>output path</i> for the next views.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tool-item" id="composition-guides" onclick="window.open('/tools/#vp-composition','_blank');">
+        <div><img src="/assets/images/icons/vcomp_48.png" alt="composition-guides">
+            <p>Viewport composition guides</p>
+        </div>
+        <div>
+            <p>This tool is intended to be of aid when composing shots. Easily draw photographic grids, reference lines, and vanishing lines to help compose the perfect shot.</p>
+        </div>
+        <div class="instruction">
+            <ul>
+                <li>Quadrants (2x2)</li>
+                <li>Rule of thirds (3x3)</li>
+                <li>Golden proportions</li>
+                <li>Golden ratio rectangles & spiral</li>
+                <li>Position a guide in the viewport with the mouse. Possible positions: Vertical, horizontal, cross, from two-points.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tool-item" id="materials-replacer" onclick="window.open('/docs/userguide/#material-replacer','target');">
+        <div><img src="/assets/images/icons/mtl_48.png" alt="material">
+            <p>Replace scene materials</p>
+        </div>
+        <div>
+            <p>Replace each scene material with an alternative one.</p>
+        </div>
+        <div class="instruction">
+            <ul>
+                <li>Select (or multi-select) the materials name on the list. next, double click on the selection and a scene explorer will open to select a replacement.</li>
+                <li>You can save and load the material replacements list.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tool-item" id="material-remove" onclick="window.open('/tools/userguide/#other-material-related-tools','_blank');">
+        <div><img src="/assets/images/icons/mtlrem_48.png" alt="remove-material">
+            <p>Remove materials from selection</p>
+        </div>
+        <div>
+            <p>Single-click action for removing the material of the selected objects.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="select-no-material" onclick="window.open('/docs/userguide/#other-material-related-tools','target');">
+        <div><img src="/assets/images/icons/mtlSel_1_48.png" alt="material-select">
+            <p>Select objects without material</p>
+        </div>
+        <div>
+            <p>For the current selection, filter out the nodes without an applied material.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="select-same-material" onclick="window.open('/docs/userguide/#other-material-related-tools','target');">
+        <div><img src="/assets/images/icons/mtlSel_1_48.png" alt="material-select">
+            <p>Select objects with same material</p>
+        </div>
+        <div>
+            <p>Quick shortcut. For the current selection, select the scene nodes sharing the same material.</p>
+        </div>
+    </div>
+    <div class="tool-item" id="material-id-set" onclick="window.open('/docs/userguide/#quick-material-id-set','target');">
+        <div><img src="/assets/images/icons/mtl_48.png" alt="material">
+            <p>Quick material ID Set</p>
+        </div>
+        <div>Dialog UI for select and set material IDs without the need to dive in the command panel.</div>
+        <div class="instruction">
+            <ul>
+                <li>Works with editable poly only</li>
+                <li>You can also select all the faces that has the same ID as the current selected one.</li>
+                <li>An additional option allows to randomly set IDs for the selected polygons.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- endregion -->
+<!-- #region Extras  -->
+<div class="category">
+    <h2>Extras</h2>
+</div>
+<div class="tools" id="extras">
+    <div class="tool-item" id="multi-bitmap-loader" onclick="window.open('/docs/userguide/#bitmap-multi-loader','target');">
+        <div><img src="/assets/images/icons/bitmap_1_48.png" alt="bitmap-load">
+            <p>Bitmap multi-loader</p>
+        </div>
+        <div>Load multiple bitmapTextures to the slate material editor</div>
+    </div>
+    <div class="tool-item" id="map-name-from-file" onclick="window.open('/docs/userguide/#bitmap-name-from-file','target');">
+        <div><img src="/assets/images/icons/bitmap_2_48.png" alt="bitmap-rename">
+            <p>Map name from file</p>
+        </div>
+        <div>Change the names of Bitmap Textures to the name of the loaded files.</div>
+    </div>
+    <div class="tool-item" id="missing-textures" onclick="window.open('/docs/userguide/#missing-textures','target');">
+        <div><img src="/assets/images/icons/bitmap_3_48.png" alt="bitmap-missing">
+            <p>Missing textures</p>
+        </div>
+        <div>
+            <p>Texture maps filename search and replace utility for relocating missing files.</p>
+        </div>
+    </div>
+    <div class="tool-item" onclick="window.open('/docs/userguide/#transform-locks','target');">
+        <div><img src="/assets/images/icons/Locks_all_48.png" alt="Locks_all">
+            <p>Lock flags</p>
+        </div>
+        <div>
+            <p>Lock/Unlock the object transforms.</p>
+        </div>
+        <div class="instruction" id="DSTBX_Locks_all">
+            <p>Lock/Unlock all object transformations: Position, rotation and scale</p>
+        </div>
+        <div class="tool-footer">
+            <img src="/assets/images/icons/Locks_pos_48.png" alt="Locks_pos">
+            <img src="/assets/images/icons/Locks_ro_48.png" alt="Locks_ro">
+            <img src="/assets/images/icons/Locks_sc_48.png" alt="Locks_sc">
+        </div>
+    </div>
+    <div class="tool-item double" onclick="window.open('/docs/userguide/#utilities','target');">
+        <div><img src="/assets/images/icons/box_48.png" alt="material">
+            <p>Other tools</p>
+        </div>
+        <div>
+            <ul>
+                <li>ID from camera: Set objects ID for current camera view</li>
+                <li>Set Bump value to 100: Easy way to adjust materials for a modern PBR workflow.</li>
+                <li>Normal map gamma correct: Change the gamma value to 1.0 for normal maps textures.</li>
+                <li>Replace selected node with Xref Record.</li>
+            </ul>
+        </div>
+        <div class="tool-footer">
+            <p>OPTIONAL FEATURES</p>
+        </div>
+    </div>
+</div>
+<!-- endregion -->
