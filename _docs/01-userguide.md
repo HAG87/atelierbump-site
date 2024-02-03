@@ -18,7 +18,7 @@ Another feature is the ability to place **intersection marks** where linear guid
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ewg1prguQE0" frameborder="0" allowfullscreen></iframe></div>
 
-![rg?tool](/assets/images/icons/rg_B_128.png){: .icon-small}
+![rg-tool](/assets/images/icons/rg_B_128.png){: .icon-small}
 
 ### Guides placement
 
@@ -53,9 +53,9 @@ This mode place a guide by determining a direction from two points.
 > - Press <mark>ALT</mark> during last placement tracking to override intersection points ON/OFF setting.
 > - The tools have a "continued creation" mode for placing more than one guide in one action.
 
-![rGUImode](/assets/images/ui/rgUImode.png){: .align-center .drop-shadow}
+![rG-UI-mode](/assets/images/ui/rgUImode.png){: .align-center .drop-shadow}
 
-![rg?protractor](/assets/images/icons/prot_128.png){: .icon-small}
+![rg-protractor](/assets/images/icons/prot_128.png){: .icon-small}
 
 #### Line guide
 
@@ -76,9 +76,9 @@ The UI option for the creation modes shows a floater with the general settings f
 
 Tool for displaying and snapping angular values. The same placing methods described for the reference line tool are available for the protractor, a exception of the UI mode, since its included in the guide line UI.
 
-![prev?prot_128](/assets/images/ui/preprot.png){: .align-center .drop-shadow}
+![prev-prot](/assets/images/ui/preprot.png){: .align-center .drop-shadow}
 
-![rg?intpoints](/assets/images/icons/infer_128.png){: .icon-small}
+![rg-int-points](/assets/images/icons/infer_128.png){: .icon-small}
 
 #### Reference points Tool
 
@@ -90,7 +90,7 @@ Line tracing options:
 - Press <mark>SHIFT</mark> / when picking first point of line for **orthogonal** placement mode
 - Press <mark>ALT</mark> when picking first point of line for **polar** placement mode
 
-![rg?liveview](/assets/images/icons/rg_inf2_128.png){: .icon-small}
+![rg-live-view](/assets/images/icons/rg_inf2_128.png){: .icon-small}
 
 #### Viewport information tools
 
@@ -99,7 +99,7 @@ Use the guides as a ruler display in viewport unit steps
 - Live info: Display units for the current selected guide.
 - Live info+: Display units for all the guides in the current view (skips hidden or isolated guides).
 
-![rg?more](/assets/images/icons/rg_UI_128.png){: .icon-small}
+![rg-more](/assets/images/icons/rg_UI_128.png){: .icon-small}
 
 #### refGuides Objects
 
@@ -110,11 +110,11 @@ When using any of the "refGuides" tools, a custom Shape object is created for / 
 - Delete all guides in scene.
 - Lock guides after creation.
 
-![dslogo](/assets/images/icons/dstlbx_icon_128.png){: .icon-small}
+![ds-logo](/assets/images/icons/dstlbx_icon_128.png){: .icon-small}
 
 ## Transform tools
 
-![ref?rot](/assets/images/icons/rotate_128.png){: .icon-small}
+![ref-rotation](/assets/images/icons/rotate_128.png){: .icon-small}
 
 ### reference Rotation
 
@@ -131,7 +131,7 @@ First, select the object you want to rotate.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/jNH5CqEVkm4" frameborder="0" allowfullscreen></iframe></div>
 
-![loc?rot](/assets/images/icons/QLrotate_128.png){: .icon-small}
+![loc-rotation](/assets/images/icons/QLrotate_128.png){: .icon-small}
 
 ### local reference Rotation
 
@@ -147,7 +147,7 @@ First, select the object you want to rotate.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7yt8PFlBymI" frameborder="0" allowfullscreen></iframe></div>
 
-![ref?scale](/assets/images/icons/scale_128.png){: .icon-small}
+![ref-scale](/assets/images/icons/scale_128.png){: .icon-small}
 
 ### reference Scale
 
@@ -170,7 +170,7 @@ The tool works picking two reference distances, one representing a reference len
 > - **In context:** Operation done in local coordinates.
 > - **Xform:** Instead of direct transformation, it applies a Xform modifier to the target object.
 
-![mirrortool](/assets/images/icons/Reflect_128.png){: .icon-small}
+![mirror-tool](/assets/images/icons/Reflect_128.png){: .icon-small}
 
 ### Mirror tool
 
@@ -184,11 +184,11 @@ Interactive mirror tool with complex mirror planes alignment.
 3. Set or skip the offset angle
 4. Finally, select the objects and use the options in the dialog to enable or disable the mirror axes or planes.
 
-![mirrortool1](/assets/images/ui/mirrortool_1.png){: .align-center .drop-shadow}
+![mirror-tool1](/assets/images/ui/mirrortool_1.png){: .align-center .drop-shadow}
 
-![mirrortool2](/assets/images/ui/mirrortool_2.png){: .align-center .drop-shadow}
+![mirror-tool2](/assets/images/ui/mirrortool_2.png){: .align-center .drop-shadow}
 
-![movealign](/assets/images/icons/QrotateF_128.png){: .icon-small}
+![move-align](/assets/images/icons/QrotateF_128.png){: .icon-small}
 
 ### Move and align (1D Align tool)
 
@@ -200,7 +200,7 @@ Align objects using two directions from a common base point.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/4qdFyJbd9n4" frameborder="0" allowfullscreen></iframe></div>
 
-![pointsalign](/assets/images/icons/3ptAlign_128.png){: .icon-small}
+![points-align](/assets/images/icons/3ptAlign_128.png){: .icon-small}
 
 ### 3 points align
 
@@ -259,19 +259,19 @@ CAD-like Move tool that uses two (origin and destination) reference points.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZCKKdEMK9a8" frameborder="0" allowfullscreen></iframe></div>
 
-![swaptransform](/assets/images/icons/swapTr_128.png){: .icon-small}
+![swap-transform](/assets/images/icons/swapTr_128.png){: .icon-small}
 
 ### Swap transform
 
 Select a collection of objects (will follow the selection pick order) and cycle their transform from one to the next.
 
-![randomswap](/assets/images/icons/RndSwap_128.png){: .icon-small}
+![random-swap](/assets/images/icons/RndSwap_128.png){: .icon-small}
 
 ### Random swap transform
 
 Randomly swap position, rotation and scale between the selected objects.
 
-![randomswap](/assets/images/ui/random-swap.png){: .align-center .drop-shadow}
+![random-swap-ui](/assets/images/ui/random-swap.png){: .align-center .drop-shadow}
 
 #### Floater dialog
 
@@ -287,11 +287,11 @@ Tool packed with several options to randomize and clone nodes.
 - Set constant, by range or a scripted list of values to apply the transform.
 - Apply the transform in Grid, Local, or Reference coordinate system. To use the later mode, pick a reference node first.
 
-![randomtransform](/assets/images/ui/rndTrnsform.png){: .align-center .drop-shadow}
+![random-transform](/assets/images/ui/rndTrnsform.png){: .align-center .drop-shadow}
 
 ### Arrange objects
 
-![arrangeInt](/assets/images/icons/arrangeInt_128.png){: .icon-small}
+![arrange-Int](/assets/images/icons/arrangeInt_128.png){: .icon-small}
 
 #### Arrange objects (interactive)
 
@@ -305,7 +305,7 @@ Distribute or redistribute objects (equally spaced) on a linear direction.
 > - Press <mark>SHIFT</mark> to conform to the underlying surfaces
 > - Press <mark>SHIFT</mark> to orient to the underlying surfaces
 
-![arrangeRT](/assets/images/icons/arrangeRT_128.png){: .icon-small}
+![arrange-RT](/assets/images/icons/arrangeRT_128.png){: .icon-small}
 
 #### Arrange objects (real-time)
 
@@ -321,7 +321,7 @@ Distribute or redistribute objects (equally spaced) on a linear direction.
 > - Press <mark>SHIFT</mark> to conform to the underlying surfaces
 > - Press <mark>CONTROL</mark> to orient to the underlying surfaces
 
-![arrangeAB](/assets/images/icons/arrangeAB_128.png){: .icon-small}
+![arrange-AB](/assets/images/icons/arrangeAB_128.png){: .icon-small}
 
 #### Arrange objects (start-end objects)
 
@@ -334,7 +334,7 @@ Direction and length of the distribution determined by the position of two objec
 
 > Press the TOOL BUTTON+<mark>SHIFT</mark> to conform and align the objects to the underlying surfaces.
 
-![arrangeAB](/assets/images/icons/dropObj_128.png){: .icon-small}
+![drp-object](/assets/images/icons/dropObj_128.png){: .icon-small}
 
 #### Drop objects
 
@@ -376,7 +376,7 @@ Measure tape with live visual feedback.
 
 The result of the last measure will be copied to the clipboard and each measure is traced to the listener after finishing using the tool.
 
-![distance](/assets/images/icons/Qmeasure_2_128.png){: .icon-small}
+![distance-2](/assets/images/icons/Qmeasure_2_128.png){: .icon-small}
 
 ### Contiguous (chain) dimension line
 
@@ -398,7 +398,7 @@ Both functionalities are integrated in the dialog UI of the **"Distance history"
 
 #### Distance history
 
-![distanceDlg](/assets/images/ui/dstDlg.png){: .align-center .drop-shadow}
+![distance-history-dialog](/assets/images/ui/dstDlg.png){: .align-center .drop-shadow}
 
 Selecting one or multiple items in the listbox of "Distance measures" or "Continued distance measures" wil re-display them in the viewport.
 
@@ -428,7 +428,7 @@ Create dimension lines with measure annotation allowing to render the taken dime
 
 >Please note that, the text will be oriented left -> right, based on the current view. Expect unpredicted result on orthogonal views.
 
-![dimobj?prev](\assets\images\dimobj_preview.png){: .align-center .drop-shadow}
+![dim-obj-prev](\assets\images\dimobj_preview.png){: .align-center .drop-shadow}
 
 ![angle](/assets/images/icons/Qangle_128.png){: .icon-small}
 
@@ -480,7 +480,7 @@ Measure the angle between two faces.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0v34PlCsrT4" frameborder="0" allowfullscreen></iframe></div>
 
-![angle2faces](/assets/images/icons/angle2edges_128.png)
+![angle2edges](/assets/images/icons/angle2edges_128.png)
 
 ### Angle between two edges
 
@@ -491,7 +491,7 @@ Measure the angle between two faces.
 
 Displays information about an object's dimension and transformation
 
-![spatialInfo](/assets/images/ui/spatialinfo.png)
+![spatial-Info](/assets/images/ui/spatialinfo.png)
 
 ### Home grid size
 
@@ -505,7 +505,7 @@ Provides settings to change the guides color, layer name, intersection points be
 
 ### refGuides options
 
-![rGoptions](/assets/images/ui/rGoptions.png){: .align-center .drop-shadow}
+![refguides-cfg](/assets/images/ui/rGoptions.png){: .align-center .drop-shadow}
 
 - [*] Custom Object mode (On by default) is only available for 3Ds Max 2016 and up.
 - Smart intersection mode will consider any planar shape on the scene as a guide. While resource consuming, it can place intersection points on imported CAD drawings. for example.
@@ -514,7 +514,7 @@ Provides settings to change the guides color, layer name, intersection points be
 
 You can change the color palette used to represent points marks, lines and other kind of visual helpers within the tools. Change the colors in the pickers or use one of the presets.
 
-![dstlbx_cfg](/assets/images/ui/dstlbx_cfg.png){: .align-center .drop-shadow}
+![designtoolbox-cfg](/assets/images/ui/dstlbx_cfg.png){: .align-center .drop-shadow}
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/Peh68BRbEiQ" frameborder="0" allowfullscreen></iframe></div>
 
@@ -524,11 +524,11 @@ You can change the color palette used to represent points marks, lines and other
 - For the protractor change the radius, angle marks and angle snap for the polar positioning function.
 - Set the size of the point markers
 
-![rgunits](/assets/images/ui/refguides-units.png){: .align-center .drop-shadow}
+![rg-units](/assets/images/ui/refguides-units.png){: .align-center .drop-shadow}
 
 ### Transform and measure tools units configuration
 
-![dsunits](/assets/images/ui/dstlbx-units.png){: .align-center .drop-shadow}
+![ds-units](/assets/images/ui/dstlbx-units.png){: .align-center .drop-shadow}
 
 - Linear Units apply only to results printed in the listener.
 - Changing any of these values from the default 1.0 Will NOT scale the values in the current Display Unit Scale (i.e.: 1.0m to 0.1m).
@@ -549,7 +549,7 @@ You can change the color palette used to represent points marks, lines and other
 
 Pivot repositioning commands
 
-![pivot_tools](/assets/images/ui/pivotUI.png){: .align-center .drop-shadow}
+![pivot-tools](/assets/images/ui/pivotUI.png){: .align-center .drop-shadow}
 
 While there already are tools available to reposition an object's center pivot, this one groups them in a convenient UI, that pops down from the toolbar or ribbon button.
 
@@ -575,7 +575,7 @@ If no object is selected, the tool will reposition the pivot of the object where
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/kQdwEGEm2U8" frameborder="0" allowfullscreen></iframe></div>
 
-![lockpos](/assets/images/icons/Locks_pos_128.png){: .icon-small}
+![lock-pos](/assets/images/icons/Locks_pos_128.png){: .icon-small}
 
 ### Transform locks
 
@@ -604,7 +604,7 @@ Isolate / unisolate selected object and set an active work grid in its local coo
 
 re-Isolate within current the selection.
 
-![inciso](/assets/images/ui/incIso_ui.png){: .align-center .drop-shadow}
+![inc-iso](/assets/images/ui/incIso_ui.png){: .align-center .drop-shadow}
 
 The tool will open a floater dialog with three buttons. **"LEVEL UP"**, **"LEVEL DOWN"** and **"CLOSE"**. Select some nodes and press **LEVEL UP** to isolate them. Press **LEVEL DOWN** to restore the previous isolated nodes, or exit isolation mode if no previous level is registered. Closing the tool will exit isolation mode.
 
@@ -620,7 +620,7 @@ This tool will temporally display all hidden objects (and hide visible ones). Se
 
 This tool will temporally display all frozen objects (and freeze visible ones). Select the ones you want to unfreeze and Press "Done" on the floater.
 
-![laytools](/assets/images/icons/layIso_128.png){: .icon-small}
+![layer-tools](/assets/images/icons/layIso_128.png){: .icon-small}
 
 ### Layer tools
 
@@ -658,7 +658,7 @@ Layer tools will work on the selected node (if any) otherwise they will work in 
 
 Properties, modifiers and appearance copy tool, from a source object to a target object or objects*
 
-Note that, Eyedropper will replace any matching or similar property, regardless of the node class. I.E: You can copy the diameter of a circle shape to a sphere object, and so on. UVWmap copy will copy applied UVW modifiers and attempt to copy direct mesh mapping, so if a editable poly or mesh is collapsed, there is a chance their mapping coordinates will be copied.
+Note that, Eyedropper will replace any matching or similar property, regardless of the node class. I.E: You can copy the diameter of a circle shape to a sphere object, and so on. UVW map copy will copy applied UVW modifiers and attempt to copy direct mesh mapping, so if a editable poly or mesh is collapsed, there is a chance their mapping coordinates will be copied.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/LNEMMZjTgIQ" frameborder="0" allowfullscreen></iframe></div>
 
@@ -666,7 +666,7 @@ Note that, Eyedropper will replace any matching or similar property, regardless 
 
 Will copy the active settings on the **filters** dialog:
 
-![eyedrop?filters](/assets/images/ui/eyedropper_floater.png){: .align-center .drop-shadow}
+![eyedrop-filters](/assets/images/ui/eyedropper_floater.png){: .align-center .drop-shadow}
 
 #### Eyedropper modes
 
@@ -682,7 +682,7 @@ Additional available modes:
 
 ## Object related tools
 
-![1darray](/assets/images/icons/1d_array_128.png){: .icon-small}
+![1d-array](/assets/images/icons/1d_array_128.png){: .icon-small}
 
 ### 1D Array (Clone Between)
 
@@ -700,7 +700,7 @@ Set subdivision marks between two points, and place a clone on each mark
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
 
-![interactive?array](/assets/images/icons/2d_array_128.png){: .icon-small}
+![interactive-array](/assets/images/icons/2d_array_128.png){: .icon-small}
 
 ### Interactive 2D Array
 
@@ -716,13 +716,13 @@ Set subdivision marks between two points, and place a clone on each mark
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/aR_UTzUdyps" frameborder="0" allowfullscreen></iframe></div>
 
-![pattern?array](/assets/images/icons/P_array_128.png){: .icon-small}
+![pattern-array](/assets/images/icons/P_array_128.png){: .icon-small}
 
 ### Pattern Array
 
 Make complex rule-based object arrays; walls, mosaic patterns...
 
-![pattern?array](/assets/images/ui/parray.png){: .align-center .drop-shadow}
+![pattern-array](/assets/images/ui/parray.png){: .align-center .drop-shadow}
 
 - Array Dimension
   - Rows and Columns: Set the amount of rows and columns for the array. Array dimension will be nRows x nColumns. (nColumns per row).
@@ -739,9 +739,7 @@ Make complex rule-based object arrays; walls, mosaic patterns...
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/R7HhBRuUbnY" frameborder="0" allowfullscreen></iframe></div>
 
-![cammanager](/assets/images/icons/Explode_128.png){: .icon-small}
-
-![array?polar](/assets/images/icons/polar_array_128.png){: .icon-small}
+![array-polar](/assets/images/icons/polar_array_128.png){: .icon-small}
 
 ### Polar array
 
@@ -759,7 +757,7 @@ Make complex rule-based object arrays; walls, mosaic patterns...
 
 #### Floater dialog
 
-![arraypolar?ui](/assets/images/ui/mvarnd.png){: .align-center .drop-shadow}
+![array-polar-ui](/assets/images/ui/mvarnd.png){: .align-center .drop-shadow}
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/40i8ldt4j4k" frameborder="0" allowfullscreen></iframe></div>
 
@@ -777,7 +775,7 @@ This tools offers some enhanced functionality to the default available attach/de
 | Edit Mesh  |
 | Splines    |
 
-![edgelength](/assets/images/icons/edgeLength_128.png){: .icon-small}
+![edge-length](/assets/images/icons/edgeLength_128.png){: .icon-small}
 
 ### Edge length tool
 
@@ -790,11 +788,19 @@ Change the length of selected edges. (Works only with Editable Poly objects)
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/YOMrC9Rxlng" frameborder="0" allowfullscreen></iframe></div>
 
----
+![vertex-align](/assets/images/icons/vertexAlign_128.png){: .icon-small}
+
+### Align vertices
+
+Align a selection of vertices in a straight line.
+
+1. Select the vertices you want to align. alternatively, select a edge loop or some consecutive edges.
+2. Start the tool. Choose a base point to begin drawing a line that will be used to align the vertices.
+3. Choose an endpoint to determine the direction of the line. The vertices will be repositioned over the line, to the closest point to the original position.
 
 ## Scene management and rendering related tools
 
-![cammanager](/assets/images/icons/camtool_128.png){: .icon-small}
+![cam-manager](/assets/images/icons/camtool_128.png){: .icon-small}
 
 ### Camera manager
 
@@ -818,18 +824,18 @@ Using "Select" button will select in the scene the active camera.
 
 This will open a new floater dialog, with only a button to set the feature on and off. If the tool is open and enabled, when changing the cameras using the standard 3ds Max method (CTRL+C) the render output will be auto changed to match the settings configured in the "Output size" for the respective camera (if any).
 
-![cammanager](/assets/images/ui/cammngr_ui1.png){: .align-center .drop-shadow}
+![cam-manager-ui](/assets/images/ui/cammngr_ui1.png){: .align-center .drop-shadow}
 
 #### Batch render rollout
 
 - The view will be named with the active camera name and resolution related information.
 - After setting the **output path** one time, the tool will auto format file name and output path for the next views.
 
-![cammanager](/assets/images/ui/cammngr_ui2.png){: .align-center .drop-shadow}
+![cam-manager-ui-2](/assets/images/ui/cammngr_ui2.png){: .align-center .drop-shadow}
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/rwIf1HBtY5o" frameborder="0" allowfullscreen></iframe></div>
 
-![cammanager](/assets/images/icons/mtl_128.png){: .icon-small}
+![mtl-replacer](/assets/images/icons/mtl_128.png){: .icon-small}
 
 ### Material replacer
 
@@ -839,13 +845,13 @@ The tool enables to save a list of material correspondences, so if you work in a
 
 Note: When importing some formats, 3ds max auto assigns materials with random names, so use a format like **FBX** that keeps material information.
 
-![mtlreplacer](/assets/images/ui/matreplacer.png){: .align-center .drop-shadow}
+![mtl-replacer-ui](/assets/images/ui/matreplacer.png){: .align-center .drop-shadow}
 
 ### Quick material ID Set
 
 Dialog UI for select and set material IDs without the need to dive in the command panel.
 
-![mtlidset](/assets/images/ui/mtl-id-set.png){: .align-center .drop-shadow}
+![mtl-id-set](/assets/images/ui/mtl-id-set.png){: .align-center .drop-shadow}
 
 - Works with editable poly only
 - You can also select all the faces that has the same ID as the current selected one.
@@ -892,6 +898,20 @@ Adjust HSV values of selected objects wireframe color.
 - Random IDs
 
 ## Utilities
+
+![modifiers-presets](/assets/images/icons/modPreset_128.png){: .icon-small}
+
+### Modifiers presets
+
+![modifiers-presets](/assets/images/ui/modifiers-presets.png){: .align-center}
+
+Tool for storing presets for modifier. The tool works by storing values from the modifiers applied to a node. It has three dialogs, the main dialog shows a list of buttons with the presets, one dialog is for adding the presets, and the other is for managing the saved presets.
+
+- Start the tool, use the presets from the list, selecting the object or objects to apply the modifiers to, and clicking the desired preset.
+- - To add presets:
+  1. Select an object with some modifiers applied, and click "Add presets". Pick an object if nothing is selected.
+  2. Select a modifier from the list, Edit the name, and Add the preset.
+- Use "Edit list" to reset, remove, or rearrange the preset list.
 
 ![paneling](/assets/images/icons/paneling_128.png){: .icon-small}
 
@@ -945,7 +965,7 @@ Best suited to be used as a complement of the Paneling tool. This utility allows
 
 Texture coordinates related tools
 
-![maptools](/assets/images/icons/maptools_128.png){: .icon-small}
+![map-tools](/assets/images/icons/maptools_128.png){: .icon-small}
 
 #### Map tools
 
@@ -965,17 +985,17 @@ Add **individual** UVW modifiers to a **selection** of objects, **poly elements*
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/BAxjEX4N4CY" frameborder="0" allowfullscreen></iframe></div>
 
-![snap?states](/assets/images/icons/magnet_128.png){: .icon-small}
+![snap-states](/assets/images/icons/magnet_128.png){: .icon-small}
 
 ### Snaps states
 
-![savesnapfloater](/assets/images/ui/savesnap1.png){: .align-center .drop-shadow}
+![saves-nap-floater](/assets/images/ui/savesnap1.png){: .align-center .drop-shadow}
 
 Save current active snaps as a named set and reuse them from the floater dropdown list
 
-![savesnapadd](/assets/images/ui/savesnap2.png){: .align-center .drop-shadow}
+![save-snap-add](/assets/images/ui/savesnap2.png){: .align-center .drop-shadow}
 
-![color?clipboard](/assets/images/icons/color_128.png){: .icon-small}
+![color-clipboard](/assets/images/icons/color_128.png){: .icon-small}
 
 ---
 
@@ -983,7 +1003,7 @@ Save current active snaps as a named set and reuse them from the floater dropdow
 
 ### Menus
 
-![dstlbx_menu](/assets/images/designtoolbox-menus.png){: .align-center .drop-shadow}
+![dstlbx-menu](/assets/images/designtoolbox-menus.png){: .align-center .drop-shadow}
 
 ### Where to locate the toolbar macros
 
@@ -993,9 +1013,9 @@ You can find the tools in the **customization dialog** under the categories of <
 
 #### refGuides panel
 
-![refguides_ribbon](/assets/images/ui/r1.png){: .align-center .drop-shadow}
+![refguides-ribbon](/assets/images/ui/r1.png){: .align-center .drop-shadow}
 
-![refguides_ribbon](/assets/images/ui/r2.png){: .align-center .drop-shadow}
+![refguides-ribbon](/assets/images/ui/r2.png){: .align-center .drop-shadow}
 
 Options not available in toolbars:
 
@@ -1006,17 +1026,17 @@ Options not available in toolbars:
 
 #### Transform panel
 
-![transform_ribbon](/assets/images/ui/r3.png){: .align-center .drop-shadow}
+![transform-ribbon](/assets/images/ui/r3.png){: .align-center .drop-shadow}
 
 #### Measure panel
 
-![transform_ribbon](/assets/images/ui/r4.png){: .align-center .drop-shadow}
+![transform-ribbon](/assets/images/ui/r4.png){: .align-center .drop-shadow}
 
 Option not available in toolbars: reference angle for rotation tools angle lock.
 
 #### Replicator and Eyedropper panel
 
-![eyedrop_ribbon](/assets/images/ui/r5.png){: .align-center .drop-shadow}
+![eyedrop-ribbon](/assets/images/ui/r5.png){: .align-center .drop-shadow}
 
 Options available in toolbars as Checkbuttons:
 
@@ -1029,25 +1049,25 @@ Options available in toolbars as Checkbuttons:
 
 #### Scene tools panel
 
-![pivot_ribbon](/assets/images/ui/r6.png){: .align-center .drop-shadow}
+![pivot-ribbon](/assets/images/ui/r6.png){: .align-center .drop-shadow}
 
 #### General tools panel
 
-![utilities_ribbon](/assets/images/ui/r7.png){: .align-center .drop-shadow}
+![utilities-ribbon](/assets/images/ui/r7.png){: .align-center .drop-shadow}
 
 #### Object related tools
 
-![object_ribbon](/assets/images/ui/r8.png){: .align-center .drop-shadow}
+![object-ribbon](/assets/images/ui/r8.png){: .align-center .drop-shadow}
 
 #### Layer tools panel
 
-![object_ribbon](/assets/images/ui/r9.png){: .align-center .drop-shadow}
+![object-ribbon](/assets/images/ui/r9.png){: .align-center .drop-shadow}
 
 ---
 
 ## Extras
 
-![stamptool](/assets/images/icons/stampTool_128.png){: .icon-small}
+![stamp-tool](/assets/images/icons/stampTool_128.png){: .icon-small}
 
 ### Mesh stamp tool
 
@@ -1067,7 +1087,7 @@ Use an object to Interactively stamp its shape or cut holes in a mesh.
 
 ### Photographic composition guides
 
-![vp?guides](/assets/images/vp-guides.png)
+![vp-guides](/assets/images/vp-guides.png)
 
 Display an overlay of photographic composition guides in the viewport.
 This tool is intended to be of aid when composing shots. Easily draw common photographic grids, reference and perspective lines to help compose the perfect shot.
@@ -1087,7 +1107,7 @@ This tool is intended to be of aid when composing shots. Easily draw common phot
 
 #### Tool UI
 
-![vp?guides?ui](/assets/images/ui/vcomp.png)
+![vp-guides-ui](/assets/images/ui/vcomp.png)
 
 ---
 
