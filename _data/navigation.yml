@@ -153,6 +153,8 @@ sidebar-userguide:
     url: /docs/userguide/#merge-and-explode-tools
   - title: "Edge length"
     url: /docs/userguide/#edge-length-tool
+  - title: "Align vertices"
+    url: /docs/userguide/#align-vertices-tool
 - title: "Scene management"
   url: /docs/userguide/#scene-management-and-rendering-related-tools
   children:
@@ -171,6 +173,8 @@ sidebar-userguide:
 - title: "Utilities"
   url: /docs/userguide/#utilities
   children:
+  - title: "modifiers presets"
+    url: /docs/userguide/#modifiers-presets
   - title: "Paneling and detailer"
     url: /docs/userguide/#paneling-and-detailer
   - title: "Paneling"

@@ -1087,15 +1087,18 @@ classes: wide
         </div>
     </div>
     <div class="tool-item" id="align-vertices" onclick="window.open('/docs/userguide/#align-vertices-tool','target');">
+        <div><img src="/assets/images/icons/vertexAlign_48.png" alt="VertexAlign">
+            <p>Align vertices</p>
         </div>
         <div>
-            <p>Isolate the selected object and set an active work grid in its local coordinates</p>
+            <p>Align a selection of vertices in a straight line.</p>
         </div>
-        <div class="instruction" id="DSTBX_refIsolate">
-            <ul>
-                <li>Works in Object level or with the selected faces in an Editable Poly.</li>
-                <li>If more than one object is selected, Local isolate will use the first object in the selection to set the grid</li>
-            </ul>
+        <div class="instruction" id="DSTBX_stmp">
+            <ol>
+                <li>Select the vertices you want to align. alternatively, select a edge loop or some consecutive edges.</li>
+                <li>Start the tool. Choose a base point to begin drawing a line that will be used to align the vertices.</li>
+                <li>Choose an endpoint to determine the direction of the line. The vertices will be repositioned over the line, to the closest point to the original position.</li>
+            </ol>
         </div>
     </div>
     <div class="tool-item" id="mesh-stamp" onclick="window.open('/docs/userguide/#mesh-stamp-tool','target');">
@@ -1317,18 +1320,21 @@ classes: wide
             <p style="text-align: center;"><b>ASSIGN THIS MACRO TO A SHORTCUT</b></p>
         </div>
     </div>
-    <div class="tool-item" onclick="window.open('/docs/userguide/#snaps-states','target');">
-        <div><img src="/assets/images/icons/magnet_48.png" alt="magnet">
-            <p>Snap sate sets</p>
+    <div class="tool-item" id="modifiers-presets" onclick="window.open('/tools/modifiers-presets','_blank');">
+        <div><img src="/assets/images/icons/modPresets_48.png" alt="align-assets">
+            <p>Modifiers presets</p>
         </div>
         <div>
-            <p>Save States for Snap settings.</p>
+            <p>Tool for storing presets for modifiers</p>
         </div>
-        <div class="instruction" id="DSTBX_snapSets">
-            <!-- TODO: Complete this! -->
+        <div class="instruction">
             <ul>
-                <li>You can click and drag around the compact interface.</li>
-                <li>Press the "OK" button to expand the UI and add states.</li>
+                <li>Start the tool</li>
+                <li>Select an object with some modifiers applied, and click "Add presets"</li>
+                <li>Pick an object if nothing is selected.</li>
+                <li>Select a modifier from the list, Edit the name, and Add the preset.</li>
+                <li>Use "Edit list" to reset, remove, or rearrange the preset list.</li>
+                <li>Select the object or objects to apply the modifiers to, and click the desired preset.</li>
             </ul>
         </div>
     </div>
