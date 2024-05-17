@@ -3,6 +3,58 @@ title: DesignToolBox Changelog
 excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
+
+## Version 2.20.0.0
+
+### New
+
+* Added support for 3ds max 2025
+
+### Fixes
+
+* Position tools: The objects were positioned in an unexpected order.
+* Code optimization, faster startup.
+* Fixed a problem that caused a crash when an invalid license was used.
+
+### Changes
+
+* Reorganized the menu.
+* Removed support for versions prior to 3ds max 2018. This was done to streamline the development.
+* Changed the files structure and install directory. Now the plugin content is installed in the ApplicationPlugins folder instead of the main 3ds max installation, following the recent guidelines for plugin developers.
+
+## Version 2.10.5.0
+
+### Fixes
+
+* camera manager: fixed FOV parameter
+* explode/merge: fixed problem with non editable-ploy objects
+* modifiers presets: fixed problem that crashed the tool when adding a modifier to a group
+* measure tools: fixed a problem that caused the tool to end after the first measure
+
+## Version 2.10.4.0
+
+### Fixes
+
+* reDimension tool: fixed undo.
+
+## Version 2.10.3.0
+
+### Fixes
+
+* critical fix for reDimension tool.
+
+## Version 2.10.2.0
+
+### Fixes
+
+* critical fix for reDimension tool.
+
+## Version 2.10.1.0
+
+### Fixes
+
+* critical fix for 1D align tool.
+
 ## Version 2.10.0.0
 
 ### New
