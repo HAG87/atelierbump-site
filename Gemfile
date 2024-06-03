@@ -1,10 +1,15 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
 gem "minimal-mistakes-jekyll"
 
-gem "kramdown-parser-gfm"
+gem "jekyll", "~> 4.2.0"
+
+gem "jekyll-sass-converter", "~> 2.0"
+gem 'ffi', '~> 1.16.0'
+
+# gem "kramdown-parser-gfm"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
 #   gem "jekyll-sitemap"
@@ -21,4 +26,5 @@ group :jekyll_plugins do
   gem 'jemoji'
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 end
+
 gem "webrick", "~> 1.7"
