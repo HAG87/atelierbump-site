@@ -8,7 +8,7 @@ header:
   image: '/assets/images/logo-dstlbx.png'
   #overlay_color: "#1377FF"
   overlay_color: "#FFFFFF"
-  overlay_filter: "linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.0))"
+  overlay_filter: "linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1.0))"
   overlay_image: /assets/images/hero-image-alpha.png
 video:
   id: zskGfiWOeyo
@@ -73,41 +73,12 @@ footer_text:
   - 3ds Max is a trademark of Autodesk Inc.
 ---
 <style>
-  .masthead,
-  .masthead__menu,
-  .greedy-nav {
-    /* background-color: #1377ff; */
-    /* background-color: #5BA0FF; */
-    border-bottom: none;
-  }
-
-  .search__toggle,
-  .search__toggle:hover {
-    color:black
-  }
-  
-  .navicon,
-  .navicon:after,
-  .navicon:before,
-  .navicon:hover,
-  /* .greedy-nav__toggle, */
-  /* .greedy-nav__toggle:hover, */
-  /* .greedy-nav__toggle:after, */
-  .greedy-nav__toggle:before
-  {
-    background: black;
-  }
-  .page__hero--overlay {
-    /* background-color: #1377ff; */
+  /* .page__hero--overlay {
     margin-bottom: -4em;
     padding-bottom: 3em;
-  }
-  /* .page__hero--overlay:hover { */
-      /* Add the blur effect */
-    /* filter: blur(8px); */
-    /* -webkit-filter: blur(8px); */
-  /* } */
+  } */
 </style>
+
 <!-- Video presentation -->
 {% include video id=page.video.id provider=page.video.provider %}
 
