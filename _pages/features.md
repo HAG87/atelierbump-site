@@ -1,7 +1,8 @@
 ---
 title: DesignToolBox feature list
 excerpt: List of available tools and utilities
-layout: single
+layout: full
+classes: wide
 permalink: /features/
 classes: wide
 ---
