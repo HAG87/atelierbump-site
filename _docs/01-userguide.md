@@ -644,11 +644,20 @@ Layer tools will work on the selected node (if any) otherwise they will work in 
 
 1. Pick source node.
 2. Pick nodes to be replaced.
-    - DEFAULT: Instance replacement
-    - <mark>SHIFT</mark> while picking objects will create a **reference**.
+    - DEFAULT: target node is replaced with an instance of the source node.
+    - <mark>SHIFT</mark> while picking objects will create **references**.
 
-> - By Default, replicator will keep the original node material and transformation. to replace the transformation, activate the checkbox in the ribbon or the check button macro. *Note that the original position is always maintained.*
-> - Multitarget toggle will disable multiple targets.
+### Options
+
+![replicator_options](/assets/images/ui/replicator_floater.png){: .align-center .drop-shadow}
+
+- Multi-target: This toggle will enable/disable the picking of multiple targets (When disabled, the tool wil act as a single-use).
+- Use group as source: When selecting a group as source, use the entire group
+- Replace entire group: If the *target* node is in a group, replace the entire group with the *source* node
+- Retain source node offset transform: This effectively retains the node offsetTransform without changing the pivot, AND into the target transform.
+- Replace all instances of the target node(s): If the *target* node is an instance, replace all instances of the node.
+    Note: This mode will ignore the *source group* and *target group* options.
+- Keep properties: By Default, replicator will use the *source* node properties. Enable the checkboxes to keep properties of the *target* node.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/8xTYApZCjVA" frameborder="0" allowfullscreen></iframe></div>
 
@@ -698,7 +707,7 @@ Set subdivision marks between two points, and place a clone on each mark
 > Orthogonal tracking (<mark>SHIFT</mark>) has a axis-lock feature: Keep <mark>SHIFT</mark> pressed, and having vertex snap activated, move the cursor to a vertex and press <mark>CTRL</mark>, the tracking will be **restricted to the nearest axis**, and then you can track any point, the line will lock to that specific axis. This feature works in all the tools that has a orthogonal tracking feature.
 > **Alternate mode**: Press <mark>SHIFT</mark> when activating the tool to place the clones at segments midpoint.
 
-<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzMIqMH5PXY" frameborder="0" allowfullscreen></iframe></div>
+<div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/VtAfxGZs4gU" frameborder="0" allowfullscreen></iframe></div>
 
 ![interactive-array](/assets/images/icons/2d_array_128.png){: .icon-small}
 

@@ -4,6 +4,66 @@ excerpt: Whats new in the latest build.
 permalink: /docs/changelog
 ---
 
+## Version 2.21.6.0
+
+### Fixes
+
+* UVWmap gizmo fit: This tool was broken.
+* Eyedropper setting "Replace all instances of the target node(s)" description was incorrect. Now reads: If the target node is an instance, replace all instances of the node. Note: This mode will ignore the _source group_ and _target group_ options
+
+## Version 2.21.5.0
+
+### Changes
+
+* Some optimizations for the measure tool arrows display.
+* Random material Id tool: Added UI, added an option to set a random id for each selected editable poly object
+
+### New
+
+* Replicator: A dialog to change settings has been added. New settings include toggles for keeping properties of the original nodes, like layer, material, and linking.
+
+### Fixes
+
+* Installer: When deselecting the "extras" component during the installation, a waring will raise after starting 3ds Max, indicating that some components are missing.
+
+## Version 2.21.0.0
+
+### Changes
+
+* Measure dimension tools
+  * Changed the way that text labels are displayed, for readability: Now the background is ON by default, has more margin around the text legend and the color can be configured.
+  * Added options:
+    * "Offset from origin" setting, to render the dimension lines away from the measure points. This can be found on the "Set units"dialog.
+    * "Arrowheads angle": Now you can control the aperture angle for the arrowheads. This can be found on the "Set units"dialog.
+    * "Extension line length": The extension lines at the measure points can now be customized. This can be found on the "Set units"dialog.
+    * Added an option in the history dialog to turn on/off arrowheads.
+    * Option in the configuration dialog to globally turn on/off arrowheads.
+* Several optimizations done to the graphic functions that displays visual information and gizmos.
+  * All the text labels that shows measurements, like distances and angles are now rendered with a background.
+* Angle between edges: The tool is now interactive, allowing to change the edges selection and the active object. When turning off the tool, if you have changed the current object selection, it will ask if you want to change the object instead of deactivate the tool.
+
+### Known issues
+
+The color of the text labels backgrounds (besides the measure distance tools) that can be changed in the configuration dialog will be blended with the current wireframe color. A workaround is unchecking the random colors option (in the color picker) setting a default light gray color, and using a dark color for the texts background (via de config. dialog).
+
+### Fixes
+
+* Fixed a problem with normal gamma correct tool: Error triggered if V-ray or Corona render are not installed.
+
+## Version 2.20.3.0
+
+### Fixes
+
+* Installer:
+  * Install directory always falls back to %APPDATA%
+  * Error message after uninstall/reinstall.
+
+## Version 2.20.2.0
+
+### Fixes
+
+* MacroScripts failing to find scripts
+
 ## Version 2.20.0.0
 
 ### New
@@ -376,8 +436,8 @@ Besides setting up a framework that allows to expand the tools feature sets, the
 
 * **Drop objects:** Drop objects on below surfaces. Press SHIFT when activating the tool to align the objects to the surface form.
 * **Arrange objects (start-end objects):** Distribute objects (equally spaced) on a linear direction.  Direction and length of the distribution determined by the position of two objects: 1. Select the START OBJECT -- 2. Select the END OBJECT -- 3. Select the objects to distribute between them. * Press the TOOL BUTTON+SHIFT to conform and align the objects to the underlying surfaces.
-* **Arrange objects (real-time):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's in Real Time. Warning! slow.  When tracking positions: *Press SHIFT to conform to the underlying surfaces* Press CONTROL to orient to the underlying surfaces
-* **Arrange objects (interactive):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's with marks in the viewport.  When tracking positions: *Press SHIFT to conform to the underlying surfaces* Press CONTROL to orient to the underlying surfaces
+* **Arrange objects (real-time):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's in Real Time. Warning! slow.  When tracking positions: _Press SHIFT to conform to the underlying surfaces_ Press CONTROL to orient to the underlying surfaces
+* **Arrange objects (interactive):** Distribute objects (equally spaced) on a linear direction. Tracks the objects new position's with marks in the viewport.  When tracking positions: _Press SHIFT to conform to the underlying surfaces_ Press CONTROL to orient to the underlying surfaces
 
 >Check the user guide for detailed instruction of how this tools work
 
@@ -711,7 +771,7 @@ This version addresses some problems found in the previous release:
 ## Version 2.5.4
 
 * Added complete tool set menu
-* Fixed (partially) problem with *paramblock2*
+* Fixed (partially) problem with _paramblock2_
 * Fixed issues with UVW map transform tool
 * Fixed behavior of Replicator with groups
 * Added option to Replicator to propagate or not to instances
@@ -741,7 +801,7 @@ This version addresses some problems found in the previous release:
 * Transform tools: Improved polar and orthogonal tracking.
 * refGuides
   * Polar placing: Now, when placing the polar reference plane, you can orient and rotate (yaw-pitch-roll) it.
-  * Orthogonal mode: Pressing *CTRL* will lock z-axis.
+  * Orthogonal mode: Pressing _CTRL_ will lock z-axis.
   * Removed option to place protractor with guide line.
   * New objects: Now line, protractor and intersection points are configurable **custom objects**, you can now snap to vertex at a intersection point.
 * General performance improvements and fixes
