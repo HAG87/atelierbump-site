@@ -15,7 +15,7 @@ Unfortunately it can't be corrected, (It will be fixed for next version updates,
 Workarounds to open the scene:
 
 1. Merge in a new scene everything except any refGuides object
-2. If you have DesignToolBox unistalled, open the scenes, remove any invalid refGuides object, re-save.
+2. If you have DesignToolBox uninstalled, open the scenes, remove any invalid refGuides object, re-save.
 3. Temporary delete %MAXROOT%/Plugins/refGuidesObject.mse, do option 2.
 
 Apologies for the inconveniences.
