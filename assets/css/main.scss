@@ -321,6 +321,11 @@ hr {
 .text-small {
   font-size: $type-size-7 !important;
 }
+
+.background__light {
+  background: $lighter-gray;
+  border-radius: $border-radius;
+}
 /*
 ==========================================================================
 Overrides
@@ -345,6 +350,10 @@ html {
   
   }
 */
+.feature__item {
+  margin-bottom: 0.8em !important;
+}
+
 .archive__subtitle {
   margin: 1.414em 0 0;
 }

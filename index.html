@@ -36,29 +36,29 @@ feature_row:
     btn_class: "btn--primary"
   - image_path: /assets/images/splash-maxscript.jpg
     title: "Free Tools"
-    excerpt: "Look if some of our tools can improve your work. Feel free to modify and collaborate with improve them."
+    excerpt: "Look if some of our tools can improve your work. Feel free to modify and collaborate."
     url: "/tools/"
     btn_label: "Explore"
     btn_class: "btn--primary"
-feature_cats:
+feature_tools:
   - image_path: /assets/images/icons/rotate_128.png
     title: Transform
-    excerpt: Precise CAD-like transforms.
-  - image_path: /assets/images/Qmeasure_128.png
+    excerpt: Precise CAD-like and advanced transformation tools.
+  - image_path: /assets/images/icons/Qmeasure_128.png
     title: Measure
-    excerpt: Inquiry dimensions, areas..
-  - image_path: /assets/images/rg_B_128.png
+    excerpt: Inquiry and display dimensions, angles and areas.
+  - image_path: /assets/images/icons/rg_B_128.png
     title: Project
-    excerpt: Spatial reference objects.
+    excerpt: Construct your mododel with spatial reference guides.
   - image_path: /assets/images/icons/eyedrop_2_128.png
     title: Replicate
     excerpt: Match properties, replace nodes with a few clicks.
   - image_path: /assets/images/icons/p_array_128.png
     title: Clone
-    excerpt: Make patterns & distribute elements.
+    excerpt: Distribute and clone nodes with interactive array tools.
   - image_path: /assets/images/icons/LayIso_128.png
     title: Organize & manage
-    excerpt: Work faster with layers and manage node visibility. Isolate objects in local space; Nested isolation...
+    excerpt: Work faster with layers and manage node visibility.
   - image_path: /assets/images/icons/camtool_128.png
     title: Preparing scene to render
     excerpt: Review cameras and different output sizes faster, Set up batch render views with fewer clicks.
@@ -66,25 +66,18 @@ feature_cats:
     title: Materials and texture
     excerpt: Load a bunch of Textures in one operation. Easy manage geometry IDs..
   - image_path: /assets/images/icons/random_128.png
-    title: Utilities
-    excerpt: Interactive arrays, Apply edit and randomize UVW modifiers on multiple objects at the same time, detail furniture cabinets, and more useful utilities.
+    title: + Utilities
+    excerpt: Save modifiers presets, edit UVW maps, straighten edges, align vertices, randomization tools and more.
   
 footer_text:
   - 3ds Max is a trademark of Autodesk Inc.
 ---
-<style>
-  /* .page__hero--overlay {
-    margin-bottom: -4em;
-    padding-bottom: 3em;
-  } */
-</style>
 
 <!-- Video presentation -->
 {% include video id=page.video.id provider=page.video.provider %}
 
 <!--Feature list-->
-<!-- {% include feature_row id="feature_cats" %} -->
-{% include dstlbx-features-cats.html %}
+{% include feature_tools type="image-center text-center" %}
 {% include feature_row id="feature_row_ui" type="center" %}
 
 <!--Slider images-->
@@ -108,7 +101,7 @@ footer_text:
 </div>
 
 <!--Buy now section-->
-{% include dstlbx-buy-now.html price="$25.00*" purchase-url="https://gum.co/dstlbx" download-url="https://github.com/HAG87/designtoolbox-release/releases/latest" %}
+{% include dstlbx-buy-now price="$25.00*" purchase-url="https://gum.co/dstlbx" download-url="https://github.com/HAG87/designtoolbox-release/releases/latest" %}
 
 <!-- Documents 3 column-->
 {% include feature_row %}
