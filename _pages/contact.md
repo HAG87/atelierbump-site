@@ -1,7 +1,7 @@
 ---
-title: 'Contact'
+title: Contact
 layout: single
-excerpt: 'List of available tools and utilities'
+excerpt: List of available tools and utilities
 permalink: /contact/
 classes: wide
 ---

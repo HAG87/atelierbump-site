@@ -1,171 +1,8 @@
----
-title: DesignToolBox feature list
-excerpt: List of available tools and utilities
-layout: full
-permalink: /dstlbx/commands/
-classes: wide
----
-<style>
-    .tools {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-        grid-gap: 0.5rem;
-    }
-
-    .tool-item {
-        justify-self: stretch;
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(238, 238, 238);
-        border-radius: 0.5em;
-        cursor: pointer;
-    }
-
-    .double {
-        grid-column: span 2;
-    }
-
-    .tool-item>div {
-        /* display: flex;
-        flex-direction: column; */
-        min-height: 32px;
-        width: 100%;
-        padding: 0.5rem;
-    }
-
-    .tool-item p {
-        padding: 0;
-        margin: 0;
-    }
-
-    .tool-item ul,
-    .tool-item ol {
-        padding: 0 0 0 1rem;
-        margin: 0;
-    }
-
-    .tool-item img {
-        display: inline-block;
-        width: 32px;
-        height: auto;
-        margin-right: 1rem;
-    }
-
-    .tool-item:hover img {
-        -webkit-filter: drop-shadow(2px 2px 4px rgb(134, 134, 134));
-        filter: drop-shadow(2px 2px 4px rgb(134, 134, 134));
-    }
-
-    .tool-item div:nth-child(1) {
-        padding-bottom: 1rem;
-    }
-
-    .tool-item div:nth-child(1) p {
-        display: inline-block;
-        width: auto;
-        font-weight: bold;
-        line-height: 32px;
-    }
-
-    .tool-item div:nth-child(2) {
-        font-size: medium;
-        width: 100%;
-    }
-
-    .tool-item:hover {
-        background-color: rgb(211, 211, 211);
-    }
-
-    .instruction {
-        font-size: small;
-        border-top: 1px solid rgb(120, 120, 120);
-    }
-
-    .instruction b {
-        padding: 0 0.3rem 0 0.3rem;
-        background-color: rgb(214, 214, 214);
-        border-radius: 0.35rem;
-        word-break: keep-all;
-        white-space: nowrap;
-        box-shadow: 1px 1px 2px rgb(165, 165, 165);
-    }
-
-    .tool-footer {
-        height: 48px;
-        bottom: 0;
-        width: auto;
-        background-color: rgb(186, 186, 186);
-        border-radius: 0 0 0.5em 0.5em;
-        margin-top: auto;
-        align-self: flex-end;
-        font-size: small;
-        box-shadow: 0px 2px 3px rgb(132, 131, 131) inset;
-    }
-
-    .category {
-        display: block;
-        position: relative;
-        width: auto;
-        /* display: flexbox; 
-        align-items: center;
-        width: 100%; */
-        cursor: pointer;
-        padding-left: 1rem;
-
-    }
-
-    .category:hover {
-        color: rgb(12, 120, 255);
-    }
-
-    .category::before {
-        content: "";
-        position: absolute;
-        vertical-align: middle;
-        top: 15%;
-        left: 0;
-        width: .5rem;
-        height: .5rem;
-        border-width: 2px 2px 0 0;
-        border-style: solid;
-        border-color: rgb(87, 87, 87);
-        transform: rotate(45deg);
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .category::after {
-        content: "ROLL UP";
-        position: absolute;
-        display: block;
-        visibility: hidden;
-        top: 0;
-        right: 0;
-        font-weight: bolder;
-        color: rgb(169, 169, 169);
-        font-variant-caps: all-small-caps;
-        transition: opacity 0.2s ease-in-out;
-        opacity: 0.2;
-    }
-
-    .category:hover::after {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .category:hover::before {
-        border-color: rgb(12, 120, 255);
-    }
-
-    .category-up:before {
-        transform: rotate(-45deg);
-    }
-</style>
 
 <!-- <script src="{{ base.url | prepend: site.url }}/assets/js/cheatsheet.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="/assets/js/cheatsheet.js"></script>
 
-<h2>{{ page.excerpt }}</h2>
 <!-- START OF TOOLS -->
 <!-- #region Transform -->
 <div class="category">
@@ -179,7 +16,7 @@ classes: wide
         <div>
             <p>4-point rotation (Base Point &gt; Reference Point &gt; Axis Point &gt; Dest. Point)<br>The action is performed in the object's local coordinate system.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ol>
                 <li>Position point</li>
                 <li>Rotation axis point</li>
@@ -198,7 +35,7 @@ classes: wide
         <div>
             <p>Local reference rotation performs a 3-Point rotation (Base point &gt; Reference point &gt; Dest. point) using the object's local coordinate system.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ol>
                 <li>Position point</li>
                 <li>Reference rotation point. Default rotation axis: Z. To change rotation axis: Hold <b>SHIFT</b> while tracking the reference point to change the rotation axis.</li>
@@ -220,7 +57,7 @@ classes: wide
         <div>
             <p>Transform Scale by matching reference vectors.</p>
         </div>
-        <div class="instruction" id="DSTBX_scale">
+        <div class="tool-instruction" id="DSTBX_scale">
             <ol>
                 <li>Pick 2 points for reference dimension.</li>
                 <li>Pick 2 points for new dimension and transformation direction.</li>
@@ -243,7 +80,7 @@ classes: wide
         <div>
             <p>Performs a Translation from a reference point and a direction path.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ol>
                 <li>Pick Base point</li>
                 <li>Pick Direction point</li>
@@ -258,7 +95,7 @@ classes: wide
         <div>
             <p>Scale object by dimensional value.</p>
         </div>
-        <div class="instruction" id="DSTBX_scale_distance">
+        <div class="tool-instruction" id="DSTBX_scale_distance">
             <ol>
                 <li>Pick base point</li>
                 <li>Pick second point for reference distance and direction.</li>
@@ -276,7 +113,7 @@ classes: wide
         <div>
             <p>Move the object to a new position and align it by two-points.</p>
         </div>
-        <div class="instruction" id="DSTBX_rotator_free">
+        <div class="tool-instruction" id="DSTBX_rotator_free">
             <ol>
                 <li>Reference point</li>
                 <li>New location Point</li>
@@ -295,7 +132,7 @@ classes: wide
         <div>
             <p>Relocate a node from three pairs of points, from an origin position to a target position.</p>
         </div>
-        <div class="instruction" id="DSTBX_threePtAlign">
+        <div class="tool-instruction" id="DSTBX_threePtAlign">
             <ol>
                 <li>Select a node to Align</li>
                 <li>
@@ -321,7 +158,7 @@ classes: wide
         <div>
             <p>Advanced mirror tool that uses a 3-plane viewport gizmo to guide the mirror operation.</p>
         </div>
-        <div class="instruction" id="DSTBX_reflect">
+        <div class="tool-instruction" id="DSTBX_reflect">
             <ol>
                 <li>Position the 3-plane gizmo picking a center point for the mirror operation.</li>
                 <li>Orient the gizmo with points for direction, yaw, Pitch, Roll and offset angle.</li>
@@ -336,7 +173,7 @@ classes: wide
         <div>
             <p>CAD-like Move tool that uses two (origin and destination) reference points.</p>
         </div>
-        <div class="instruction" id="DSTBX_refMove">
+        <div class="tool-instruction" id="DSTBX_refMove">
             <ol>
                 <li>Select the objects you want to move.</li>
                 <li>Start the tool; Pick an origin ref. point (be sure to enable snaps)</li>
@@ -351,7 +188,7 @@ classes: wide
         <div>
             <p>Select a collection of objects and cycle their transform from one to the next.</p>
         </div>
-        <div class="instruction">The cycle will follow the selection pick order</div>
+        <div class="tool-instruction">The cycle will follow the selection pick order</div>
     </div>
     <div class="tool-item" id="random-swap" onclick="window.open('/docs/userguide/#random-swap-transform','target');">
         <div><img src="/assets/images/icons/RndSwap_48.png" alt="swapTransforms">
@@ -360,7 +197,7 @@ classes: wide
         <div>
             <p>Randomly swap position, rotation and scale between the selected objects.</p>
         </div>
-        <!-- <div class="instruction">TODO: Complete this</div> -->
+        <!-- <div class="tool-instruction">TODO: Complete this</div> -->
     </div>
     <div class="tool-item" id="drop-object" onclick="window.open('/docs/userguide/#drop-objects','target');">
         <div><img src="/assets/images/icons/dropObj_48.png" alt="dropObj">
@@ -369,7 +206,7 @@ classes: wide
         <div>
             <p>Drop objects on below surfaces.</p>
         </div>
-        <div class="instruction" id="DSTBX_drop">
+        <div class="tool-instruction" id="DSTBX_drop">
             <p>Press <b>SHIFT</b> when activating the tool to align the objects to the surface shape.</p>
         </div>
     </div>
@@ -380,7 +217,7 @@ classes: wide
         <div>
             <p>Distribute objects (equally spaced) on a linear direction. Direction and length of the distribution determined by the position of two objects.</p>
         </div>
-        <div class="instruction" id="DSTBX_arrangeByObjs">
+        <div class="tool-instruction" id="DSTBX_arrangeByObjs">
             <ol>
                 <li>Select the START OBJECT</li>
                 <li>Select the END OBJECT</li>
@@ -398,7 +235,7 @@ classes: wide
         <div>
             <p>Distribute objects (equally spaced) on a linear direction.This variant of the tool tracks the objects new position's in real time. It could be slow with complex geometry.</p>
         </div>
-        <div class="instruction" id="DSTBX_arrangeRT">
+        <div class="tool-instruction" id="DSTBX_arrangeRT">
             <ol>
                 <li>Select the object set to rearrange.</li>
                 <li>Pick the direction line START POINT</li>
@@ -418,7 +255,7 @@ classes: wide
         <div>
             <p>Distribute objects (equally spaced) on a linear direction. his variant of the tool tracks the objects new position's with marks in the viewport.</p>
         </div>
-        <div class="instruction" id="DSTBX_arrangeInteractive">
+        <div class="tool-instruction" id="DSTBX_arrangeInteractive">
             <ol>
                 <li>Select the object set to rearrange.</li>
                 <li>Pick the direction line START POINT</li>
@@ -445,7 +282,7 @@ classes: wide
         <div>
             <p>Draw temporary dimension lines in the viewport.</p>
         </div>
-        <div class="instruction" id="DSTBX_Qmeasure">
+        <div class="tool-instruction" id="DSTBX_Qmeasure">
             <ol>
                 <li>Measurement start point</li>
                 <li>Measurement end point</li>
@@ -464,7 +301,7 @@ classes: wide
         <div>
             <p>Draw contiguous dimension lines</p>
         </div>
-        <div class="instruction" id="DSTBX_Qmeasure_mult">
+        <div class="tool-instruction" id="DSTBX_Qmeasure_mult">
             <ol>
                 <li>Measurement start point</li>
                 <li>Measurement next points</li>
@@ -483,7 +320,7 @@ classes: wide
         <div>
             <p>Take an angular measurement and copy the result to the clipboard.</p>
         </div>
-        <div class="instruction" id="DSTBX_Qangle">Measure angle by picking 3 points.
+        <div class="tool-instruction" id="DSTBX_Qangle">Measure angle by picking 3 points.
             <ol>
                 <li>Base point</li>
                 <li>Reference base direction point</li>
@@ -501,7 +338,7 @@ classes: wide
         <div>
             <p>Measures a 2D polygonal area by picking vertex points.</p>
         </div>
-        <div class="instruction" id="DSTBX_Qarea">
+        <div class="tool-instruction" id="DSTBX_Qarea">
             <ul>
                 <li>Hold <b>SHIFT</b> while tracking second point for orthogonal mode, then press <b>CTRL</b> for axis-lock.</li>
                 <li>Measurements are copied to the clipboard and traced to the listener.</li>
@@ -515,7 +352,7 @@ classes: wide
         <div>
             <p>Cubic volume measurement</p>
         </div>
-        <div class="instruction" id="DSTBX_Qvolume">
+        <div class="tool-instruction" id="DSTBX_Qvolume">
             <ol>
                 <li>Pick a bottom minimum point</li>
                 <li>Pick an opposed top maximum point</li>
@@ -530,7 +367,7 @@ classes: wide
         <div>
             <p>Angle2Faces for short, measures the angle between two polygons</p>
         </div>
-        <div class="instruction" id="DSTBX_Angle2Faces">
+        <div class="tool-instruction" id="DSTBX_Angle2Faces">
             <ul>
                 <li>Pick one point on each face to get the angle between them.</li>
                 <li>The result is displayed in the viewport and traced to the listener.</li>
@@ -544,7 +381,7 @@ classes: wide
         <div>
             <p>Angle2Edges for short, measures the angle between two selected edges.</p>
         </div>
-        <div class="instruction" id="DSTBX_Angle2Edges">
+        <div class="tool-instruction" id="DSTBX_Angle2Edges">
             <ul>
                 <li>Needs an Editable Poly or Editable Mesh object selected.</li>
                 <li>Select two edges to get the angle between them.</li>
@@ -559,7 +396,7 @@ classes: wide
         <div>
             <p>Distance measure history.<br>Create renderable dimension objects.</p>
         </div>
-        <div class="instruction" id="DSTBX_distListener">
+        <div class="tool-instruction" id="DSTBX_distListener">
             <ul>
                 <li>The Distance measure history dialog keeps track of performed measures, allowing to re-display them and customize appearance.</li>
                 <li>It will also <b>Create renderable dimension lines</b> with measure annotation. Standard Spline and text shapes will be created to draw the dimension line.<br><em>Please note that, the text will be oriented left -&gt; right, based on the current view. Expect unpredicted result on orthogonal views.</em></li>
@@ -573,7 +410,7 @@ classes: wide
         <div>
             <p>Divide a distance in equal segments and adds a helper mark at each division point.</p>
         </div>
-        <div class="instruction" id="DSTBX_Divider">
+        <div class="tool-instruction" id="DSTBX_Divider">
             <ol>
                 <li>Pick distance start point.</li>
                 <li>pick distance end point.</li>
@@ -592,7 +429,7 @@ classes: wide
         <div>
             <p>Divide a distance in equal segments and adds a helper mark at each division point. This alternative mode of the tool uses a numeric input instead.</p>
         </div>
-        <div class="instruction" id="DSTBX_Divider_input">
+        <div class="tool-instruction" id="DSTBX_Divider_input">
             <ol>
                 <li>Pick distance start point.</li>
                 <li>pick distance end point.</li>
@@ -663,7 +500,7 @@ classes: wide
             <p>Linear, segments marked construction guide. Free space mode allows to position the guide freely using two position points. (Note: Also referred in the toolset as refLine)</p>
             <p>in addition, when positioning line guides, intersection marks (created as refPoints) can be created between the reference guides in the scene.</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_noUI_free">
+        <div class="tool-instruction" id="DSTBX_refGuides_noUI_free">
             <ol>
                 <li>Pick a base reference point.</li>
                 <li>Pick a second reference point determining the direction of the guide.</li>
@@ -687,7 +524,7 @@ classes: wide
             <p>Linear construction guide. Orthogonal positioning mode. (Note: Also referred in the toolset as refLine)</p>
             <p>in addition, when positioning line guides, intersection marks (created as refPoints) can be created between the reference guides in the scene.</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_noUI_ortho">
+        <div class="tool-instruction" id="DSTBX_refGuides_noUI_ortho">
             <ol>
                 <li>Pick a reference point, it will act as a center of the orthogonal space.</li>
                 <li>Move the mouse around to change the direction or snap to a point. Hold <b>CTRL</b> during axis selection to lock the position of the XY plane.</li>
@@ -711,7 +548,7 @@ classes: wide
             <p>Linear construction guide. Polar positioning mode. (Note: Also referred in the toolset as refLine)</p>
             <p>in addition, when positioning line guides, intersection marks (created as refPoints) can be created between the reference guides in the scene.</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_noUI_polar">
+        <div class="tool-instruction" id="DSTBX_refGuides_noUI_polar">
             <ol>
                 <li>Pick base point.</li>
                 <li>Pick Z axis gizmo rotation reference point.</li>
@@ -741,7 +578,7 @@ classes: wide
         <div>
             <p>Tool for displaying and snapping angular values. Free space mode allows to position the guide freely using two position points. (Note: Also referred in the toolset as refProtractor)</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_prot_free">
+        <div class="tool-instruction" id="DSTBX_refGuides_prot_free">
             <ol>
                 <li>Pick a base reference point.</li>
                 <li>Pick a second reference point determining the direction of the guide.</li>
@@ -760,7 +597,7 @@ classes: wide
         <div>
             <p>Tool for displaying and snapping angular values. Orthogonal positioning mode. (Note: Also referred in the toolset as refProtractor)</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_prot_ortho">
+        <div class="tool-instruction" id="DSTBX_refGuides_prot_ortho">
             <ol>
                 <li>Pick a reference point, it will act as a center of the orthogonal space.</li>
                 <li>Move the mouse around to change the direction or snap to a point. Hold <b>CTRL</b> during axis selection to lock the position of the XY plane.</li>
@@ -779,7 +616,7 @@ classes: wide
         <div>
             <p>Tool for displaying and snapping angular values. Polar positioning mode. (Note: Also referred in the toolset as refProtractor)</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_prot_polar">Protractor Polar mode.
+        <div class="tool-instruction" id="DSTBX_refGuides_prot_polar">Protractor Polar mode.
             <ol>
                 <li>Pick base point.</li>
                 <li>Pick Z axis gizmo rotation reference point.</li>
@@ -806,7 +643,7 @@ classes: wide
             <p>Trace temporary reference lines and place points at intersections. (Note: Also referred in the toolset as refPoint)</p>
             <p>Unlike the Standard helper points, this custom objects works with vertex snap.</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_intpoints">
+        <div class="tool-instruction" id="DSTBX_refGuides_intpoints">
             <ul>
                 <li>When picking first point of line:
                     <ul>
@@ -825,7 +662,7 @@ classes: wide
         <div>
             <p>Displays line guides units scale and protractor angles on the viewport.</p>
         </div>
-        <div class="instruction" id="DSTBX_refGuides_Li2">
+        <div class="tool-instruction" id="DSTBX_refGuides_Li2">
             Tool modes:
             <ul>
                 <li>Selection: displays the units for the selected guide objects.</li>
@@ -849,7 +686,7 @@ classes: wide
             <p>Delete guides</p>
         </div>
         <div>Delete all refGuides</div>
-        <div class="instruction" id="DSTBX_refGuides_delete">Delete all guides (lines, protractor and intersection points) on scene.</div>
+        <div class="tool-instruction" id="DSTBX_refGuides_delete">Delete all guides (lines, protractor and intersection points) on scene.</div>
     </div>
     <div class="tool-item" id="enable-intersections" onclick="window.open('/docs/userguide/#refguides-additional-tools','target');">
         <div><img src="/assets/images/icons/intToggle_48.png" alt="intToggle">
@@ -858,7 +695,7 @@ classes: wide
         <div>
             <p>Intersection points toggle</p>
         </div>
-        <div class="instruction" id="rG_ribbon_intPoints">
+        <div class="tool-instruction" id="rG_ribbon_intPoints">
             <p>Enable or disable the auto creation of intersection points when placing reference guidelines</p>
         </div>
     </div>
@@ -869,7 +706,7 @@ classes: wide
         <div>
             <p>Protractor toggle</p>
         </div>
-        <div class="instruction" id="rG_ribbon_Prot">
+        <div class="tool-instruction" id="rG_ribbon_Prot">
             <p>When the option is enabled, a protractor will be created when placing reference guides.</p>
         </div>
     </div>
@@ -888,7 +725,7 @@ classes: wide
         <div>
             <p>Polar grid toggle: keep the temporal grid active after polar mode guides creation.</p>
         </div>
-        <div class="instruction" id="rG_ribbon_pGrid">
+        <div class="tool-instruction" id="rG_ribbon_pGrid">
             <p>When enabled, the reference grid used to define polar coordinates in guidelines placement will remain active.</p>
         </div>
     </div>
@@ -899,7 +736,7 @@ classes: wide
         <div>
             <p>Toggle to change the guidelines intersection behavior</p>
         </div>
-        <div class="instruction" id="rG_ribbon_IntMode">
+        <div class="tool-instruction" id="rG_ribbon_IntMode">
             <p>Intersect against all guides in scene or only the guides in the current placement.</p>
         </div>
     </div>
@@ -940,7 +777,7 @@ classes: wide
         <div>
             <p>Tool for replacing objects Interactively.</p>
         </div>
-        <div class="instruction" id="DSTBX_replicator">
+        <div class="tool-instruction" id="DSTBX_replicator">
             <ol>
                 <li>Pick a source node</li>
                 <li>Pick the objects you want to replace.</li>
@@ -959,7 +796,7 @@ classes: wide
         <div>
             <p>Toggles that changes the behavior of the tool</p>
         </div>
-        <div class="instruction" id="DSTBX_replicator_options">
+        <div class="tool-instruction" id="DSTBX_replicator_options">
             <ul>
                 <li><b>Multi Target toggle</b>: continuos target picking..</li>
                 <li><b>Transform copy toggle</b>: copy reference object transformation.</li>
@@ -980,7 +817,7 @@ classes: wide
         <div>
             <p>Eyedropper Tool can copy several characteristics (properties and modifiers) form one node to another, or to a group of nodes</p>
         </div>
-        <div class="instruction" id="DSTBX_edrpAll">
+        <div class="tool-instruction" id="DSTBX_edrpAll">
             <ol>
                 <li>Pick a source node</li>
                 <li>Pick the objects you want to apply the properties or modifiers.</li>
@@ -1040,7 +877,7 @@ classes: wide
         <div>
             <p>Toggles that changes the behavior of the tool</p>
         </div>
-        <div class="instruction" id="DSTBX_edrp_mt">
+        <div class="tool-instruction" id="DSTBX_edrp_mt">
             <ul>
                 <li><b>Multi Target toggle</b>: Enable eyedropper multi target mode.</li>
                 <li><b>Filters dialog</b>: Set filters for multi-eyedropper. This enables or disables the different range of properties that the Eyedropper can pick.</li>
@@ -1064,7 +901,7 @@ classes: wide
         <div>
             <p>Combine geometry and splines into one object.</p>
         </div>
-        <div class="instruction" id="DSTBX_nodeMerge">
+        <div class="tool-instruction" id="DSTBX_nodeMerge">
             <p>Select the objects to merge, run the tool, select or dismiss the prompt for keeping the original nodes, done.</p>
         </div>
     </div>
@@ -1073,7 +910,7 @@ classes: wide
             <p>Explode Nodes</p>
         </div>
         <div>Explode geometry elements and spline shapes</div>
-        <div class="instruction" id="DSTBX_nodeExplode">
+        <div class="tool-instruction" id="DSTBX_nodeExplode">
             <p>Select the objects to explode, run the tool, select or dismiss the prompt for keeping the original nodes, done.</p>
         </div>
     </div>
@@ -1084,7 +921,7 @@ classes: wide
         <div>
             <p>Align a selection of vertices in a straight line.</p>
         </div>
-        <div class="instruction" id="DSTBX_stmp">
+        <div class="tool-instruction" id="DSTBX_stmp">
             <ol>
                 <li>Select the vertices you want to align. alternatively, select a edge loop or some consecutive edges.</li>
                 <li>Start the tool. Choose a base point to begin drawing a line that will be used to align the vertices.</li>
@@ -1099,7 +936,7 @@ classes: wide
         <div>
             <p>Change the length of selected edges. (Works only with Editable Poly objects)</p>
         </div>
-        <div class="instruction" id="DSTBX_stmp">
+        <div class="tool-instruction" id="DSTBX_stmp">
             <p>Note that the objects must be geometry that can be converted to Editable Poly and, the tool will collapse the modifier stack.</p>
             <p>Options: Max, minimum, and average length, custom value.</p>
             <ol>
@@ -1115,7 +952,7 @@ classes: wide
         <div>
             <p>Use an object to Interactively stamp its shape or cut holes in a mesh.</p>
         </div>
-        <div class="instruction" id="DSTBX_stmp">
+        <div class="tool-instruction" id="DSTBX_stmp">
             <p>Note that the objects must be geometry that can be converted to Editable Poly and, the tool will collapse the modifier stack.</p>
             <ol>
                 <li>In the UI, pick a base node to operate on and choose the operation</li>
@@ -1141,7 +978,7 @@ classes: wide
         <div>
             <p>Clone object between 2 points</p>
         </div>
-        <div class="instruction" id="DSTBX_clonebtwn">
+        <div class="tool-instruction" id="DSTBX_clonebtwn">
             <ol>
                 <li>Pick distance start point.</li>
                 <li>Pick distance end point.</li>
@@ -1160,7 +997,7 @@ classes: wide
             <p>Array 2D - Interactive</p>
         </div>
         <div>Quick and visual tool for cloning objects in a 2D grid.</div>
-        <div class="instruction" id="DSTBX_IARR">
+        <div class="tool-instruction" id="DSTBX_IARR">
             <ol>
                 <li>Select Object to replicate</li>
                 <li>Define a rectangular area by three points:
@@ -1184,12 +1021,12 @@ classes: wide
         <div>
             <p>Create complex Rule / Pattern based arrays</p>
         </div>
-        <div class="instruction" id="DSTBX_PARR">
+        <div class="tool-instruction" id="DSTBX_PARR">
             <ol>
                 <li>Select a base object</li>
                 <li>Array General Dimension: Set total rows, columns, origin and gap between rows and columns.</li>
                 <li>Pattern rules: Change current row/column spinners to add a new rule. Each cell can have a different node, transformation and can be turned on/off.</li>
-                <!-- TODO: COMPLETE INSTRUCTIONS! -->
+                <!-- TODO: COMPLETE tool-INSTRUCTIONS! -->
                 <li>Preview o generate the array.</li>
             </ol>
         </div>
@@ -1201,7 +1038,7 @@ classes: wide
         <div>
             <p>Clone and orient an object around a center.</p>
         </div>
-        <div class="instruction" id="DSTBX_arrayPolar">
+        <div class="tool-instruction" id="DSTBX_arrayPolar">
             <p>Additional options:</p>
             <ul>
                 <li>Pick a node to act as a center to clone around.</li>
@@ -1215,7 +1052,7 @@ classes: wide
             <p>Paneling</p>
         </div>
         <div>Simple Paneling tool. Creates panels on planar areas.</div>
-        <div class="instruction" id="DSTBX_PN">
+        <div class="tool-instruction" id="DSTBX_PN">
             <ol>
                 <li>Define a rectangular area by three points:
                     <ol>
@@ -1242,7 +1079,7 @@ classes: wide
         <div>
             <p>Position features over a collection of objects.</p>
         </div>
-        <div class="instruction" id="DSTBX_PNDT">
+        <div class="tool-instruction" id="DSTBX_PNDT">
             <ol>
                 <li>Select objects to be detailed.</li>
                 <li>Pick feature object</li>
@@ -1259,7 +1096,7 @@ classes: wide
         <div>
             <p>UVW Modifier tools. Fit, center, and reset the gizmo. Delete all UVW modifiers on the object's stack.</p>
         </div>
-        <div class="instruction" id="DSTBX_mapTools">
+        <div class="tool-instruction" id="DSTBX_mapTools">
             <p>Open the tool UI and select the options.</p>
             <p>Use the combined floater UI to access all UVW tools at once.</p>
         </div>
@@ -1272,7 +1109,7 @@ classes: wide
         <div>
             <p>UVW modifier Bulk apply. Save time with preset settings before adding a UVW map to the object.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ul>
                 <li>Apply individual uvwMaps to multiple objects.</li>
                 <li>Apply mapping by Edit Poly elements or by faces.</li>
@@ -1287,7 +1124,7 @@ classes: wide
         <div>
             <p>Apply random, rule-based or constant transforms to mapping modifiers.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <!-- TODO: Complete this! -->
             <p>Use tis utility in a non-destructive way adding a UVW Xform modifier for the transform</p>
         </div>
@@ -1297,7 +1134,7 @@ classes: wide
             <p>Pivot: Quick position</p>
         </div>
         <div>Several options to quickly reposition the pivot.</div>
-        <div class="instruction" id="DSTBX_QPVT">
+        <div class="tool-instruction" id="DSTBX_QPVT">
             <ul>
                 <li>Bottom, center, top.</li>
                 <li>Corners and centers of the object's bounding box.</li>
@@ -1316,7 +1153,7 @@ classes: wide
         <div>
             <p>Quickly move an object's pivot to a snapping point.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <!-- <p><b>ASSIGN THIS MACRO TO A SHORTCUT</b></p> -->
             <ul>
                 <li>Works with any snap type.</li>
@@ -1334,7 +1171,7 @@ classes: wide
         <div>
             <p>Tool for storing presets for modifiers</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ul>
                 <li>Start the tool</li>
                 <li>Select an object with some modifiers applied, and click "Add presets"</li>
@@ -1352,7 +1189,7 @@ classes: wide
         <div>
             <p>Organize the models you will use in the scene, arranging them in line.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ol>
                 <li>Select the nodes you want to arrange</li>
                 <li>Run the tool. Use the UI to set the separation between objects</li>
@@ -1366,7 +1203,7 @@ classes: wide
             <p>Random transform</p>
         </div>
         <div>Tool with several options to randomize transforms.</div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ul>
                 <li>Can be used to directly transform the node, add an XForm modifier, or transform applied modifiers gizmo's.</li>
                 <li>Set constant, by range or a scripted list of values to apply the transform.</li>
@@ -1380,7 +1217,7 @@ classes: wide
             <p>Random Select</p>
         </div>
         <div>Select random nodes</div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ol>
                 <li>make a selection of objects. The list of objects follows the selection order.</li>
                 <li>Select the algorithm:<ul>
@@ -1406,7 +1243,7 @@ classes: wide
         <div>
             <p>Dockable color clipboard.</p>
         </div>
-        <div class="instruction" id="DSTBX_cclp">
+        <div class="tool-instruction" id="DSTBX_cclp">
             <ul>
                 <li>Left-click on "+" button to fill swatches with random colors.</li>
                 <li>Right-click on "+" button to fill unused swatches with random colors.</li>
@@ -1422,7 +1259,7 @@ classes: wide
         <div>
             <p>Save States for Snap settings.</p>
         </div>
-        <div class="instruction" id="DSTBX_snapSets">
+        <div class="tool-instruction" id="DSTBX_snapSets">
             <!-- TODO: Complete this! -->
             <ul>
                 <li>You can click and drag around the compact interface.</li>
@@ -1452,7 +1289,7 @@ classes: wide
         <div>
             <p>Isolate the selected object and set an active work grid in its local coordinates</p>
         </div>
-        <div class="instruction" id="DSTBX_refIsolate">
+        <div class="tool-instruction" id="DSTBX_refIsolate">
             <ul>
                 <li>Works in Object level or with the selected faces in an Editable Poly.</li>
                 <li>If more than one object is selected, Local isolate will use the first object in the selection to set the grid</li>
@@ -1466,7 +1303,7 @@ classes: wide
         <div>
             <p> Multi-level isolation tool, use it to incrementally re-isolate within the current selection</p>
         </div>
-        <div class="instruction" id="DSTBX_nestedISO">
+        <div class="tool-instruction" id="DSTBX_nestedISO">
             <li>The tool will open a floater dialog with three buttons.</li>.
             <li>Select some nodes and press <b>LEVEL UP</b> to isolate them.</li>
             <li>Press <b>LEVEL DOWN</b> to restore the previous isolated nodes, or exit isolation mode if no previous level is registered.</li>
@@ -1478,14 +1315,14 @@ classes: wide
             <p>unHide selection</p>
         </div>
         <div>Unhide object selection</div>
-        <div class="instruction" id="DSTBX_unhider">Unhide objects by selection</div>
+        <div class="tool-instruction" id="DSTBX_unhider">Unhide objects by selection</div>
     </div>
     <div class="tool-item" id="unfreeze-selection" onclick="window.open('/docs/userguide/#unfreeze-by-selection','target');">
         <div><img src="/assets/images/icons/bulb_fsel_48.png" alt="bulb_fsel">
             <p>unFreeze selection</p>
         </div>
         <div>unFreeze object selection</div>
-        <div class="instruction" id="DSTBX_unfrozer">unfreeze objects by selection</div>
+        <div class="tool-instruction" id="DSTBX_unfrozer">unfreeze objects by selection</div>
     </div>
     <div class="tool-item" id="isolate-layer" onclick="window.open('/docs/userguide/#layer-tools','target');">
         <div><img src="/assets/images/icons/LayIso_48.png" alt="LayIso">
@@ -1494,7 +1331,7 @@ classes: wide
         <div>
             <p>Isolate/Un-isolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
         </div>
-        <div class="instruction" id="DSTBX_layIso">
+        <div class="tool-instruction" id="DSTBX_layIso">
             <p>Isolate/Un-isolate selected object/s layer/s.</p>
             <p>If nothing is selected, you can pick an object in viewport and isolate the respective layer.</p>
         </div>
@@ -1506,7 +1343,7 @@ classes: wide
         <div>
             <p>Locks the layer of the picked/selected node. Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
         </div>
-        <div class="instruction" id="DSTBX_layProp1">
+        <div class="tool-instruction" id="DSTBX_layProp1">
             <p>Locks the layer of the picked/selected node.</p>
             <p>Press <b>SHIFT</b> when selecting the tool to unlock a frozen layer.</p>
         </div>
@@ -1518,7 +1355,7 @@ classes: wide
         <div>
             <p>Turn off the layer of the selected/picked node.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
         </div>
     </div>
@@ -1529,7 +1366,7 @@ classes: wide
         <div>
             <p>Set Box mode status for selected/picked node layer.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
         </div>
     </div>
@@ -1540,7 +1377,7 @@ classes: wide
         <div>
             <p>Set BackFaceCull status for selected/picked node layer.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <p>Press <b>SHIFT</b> when selecting the tool to pick a frozen node/layer.</p>
         </div>
     </div>
@@ -1558,7 +1395,7 @@ classes: wide
         <div>
             <p>Review cameras, assign per-camera resolution, create batch render views, and add state sets.</p>
         </div>
-        <div class="instruction" id="DSTBX_cam_manager">
+        <div class="tool-instruction" id="DSTBX_cam_manager">
             <ul>
                 <li>
                     <p><b>Per-Camera resolution</b></p>
@@ -1588,7 +1425,7 @@ classes: wide
         <div>
             <p>This tool is intended to be of aid when composing shots. Easily draw photographic grids, reference lines, and vanishing lines to help compose the perfect shot.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ul>
                 <li>Quadrants (2x2)</li>
                 <li>Rule of thirds (3x3)</li>
@@ -1605,7 +1442,7 @@ classes: wide
         <div>
             <p>Replace each scene material with an alternative one.</p>
         </div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ul>
                 <li>Select (or multi-select) the materials name on the list. next, double click on the selection and a scene explorer will open to select a replacement.</li>
                 <li>You can save and load the material replacements list.</li>
@@ -1641,7 +1478,7 @@ classes: wide
             <p>Quick material ID Set</p>
         </div>
         <div>Dialog UI for select and set material IDs without the need to dive in the command panel.</div>
-        <div class="instruction">
+        <div class="tool-instruction">
             <ul>
                 <li>Works with editable poly only</li>
                 <li>You can also select all the faces that has the same ID as the current selected one.</li>
@@ -1683,7 +1520,7 @@ classes: wide
         <div>
             <p>Lock/Unlock the object transforms.</p>
         </div>
-        <div class="instruction" id="DSTBX_Locks_all">
+        <div class="tool-instruction" id="DSTBX_Locks_all">
             <p>Lock/Unlock all object transformations: Position, rotation and scale</p>
         </div>
         <div class="tool-footer">

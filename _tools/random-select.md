@@ -1,5 +1,6 @@
 ---
 title: Random select
+toc: true
 excerpt: Random node selection. By percent of the selected nodes or "Dot-Gap" pattern.
 ---
 

@@ -908,7 +908,7 @@ Adjust HSV values of selected objects wireframe color.
 
 ## Utilities
 
-![modifiers-presets](/assets/images/icons/modPreset_128.png){: .icon-small}
+![modifiers-presets](/assets/images/icons/modPresets_128.png){: .icon-small}
 
 ### Modifiers presets
 

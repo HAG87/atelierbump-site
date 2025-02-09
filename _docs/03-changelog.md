@@ -1,8 +1,53 @@
 ---
-title: DesignToolBox Changelog
-excerpt: Whats new in the latest build.
+title: DesignToolBox release notes
+excerpt: Find what's new in the latest version.
 permalink: /docs/changelog
+toc: true
 ---
+
+## Version 2.22.5.0
+
+### New
+
+* New pivot placement tools:
+  * Align by axis
+  * Position at the center of three points.
+
+### Enhancements
+
+* Improved UVWmap add tool
+* Improved pivot tools
+* Missing menu items:
+  * Normal map gamma correct
+  * Material bump to 100.0
+* some UI and tooltips improvements
+
+### Fixes
+
+* Problem with UVW map tools: add mapping to geometry elements was broken.
+
+## Version 2.22.0.0
+
+### Fixes
+
+* Fixed problems with floater dialogs
+* Fixed problem with dialogs background when using OCIO color management
+
+### Enhancements
+
+* General code maintenance and improvements
+
+## Version 2.21.8.0
+
+### Fixes
+
+Addressed critical error in some tools (mainly the measure Area tool that was broken)
+
+## Version 2.21.7.0
+
+### Fixes
+
+Addressed critical error in transform tools (Offset and reDimension tools were broken)
 
 ## Version 2.21.6.0
 

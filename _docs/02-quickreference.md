@@ -2,6 +2,7 @@
 title: Quick reference
 excerpt: 'Userguide containing tools description and how to use.'
 permalink: /docs/quickreference/
+classes: wide
 ---
 
-[List of available tools, with description and a short instructions guide.](/dstlbx/commands)
+{% include tools-table.html %}
