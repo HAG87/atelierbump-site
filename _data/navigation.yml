@@ -4,8 +4,10 @@ main:
     url: /
   - title: "Features"
     url: "/features/"
+  - title: "User guide"
+    url: "/userguide/"
   - title: "Documents"
-    url: /docs/
+    url: /
   - title: "Free tools"
     url: /tools/
   - title: "Blog"
@@ -20,188 +22,188 @@ main:
 # User guide sidebar
 sidebar-userguide:
 - title: "refGuides, spatial reference helpers"
-  url: /docs/userguide/#refguides-spatial-reference-helpers
+  url: /userguide/#refguides-spatial-reference-helpers
   children:
   - title: "Line guides placement"
-    url: /docs/userguide/#line-guides-placement
+    url: /userguide/#line-guides-placement
   - title: "Free space mode"
-    url: /docs/userguide/#free-space-mode
+    url: /userguide/#free-space-mode
   - title: "Orthogonal space mode"
-    url: /docs/userguide/#orthogonal-space-mode
+    url: /userguide/#orthogonal-space-mode
   - title: "Polar space mode"
-    url: /docs/userguide/#polar-space-mode
+    url: /userguide/#polar-space-mode
   - title: "Protractor guide"
-    url: /docs/userguide/#protractor-guide
+    url: /userguide/#protractor-guide
   - title: "Intersection points"
-    url: /docs/userguide/#intersection-points
+    url: /userguide/#intersection-points
   - title: "Guides parameters"
-    url: /docs/userguide/#guides-parameters
+    url: /userguide/#guides-parameters
   - title: "refGuides Objects"
-    url: /docs/userguide/#refguides-objects
+    url: /userguide/#refguides-objects
   - title: "Viewport information tools"
-    url: /docs/userguide/#viewport-information-tools
+    url: /userguide/#viewport-information-tools
   - title: "refGuides additional tools"
-    url: /docs/userguide/#refguides-additional-tools
+    url: /userguide/#refguides-additional-tools
 - title: "Transform tools"
-  url: /docs/userguide/#transform-tools
+  url: /userguide/#transform-tools
   children:
   - title: "reference Rotation"
-    url: /docs/userguide/#reference-rotation
+    url: /userguide/#reference-rotation
   - title: "local reference Rotation"
-    url: /docs/userguide/#local-reference-rotation
+    url: /userguide/#local-reference-rotation
   - title: "reference Scale"
-    url: /docs/userguide/#reference-scale
+    url: /userguide/#reference-scale
   - title: "Mirror tool"
-    url: /docs/userguide/#mirror-tool
+    url: /userguide/#mirror-tool
   - title: "Move and align (1D Align tool)"
-    url: /docs/userguide/#move-and-align-1d-align-tool
+    url: /userguide/#move-and-align-1d-align-tool
   - title: "3 points align"
-    url: /docs/userguide/#3-points-align
+    url: /userguide/#3-points-align
   - title: "reDimension"
-    url: /docs/userguide/#redimension
+    url: /userguide/#redimension
   - title: "Offset (reference move)"
-    url: /docs/userguide/#offset
+    url: /userguide/#offset
   - title: "Reference move"
-    url: /docs/userguide/#reference-move
+    url: /userguide/#reference-move
   - title: "Swap transform"
-    url: /docs/userguide/#swap-transform
+    url: /userguide/#swap-transform
   - title: "Swap transform"
-    url: /docs/userguide/#random-swap-transform
+    url: /userguide/#random-swap-transform
   - title: "Random transform"
-    url: /docs/userguide/#random-transform
+    url: /userguide/#random-transform
   - title: "Object distribution tools"
-    url: /docs/userguide/#arrange-objects    
+    url: /userguide/#arrange-objects    
 - title: "Measure tools"
-  url: /docs/userguide/#measure-tools
+  url: /userguide/#measure-tools
   children:
   - title: "Divide distance"
-    url: /docs/userguide/#divide-distance
+    url: /userguide/#divide-distance
   - title: "Distance"
-    url: /docs/userguide/#distance
+    url: /userguide/#distance
   - title: "Contiguous (chain) dimension line"
-    url: /docs/userguide/#contiguous-chain-dimension-line
+    url: /userguide/#contiguous-chain-dimension-line
   - title: "Working with measurements"
-    url: /docs/userguide/#working-with-measurements-distance-history
+    url: /userguide/#working-with-measurements-distance-history
   - title: "Angle"
-    url: /docs/userguide/#angle
+    url: /userguide/#angle
   - title: "Area"
-    url: /docs/userguide/#area
+    url: /userguide/#area
   - title: "Volume"
-    url: /docs/userguide/#volume
+    url: /userguide/#volume
   - title: "Angle between faces"
-    url: /docs/userguide/#angle-between-two-faces
+    url: /userguide/#angle-between-two-faces
   - title: "Angle between edges"
-    url: /docs/userguide/#angle-between-two-edges
+    url: /userguide/#angle-between-two-edges
   - title: "Spatial info"
-    url: /docs/userguide/#spatial-info
+    url: /userguide/#spatial-info
   - title: "Home grid size"
-    url: /docs/userguide/#home-grid-size
+    url: /userguide/#home-grid-size
 - title: "configuration dialog"
-  url: /docs/userguide/#configuration-dialog
+  url: /userguide/#configuration-dialog
   children:
   - title: "refGuides options"
-    url: /docs/userguide/#refguides-options
+    url: /userguide/#refguides-options
   - title: "refGuides units"
-    url: /docs/userguide/#refguides-units-configuration
+    url: /userguide/#refguides-units-configuration
   - title: "Viewport options"
-    url: /docs/userguide/#viewport-elements-colors
+    url: /userguide/#viewport-elements-colors
   - title: "Transform tools units"
-    url: /docs/userguide/#transform-and-measure-tools-units-configuration
+    url: /userguide/#transform-and-measure-tools-units-configuration
 - title: "Pivot and coordinates related tools"
-  url: /docs/userguide/#pivot-and-coordinates-related-tools
+  url: /userguide/#pivot-and-coordinates-related-tools
   children:
   - title: "Pivot tools"
-    url: /docs/userguide/#pivot-tools
+    url: /userguide/#pivot-tools
   - title: "Transform locks"
-    url: /docs/userguide/#transform-locks
+    url: /userguide/#transform-locks
 - title: "Scene organization tools"
-  url: /docs/userguide/#scene-organization-tools
+  url: /userguide/#scene-organization-tools
   children:
   - title: "Local isolate"
-    url: /docs/userguide/#local-isolate
+    url: /userguide/#local-isolate
   - title: "Incremental isolation"
-    url: /docs/userguide/#incremental-isolation
+    url: /userguide/#incremental-isolation
   - title: "unHide by selection"
-    url: /docs/userguide/#unhide-by-selection
+    url: /userguide/#unhide-by-selection
   - title: "unFreeze by selection"
-    url: /docs/userguide/#unfreeze-by-selection
+    url: /userguide/#unfreeze-by-selection
   - title: "Layer tools"
-    url: /docs/userguide/#layer-tools
+    url: /userguide/#layer-tools
 - title: "Eyedropper tools"
-  url: /docs/userguide/#eyedropper-tools
+  url: /userguide/#eyedropper-tools
   children:
   - title: "Replicator"
-    url: /docs/userguide/#replicator
+    url: /userguide/#replicator
   - title: "Eyedropper"
-    url: /docs/userguide/#eyedropper
+    url: /userguide/#eyedropper
   - title: "MultiTool"
-    url: /docs/userguide/#multitool
+    url: /userguide/#multitool
   - title: "Eyedropper modes"
-    url: /docs/userguide/#eyedropper-modes
+    url: /userguide/#eyedropper-modes
 - title: "Object related tools"
-  url: /docs/userguide/#object-related-tools
+  url: /userguide/#object-related-tools
   children:
   - title: "1D Array"
-    url: /docs/userguide/#1d-array-clone-between
+    url: /userguide/#1d-array-clone-between
   - title: "Interactive 2D Array"
-    url: /docs/userguide/#interactive-2d-array
+    url: /userguide/#interactive-2d-array
   - title: "Pattern Array"
-    url: /docs/userguide/#pattern-array
+    url: /userguide/#pattern-array
   - title: "Polar array"
-    url: /docs/userguide/#polar-array
+    url: /userguide/#polar-array
   - title: "Merge and explode"
-    url: /docs/userguide/#merge-and-explode-tools
+    url: /userguide/#merge-and-explode-tools
   - title: "Edge length"
-    url: /docs/userguide/#edge-length-tool
+    url: /userguide/#edge-length-tool
   - title: "Align vertices"
-    url: /docs/userguide/#align-vertices-tool
+    url: /userguide/#align-vertices-tool
 - title: "Scene management"
-  url: /docs/userguide/#scene-management-and-rendering-related-tools
+  url: /userguide/#scene-management-and-rendering-related-tools
   children:
   - title: "Camera manager"
-    url: /docs/userguide/#camera-manager
+    url: /userguide/#camera-manager
   - title: "Material replacer"
-    url: /docs/userguide/#material-replacer
+    url: /userguide/#material-replacer
   - title: "Polygon ID set"
-    url: /docs/userguide/#quick-material-id-set
+    url: /userguide/#quick-material-id-set
   - title: "Bitmap multi-loader"
-    url: /docs/userguide/#bitmap-multi-loader
+    url: /userguide/#bitmap-multi-loader
   - title: "Bitmap name from file"
-    url: /docs/userguide/#bitmap-name-from-file
+    url: /userguide/#bitmap-name-from-file
   - title: "Other material related tools"
-    url: /docs/userguide/#other-material-related-tools
+    url: /userguide/#other-material-related-tools
 - title: "Utilities"
-  url: /docs/userguide/#utilities
+  url: /userguide/#utilities
   children:
   - title: "modifiers presets"
-    url: /docs/userguide/#modifiers-presets
+    url: /userguide/#modifiers-presets
   - title: "Paneling and detailer"
-    url: /docs/userguide/#paneling-and-detailer
+    url: /userguide/#paneling-and-detailer
   - title: "Paneling"
-    url: /docs/userguide/#paneling
+    url: /userguide/#paneling
   - title: "Detailer"
-    url: /docs/userguide/#detailer
+    url: /userguide/#detailer
   - title: "Map tools and multiMap"
-    url: /docs/userguide/#map-tools-and-multimap
+    url: /userguide/#map-tools-and-multimap
   - title: "Snaps states"
-    url: /docs/userguide/#snaps-states
+    url: /userguide/#snaps-states
   - title: "Color clipboard"
-    url: /docs/userguide/#color-clipboard
+    url: /userguide/#color-clipboard
   - title: "Wireframe color HSV"
-    url: /docs/userguide/#wireframe-colors-adjustment
+    url: /userguide/#wireframe-colors-adjustment
 - title: "UI reference"
-  url: /docs/userguide/#ui-reference
+  url: /userguide/#ui-reference
   children:
   - title: "Viewport elements colors"
-    url: /docs/userguide/#viewport-elements-colors
+    url: /userguide/#viewport-elements-colors
   - title: "Toolbar macros"
-    url: /docs/userguide/#where-to-locate-the-toolbar-macros
+    url: /userguide/#where-to-locate-the-toolbar-macros
   - title: "Ribbon Tab"
-    url: /docs/userguide/#ribbon-tab
+    url: /userguide/#ribbon-tab
 - title: "Extras"
-  url: /docs/userguide/#extras
+  url: /userguide/#extras
   children:
   - title: "Mesh stamp"
-    url: /docs/userguide/#mesh-stamp-tool
+    url: /userguide/#mesh-stamp-tool
 - title: "Install folders"
-  url: /docs/userguide/#install-folders
+  url: /userguide/#install-folders
