@@ -223,28 +223,28 @@ compress_html:
 permalink: /:categories/:title/
 Timezone: UTC
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num # /page:num/
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
-pagination:
-  # Set enabled to true to use paginate v2
-  # enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
+# pagination:
+#   # Set enabled to true to use paginate v2
+#   # enabled: true
+#   debug: false
+#   collection: 'posts'
+#   per_page: 10
+#   permalink: '/page/:num/'
+#   title: ':title - page :num'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+#   category: 'posts'
+#   tag: ''
+#   locale: ''
+#   trail:
+#     before: 2
+#     after: 2
 
 
 # Plugins (previously gems:)
@@ -311,7 +311,6 @@ defaults:
       type: posts
     values:
       layout: single
-      permalink: /:categories/:year/:month/:day/:title/
       author_profile: false
       read_time: true
       comments: false

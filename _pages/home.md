@@ -25,7 +25,7 @@ feature_row:
     alt: "DesignToolBox documents"
     title: "Documents"
     excerpt: "Consult the user guide to learn how to use the tools and their available options."
-    url: "/docs/userguide/"
+    url: "/userguide/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/splash-changelog.jpg
