@@ -7,7 +7,7 @@ main:
   - title: "User guide"
     url: "/userguide/"
   - title: "Documents"
-    url: /
+    url: /docs/
   - title: "Free tools"
     url: /tools/
   - title: "Blog"
