@@ -78,31 +78,14 @@ footer_text:
 {% include video id=page.video.id provider=page.video.provider %}
 
 <!--Feature list-->
-{% include feature_tools type="image-center text-center" %}
+{% include feature_tools.html type="image-center text-center" %}
 {% include feature_row id="feature_row_ui" type="center" %}
 
 <!--Slider images-->
-<div class="flexslider">
-  <ul class="slides">
-    <li><img src="/assets/images/slide_refguides.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_quick_measuere.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_ref_rotation.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_ref_scale.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_ref_offset.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/dimobj_preview.png" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_divide_distance.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_quick_angle.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_menu.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_ribbon_tab.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_multimap.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_paneling.jpg" alt="Features slider"/></li>
-    <li><img src="/assets/images/slide_pivot_tools.jpg" alt="Features slider"/></li>
-    <!-- <li><img src="/assets/images/slide_local_isolate.jpg" alt="Features slider"/></li> -->
-  </ul>
-</div>
+{% include presentation-slider.html %}
 
 <!--Buy now section-->
-{% include dstlbx-buy-now price="$25.00*" purchase-url="https://gum.co/dstlbx" download-url="https://github.com/HAG87/designtoolbox-release/releases/latest" %}
+{% include dstlbx-buy-now.html price="$25.00*" purchase-url="https://gum.co/dstlbx" download-url="https://github.com/HAG87/designtoolbox-release/releases/latest" %}
 
 <!-- Documents 3 column-->
 {% include feature_row %}

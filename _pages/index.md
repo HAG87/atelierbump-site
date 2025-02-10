@@ -1,8 +1,0 @@
----
-layout: posts
-title: Blog entries
-excerpt: News and stuff
-permalink: /blog/
-entries_layout: grid
-author_profile: false
----
