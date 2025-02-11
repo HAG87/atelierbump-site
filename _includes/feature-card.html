@@ -1,0 +1,42 @@
+{% if feature.reference %}
+    <div class="tool-item"
+         id="{{ feature.title downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' }}"
+         onclick="window.open('{{ feature.reference | absolute_url }}','target');">
+{% else %}
+    <div class="tool-item"
+         id="{{ feature.title downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' }}">
+{% endif %}
+    <div>
+        {% if feature.icon != null %}
+        <img src="{{ feature.icon | relative_url }}"
+             alt="{{ feature.title }}"
+             height="48">
+        {% endif %}
+        <p>{{ feature.title }}</p>
+    </div>
+    <div>
+        {% if feature.description %}
+            {% for desc in feature.description %}
+                <p>{{ desc | markdownify }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    {% if feature.content %}
+        <div class="tool-instruction">
+            {{ feature.content | markdownify }}
+        </div>
+    {% endif %}
+    {% if feature.footer %}
+        <div class="tool-footer">
+            <p>{{ feature.footer | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% if feature.footer_images %}
+            <div class="tool-footer-img">
+                {% for image in feature.footer_images %}
+                    <img src="{{ image | relative_url }}"
+                         alt="{{ feature.title }}">
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
