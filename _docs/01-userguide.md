@@ -2,6 +2,7 @@
 title: User Guide
 excerpt: 'User guide containing tools description and how to use.'
 permalink: /docs/userguide/
+published: false
 # toc: true
 sidebar:
   title: "Index"
