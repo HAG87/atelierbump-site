@@ -1,0 +1,28 @@
+<div class="grid-row">
+  <div class="feature-wide">
+    <h3>{{ category }}</h3>
+  </div>
+</div>
+{% assign features_in_cat = site.features | where: "category", category -%}
+{% if features_in_cat.size == 1 %}
+    {%- assign classname = "feature-wide" -%}
+{% elsif features_in_cat.size == 2 %}
+    {%- assign classname = "feature-two__fifth" -%}
+{% else %}
+    {%- assign classname = "feature" -%}
+{% endif %}
+<div class="grid-row">
+  {% for feature in features_in_cat %}
+    <div class="{{ classname }}">
+      {% if feature.icon != null%}
+        <img src="{{ feature.icon | relative_url }}" alt="{{ feature.id }}">
+      {% endif %}
+      {% if feature.title != null and feature.title != "" %}
+          <h4>{{ feature.title }}</h4>
+      {% endif %}
+      {% if feature.excerpt != null %}
+        <p>{{ feature.excerpt | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
