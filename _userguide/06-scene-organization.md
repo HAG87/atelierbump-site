@@ -1,10 +1,12 @@
 ---
 title: Scene organization
 excerpt: 'User guide containing tools description and how to use.'
-permalink: /docs/userguide/
+permalink: /userguide/scene-organization
 ---
 
 ## Scene organization tools
+
+![unhide](/assets/images/icons/isolate_local_128.png){: .icon-small}
 
 ### Local isolate
 
@@ -13,6 +15,8 @@ Isolate / unisolate selected object and set an active work grid in its local coo
 >Note: If more than one object is selected, Local isolate will use the first object in the selection to set the grid.
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/rD8cU_DtP4A" frameborder="0" allowfullscreen></iframe></div>
+
+![unhide](/assets/images/icons/incIso_128.png){: .icon-small}
 
 ### Incremental isolation
 

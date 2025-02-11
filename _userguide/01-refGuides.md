@@ -1,6 +1,7 @@
 ---
 title: refGuides
 excerpt: 'Spatial reference helpers'
+permalink: /userguide/refguides
 ---
 
 ## refGuides, spatial reference helpers

@@ -1,6 +1,7 @@
 ---
 title: Measure tools
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/measure-tools
 ---
 
 ## Measure tools

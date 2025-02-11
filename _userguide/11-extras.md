@@ -1,6 +1,7 @@
 ---
 title: Extras
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/extras
 ---
 
 ## Extras

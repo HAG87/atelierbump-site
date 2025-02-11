@@ -1,7 +1,7 @@
 ---
 title: Pivot and coordinates related tools
 excerpt: 'User guide containing tools description and how to use.'
-permalink: /docs/userguide/
+permalink: /userguide/pivot-and-coordinates-related-tools
 ---
 
 ## Pivot and coordinates related tools

@@ -1,6 +1,7 @@
 ---
 title: Eyedropper
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/eyedropper-and-replicator
 ---
 
 ## Eyedropper tools

@@ -1,6 +1,7 @@
 ---
 title: Object related tools
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/object-related-tools
 ---
 
 ## Object related tools

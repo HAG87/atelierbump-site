@@ -1,13 +1,14 @@
 ---
 title: UI reference
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/ui-reference
 ---
 
 ## UI reference
 
 ### Menus
 
-![dstlbx-menu](/assets/images/designtoolbox-menus.png){: .align-center .drop-shadow}
+![dstlbx-menu](/assets/images/designtoolbox-menus.png){: .drop-shadow}
 
 ### Where to locate the toolbar macros
 
@@ -17,9 +18,9 @@ You can find the tools in the **customization dialog** under the categories of <
 
 #### refGuides panel
 
-![refguides-ribbon](/assets/images/ui/r1.png){: .align-center .drop-shadow}
+![refguides-ribbon](/assets/images/ui/r1.png){: .drop-shadow}
 
-![refguides-ribbon](/assets/images/ui/r2.png){: .align-center .drop-shadow}
+![refguides-ribbon](/assets/images/ui/r2.png){: .drop-shadow}
 
 Options not available in toolbars:
 
@@ -30,17 +31,17 @@ Options not available in toolbars:
 
 #### Transform panel
 
-![transform-ribbon](/assets/images/ui/r3.png){: .align-center .drop-shadow}
+![transform-ribbon](/assets/images/ui/r3.png){: .drop-shadow}
 
 #### Measure panel
 
-![transform-ribbon](/assets/images/ui/r4.png){: .align-center .drop-shadow}
+![transform-ribbon](/assets/images/ui/r4.png){: .drop-shadow}
 
 Option not available in toolbars: reference angle for rotation tools angle lock.
 
 #### Replicator and Eyedropper panel
 
-![eyedrop-ribbon](/assets/images/ui/r5.png){: .align-center .drop-shadow}
+![eyedrop-ribbon](/assets/images/ui/r5.png){: .drop-shadow}
 
 Options available in toolbars as Checkbuttons:
 
@@ -53,18 +54,18 @@ Options available in toolbars as Checkbuttons:
 
 #### Scene tools panel
 
-![pivot-ribbon](/assets/images/ui/r6.png){: .align-center .drop-shadow}
+![pivot-ribbon](/assets/images/ui/r6.png){: .drop-shadow}
 
 #### General tools panel
 
-![utilities-ribbon](/assets/images/ui/r7.png){: .align-center .drop-shadow}
+![utilities-ribbon](/assets/images/ui/r7.png){: .drop-shadow}
 
 #### Object related tools
 
-![object-ribbon](/assets/images/ui/r8.png){: .align-center .drop-shadow}
+![object-ribbon](/assets/images/ui/r8.png){: .drop-shadow}
 
 #### Layer tools panel
 
-![object-ribbon](/assets/images/ui/r9.png){: .align-center .drop-shadow}
+![object-ribbon](/assets/images/ui/r9.png){: .drop-shadow}
 
 ---

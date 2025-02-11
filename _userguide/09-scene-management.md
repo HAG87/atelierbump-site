@@ -1,6 +1,7 @@
 ---
 title: Scene management
 excerpt: 'Scene management and rendering related tools'
+permalink: /userguide/scene-management
 ---
 
 ## Scene management and rendering related tools

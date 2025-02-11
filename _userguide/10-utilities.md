@@ -1,6 +1,7 @@
 ---
 title: Utilities
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/utilities
 ---
 
 ## Utilities

@@ -1,6 +1,7 @@
 ---
 title: Transform tools
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/trasnform-tools
 ---
 
 ## Transform tools

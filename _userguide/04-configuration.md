@@ -1,6 +1,7 @@
 ---
 title: Configuration
 excerpt: 'User guide containing tools description and how to use.'
+permalink: /userguide/configuration
 ---
 
 ## Configuration dialog
