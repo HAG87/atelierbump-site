@@ -1,7 +1,7 @@
 ---
 title: Random select
 reference: '/tools/random-select'
-icon: '/assets/images/icons/rndSel_48.png'
+icon: '/assets/images/icons/rndSel_128.png'
 excerpt: Select random nodes.
 description:
     - Several options for randomizing a selection set.

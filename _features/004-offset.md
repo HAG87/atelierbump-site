@@ -1,7 +1,7 @@
 ---
 title: Position offset
 reference: '/userguide/#position-offset'
-icon: '/assets/images/icons/offset_48.png'
+icon: '/assets/images/icons/offset_128.png'
 excerpt: Precise referential movements.
 description:
     - Performs a translation from a reference point and a direction path.

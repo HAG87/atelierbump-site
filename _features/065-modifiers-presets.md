@@ -1,7 +1,7 @@
 ---
 title: Modifiers presets
 reference: '/userguide/#modifiers-presets'
-icon: '/assets/images/icons/modPresets_48.png'
+icon: '/assets/images/icons/modPresets_128.png'
 excerpt: Tool for storing presets for modifiers.
 description:
     -   Store presets for modifiers in a convenient UI.

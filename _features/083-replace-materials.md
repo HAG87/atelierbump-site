@@ -1,7 +1,7 @@
 ---
 title: Replace scene materials
 reference: '/userguide/#material-replacer'
-icon: '/assets/images/icons/mtl_48.png'
+icon: '/assets/images/icons/mtl_128.png'
 excerpt:  Replace each scene material with an alternative one.
 description:
     - Automate the process of replacing materials.

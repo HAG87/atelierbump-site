@@ -1,7 +1,7 @@
 ---
 title: Random transform
 reference: '/userguide/#random-transform'
-icon: '/assets/images/icons/random_48.png'
+icon: '/assets/images/icons/random_128.png'
 excerpt: Tool with several options to randomize transforms.
 description:
     - Tool with several options to randomize transforms.

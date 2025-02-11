@@ -1,7 +1,7 @@
 ---
 title: 1D array
 reference: '/userguide/#1d-array-clone-between'
-icon: '/assets/images/icons/1d_array_48.png'
+icon: '/assets/images/icons/1d_array_128.png'
 excerpt: Clone object between 2 points
 description:
     - Fast, interactive, in-viewport 1D Array. 

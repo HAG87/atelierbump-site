@@ -1,7 +1,7 @@
 ---
 title: Eyedropper options
 reference: '/userguide/#eyedropper-modes'
-icon: '/assets/images/icons/eyedrop_ui_48.png'
+icon: '/assets/images/icons/eyedrop_ui_128.png'
 excerpt: Toggles that changes the behavior of the eyedropper tool.
 description:
     - Configuration dialog for the eyedropper tool.
@@ -9,8 +9,8 @@ description:
     - Change the behavior of some actions.
 # footer:
 footer_images:
-    - '/assets/images/icons/eyedrop_2_48.png'
-    - '/assets/images/icons/check_48.png'
+    - '/assets/images/icons/eyedrop_2_128.png'
+    - '/assets/images/icons/check_128.png'
 category: Replicator and Eyedropper
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Drop objects
 reference: '/userguide/#drop-objects'
-icon: '/assets/images/icons/dropObj_48.png'
+icon: '/assets/images/icons/dropObj_128.png'
 excerpt: Drop objects into underlay surfaces
 description:
     - Drop objects on below surfaces.

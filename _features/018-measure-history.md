@@ -1,7 +1,7 @@
 ---
 title: Measure history
 reference: '/userguide/#working-with-measurements-distance-history'
-icon: '/assets/images/icons/QmDlg_48.png'
+icon: '/assets/images/icons/QmDlg_128.png'
 excerpt: Review distance measurements, create dimension objects to show them.
 description:
     - Distance measure history.

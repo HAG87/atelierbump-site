@@ -1,7 +1,7 @@
 ---
 title: Mirror tool
 reference: '/userguide/#mirror-tool'
-icon: '/assets/images/icons/reflect_48.png'
+icon: '/assets/images/icons/reflect_128.png'
 excerpt: Viewport interactive mirror tool. Let's you set a 3d gizmo for freely position mirror planes.
 description:
     - Advanced mirror tool that uses a 3-plane viewport gizmo to guide the mirror operation.

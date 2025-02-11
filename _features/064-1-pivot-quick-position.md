@@ -1,7 +1,7 @@
 ---
 title: Pivot quick position
 reference: '/userguide/#pivot-and-coordinates-related-tools'
-icon: '/assets/images/icons/qpivot_48.png'
+icon: '/assets/images/icons/qpivot_128.png'
 excerpt: Several options to quickly reposition the pivot.
 description:
     - Move to top, bottom, center, cage align, to a snap point, 3-point align, axis align, face normal (3-points and face normal has a Working pivot option), reset xform and pivot, all in an organized pop-up dialog. 

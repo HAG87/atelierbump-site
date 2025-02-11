@@ -1,7 +1,7 @@
 ---
 title: Snap sate sets
 reference: '/userguide/#snap-states'
-icon: '/assets/images/icons/magnet_48.png'
+icon: '/assets/images/icons/magnet_128.png'
 excerpt:  Save States for Snap settings.
 description:
     -   Save and reuse different active snaps settings.

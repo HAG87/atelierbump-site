@@ -1,7 +1,7 @@
 ---
 title: Local Rotation
 reference: '/userguide/#local-reference-rotation'
-icon: '/assets/images/icons/QLrotate_48.png'
+icon: '/assets/images/icons/QLrotate_128.png'
 excerpt: 2-point CAD-like rotation. Angle snap option, local XYZ axis direction option.
 description:
     - Local reference rotation performs a 3-Point rotation (Base point &gt; Reference point &gt; Dest. point) using the object's local coordinate system.

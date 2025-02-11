@@ -1,7 +1,7 @@
 ---
 title: Measure Angle
 reference: '/userguide/#angle'
-icon: '/assets/images/icons/Qangle_48.png'
+icon: '/assets/images/icons/Qangle_128.png'
 excerpt: Measure any angle by three points.
 description:
     - Live visual feedback angular measurement.

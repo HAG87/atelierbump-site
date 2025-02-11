@@ -1,7 +1,7 @@
 ---
 title: Home grid Scale
 reference: '/userguide/#home-grid-size'
-icon: '/assets/images/icons/rg_ax_48.png'
+icon: '/assets/images/icons/rg_ax_128.png'
 excerpt: Display XYZ reference units for the active viewport grid.
 description:
     - Display XYZ reference units for the active viewport grid.

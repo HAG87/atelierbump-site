@@ -1,7 +1,7 @@
 ---
 title: Local isolate
 reference: '/userguide/#local-isolate'
-icon: '/assets/images/icons/isolate_local_48.png'
+icon: '/assets/images/icons/isolate_local_128.png'
 excerpt: Isolate object and set an active grid with it's local coordinates.
 description:
     -   Isolate the selected object and set an active work grid in its local coordinates.

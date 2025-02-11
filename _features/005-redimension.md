@@ -1,7 +1,7 @@
 ---
 title: reDimension
 reference: '/userguide/#redimension'
-icon: '/assets/images/icons/Qdim_48.png'
+icon: '/assets/images/icons/Qdim_128.png'
 excerpt: Scale an object by a dimensional value.
 description:
     - Unit-measured scale, with orthogonal reference pick mode.

@@ -1,7 +1,7 @@
 ---
 title: Reference point
 reference: '/userguide/#intersection-points'
-icon: '/assets/images/icons/infer_48.png'
+icon: '/assets/images/icons/infer_128.png'
 excerpt: Position a vertex-snap enabled points in guides intersection.
 description:
     - Trace temporary reference lines and place points at intersections.

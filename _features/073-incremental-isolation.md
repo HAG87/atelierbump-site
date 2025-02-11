@@ -1,7 +1,7 @@
 ---
 title: Incremental isolation
 reference: '/userguide/#incremental-isolation'
-icon: '/assets/images/icons/incIso_48.png'
+icon: '/assets/images/icons/incIso_128.png'
 excerpt: re-Isolate within current selection.
 description:
     -  Multi-level isolation tool, use it to incrementally re-isolate within the current selection. 

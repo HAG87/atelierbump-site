@@ -1,7 +1,7 @@
 ---
 title: Arrange objects (interactive)
 reference: '/userguide/#arrange-objects'
-icon: '/assets/images/icons/arrangeInt_48.png'
+icon: '/assets/images/icons/arrangeInt_128.png'
 excerpt: Object distribution tool.
 description:
     - Distribute objects (equally spaced) on a linear direction.

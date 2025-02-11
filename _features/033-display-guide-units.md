@@ -1,14 +1,14 @@
 ---
 title: Display guide units
 reference: '/userguide/#viewport-information-tools'
-icon: '/assets/images/icons/rg_Inf_48.png'
+icon: '/assets/images/icons/rg_Inf_128.png'
 excerpt: Displays line guides units scale and protractor angles on the viewport.
 description:
     - Displays line guides units scale and protractor angles on the viewport.
 # footer:
 footer_images:
-    - '/assets/images/icons/check_48.png'
-    - '/assets/images/icons/rg_Inf2_48.png'
+    - '/assets/images/icons/check_128.png'
+    - '/assets/images/icons/rg_Inf2_128.png'
 category: refGuides
 ---
 

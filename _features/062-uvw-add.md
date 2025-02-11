@@ -1,7 +1,7 @@
 ---
 title: UVW Bulk add
 reference: '/userguide/#map-tools-and-multimap'
-icon: '/assets/images/icons/multimap_48.png'
+icon: '/assets/images/icons/multimap_128.png'
 excerpt: UVW modifier Bulk apply.
 description:
     - Add individual UVW modifiers to a selection of objects, poly elements or faces.
@@ -9,8 +9,8 @@ description:
     - Adjust the most common used parameters of the modifier from the docking UI.
 # footer:
 footer_images:
-    - '/assets/images/icons/maptools_48.png'
-    - '/assets/images/icons/multimap_tr_48.png'
+    - '/assets/images/icons/maptools_128.png'
+    - '/assets/images/icons/multimap_tr_128.png'
 category: Object Utilities
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Guides - units
 reference: '/userguide/#refguides-units-configuration'
-icon: '/assets/images/icons/refGuides_icon_48.png'
+icon: '/assets/images/icons/refGuides_icon_128.png'
 excerpt: Units configuration for the reference objects creation and placement.
 description:
     - Units configuration for the reference objects creation and placement.

@@ -1,7 +1,7 @@
 ---
 title: Angle between two edges
 reference: '/userguide/#angle-between-two-edges'
-icon: '/assets/images/icons/angle2edges_48.png'
+icon: '/assets/images/icons/angle2edges_128.png'
 excerpt: Measures the angle between two selected edges.
 description:
     - Angle2Edges for short, measures the angle between two selected edges.

@@ -1,7 +1,7 @@
 ---
 title: Arrange objects (start-end)
 reference: '/userguide/#arrange-objects'
-icon: '/assets/images/icons/arrangeAB_48.png'
+icon: '/assets/images/icons/arrangeAB_128.png'
 excerpt: Distribute objects (equally spaced) on a linear direction.
 description:
     - Distribute objects (equally spaced) on a linear direction.

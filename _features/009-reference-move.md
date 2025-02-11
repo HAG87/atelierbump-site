@@ -1,7 +1,7 @@
 ---
 title: Reference move
 reference: '/userguide/#reference-move'
-icon: '/assets/images/icons/refMove_48.png'
+icon: '/assets/images/icons/refMove_128.png'
 excerpt: CAD-like Move tool that uses two (origin and destination) reference points.
 description:
     - CAD-like Move tool that uses two (origin and destination) reference points.

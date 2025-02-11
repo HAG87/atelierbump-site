@@ -1,7 +1,7 @@
 ---
 title: Align Assets
 reference: '/tools/align-assets'
-icon: '/assets/images/icons/alignassets_48.png'
+icon: '/assets/images/icons/alignassets_128.png'
 excerpt: Put nodes in line.
 description:
     - Organize the models you will use in the scene, arranging them in line.

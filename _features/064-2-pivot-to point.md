@@ -1,7 +1,7 @@
 ---
 title: Pivot to point (shortcut)
 reference: '/userguide/#ivot-tools'
-icon: '/assets/images/icons/qpivot_48.png'
+icon: '/assets/images/icons/qpivot_128.png'
 excerpt: Snap to point keyboard shortcut.
 description:
     - Quickly move an object's pivot to a snapping point with a shortcut.

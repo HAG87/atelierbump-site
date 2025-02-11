@@ -1,7 +1,7 @@
 ---
 title: Measure area
 reference: '/userguide/#area'
-icon: '/assets/images/icons/Qarea_48.png'
+icon: '/assets/images/icons/Qarea_128.png'
 excerpt: Measures a 2D polygonal area by picking vertex points.
 description:
     - Pick points to draw an a closed polygonal region and measure its area.

@@ -1,7 +1,7 @@
 ---
 title: Color Clipboard
 reference: '/userguide/#color-clipboard'
-icon: '/assets/images/icons/color_48.png'
+icon: '/assets/images/icons/color_128.png'
 excerpt: Dockable color clipboard.
 description:
     -   Dockable color swatches pallette.Generate random colors. Store and reuse colors.

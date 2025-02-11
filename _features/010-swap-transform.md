@@ -1,7 +1,7 @@
 ---
 title: Swap transform
 reference: '/userguide/#reference-scale'
-icon: '/assets/images/icons/swapTr_48.png'
+icon: '/assets/images/icons/swapTr_128.png'
 excerpt: Select a collection of objects and cycle their transform from one to the next.
 description:
     - Select a collection of objects and cycle their transform from one to the next.

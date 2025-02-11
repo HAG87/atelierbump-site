@@ -1,7 +1,7 @@
 ---
 title: Camera manager
 reference: '/userguide/#camera-manager'
-icon: '/assets/images/icons/camtool_48.png'
+icon: '/assets/images/icons/camtool_128.png'
 excerpt: Utility to review scene cameras, assign a custom resolution to each, and add it to a batch render view or state set.
 description:
     - Review cameras, assign per-camera resolution, create batch render views, and add state sets.

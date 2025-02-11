@@ -1,7 +1,7 @@
 ---
 title: Mesh Stamp
 reference: '/userguide/#mesh-stamp-tool'
-icon: '/assets/images/icons/stampTool_48.png'
+icon: '/assets/images/icons/stampTool_128.png'
 excerpt: Use an object to Interactively stamp its shape or cut holes in a mesh.
 description:
     -   Use an object to Interactively stamp its shape or cut holes in a mesh.

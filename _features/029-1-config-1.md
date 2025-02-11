@@ -1,7 +1,7 @@
 ---
 title: General settings
 reference: '/userguide/#viewport-elements-colors'
-icon: '/assets/images/icons/dstlbx_icon_48.png'
+icon: '/assets/images/icons/dstlbx_icon_128.png'
 excerpt: DesignToolBox general settings, like viewport elements color and style, tools behavior and more.
 description:
     - DesignToolBox general settings, like viewport elements color and style, tools behavior and more.

@@ -1,7 +1,7 @@
 ---
 title: Angle between two faces
 reference: '/userguide/#angle-between-two-faces'
-icon: '/assets/images/icons/angle2faces_48.png'
+icon: '/assets/images/icons/angle2faces_128.png'
 excerpt: Measures the angle between two polygons.
 description:
     - Angle2Faces for short, measures the angle between two polygons.

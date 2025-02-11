@@ -1,13 +1,13 @@
 ---
 title: Replicator options
 reference: '/userguide/#replicator'
-icon: '/assets/images/icons/repl_2_48.png'
+icon: '/assets/images/icons/repl_2_128.png'
 excerpt: Toggles that changes the behavior of the tool
 description:
     - Toggles that changes the behavior of the tool
 # footer:
 footer_images:
-  - '/assets/images/icons/eyedrop_1_48.png'
+  - '/assets/images/icons/eyedrop_1_128.png'
 category: Replicator and Eyedropper
 --- 
 

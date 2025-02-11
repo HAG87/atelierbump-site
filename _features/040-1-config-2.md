@@ -1,7 +1,7 @@
 ---
 title: Guides - settings
 reference: '/userguide/#refguides-options'
-icon: '/assets/images/icons/refGuides_icon_48.png'
+icon: '/assets/images/icons/refGuides_icon_128.png'
 excerpt:   refGuides preferences dialog.
 description:
     - refGuides preferences dialog.

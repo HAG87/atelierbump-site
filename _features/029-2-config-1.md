@@ -1,7 +1,7 @@
 ---
 title: Settings for transform tools
 reference: '/userguide/#transform-and-measure-tools-units-configuration'
-icon: '/assets/images/icons/dstlbx_icon_48.png'
+icon: '/assets/images/icons/dstlbx_icon_128.png'
 excerpt: Units configuration values for the transform and measure tools.
 description:
     - Units configuration values for the transform and measure tools.

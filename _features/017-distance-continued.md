@@ -1,7 +1,7 @@
 ---
 title: Distance - continued
 reference: '/userguide/#distance'
-icon: '/assets/images/icons/Qmeasure_2_48.png'
+icon: '/assets/images/icons/Qmeasure_2_128.png'
 excerpt: Draw a contiguous (milti-point) dimension line.
 description:
     - Live visual feedback measure tape. 

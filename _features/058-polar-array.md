@@ -1,7 +1,7 @@
 ---
 title: Polar array
 reference: '/userguide/#polar-array'
-icon: '/assets/images/icons/polar_array_48.png'
+icon: '/assets/images/icons/polar_array_128.png'
 excerpt: Clone and orient an object around a center.
 description:
     - Clone an object around a reference center object.

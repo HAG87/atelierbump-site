@@ -1,7 +1,7 @@
 ---
 title: Array - Pattern
 reference: '/userguide/#pattern-array'
-icon: '/assets/images/icons/P_array_48.png'
+icon: '/assets/images/icons/P_array_128.png'
 excerpt: Create complex Rule-Pattern based arrays.
 description:
     - Rule-based objects array generation with advanced transform options.

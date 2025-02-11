@@ -1,7 +1,7 @@
 ---
 title: 2D array - interactive
 reference: '/userguide/#interactive-2d-array'
-icon: '/assets/images/icons/2d_array_48.png'
+icon: '/assets/images/icons/2d_array_128.png'
 excerpt: Fast, interactive, in-viewport 2.5D Array.
 description:
     - Quick and visual tool for cloning objects in a 2D grid.

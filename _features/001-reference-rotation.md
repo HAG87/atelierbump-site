@@ -1,7 +1,7 @@
 ---
 title: Reference Rotation
 reference: userguide/#reference-rotation
-icon: '/assets/images/icons/rotate_48.png'
+icon: '/assets/images/icons/rotate_128.png'
 excerpt: 3-point rotation. Angle snap option.
 description:
     - 4-point rotation (Base Point &gt; Reference Point &gt; Axis Point &gt; Dest. Point)

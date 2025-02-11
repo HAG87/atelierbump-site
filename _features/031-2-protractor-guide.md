@@ -1,7 +1,7 @@
 ---
 title: Protractor - orthogonal position
 reference: '/userguide/#protractor-guide'
-icon: '/assets/images/icons/prot_ortho_48.png'
+icon: '/assets/images/icons/prot_ortho_128.png'
 excerpt: Reference protractor object for working with angles.
 description:
     - Tool for displaying and snapping angular values. Orthogonal positioning mode.

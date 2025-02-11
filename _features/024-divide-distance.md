@@ -1,7 +1,7 @@
 ---
 title: Divide distance
 reference: '/userguide/#divide-distance'
-icon: '/assets/images/icons/sdivide_48.png'
+icon: '/assets/images/icons/sdivide_128.png'
 excerpt: Place reference points between two points.
 description:
     - Divide a distance in equal segments and adds a helper mark at each division point.

@@ -1,15 +1,15 @@
 ---
 title: Line guide - Polar positioning
 reference: '/userguide/#polar-space-mode'
-icon: '/assets/images/icons/rg_polar_48.png'
+icon: '/assets/images/icons/rg_polar_128.png'
 excerpt: Reference guide that works as a ruler.
 description:
     - Linear construction guide. Polar positioning mode.
     - In addition, when positioning line guides, intersection marks (created as refPoints) can be created between the reference guides in the scene.
 footer: 'Note: Also referred in the toolset as refLine.'
 footer_images:
-    - '/assets/images/icons/rg_polar2_48.png'
-    - '/assets/images/icons/rg_UI_polar_48.png'
+    - '/assets/images/icons/rg_polar2_128.png'
+    - '/assets/images/icons/rg_UI_polar_128.png'
 category: refGuides
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:  Edge length
 reference: '/userguide/#edge-length-tool'
-icon: '/assets/images/icons/edgeLength_48.png'
+icon: '/assets/images/icons/edgeLength_128.png'
 excerpt: Change the length of selected edges.
 description:
     - Change the length of selected edges.

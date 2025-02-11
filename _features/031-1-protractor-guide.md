@@ -1,7 +1,7 @@
 ---
 title: Protractor - free positioning
 reference: '/userguide/#protractor-guide'
-icon: '/assets/images/icons/prot_48.png'
+icon: '/assets/images/icons/prot_128.png'
 excerpt: Reference protractor object for working with angles.
 description:
     - Tool for displaying and snapping angular values. Free space mode allows to position the guide freely using two position points.

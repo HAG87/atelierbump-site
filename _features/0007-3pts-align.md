@@ -1,7 +1,7 @@
 ---
 title: 3-Points Align
 reference: '/userguide/#3-points-align'
-icon: '/assets/images/icons/3ptAlign_48.png'
+icon: '/assets/images/icons/3ptAlign_128.png'
 excerpt: Relocate a node from three pairs of points, from an origin position to a target position.
 description:
     - Relocate a node from three pairs of points, from an origin position to a target position.

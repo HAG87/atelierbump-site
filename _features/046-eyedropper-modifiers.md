@@ -1,7 +1,7 @@
 ---
 title: Eyedropper - modifiers
 reference: '/userguide/#eyedropper-modes'
-icon: '/assets/images/icons/eyedrop_5_48.png'
+icon: '/assets/images/icons/eyedrop_5_128.png'
 excerpt: Copy selected node modifiers to another node or group of nodes.
 description:
     - Copy selected node modifiers to another node or group of nodes.

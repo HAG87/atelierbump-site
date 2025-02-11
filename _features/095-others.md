@@ -7,7 +7,7 @@ description:
     - ID from camera 
     - Set Bump value to 100
     - Replace with Xref
-footer: optional installation features
+footer: Optional installation features
 # footer_images:
 category: Extras
 ---

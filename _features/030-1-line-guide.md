@@ -1,15 +1,15 @@
 ---
 title: Line guide - Free position
 reference: '/userguide/#free-space-mode'
-icon: '/assets/images/icons/rg_B_48.png'
+icon: '/assets/images/icons/rg_B_128.png'
 excerpt: Reference guide that works as a ruler.
 description:
     - Linear, segments marked construction guide. Free space mode allows to position the guide freely using two position points.
     - In addition, when positioning line guides, intersection marks (created as refPoints) can be created between the reference guides in the scene.
 footer: 'Note: Also referred in the toolset as refLine.'
 footer_images:
-    - '/assets/images/icons/rg_B2_48.png'
-    - '/assets/images/icons/rg_UI_48.png'
+    - '/assets/images/icons/rg_B2_128.png'
+    - '/assets/images/icons/rg_UI_128.png'
 category: refGuides
 ---
 

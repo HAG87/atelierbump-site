@@ -1,7 +1,7 @@
 ---
 title: Random swap transform
 reference: '/userguide/#reference-scale'
-icon: '/assets/images/icons/scale_48.png'
+icon: '/assets/images/icons/scale_128.png'
 excerpt: Randomly swap position, rotation and scale between the selected objects.
 description:
     - Randomly swap position, rotation and scale between the selected objects.

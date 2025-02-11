@@ -1,7 +1,7 @@
 ---
 title: Object spatial info
 reference: '/userguide/#spatial-info'
-icon: '/assets/images/icons/info_48.png'
+icon: '/assets/images/icons/info_128.png'
 excerpt: Displays information about an object's dimension and transformation.
 description:
     - Viewport gizmo for displaying information about an object dimensions and transformation.

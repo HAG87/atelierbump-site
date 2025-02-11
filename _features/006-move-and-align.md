@@ -1,7 +1,7 @@
 ---
 title: move and align (1D Align)
 reference: '/userguide/#move-and-align-1d-align-tool'
-icon: '/assets/images/icons/QrotateF_48.png'
+icon: '/assets/images/icons/QrotateF_128.png'
 excerpt: Move an object to a new destination and perform an 1D alignment.
 description:
     - Move the object to a new position and align it by picking two pairs of points .

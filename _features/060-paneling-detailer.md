@@ -1,7 +1,7 @@
 ---
 title: Detailer
 reference: '/userguide/#detailer'
-icon: '/assets/images/icons/paneling_48.png'
+icon: '/assets/images/icons/paneling_128.png'
 excerpt: Position features over a collection of objects.
 description:
     - Position features over a collection of objects. 

@@ -1,7 +1,7 @@
 ---
 title: Paneling
 reference: '/userguide/#paneling'
-icon: '/assets/images/icons/paneling_48.png'
+icon: '/assets/images/icons/paneling_128.png'
 excerpt: Simple Paneling tool. Creates panels on planar areas.
 description:
     - Quickly create a grid of panels (boxes or custom geometry) in a planar surface. 

@@ -1,7 +1,7 @@
 ---
 title: Measure volumne
 reference: '/userguide/#volume'
-icon: '/assets/images/icons/Qvolume_48.png'
+icon: '/assets/images/icons/Qvolume_128.png'
 excerpt: Cubic volume measurement.
 description:
     - Pick points to draw an a closed polygonal region and measure its area.

@@ -1,7 +1,7 @@
 ---
 title:  Align vertices
 reference: '/userguide/#align-vertices-tool'
-icon: '/assets/images/icons/vertexAlign_48.png'
+icon: '/assets/images/icons/vertexAlign_128.png'
 excerpt: Align a selection of vertices in a straight line.
 description:
     - Align a selection of vertices in a straight line.

@@ -1,13 +1,13 @@
 ---
 title: Replicator
 reference: '/userguide/#replicator'
-icon: '/assets/images/icons/eyedrop_1_48.png'
+icon: '/assets/images/icons/eyedrop_1_128.png'
 excerpt: Tool for replacing objects Interactively.
 description:
     - Replace any object with another. Replicate multiple instances, keep or not material and transformations.
 # footer:
 footer_images:
-    - '/assets/images/icons/repl_2_48.png'
+    - '/assets/images/icons/repl_2_128.png'
 category: Replicator and Eyedropper
 --- 
 

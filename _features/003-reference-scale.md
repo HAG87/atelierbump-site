@@ -1,7 +1,7 @@
 ---
 title: Reference scale
 reference: '/userguide/#reference-scale'
-icon: '/assets/images/icons/scale_48.png'
+icon: '/assets/images/icons/scale_128.png'
 excerpt: Transform Scale by matching reference vectors.
 description:
     - 4-point scale. Orthogonal reference pick mode.

@@ -1,7 +1,7 @@
 ---
 title: Measure distance
 reference: '/userguide/#distance'
-icon: '/assets/images/icons/Qmeasure_48.png'
+icon: '/assets/images/icons/Qmeasure_128.png'
 excerpt: Draw temporary dimension lines in the viewport.
 description:
     - Live visual feedback measure tape. 

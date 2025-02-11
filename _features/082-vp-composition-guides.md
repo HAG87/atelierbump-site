@@ -1,7 +1,7 @@
 ---
 title: Viewport composition guides
 reference: '/tools/#vp-composition'
-icon: '/assets/images/icons/vcomp_48.png'
+icon: '/assets/images/icons/vcomp_128.png'
 excerpt: Clone object between 2 points
 description:
     - This tool is intended to be of aid when composing shots. 

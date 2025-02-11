@@ -1,7 +1,7 @@
 ---
 title: Eyedropper - transform
 reference: '/userguide/#eyedropper-modes'
-icon: '/assets/images/icons/eyedrop_3_48.png'
+icon: '/assets/images/icons/eyedrop_3_128.png'
 excerpt: Copy selected node transform to another node or group of nodes.
 description:
     - Copy selected node transform to another node or group of nodes.
