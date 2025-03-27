@@ -13,3 +13,4 @@ https://atelierbump-site.netlify.com/* https://atelierbump.com/:splat 301!
 # URL redirections
 /freebies/*      /tools/:splat 301!
 /designtoolbox/ /              301!
+/docs/userguide/ /userguide    301!
