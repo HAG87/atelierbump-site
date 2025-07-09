@@ -67,5 +67,3 @@ Options available in toolbars as Checkbuttons:
 #### Layer tools panel
 
 ![object-ribbon](/assets/images/ui/r9.png){: .drop-shadow}
-
----

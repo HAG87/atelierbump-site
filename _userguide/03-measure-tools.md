@@ -156,5 +156,3 @@ Displays information about an object's dimension and transformation
 ### Home grid size
 
 Displays a reference gizmo with 3 rules towards the XYZ axes indicating the Active Grid spacing units.
-
----

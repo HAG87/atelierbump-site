@@ -21,10 +21,10 @@ permalink: /userguide/eyedropper-and-replicator
 
 ![replicator_options](/assets/images/ui/replicator_floater.png){: .align-center .drop-shadow}
 
-- Multi-target: This toggle will enable/disable the picking of multiple targets (When disabled, the tool wil act as a single-use).
 - Use group as source: When selecting a group as source, use the entire group
 - Replace entire group: If the *target* node is in a group, replace the entire group with the *source* node
 - Retain source node offset transform: This effectively retains the node offsetTransform without changing the pivot, AND into the target transform.
+- Multi-target: This toggle will enable/disable the picking of multiple targets (When disabled, the tool wil act as a single-use).
 - Replace all instances of the target node(s): If the *target* node is an instance, replace all instances of the node.
     Note: This mode will ignore the *source group* and *target group* options.
 - Keep properties: By Default, replicator will use the *source* node properties. Enable the checkboxes to keep properties of the *target* node.
@@ -54,5 +54,14 @@ Additional available modes:
 | Visual appearance                |
 | Material                         |
 | non-Topology dependent modifiers |
-| Standard transformations         |
+| Node transformations             |
 | UVW mapping                      |
+
+### Options
+
+- Transformation:
+  - modes:
+    - copy the node pivot and transform: The space and pivot transforms from the source node will be copied to the target node
+    - copy only the node pivot: This will maintain the node transform and only change the pivot position and rotation.
+    - copy only the node transform: This mode will only map the node transform, leaving unchanged the offset transform (the pivot transform)
+  - Keep original position: Enabling this checkbox will maintain the target node position.

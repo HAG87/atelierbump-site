@@ -43,5 +43,3 @@ You can change the color palette used to represent points marks, lines and other
   MEASUREMENT: 1.0m  
   Linear Units Scale factor: 0.01 (for printing the value in centimeters)  
   PRINTED RESULT: 100.0 u
-
----

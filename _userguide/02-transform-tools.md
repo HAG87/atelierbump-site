@@ -233,5 +233,3 @@ Direction and length of the distribution determined by the position of two objec
 Drop objects on underlay surfaces.
 
 > Press <mark>SHIFT</mark> when activating the tool to align the objects to the surface form.
-
----

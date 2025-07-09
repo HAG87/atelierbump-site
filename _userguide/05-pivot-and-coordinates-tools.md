@@ -50,5 +50,3 @@ Convenient shortcuts to enable / disable standard transformations locks on the c
 - Scale lock
 
 <div class="responsive-video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/EZ-VBQdTmuE" frameborder="0" allowfullscreen></iframe></div>
-
----

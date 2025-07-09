@@ -595,7 +595,7 @@ Convenient shortcuts to enable / disable standard transformations locks on the c
 
 ### Local isolate
 
-Isolate / unisolate selected object and set an active work grid in its local coordinates.
+Isolate selected object and set an active work grid in its local coordinates.
 
 >Note: If more than one object is selected, Local isolate will use the first object in the selection to set the grid.
 
@@ -627,7 +627,7 @@ This tool will temporally display all frozen objects (and freeze visible ones). 
 
 Layer tools will work on the selected node (if any) otherwise they will work in "pick mode".
 
-| **Isolate layer**       | Isolate-Unisolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer. |
+| **Isolate layer**       | Isolate selected object/s layer/s. If nothing is selected, you can pick an object in viewport and isolate the respective layer. |
 | **Lock layer**          | Locks the layer of the picked/selected node. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.          |
 | **Hide layer**          | Turn off the layer of the picked node. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.                |
 | **Layer box mode**      | Set Box mode status for target node layer. Press <mark>SHIFT</mark> when activating the tool to pick frozen nodes/layers.            |

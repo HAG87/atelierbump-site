@@ -103,5 +103,3 @@ Save current active snaps as a named set and reuse them from the floater dropdow
 ![save-snap-add](/assets/images/ui/savesnap2.png){: .align-center .drop-shadow}
 
 ![color-clipboard](/assets/images/icons/color_128.png){: .icon-small}
-
----
