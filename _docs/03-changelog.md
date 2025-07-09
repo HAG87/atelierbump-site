@@ -5,6 +5,50 @@ permalink: /docs/changelog
 toc: true
 ---
 
+## Version 2.31.0.0
+
+### New
+
+* Find arc (or circle) center tool: Use three points (1-Arc Start, 2-Arc end, 3-Point in arc segment) to locate the center of an arc or circle. The tool positions a point mark at the center. Press SHIFT while starting the tool to position and align a circle shape.
+
+### Fixes
+
+* "Viewport composition guides" tool was broken.
+
+## Version 2.30.0.0
+
+### New
+
+* Two new utilities for working with cameras: a crosshair pointer to set the camera target distance. You can use it to focus the camera on a specific point.
+  * Camera target reposition: crosshair pointer to reposition the active camera target from the viewport. The camera target is moved to the clicked point.
+  * Camera target distance: crosshair pointer to interactively change the distance of the camera target, without affecting the direction.
+* Polygon selection (for Editable poly only):
+  * Select polygons by area.
+  * Select invalid polygons. Usually, when modelling or editing imported meshes, we end up with invalid "invisible" faces that break the edge flow and mesh smoothing. Use this tool to select those faces and remove them.
+* Align the selected nodes to the active space grid.
+* Align to average normal: align the selection to the average direction of the selected objects' positions.
+
+### Enhancements
+
+* Improved camera manager tool with support for standard cameras and added access to more camera properties.
+* Improved material replacer tool.
+* Isolate local: when selecting multiple objects, the average nodes transform will be used as reference.
+* refGuides: polar mode now restores the active grid.
+* Drop objects: align to surface now respects the object rotation.
+* Revisited some icons and the menu layout. Added SVG format for the icons (can be opted out in the installer)
+* Several small internal changes to improve code maintenance and performance.
+* Support for 3ds max 2026 (untested)
+
+## Version 2.22.7.0
+
+### New
+
+* Added a small utility function: Clean scene materials. Running this macro will force remove the unused materials from the scene.
+
+### Fixes
+
+* Fixed an issue with the measure dimension tool and other tools: when manipulating an object far from the coordinate origin, the graphic elements were drawn out of scale.
+
 ## Version 2.22.6.0
 
 ### Enhancements
